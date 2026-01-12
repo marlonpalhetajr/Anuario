@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
@@ -79,6 +79,19 @@
             color: #2f7f2f;
         }
     </style>
+
+        <style>
+            .map-caption {
+                margin-top: 8px;
+                font-size: 0.95rem;
+                color: #444;
+            }
+
+            .portfolio-text .d-flex {
+                gap: 12px;
+                justify-content: center;
+            }
+        </style>
 </head>
 
 <body>
@@ -126,7 +139,7 @@
                 <li class="nav-item"><a class="nav-link" href="index.html#contato" data-i18n="menu_contato">Contato</a></li>
                 <li class="nav-item dropdown">
                     <button class="nav-link dropdown-toggle bg-transparent border-0" id="langDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        🌐 <span data-i18n="menu_idioma">Idioma</span>
+                        ?? <span data-i18n="menu_idioma">Idioma</span>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item lang-option" data-lang="pt" href="#">Português</a></li>
@@ -136,7 +149,7 @@
                 </li>
                 <li class="nav-item position-relative">
                     <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);" type="button">
-                        ♿ <span class="d-none d-lg-inline">Acessibilidade</span>
+                        ? <span class="d-none d-lg-inline">Acessibilidade</span>
                     </button>
                     <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
                         <div class="acess-section-title">Visão</div>
@@ -210,8 +223,7 @@
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Estimativa Populacional</h4>
                                 <div class="d-flex justify-content-center gap-3">
-                                    <a class="btn btn-lg-square rounded-circle" href="mapas/demografia/Demografia_Estimativa_Populacional2025.jpg" title="Visualizar mapa" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
-                                    <button class="btn btn-lg-square rounded-circle" onclick="downloadMap('mapas/demografia/Demografia_Estimativa_Populacional2025.jpg', 'Estimativa_Populacional_2025.jpg')" title="Baixar mapa"><i class="bi bi-download"></i></button>
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/demografia/Demografia_Estimativa_Populacional2025.jpg" title="Visualizar mapa Estimativa Populacional" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -222,8 +234,8 @@
                             <img class="img-fluid" src="icons/demografia/Demografia_Razao_Dependencia2024.png" alt="Ícone Razão de Dependência">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Razão de Dependência</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/demografia/Demografia_Razao_Dependencia2024.jpg" title="Visualizar mapa Razão de Dependência" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/demografia/Demografia_Razao_Dependencia2024.jpg" title="Visualizar mapa Razão de Dependência" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -234,8 +246,8 @@
                             <img class="img-fluid" src="icons/demografia/Demografia_Indice_Envelhecimento2024.png" alt="Ícone Índice de Envelhecimento">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Índice de Envelhecimento</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/demografia/Demografia_Indice_Envelhecimento2024.jpg" title="Visualizar mapa Índice de Envelhecimento" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/demografia/Demografia_Indice_Envelhecimento2024.jpg" title="Visualizar mapa Índice de Envelhecimento" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -248,8 +260,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_PIB2021.png" alt="Ícone PIB">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">PIB</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_PIB2021.png" title="Visualizar mapa PIB" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_PIB2021.png" title="Visualizar mapa PIB" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -260,8 +272,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_PIB_VA_total2021.png" alt="Ícone PIB VA Total">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">PIB VA Total</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_PIB_VA_total2021.png" title="Visualizar mapa PIB VA Total" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_PIB_VA_total2021.png" title="Visualizar mapa PIB VA Total" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -272,8 +284,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_PIB_VA_Agropecuaria2021.png" alt="Ícone PIB VA Agropecuária">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">PIB VA Agropecuária</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_PIB_VA_Agropecuaria2021.png" title="Visualizar mapa PIB VA Agropecuária" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_PIB_VA_Agropecuaria2021.png" title="Visualizar mapa PIB VA Agropecuária" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -284,8 +296,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_PIB_VA_Industria2021.png" alt="Ícone PIB VA Indústria">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">PIB VA Indústria</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_PIB_VA_Industria2021.png" title="Visualizar mapa PIB VA Indústria" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_PIB_VA_Industria2021.png" title="Visualizar mapa PIB VA Indústria" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -296,8 +308,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_PIB_VA_Serviços2021.png" alt="Ícone PIB VA Serviços">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">PIB VA Serviços</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_PIB_VA_Serviços2021.png" title="Visualizar mapa PIB VA Serviços" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_PIB_VA_Serviços2021.png" title="Visualizar mapa PIB VA Serviços" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -308,8 +320,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_PIB_Per_Capita%202021.png" alt="Ícone PIB Per Capita">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">PIB Per Capita</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_PIB_Per_Capita%202021.png" title="Visualizar mapa PIB Per Capita" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_PIB_Per_Capita%202021.png" title="Visualizar mapa PIB Per Capita" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -320,8 +332,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_Rebanho_Bovino2024.png" alt="Ícone Rebanho Bovino">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Rebanho Bovino</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_Rebanho_Bovino2024.png" title="Visualizar mapa Rebanho Bovino" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_Rebanho_Bovino2024.png" title="Visualizar mapa Rebanho Bovino" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -332,8 +344,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_Balança_Comercial_2024.png" alt="Ícone Balança Comercial">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Balança Comercial</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_Balança_Comercial_2024.png" title="Visualizar mapa Balança Comercial" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_Balança_Comercial_2024.png" title="Visualizar mapa Balança Comercial" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -344,8 +356,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_ICMS2024.png" alt="Ícone Repasse de ICMS">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Repasse de ICMS</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_ICMS2024.png" title="Visualizar mapa Repasse de ICMS" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_ICMS2024.png" title="Visualizar mapa Repasse de ICMS" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -356,8 +368,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_Receita_Orçamentaria_2024.png" alt="Ícone Receita Orçamentária">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Receita Orçamentária</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_Receita_Orçamentaria_2024.png" title="Visualizar mapa Receita Orçamentária" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_Receita_Orçamentaria_2024.png" title="Visualizar mapa Receita Orçamentária" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -368,8 +380,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_RECEITA_TRANSF_CORRENTES_2024.png" alt="Ícone Receita de Transferências Correntes">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Receita de Transferências Correntes</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_RECEITA_TRANSF_CORRENTES_2024.png" title="Visualizar mapa Receita de Transferências Correntes" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_RECEITA_TRANSF_CORRENTES_2024.png" title="Visualizar mapa Receita de Transferências Correntes" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -380,8 +392,8 @@
                             <img class="img-fluid" src="icons/economia/Economia_Receita_Corrente_2024.png" alt="Ícone Receita Corrente">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Receita Corrente</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/economia/Economia_Receita_Corrente_2024.png" title="Visualizar mapa Receita Corrente" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/economia/Economia_Receita_Corrente_2024.png" title="Visualizar mapa Receita Corrente" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -394,8 +406,8 @@
                             <img class="img-fluid" src="icons/infraestrutura/Infra_consumidores_energia2023.png" alt="Ícone Consumidores de Energia">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Consumidores de Energia</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/infraestrutura/Infra_consumidores_energia2023.jpg" title="Visualizar mapa Consumidores de Energia" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/infraestrutura/Infra_consumidores_energia2023.jpg" title="Visualizar mapa Consumidores de Energia" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -406,8 +418,8 @@
                             <img class="img-fluid" src="icons/infraestrutura/Infra_consumo_energia2023.png" alt="Ícone Consumo de Energia">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Consumo de Energia</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/infraestrutura/Infra_consumo_energia2023.jpg" title="Visualizar mapa Consumo de Energia" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/infraestrutura/Infra_consumo_energia2023.jpg" title="Visualizar mapa Consumo de Energia" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -418,8 +430,8 @@
                             <img class="img-fluid" src="icons/infraestrutura/Infra_frota2024.png" alt="Ícone Frota de Veículos">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Frota de Veículos</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/infraestrutura/Infra_frota2024.jpg" title="Visualizar mapa Frota de Veículos" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/infraestrutura/Infra_frota2024.jpg" title="Visualizar mapa Frota de Veículos" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -432,8 +444,8 @@
                             <img class="img-fluid" src="icons/meio_ambiente/MeioAmb_Deflorestamento2024.png" alt="Ícone Desflorestamento">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Desflorestamento</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/meio_ambiente/MeioAmb_Deflorestamento2024.jpg" title="Visualizar mapa Desflorestamento" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/meio_ambiente/MeioAmb_Deflorestamento2024.jpg" title="Visualizar mapa Desflorestamento" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -444,8 +456,8 @@
                             <img class="img-fluid" src="icons/meio_ambiente/MeioAmb_AreadeFloresta2024.png" alt="Ícone Área de Floresta">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Área de Floresta (km²)</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/meio_ambiente/MeioAmb_AreadeFloresta2024.jpg" title="Visualizar mapa Área de Floresta" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/meio_ambiente/MeioAmb_AreadeFloresta2024.jpg" title="Visualizar mapa Área de Floresta" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -456,8 +468,8 @@
                             <img class="img-fluid" src="icons/meio_ambiente/MeioAmb_focos_calor2024.png" alt="Ícone Focos de Calor">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Focos de Calor</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/meio_ambiente/MeioAmb_focos_calor2024.jpg" title="Visualizar mapa Focos de Calor" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/meio_ambiente/MeioAmb_focos_calor2024.jpg" title="Visualizar mapa Focos de Calor" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -468,8 +480,8 @@
                             <img class="img-fluid" src="icons/meio_ambiente/MeioAmb_Incremento2024.png" alt="Ícone Incremento (Desflorestamento)">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Incremento (Desflorestamento)</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/meio_ambiente/MeioAmb_Incremento2024.jpg" title="Visualizar mapa Incremento" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/meio_ambiente/MeioAmb_Incremento2024.jpg" title="Visualizar mapa Incremento" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -482,8 +494,8 @@
                             <img class="img-fluid" src="icons/social/Social_bolsafamilia_familias2024.png" alt="Ícone Famílias atendidas no Bolsa Família">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Famílias Atendidas no Programa Bolsa Família</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_bolsafamilia_familias2024.jpg" title="Visualizar mapa Famílias Atendidas no Bolsa Família" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_bolsafamilia_familias2024.jpg" title="Visualizar mapa Famílias Atendidas no Bolsa Família" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -494,8 +506,8 @@
                             <img class="img-fluid" src="icons/social/Social_bolsafamilia_valores2024.png" alt="Ícone Valor total empregado Bolsa Família">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Valor Total Empregado no Programa Bolsa Família</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_bolsafamilia_valores2024.jpg" title="Visualizar mapa Valor Bolsa Família" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_bolsafamilia_valores2024.jpg" title="Visualizar mapa Valor Bolsa Família" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -506,8 +518,8 @@
                             <img class="img-fluid" src="icons/social/Social_tx_aprovacao_fundamental2024.png" alt="Ícone Taxa de aprovação ensino fundamental">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Aprovação Total do Ensino Fundamental</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_tx_aprovacao_fundamental2024.jpg" title="Visualizar mapa Taxa de Aprovação Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_tx_aprovacao_fundamental2024.jpg" title="Visualizar mapa Taxa de Aprovação Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -518,8 +530,8 @@
                             <img class="img-fluid" src="icons/social/Social_txa_reprovacao_fundamental2024.png" alt="Ícone Taxa de reprovação ensino fundamental">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Reprovação Total no Ensino Fundamental</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txa_reprovacao_fundamental2024.jpg" title="Visualizar mapa Taxa de Reprovação Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txa_reprovacao_fundamental2024.jpg" title="Visualizar mapa Taxa de Reprovação Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -530,8 +542,8 @@
                             <img class="img-fluid" src="icons/social/Social_txabandono_fundamental2024.png" alt="Ícone Taxa de abandono ensino fundamental">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Abandono Total no Ensino Fundamental</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txabandono_fundamental2024.jpg" title="Visualizar mapa Taxa de Abandono Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txabandono_fundamental2024.jpg" title="Visualizar mapa Taxa de Abandono Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -542,8 +554,8 @@
                             <img class="img-fluid" src="icons/social/Social_tx_aprovacao_medio2024.png" alt="Ícone Taxa de aprovação ensino médio">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Aprovação Total do Ensino Médio</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_tx_aprovacao_medio2024.jpg" title="Visualizar mapa Taxa de Aprovação Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_tx_aprovacao_medio2024.jpg" title="Visualizar mapa Taxa de Aprovação Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -554,8 +566,8 @@
                             <img class="img-fluid" src="icons/social/Social_txa_reprovacaomedio2024.png" alt="Ícone Taxa de reprovação ensino médio">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Reprovação Total no Ensino Médio</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txa_reprovacaomedio2024.jpg" title="Visualizar mapa Taxa de Reprovação Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txa_reprovacaomedio2024.jpg" title="Visualizar mapa Taxa de Reprovação Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -566,8 +578,8 @@
                             <img class="img-fluid" src="icons/social/Social_txabandono_medio2024.png" alt="Ícone Taxa de abandono ensino médio">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Abandono Total no Ensino Médio</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txabandono_medio2024.jpg" title="Visualizar mapa Taxa de Abandono Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txabandono_medio2024.jpg" title="Visualizar mapa Taxa de Abandono Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -578,8 +590,8 @@
                             <img class="img-fluid" src="icons/social/Social_distorcao_fundamental2024.png" alt="Ícone Distorção idade-série fundamental">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Distorção Idade-Série Total do Ensino Fundamental</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_distorcao_fundamental2024.jpg" title="Visualizar mapa Distorção Idade-Série Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_distorcao_fundamental2024.jpg" title="Visualizar mapa Distorção Idade-Série Fundamental" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -590,8 +602,8 @@
                             <img class="img-fluid" src="icons/social/Social_distorcao_medio2024.png" alt="Ícone Distorção idade-série médio">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Distorção Idade-Série Total do Ensino Médio</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_distorcao_medio2024.jpg" title="Visualizar mapa Distorção Idade-Série Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_distorcao_medio2024.jpg" title="Visualizar mapa Distorção Idade-Série Médio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -602,8 +614,8 @@
                             <img class="img-fluid" src="icons/social/Social_ideb_series_iniciais2024.png" alt="Ícone IDEB séries iniciais">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">IDEB - Escola Pública - Séries Iniciais</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_ideb_series_iniciais2024.jpg" title="Visualizar mapa IDEB Séries Iniciais" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_ideb_series_iniciais2024.jpg" title="Visualizar mapa IDEB Séries Iniciais" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -614,8 +626,8 @@
                             <img class="img-fluid" src="icons/social/Social_ideb_series_finais2024.png" alt="Ícone IDEB séries finais">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">IDEB - Escola Pública - Séries Finais</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_ideb_series_finais2024.jpg" title="Visualizar mapa IDEB Séries Finais" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_ideb_series_finais2024.jpg" title="Visualizar mapa IDEB Séries Finais" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -626,8 +638,8 @@
                             <img class="img-fluid" src="icons/social/Social_vinculos_emprego2023.png" alt="Ícone Vínculos empregatícios">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Vínculos Empregatícios Total no Emprego Formal</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_vinculos_emprego2023.jpg" title="Visualizar mapa Vínculos Empregatícios" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_vinculos_emprego2023.jpg" title="Visualizar mapa Vínculos Empregatícios" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -638,8 +650,8 @@
                             <img class="img-fluid" src="icons/social/Social_vinculos_remuneracao2023.png" alt="Ícone Remuneração média trabalhador formal">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Remuneração Média (R$) do Trabalhador Formal</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_vinculos_remuneracao2023.jpg" title="Visualizar mapa Remuneração Média" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_vinculos_remuneracao2023.jpg" title="Visualizar mapa Remuneração Média" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -650,8 +662,8 @@
                             <img class="img-fluid" src="icons/social/Social_txmortalidade_geral2024.png" alt="Ícone Taxa de mortalidade geral">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Mortalidade Geral</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txmortalidade_geral2024.jpg" title="Visualizar mapa Taxa de Mortalidade Geral" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txmortalidade_geral2024.jpg" title="Visualizar mapa Taxa de Mortalidade Geral" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -662,8 +674,8 @@
                             <img class="img-fluid" src="icons/social/Social_tx_mortalidade_infantil2024.png" alt="Ícone Taxa de mortalidade infantil">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Mortalidade Infantil</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_tx_mortalidade_infantil2024.jpg" title="Visualizar mapa Taxa de Mortalidade Infantil" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_tx_mortalidade_infantil2024.jpg" title="Visualizar mapa Taxa de Mortalidade Infantil" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -674,8 +686,8 @@
                             <img class="img-fluid" src="icons/social/Social_tx_mortalidade_na_infância2024.png" alt="Ícone Taxa de mortalidade na infância">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Mortalidade na Infância</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_tx_mortalidade_na_infância2024.jpg" title="Visualizar mapa Taxa de Mortalidade na Infância" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_tx_mortalidade_na_infância2024.jpg" title="Visualizar mapa Taxa de Mortalidade na Infância" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -686,8 +698,8 @@
                             <img class="img-fluid" src="icons/social/Social_tx_natalidade2024.png" alt="Ícone Taxa de natalidade">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Natalidade</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_tx_natalidade2024.jpg" title="Visualizar mapa Taxa de Natalidade" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_tx_natalidade2024.jpg" title="Visualizar mapa Taxa de Natalidade" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -698,8 +710,8 @@
                             <img class="img-fluid" src="icons/social/Social_Leitos2025.png" alt="Ícone Leitos de hospitais">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Leitos de Hospitais (1.000 hab)</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_Leitos2025.jpg" title="Visualizar mapa Leitos de Hospitais" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_Leitos2025.jpg" title="Visualizar mapa Leitos de Hospitais" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -710,8 +722,8 @@
                             <img class="img-fluid" src="icons/social/Social_Medicos2025.png" alt="Ícone Médicos por habitante">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Médicos (10 mil hab.)</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_Medicos2025.jpg" title="Visualizar mapa Médicos" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_Medicos2025.jpg" title="Visualizar mapa Médicos" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -722,8 +734,8 @@
                             <img class="img-fluid" src="icons/social/Social_Postos_Centros2025.png" alt="Ícone Postos e centros">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Postos e Centros (10 mil hab.)</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_Postos_Centros2025.jpg" title="Visualizar mapa Postos e Centros" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_Postos_Centros2025.jpg" title="Visualizar mapa Postos e Centros" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -734,8 +746,8 @@
                             <img class="img-fluid" src="icons/social/Social_nvconsultaprenatal2024.png" alt="Ícone consultas pré-natal">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Percentual de Nascidos Vivos com 7 ou mais consultas pré-natal</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_nvconsultaprenatal2024.jpg" title="Visualizar mapa Consultas Pré-natal" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_nvconsultaprenatal2024.jpg" title="Visualizar mapa Consultas Pré-natal" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -746,8 +758,8 @@
                             <img class="img-fluid" src="icons/social/Social_txhomicidiototal_2024.png" alt="Ícone Taxa de homicídio">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Homicídio</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txhomicidiototal_2024.jpg" title="Visualizar mapa Taxa de Homicídio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txhomicidiototal_2024.jpg" title="Visualizar mapa Taxa de Homicídio" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -758,8 +770,8 @@
                             <img class="img-fluid" src="icons/social/Social_txhomicidio_jovens2024.png" alt="Ícone Taxa de homicídio de jovens">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Homicídio de Jovens</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_txhomicidio_jovens2024.jpg" title="Visualizar mapa Taxa de Homicídio de Jovens" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_txhomicidio_jovens2024.jpg" title="Visualizar mapa Taxa de Homicídio de Jovens" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -770,8 +782,8 @@
                             <img class="img-fluid" src="icons/social/Social_Tx_mortes_transito2024.png" alt="Ícone Taxa de mortes no trânsito">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Taxa de Mortes no Trânsito</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/social/Social_Tx_mortes_transito2024.jpg" title="Visualizar mapa Taxa de Mortes no Trânsito" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/social/Social_Tx_mortes_transito2024.jpg" title="Visualizar mapa Taxa de Mortes no Trânsito" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -784,8 +796,8 @@
                             <img class="img-fluid" src="icons/territorio/Territorio_municipios2024.png" alt="Ícone Municípios">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Municípios</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_municipios2025.png" title="Visualizar mapa Municípios" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_municipios2025.png" title="Visualizar mapa Municípios" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -796,8 +808,8 @@
                             <img class="img-fluid" src="icons/territorio/territorio_regiao_integracao2024.png" alt="Ícone Região de Integração">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Região de Integração</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Região_Integração2024.png" title="Visualizar mapa Região de Integração" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Região_Integração2024.png" title="Visualizar mapa Região de Integração" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -808,8 +820,8 @@
                             <img class="img-fluid" src="icons/territorio/Territorio_Regiao_imediata2024.png" alt="Ícone Regiões geográficas imediatas">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Regiões Geográficas Imediatas</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Região_imediata2024.png" title="Visualizar mapa Regiões Geográficas Imediatas" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Região_imediata2024.png" title="Visualizar mapa Regiões Geográficas Imediatas" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -820,8 +832,8 @@
                             <img class="img-fluid" src="icons/territorio/territorio_regiao_intermediaria2024.png" alt="Ícone Regiões geográficas intermediárias">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Regiões Geográficas Intermediárias</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Região_Intermediária2024.png" title="Visualizar mapa Regiões Geográficas Intermediárias" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Região_Intermediária2024.png" title="Visualizar mapa Regiões Geográficas Intermediárias" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -832,8 +844,8 @@
                             <img class="img-fluid" src="icons/territorio/Territorio_RMB2024.png" alt="Ícone Região Metropolitana">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Região Metropolitana</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Território_RMB2025.png" title="Visualizar mapa Região Metropolitana" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Território_RMB2025.png" title="Visualizar mapa Região Metropolitana" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -844,8 +856,8 @@
                             <img class="img-fluid" src="icons/territorio/territorio_distritos_belem2024.png" alt="Ícone Distritos de Belém">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Distritos Administrativos - Belém</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Distritos_Belém2025.png" title="Visualizar mapa Distritos Administrativos - Belém" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Distritos_Belém2025.png" title="Visualizar mapa Distritos Administrativos - Belém" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -856,8 +868,8 @@
                             <img class="img-fluid" src="icons/territorio/territorio_hidrografia_pa2024.png" alt="Ícone Hidrografia">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Hidrografia</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_hidrografia_PA.png" title="Visualizar mapa Hidrografia" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_hidrografia_PA.png" title="Visualizar mapa Hidrografia" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -868,8 +880,8 @@
                             <img class="img-fluid" src="icons/territorio/Territorio_Zoneamento2024.png" alt="Ícone Zoneamento Ecológico Econômico">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Zoneamento Ecológico - Econômico (ZEE)</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Zoneamento.png" title="Visualizar mapa ZEE" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Zoneamento.png" title="Visualizar mapa ZEE" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -880,8 +892,8 @@
                             <img class="img-fluid" src="icons/territorio/territorio_geomorfologico2024.png" alt="Ícone Geomorfológico">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Geomorfológico</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Geomorfológico2024.png" title="Visualizar mapa Geomorfológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Geomorfológico2024.png" title="Visualizar mapa Geomorfológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -892,8 +904,8 @@
                             <img class="img-fluid" src="icons/territorio/Territorio_GeolB3gico2024.png" alt="Ícone Geológico">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Geológico</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Geológico2024.png" title="Visualizar mapa Geológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Geológico2024.png" title="Visualizar mapa Geológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -904,8 +916,8 @@
                             <img class="img-fluid" src="icons/territorio/Territorio_Fitoecologia2024.png" alt="Ícone Fitoecológico">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Fitoecológico</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Fitoecologia.png" title="Visualizar mapa Fitoecológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Fitoecologia.png" title="Visualizar mapa Fitoecológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -916,8 +928,8 @@
                             <img class="img-fluid" src="icons/territorio/territorio_pedologico2023.png" alt="Ícone Pedológico">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4 text-center">Pedológico</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/territorio/Territorio_Pedológico2025.png" title="Visualizar mapa Pedológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/territorio/Territorio_Pedológico2025.png" title="Visualizar mapa Pedológico" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1020,6 +1032,64 @@
                 document.body.removeChild(a);
             }, 100);
         }
+
+        function mapFilenameFrom(title, href) {
+            const cleanTitle = (title || 'mapa').normalize('NFD').replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_');
+            const hrefName = (href || '').split('/').pop() || 'mapa.jpg';
+            const ext = hrefName.includes('.') ? hrefName.substring(hrefName.lastIndexOf('.')) : '.jpg';
+            return cleanTitle ? `${cleanTitle}${ext}` : hrefName;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.portfolio-item').forEach((item) => {
+                const inner = item.querySelector('.portfolio-inner');
+                const titleEl = item.querySelector('.portfolio-text h4');
+                const controls = item.querySelector('.portfolio-text .d-flex') || (() => {
+                    const div = document.createElement('div');
+                    div.className = 'd-flex';
+                    const text = item.querySelector('.portfolio-text');
+                    if (text) text.appendChild(div);
+                    return div;
+                })();
+
+                // limpar parágrafos e botões existentes dentro do bloco de controles (evita duplicações)
+                controls.querySelectorAll('p').forEach((p) => p.remove());
+                controls.querySelectorAll('button').forEach((btn) => btn.remove());
+
+                const eye = controls.querySelector('a[href]');
+                const href = eye ? eye.getAttribute('href') : null;
+                const title = titleEl ? titleEl.textContent.trim() : 'Mapa';
+
+                controls.classList.add('justify-content-center', 'gap-3');
+                controls.querySelectorAll('a').forEach((a) => {
+                    a.classList.remove('mx-2');
+                    a.classList.add('btn', 'btn-lg-square', 'rounded-circle');
+                });
+
+                if (!controls.querySelector('.download-btn') && href) {
+                    const btn = document.createElement('button');
+                    btn.className = 'btn btn-lg-square rounded-circle download-btn';
+                    btn.title = 'Baixar mapa';
+                    btn.innerHTML = '<i class="bi bi-download"></i>';
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        downloadMap(href, mapFilenameFrom(title, href));
+                    });
+                    controls.appendChild(btn);
+                }
+
+                // remover legendas antigas dentro do item
+                item.querySelectorAll('.portfolio-text p').forEach((p) => p.remove());
+                item.querySelectorAll(':scope > p').forEach((p) => p.remove());
+                if (inner && titleEl) {
+                    const p = document.createElement('p');
+                    p.className = 'map-caption text-center';
+                    p.textContent = title;
+                    inner.insertAdjacentElement('afterend', p);
+                }
+            });
+        });
     </script>
 </body>
 </html>
+
