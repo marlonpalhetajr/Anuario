@@ -209,8 +209,9 @@
                             <img class="img-fluid" src="icons/demografia/Demografia_Estimativa_Populacional2025.png" alt="Ícone Estimativa Populacional">
                             <div class="portfolio-text">
                                 <h4 class="text-white mb-4">Estimativa Populacional</h4>
-                                <div class="d-flex">
-                                    <a class="btn btn-lg-square rounded-circle mx-2" href="mapas/demografia/Demografia_Estimativa_Populacional2025.jpg" title="Visualizar mapa Estimativa Populacional" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a class="btn btn-lg-square rounded-circle" href="mapas/demografia/Demografia_Estimativa_Populacional2025.jpg" title="Visualizar mapa" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i></a>
+                                    <button class="btn btn-lg-square rounded-circle" onclick="downloadMap('mapas/demografia/Demografia_Estimativa_Populacional2025.jpg', 'Estimativa_Populacional_2025.jpg')" title="Baixar mapa"><i class="bi bi-download"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -1006,5 +1007,19 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        function downloadMap(imagePath, fileName) {
+            const a = document.createElement('a');
+            a.href = imagePath;
+            a.download = fileName;
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => {
+                document.body.removeChild(a);
+            }, 100);
+        }
+    </script>
 </body>
 </html>
