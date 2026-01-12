@@ -1,0 +1,73 @@
+/* ===============================
+   CSS — Página: Sobre a DETGI
+   Autor: Marlon Júnior
+   Data: 2025
+   =============================== */
+
+/* Estilo geral da página */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden; /* evita scroll lateral */
+}
+
+/* Cabeçalho */
+#cabecalho {
+  background-color: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 4px solid #084298;
+}
+
+#cabecalho h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Corpo do texto */
+#corpo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+#corpo p {
+  margin-bottom: 1.2em;
+}
+
+/* Destaques opcionais */
+#corpo strong {
+  color: #0d6efd;
+}
+
+/* Rodapé */
+#rodape {
+  text-align: center;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-top: 3px solid #0d6efd;
+  font-weight: 700;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #cabecalho h2 {
+    font-size: 1.2rem;
+  }
+
+  #corpo {
+    padding: 0 15px;
+    font-size: 13px;
+  }
+}

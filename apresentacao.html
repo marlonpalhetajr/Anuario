@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title data-i18n="apresentacao_titulo">Apresentação</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/apresentacao.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="assets/js/js.js"></script>
+</head>
+
+<body>
+  <main>
+    <article>
+      <div id="cabecalho">
+        <h2 data-i18n="apresentacao_titulo">Apresentação</h2>
+      </div>
+      <div id="corpo">
+        <p data-i18n="apresentacao_p1">A Fundação Amazônia de Amparo a Estudos e Pesquisas – FAPESPA disponibiliza em formato digital a 9ª edição do produto Anuário Estatístico do Pará, que proporciona aos seus usuários diversas informações e indicadores para os 144 municípios do estado.</p>
+        <p data-i18n="apresentacao_p2">Essa plataforma, estruturada em cinco temáticas (Demografia, Economia, Meio Ambiente, Infraestrutura e Social) insere-se num esforço mais amplo que a Fundação vem buscando de socializar dados, informações e registros administrativos, sobre características do estado do Pará, suas regiões e seus municípios, oferecendo, portanto, uma importante ferramenta auxiliar ao processo decisório para os gestores públicos, o setor privado, a comunidade acadêmica e a sociedade em geral, cumprindo com a missão institucional da FAPESPA de "Produzir, articular e disseminar conhecimento e informação para subsidiar o planejamento de políticas públicas e do desenvolvimento econômico, social e ambiental do Pará".</p>
+        <p data-i18n="apresentacao_p3">O Anuário Estatístico do Pará 2024 apresenta para todos os municípios do Estado uma série histórica, dos últimos cinco anos, em formato de tabelas, com todas as informações sistematizadas, como também mapas das temáticas trabalhadas e sobre o território paraense. Destaca-se que os dados trabalhados são provenientes de órgãos federais e estaduais, e de algumas empresas privadas, os quais a Fundação agradece pela contribuição que tornou possível a concretização deste projeto.</p>
+        <p data-i18n="apresentacao_p4">As informações estatísticas disponibilizadas no Anuário Estatístico do Pará são fundamentais ao processo de tomada de decisão, em especial, o planejamento de políticas públicas. Ao disponibilizar esse produto, a FAPESPA, mais uma vez, atende à constante demanda de informações advindas dos vários segmentos da sociedade e de Governo como um todo.</p>
+      </div>
+      <div id="rodape">
+        <p data-i18n="apresentacao_assinatura">Marcel do Nascimento Botelho</p>
+        <p data-i18n="apresentacao_cargo">Diretor-Presidente</p>
+      </div>
+    </article>
+  </main>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const lang = localStorage.getItem('lang') || 'pt';
+      if (typeof changeLanguage === 'function') {
+        changeLanguage(lang);
+      }
+    });
+  </script>
+</body>
+
+</html>

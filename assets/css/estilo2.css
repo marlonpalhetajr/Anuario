@@ -1,0 +1,189 @@
+/* este css estiliza os arquivos com submenus */
+@charset "utf-8";
+
+@font-face {
+  /* fonte da pagina */
+  font-family: 'fonteTrebuchet'; /* nome da fonte */
+  src: url(../font/trebuchet-ms.ttf); /* caminho da fonte */
+}
+
+body {
+  /* configura o corpo da pagina */
+  font-family: fonteTrebuchet; /* tipo de fonte */
+  color: #333; /* fonte COR */
+  padding: 0px; /* espacamento interno */
+  margin: 0px; /* espacamento externo */
+  overflow: hidden; /* oculta barra de rolagem */
+}
+
+@media (min-width: 321px) {
+  /* estilo para tela maior */
+
+  section#texto h2 {
+    /* configura o titulo */
+    font-size: 24px; /* fonte tamanho */
+  }
+
+  section#texto p {
+    /* configura o paragrafo */
+    font-size: 14px; /* fonte tamanho */
+    text-align: justify; /* alinhamento justificado */
+  }
+  nav#item {
+    /* configura o menu de links */
+    width: 100%; /* largura */
+  }
+  nav#item label {
+    /* configura o titulo do menu de links */
+    font-size: 14px; /* fonte tamanho */
+    color: #fff; /* fonte COR */
+    background-color: #113f28; /* fundo COR */
+    -webkit-border-radius: 5px; /* bordas arredondadas chrome */
+    -moz-border-radius: 5px; /* bordas arredondadas mozilla */
+    -ms-border-radius: 5px; /* bordas arredondadas ms explorer */
+    -o-border-radius: 5px; /* bordas arredondadas opera */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 6px 0px 0px 10px; /* espacamento interno */
+    height: 24px; /* altura */
+    display: block; /* fixa */
+    cursor: pointer; /* efeito texto */
+  }
+  nav#item ul {
+    /* configura a lista ordenada do menu de links */
+    background-color: #fefefe; /* fundo COR */
+    -webkit-border-radius: 5px; /* bordas arredondadas chrome */
+    -moz-border-radius: 5px; /* bordas arredondadas mozilla */
+    -ms-border-radius: 5px; /* bordas arredondadas ms explorer */
+    -o-border-radius: 5px; /* bordas arredondadas opera */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 0px; /* espacamento interno */
+    margin: 0px; /* espacamento externo */
+    max-height: 0; /* oculta os sub menus */
+    overflow: hidden; /* oculta */
+    list-style: none; /* oculta caracteres da lista */
+  }
+  nav#item a {
+    /* configura os links */
+    font-size: 14px; /* fonte tamanho */
+    color: #333; /* fonte COR */
+    text-decoration: none; /* sem sublinhado */
+    background-color: #fff; /* fundo COR */
+    padding: 0px 0px 0px 10px; /* espacamento interno */
+  }
+  nav#item label:hover,/* configura o efeito mouse no menu de links */
+    nav#item a:hover {
+    /* configura o efeito mouse nos links */
+    text-decoration: underline; /* sublinhado */
+  }
+  nav#item input {
+    /* configura a tag input radio */
+    display: none; /* oculta radio */
+  }
+  nav#item input:checked ~ ul {
+    /* atua sobe a ul ao ativar o radio */
+    height: auto; /* altura automatica */
+    max-height: 100%; /* altura maxima */
+  }
+  nav#item label:before {
+    /* configura o estado do menu de links */
+    font-weight: bold; /* fonte forte */
+    color: #fff; /* fonte COR */
+    margin: 0px 5px 0px 0px; /* espacamento externo */
+    float: left; /* flutuar lado esquerdo */
+    content: '\002b'; /* sinal + */
+  }
+  nav#item input:checked + label:before {
+    /* atua sobre menu de links ao ativar o radio */
+    content: '\2212'; /* sinal - */
+  }
+  nav#item .espaco {
+    /*espaco entre os menus*/
+    padding: 0px 0px 4px 0px; /* espacamento interno */
+  }
+}
+
+@media (max-width: 320px) {
+  /* estilo para tela menor */
+
+  section#texto h2 {
+    /* configura o titulo */
+    font-size: 16px; /* fonte tamanho */
+  }
+
+  section#texto p {
+    /* configura o paragrafo */
+    font-size: 12px; /* fonte tamanho */
+    text-align: justify; /* alinhamento justificado */
+  }
+  nav#item {
+    /* configura o menu de links */
+    width: 100%; /* largura */
+  }
+  nav#item label {
+    /* configura o titulo do menu de links */
+    font-size: 12px; /* fonte tamanho */
+    color: #fff; /* fonte COR */
+    background-color: #113f28; /* fundo COR */
+    -webkit-border-radius: 5px; /* bordas arredondadas chrome */
+    -moz-border-radius: 5px; /* bordas arredondadas mozilla */
+    -ms-border-radius: 5px; /* bordas arredondadas ms explorer */
+    -o-border-radius: 5px; /* bordas arredondadas opera */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 7px 0px 0px 10px; /* espacamento interno */
+    height: 23px; /* altura */
+    display: block; /* fixa */
+    cursor: pointer; /* efeito texto */
+  }
+  nav#item ul {
+    /* configura a lista ordenada do menu de links */
+    background-color: #fefefe; /* fundo COR */
+    -webkit-border-radius: 5px; /* bordas arredondadas chrome */
+    -moz-border-radius: 5px; /* bordas arredondadas mozilla */
+    -ms-border-radius: 5px; /* bordas arredondadas ms explorer */
+    -o-border-radius: 5px; /* bordas arredondadas opera */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 0px; /* espacamento interno */
+    margin: 0px; /* espacamento externo */
+    max-height: 0; /* oculta os sub menus */
+    overflow: hidden; /* oculta */
+    list-style: none; /* oculta caracteres da lista */
+  }
+  nav#item a {
+    /* configura os links */
+    font-size: 12px; /* fonte tamanho */
+    color: #333; /* fonte COR */
+    text-decoration: none; /* sem sublinhado */
+    background-color: #fefefe; /* fundo COR */
+    padding: 0px 0px 0px 10px; /* espacamento interno */
+  }
+  nav#item label:hover,/* configura o efeito mouse no menu de links */
+    nav#item a:hover {
+    /* configura o efeito mouse nos links */
+    text-decoration: underline; /* sublinhado */
+  }
+  nav#item input {
+    /* configura a tag input radio */
+    display: none; /* oculta radio */
+  }
+  nav#item input:checked ~ ul {
+    /* atua sobe a ul ao ativar o radio */
+    height: auto; /* altura automatica */
+    max-height: 100%; /* altura maxima */
+  }
+  nav#item label:before {
+    /* configura o estado do menu de links */
+    font-weight: bold; /* fonte forte */
+    color: #fff; /* fonte COR */
+    margin: 0px 5px 0px 0px; /* espacamento externo */
+    float: left; /* flutuar lado esquerdo */
+    content: '\002b'; /* sinal + */
+  }
+  nav#item input:checked + label:before {
+    /* atua sobre menu de links ao ativar o radio */
+    content: '\2212'; /* sinal - */
+  }
+  nav#item .espaco {
+    /*espaco entre os menus*/
+    padding-bottom: 4px; /* espacamento na base */
+  }
+}

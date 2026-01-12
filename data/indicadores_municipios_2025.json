@@ -1,0 +1,66 @@
+{
+  "Belém": {
+    "populacao": 1499641,
+    "pib": 35821000,
+    "idh": 0.746,
+    "densidade": 1315.26,
+    "regiao": "Metropolitana de Belém",
+    "coords": [-1.4558, -48.4902]
+  },
+  "Ananindeua": {
+    "populacao": 535547,
+    "pib": 12456000,
+    "idh": 0.718,
+    "densidade": 2906.75,
+    "regiao": "Metropolitana de Belém",
+    "coords": [-1.3656, -48.3722]
+  },
+  "Santarém": {
+    "populacao": 306480,
+    "pib": 8932000,
+    "idh": 0.691,
+    "densidade": 13.68,
+    "regiao": "Baixo Amazonas",
+    "coords": [-2.4419, -54.7081]
+  },
+  "Marabá": {
+    "populacao": 283542,
+    "pib": 11234000,
+    "idh": 0.668,
+    "densidade": 16.53,
+    "regiao": "Sudeste Paraense",
+    "coords": [-5.3686, -49.1178]
+  },
+  "Castanhal": {
+    "populacao": 200793,
+    "pib": 5678000,
+    "idh": 0.694,
+    "densidade": 141.15,
+    "regiao": "Nordeste Paraense",
+    "coords": [-1.2933, -47.9264]
+  },
+  "Parauapebas": {
+    "populacao": 208273,
+    "pib": 15890000,
+    "idh": 0.715,
+    "densidade": 29.51,
+    "regiao": "Sudeste Paraense",
+    "coords": [-6.0675, -49.9022]
+  },
+  "Altamira": {
+    "populacao": 115969,
+    "pib": 4123000,
+    "idh": 0.665,
+    "densidade": 0.72,
+    "regiao": "Sudoeste Paraense",
+    "coords": [-3.2039, -52.2069]
+  },
+  "Marituba": {
+    "populacao": 131924,
+    "pib": 2890000,
+    "idh": 0.689,
+    "densidade": 1257.36,
+    "regiao": "Metropolitana de Belém",
+    "coords": [-1.3628, -48.3394]
+  }
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Autor: Waldiney Joaci da Silva Barros -->
+
+<head>
+    <style>
+ /* FOOTER */
+.footer,
+.footer-bottom {
+  background: var(--footer-background) !important;
+  color: var(--footer-text) !important;
+}
+footer .container { padding-top: 32px; padding-bottom: 32px; }
+
+/* MAPA NO RODAPÉ */
+.footer .map-container h5 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.footer .map-embed {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  height: 0;
+  max-height: 200px;
+}
+.footer .map-embed iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .footer .map-embed {
+    padding-bottom: 40%;
+    max-height: 250px;
+  }
+}
+.footer a {
+    color: var(--footer-text) !important; /* Garante que os links sejam brancos */
+    text-decoration: underline !important; /* Adiciona o sublinhado */
+    text-underline-offset: 4px; /* Opcional: Afasta o traço do texto */
+}
+.footer .btn-link {
+    display: block; /* Garante que cada link ocupe uma linha */
+    padding: 0; /* Remove o padding do botão */
+    margin-bottom: 0.5rem; /* Adiciona um pequeno espaçamento inferior para separá-los */
+    line-height: 1.5; /* Ajusta a altura da linha */
+    text-align: left;
+}
+
+/* CSS do Copyright - Rodapé Minimalista */
+.copyright {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid #e0e0e0 !important;
+    padding: 0.5rem 0;
+}
+
+.copyright small {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.copyright a {
+    color: #495057 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #212529 !important;
+}
+
+.copyright .text-center {
+    text-align: center;
+}
+</style>
+    <meta charset="utf-8">
+    <title data-i18n="expediente_titulo">Expediente - Anuário 2024</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .formatar-li {
+            list-style-type: none;
+            /* Remove o bullet */
+            margin-left: 0;
+            /* Sem indentação */
+        }
+
+        /* Estilo para os subitens */
+        .subitem {
+            list-style-type: none;
+            /* Remove o bullet */
+            margin-left: 0;
+            /* Sem indentação */
+
+            text-align: left;
+        }
+
+        /* Alinha o texto à direita */
+        .align-right {
+            display: inline-block;
+            /* Permite o uso de width */
+            width: 100%;
+            /* Ocupa toda a largura */
+            text-align: right;
+            /* Alinha o texto à direita */
+        }
+
+        .pagina {
+            display: none;
+            /* Oculta todas as páginas inicialmente */
+        }
+
+        .pagina-ativa {
+            display: block;
+            /* Mostra apenas a página ativa */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="acess-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar">
+                <a href="https://www.fapespa.pa.gov.br/" target="_blank" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                        <h1 class="m-3" data-i18n="nav_fapespa">FAPESPA</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Alternar navegação">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#anuario">Anuário</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                                <li class="nav-item dropdown">
+                                        <button class="nav-link dropdown-toggle bg-transparent border-0" id="langDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                         🌐 <span data-i18n="menu_idioma">Idioma</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item lang-option" data-lang="pt" href="#">Português</a></li>
+                                                <li><a class="dropdown-item lang-option" data-lang="en" href="#">English</a></li>
+                                                <li><a class="dropdown-item lang-option" data-lang="es" href="#">Español</a></li>
+                                        </ul>
+                                </li>
+                                <li class="nav-item position-relative">
+                                        <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);" type="button">
+                                            ♿ <span class="d-none d-lg-inline">Acessibilidade</span>
+                                        </button>
+                                        <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
+                                            <div class="acess-section-title">Visão</div>
+                                            <div class="acess-row">
+                                                <button id="acess-contrast" class="acess-control" type="button">Alto contraste</button>
+                                                <button id="acess-night" class="acess-control" type="button">Modo noturno</button>
+                                            </div>
+                                            <div class="acess-section-title">Cores</div>
+                                            <div class="acess-row">
+                                                <button id="acess-grayscale" class="acess-control" type="button">Escala em Cinza</button>
+                                            </div>
+                                            <div class="acess-section-title">Tamanho da Fonte</div>
+                                            <div class="acess-row">
+                                                <button id="font-dec" class="acess-control" type="button">A-</button>
+                                                <button id="font-reset" class="acess-control" type="button">A</button>
+                                                <button id="font-inc" class="acess-control" type="button">A+</button>
+                                            </div>
+                                            <div class="acess-section-title">Daltonismo</div>
+                                            <div class="acess-row">
+                                                <button id="dalton-prot" class="acess-control" type="button">Protanopia</button>
+                                                <button id="dalton-deut" class="acess-control" type="button">Deuteranopia</button>
+                                                <button id="dalton-trit" class="acess-control" type="button">Tritanopia</button>
+                                                <button id="dalton-off" class="acess-control" type="button">Normal</button>
+                                            </div>
+                                            <div class="acess-section-title">Leitura &amp; Legibilidade</div>
+                                            <div class="acess-row">
+                                                <button id="acess-dislexia" class="acess-control" type="button">Modo Dislexia</button>
+                                                <button id="acess-reading" class="acess-control" type="button">Modo Leitura</button>
+                                                <button id="acess-links" class="acess-control" type="button">Destacar Links</button>
+                                            </div>
+                                            <div class="acess-section-title">Movimento</div>
+                                            <div class="acess-row">
+                                                <button id="reduce-motion" class="acess-control" type="button">Reduzir Animações</button>
+                                            </div>
+                                            <div class="acess-section-title">Geral</div>
+                                            <div class="acess-row">
+                                                <button id="acess-reset" class="acess-control acess-reset" type="button">Restaurar Tudo</button>
+                                            </div>
+                                        </div>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+      <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-3">
+        <!-- <h1 class="display-3 text-white mb-4 animated slideInDown">Anuário 2024</h1> -->
+    </div>
+</div>
+
+    <!-- Page Header End -->
+
+
+    <!-- 404 Start (Modified with Left Alignment) -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-start"> <!-- Alinhamento à esquerda -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- <h1 class="display-3">EXPEDIENTE ANUÁRIO 2023</h1> -->
+                    <img src="img/logoexp.png" alt="Logo Fapespa" class="img-fluid mb-4" style="width: 450px;">
+
+                    <p class="mb-4">
+                        <!-- <span style="font-size: 24px;">GOVERNO DO ESTADO DO PARÁ</span><br> -->
+                    <h2>GOVERNO DO ESTADO DO PARÁ</h2>
+                    <strong>Helder Zahluth Barbalho</strong> - Governador do Estado do Pará<br>
+                    <br>
+                    <h5>Secretaria de Estado de Ciência, Tecnologia, Educação Técnica e Tecnológica –
+                        Sectet</h5>
+                    <!-- <strong>Secretaria de Estado de Ciência, Tecnologia, Educação Técnica e Tecnológica –
+                        Sectet</strong><br> -->
+                    <strong>Victor Orengel Dias</strong> – Secretário da Sectet
+                    </p>
+
+
+                    <h3 class="mb-4" data-i18n="expediente_titulo">EXPEDIENTE</h3>
+                    <p class="mb-4">
+                        Publicação Oficial:<br>
+                        © 2025 Fundação Amazônia de Amparo a Estudos e Pesquisas – Fapespa<br>
+                        Todos os direitos reservados. É permitida a reprodução parcial ou total desta obra desde que
+                        citada a fonte e que não seja para venda ou qualquer fim comercial.
+                    </p>
+
+                    <p class="mb-4">
+                        <strong>10ª edição - 2025</strong><br>
+                        Elaboração, edição e distribuição: Fundação Amazônia de Amparo a Estudos e Pesquisas –
+                        Fapespa<br>
+                        Endereço: Avenida Presidente Vargas n. 670, Bairro: Campina – Belém – PA CEP: 66.017-000<br>
+                        Disponível em: <a href="https://www.fapespa.pa.gov.br" target="_blank">www.fapespa.pa.gov.br</a>
+                    </p>
+
+                    <h3 class="mb-4">Direção</h3>
+                    <p class="mb-4">
+                        <strong>Diretor-Presidente:</strong> Marcel do Nascimento Botelho<br>
+                        <strong>Diretora de Estatística e de Tecnologia e Gestão da Informação:</strong> Atyliana do
+                        Socorro Leão Dias dos Santos<br>
+                    </p>
+
+                    <h3 class="mb-4">Coordenação</h3>
+                    <p class="mb-4">
+                        <strong>Coordenador de Estatística e Disseminação da Informação:</strong> Paulo Gilberto
+                        Pinheiro Góes<br>
+
+                    </p>
+                    <h3 class="mb-4">Equipe Técnica</h3>
+                    <p class="mb-4">
+                        <!-- <strong>Equipe Técnica Coordenadoria de Estatística e Disseminação da Informação:</strong><br> -->
+                        Gabriel Carvalho Fernandes<br>
+                        Gilson Pereira Prata<br>
+                        John Assunção de Souza<br>
+                        Raymundo Nonnato da Frota Costa Junior<br>
+                        Sâmia Mota da Silva<br>
+                        Silvia Caroline Salgado Pena<br>
+                        Anderson Fabrício Pereira de Araújo<br>
+                    </p>
+
+                    <strong>Elaboração de Mapas</strong>
+                    <p class="mb-4">
+                        Rudilea Ramos Cavalcante da Silva<br>
+                        
+                    </p>
+
+                    <strong>Equipe de Desenvolvimento</strong>
+                    <p class="mb-4">
+                        Romildo Francelino de Oliveira<br>
+                        Sandy Lorena Costa Monteiro<br>
+                        Marlon George da Costa Palheta Junior
+                    </p>
+
+                    <!-- Exemplo de imagem adicionada -->
+                    <!-- <img src="img/logo.png" alt="Logo Fapespa" class="img-fluid mb-4"> -->
+
+                    <!-- <a class="btn btn-primary py-3 px-4" href="index.html">Voltar para a Home</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 404 End -->
+
+
+
+        <!-- FOOTER (Layout principal do index) -->
+        <footer class="footer-main" id="contato">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Sobre FAPESPA</h5>
+                        <p class="small text-light">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p>
+                        <div class="social-icons mt-4">
+                            <a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter" aria-label="Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Contato</h5>
+                        <ul class="list-unstyled small text-light">
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt me-2 text-white"></i>
+                                <span>Av. Presidente Vargas, 670</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-telephone me-2 text-white"></i>
+                                <span>+55 (91) 3323-2550</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-clock me-2 text-white"></i>
+                                <span>Seg-Sex: 8h às 14h</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope me-2 text-white"></i>
+                                <a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Links Úteis</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="https://www.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Governo do Estado do Pará</a></li>
+                            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">FAPESPA</a></li>
+                            <li class="mb-2"><a href="politica-privacidade.html" class="text-light text-decoration-none">Política de Privacidade</a></li>
+                            <li class="mb-2"><a href="termos-uso.html" class="text-light text-decoration-none">Termos de Uso</a></li>
+                            <li><a href="index.html#acess-open-btn" class="text-light text-decoration-none">Acessibilidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Navegação</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página Inicial</a></li>
+                            <li class="mb-2"><a href="index.html#principais-temas" class="text-light text-decoration-none">Principais Temas</a></li>
+                            <li class="mb-2"><a href="index.html#sobre" class="text-light text-decoration-none">Sobre</a></li>
+                            <li class="mb-2"><a href="index.html#produtos" class="text-light text-decoration-none">Produtos</a></li>
+                            <li><a href="index.html#contato" class="text-light text-decoration-none">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright text-center py-4">
+            <div class="container">
+                <small class="text-muted">© Anuário Estatístico do Pará, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
+            </div>
+        </div>
+
+        <!-- Botão Voltar ao Topo -->
+        <button id="btnTop" title="Voltar ao topo" aria-label="Voltar ao topo" type="button">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuário Estatístico do Pará | FAPESPA</title>
+  <meta name="description" content="Anuário Estatístico do Pará - FAPESPA">
+    <meta name="keywords" content="Anuário, Estatística, Pará, FAPESPA, Indicadores, Economia, Demografia">
+
+    <!-- Open Graph -->
+  <meta property="og:title" content="Anuário Estatístico do Pará - FAPESPA">
+    <meta property="og:description" content="Indicadores e dados do Pará, organizados pela FAPESPA.">
+    <meta property="og:image" content="img/anuario.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fapespa.pa.gov.br/anuario">
+
+    <link rel="icon" href="img/fapespa2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="canonical" href="https://www.fapespa.pa.gov.br/anuario">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anuário Estatístico do Pará - FAPESPA">
+  <meta name="twitter:description" content="Indicadores e dados do Pará, organizados pela FAPESPA.">
+  <meta name="twitter:image" content="img/anuario.png">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="acess-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Modal Genérico (corrigido e dentro do body) -->
+<!-- MODAL CUSTOMIZADO FLUTUANTE -->
+<div id="modalBackdrop" class="modal-backdrop-custom" onclick="closeCustomModal();"></div>
+<div id="contentModal" class="custom-modal">
+  <div class="custom-modal-content">
+    <div class="custom-modal-header">
+      <h5 id="contentModalLabel">Conteúdo</h5>
+      <button type="button" class="custom-modal-close" onclick="closeCustomModal();">&times;</button>
+    </div>
+    <div class="custom-modal-body" id="contentModalBody">
+      <div class="text-center py-5">
+        <div class="spinner-border"></div>
+      </div>
+    </div>
+    <div class="custom-modal-footer">
+      <a id="modal-open-full" href="#" target="_blank" class="btn btn-outline-primary btn-sm">Abrir em nova aba</a>
+      <button type="button" class="btn btn-secondary btn-sm" onclick="closeCustomModal();">Fechar</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar">
+        <a href="https://www.fapespa.pa.gov.br/" target="_blank"
+            class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-3" data-i18n="nav_fapespa">FAPESPA</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#" data-i18n="menu_home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anuario" data-i18n="menu_anuario">Anuário</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="menu_sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato" data-i18n="menu_contato">Contato</a></li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle bg-transparent border-0" id="langDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     🌐 <span data-i18n="menu_idioma">Idioma</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item lang-option" data-lang="pt" href="#">Português</a></li>
+                        <li><a class="dropdown-item lang-option" data-lang="en" href="#">English</a></li>
+                        <li><a class="dropdown-item lang-option" data-lang="es" href="#">Español</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item position-relative">
+                    <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);" type="button">
+                      ♿ <span class="d-none d-lg-inline">Acessibilidade</span>
+                    </button>
+                    <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
+                      <div class="acess-section-title">Visão</div>
+                      <div class="acess-row">
+                        <button id="acess-contrast" class="acess-control" type="button">Alto contraste</button>
+                        <button id="acess-night" class="acess-control" type="button">Modo noturno</button>
+                      </div>
+                      <div class="acess-section-title">Cores</div>
+                      <div class="acess-row">
+                        <button id="acess-grayscale" class="acess-control" type="button">Escala em Cinza</button>
+                      </div>
+                      <div class="acess-section-title">Tamanho da Fonte</div>
+                      <div class="acess-row">
+                        <button id="font-dec" class="acess-control" type="button">A-</button>
+                        <button id="font-reset" class="acess-control" type="button">A</button>
+                        <button id="font-inc" class="acess-control" type="button">A+</button>
+                      </div>
+                      <div class="acess-section-title">Daltonismo</div>
+                      <div class="acess-row">
+                        <button id="dalton-prot" class="acess-control" type="button">Protanopia</button>
+                        <button id="dalton-deut" class="acess-control" type="button">Deuteranopia</button>
+                        <button id="dalton-trit" class="acess-control" type="button">Tritanopia</button>
+                        <button id="dalton-off" class="acess-control" type="button">Normal</button>
+                      </div>
+                      <div class="acess-section-title">Leitura &amp; Legibilidade</div>
+                      <div class="acess-row">
+                        <button id="acess-dislexia" class="acess-control" type="button">Modo Dislexia</button>
+                        <button id="acess-reading" class="acess-control" type="button">Modo Leitura</button>
+                        <button id="acess-links" class="acess-control" type="button">Destacar Links</button>
+                      </div>
+                      <div class="acess-section-title">Movimento</div>
+                      <div class="acess-row">
+                        <button id="reduce-motion" class="acess-control" type="button">Reduzir Animações</button>
+                      </div>
+                      <div class="acess-section-title">Geral</div>
+                      <div class="acess-row">
+                        <button id="acess-reset" class="acess-control acess-reset" type="button">Restaurar Tudo</button>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<main>
+  <!-- HERO SECTION MODERNO -->
+  <section class="hero-section-modern" id="anuario">
+    <div class="hero-background">
+      <img src="img/anuario.png" alt="Capa do Anuário Estatístico do Pará da FAPESPA" class="hero-image" width="1100" height="700" decoding="async" fetchpriority="high">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title animate-fade-in">
+          Anuário Estatístico do Pará
+        </h1>
+        <div class="hero-cta-group hero-cta-single animate-fade-in-delay-2">
+          <a href="#" data-content-url="apresentacao.html" data-modal-title="Apresentação" class="btn-hero btn-hero-primary" aria-label="Abrir apresentação em modal" data-i18n="btn_apresentacao" onclick="openCustomModal(event);">
+            <i class="bi bi-play-circle me-2"></i>Apresentação
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CARDS DE ACESSO RÁPIDO (Sumário, Glossário, Expediente) -->
+  <section class="quick-access-section">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card-modern card-hover-lift">
+            <div class="card-icon-wrapper bg-primary-gradient">
+              <i class="bi bi-journal-text"></i>
+            </div>
+            <h5 class="card-modern-title" data-i18n="btn_sumario">Sumário</h5>
+            <p class="card-modern-text" data-i18n="btn_sumario_text">Veja o sumário do Anuário Estatístico do Pará.</p>
+            <a href="sumario1.html" target="_blank" class="btn-card-modern" aria-label="Acessar sumário">
+              Acessar <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-modern card-hover-lift">
+            <div class="card-icon-wrapper bg-success-gradient">
+              <i class="bi bi-book"></i>
+            </div>
+            <h5 class="card-modern-title" data-i18n="btn_glossario">Glossário</h5>
+            <p class="card-modern-text" data-i18n="btn_glossario_text">Consulte os principais conceitos e definições.</p>
+            <a href="glossario.html" target="_blank" class="btn-card-modern" aria-label="Acessar glossário">
+              Acessar <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-modern card-hover-lift">
+            <div class="card-icon-wrapper bg-info-gradient">
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+            <h5 class="card-modern-title" data-i18n="btn_expediente">Expediente</h5>
+            <p class="card-modern-text" data-i18n="btn_expediente_text">Informações sobre a equipe e produção do anuário.</p>
+            <a href="expediente.html" target="_blank" class="btn-card-modern" aria-label="Acessar expediente">
+              Acessar <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="container py-5" id="principais-temas">
+      <h2 data-i18n="main_title" class="section-title text-center">Principais Temas</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Linha 1: Demografia, Economia -->
+        <div class="col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 card-demografia" data-bg-image="img/demografia.png">
+            <i class="bi bi-people display-4 mb-3 text-primary"></i>
+            <h5 data-i18n="tema_demografia_titulo">Demografia</h5>
+            <p class="mb-3" data-i18n="tema_demografia_texto">Os dados demográficos trazem o total da população, por sexo e faixa etária, além de outros indicadores populacionais.</p>
+            <a href="demografia.html" target="_blank" class="btn btn-outline-primary btn-sm">Ver dados</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 card-economia" data-bg-image="img/economia.png">
+            <i class="bi bi-cash-coin display-4 mb-3 text-success"></i>
+            <h5 data-i18n="tema_economia_titulo">Economia</h5>
+            <p class="mb-3" data-i18n="tema_economia_texto">A temática econômica abrange seis grandes subtemas: Agricultura (Lavouras permanente e temporária), Pecuária, Extração Vegetal, PIB, Balança Comercial e Finanças Públicas.</p>
+            <a href="economia.html" target="_blank" class="btn btn-outline-primary btn-sm">Ver dados</a>
+          </div>
+        </div>
+
+        <!-- Linha 2: Infraestrutura, Meio Ambiente -->
+        <div class="col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 card-infraestrutura" data-bg-image="img/infraestrutura.png">
+            <i class="bi bi-building display-4 mb-3 text-info"></i>
+            <h5 data-i18n="tema_infraestrutura_titulo">Infraestrutura</h5>
+            <p class="mb-3" data-i18n="tema_infraestrutura_texto">A temática de infraestrutura compõem-se de informações sobre frota de veículos, consumidores e consumo de energia elétrica, abastecimento de água e outros.</p>
+            <a href="infraestrutura.html" target="_blank" class="btn btn-outline-primary btn-sm">Ver dados</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 card-meio-ambiente" data-bg-image="img/meio_ambiente.png">
+            <i class="bi bi-brightness-high display-4 mb-3 text-warning"></i>
+            <h5 data-i18n="tema_meio_ambiente_titulo">Meio Ambiente</h5>
+            <p class="mb-3" data-i18n="tema_meio_ambiente_texto">A temática ambiental traz em sua composição informações sobre desflorestamento, área de floresta, hidrografia, focos de calor, áreas protegidas e unidades de conservação.</p>
+            <a href="meioambiente.html" target="_blank" class="btn btn-outline-primary btn-sm">Ver dados</a>
+          </div>
+        </div>
+
+        <!-- Linha 3: Social, Mapas -->
+        <div class="col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 card-social" data-bg-image="img/social.png">
+            <i class="bi bi-hospital-fill display-4 mb-3 text-danger"></i>
+            <h5 data-i18n="tema_social_titulo">Social</h5>
+            <p class="mb-3" data-i18n="tema_social_texto">A temática social aborda informações e indicadores de seis grandes subtemas: Educação, Inclusão Social, Mercado de Trabalho, Previdência Social, Saúde e Segurança.</p>
+            <a href="social.html" target="_blank" class="btn btn-outline-primary btn-sm">Ver dados</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-feature card-animated text-center p-4 h-100 card-mapas" data-bg-image="img/mapas.png">
+            <i class="bi bi-map-fill display-4 mb-3 text-secondary"></i>
+            <h5 data-i18n="tema_mapas_titulo">Mapas</h5>
+                        <p class="mb-3" data-i18n="tema_mapas_texto">O Anuário Estatístico do Pará disponibiliza aos seus usuários um conjunto de mapas temáticos com os principais indicadores sociais, econômicos e ambientais do estado.</p>
+            <a href="mapas.html" class="btn btn-outline-secondary btn-sm" aria-label="Visualizar mapas">Visualizar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="container py-5" id="sobre">
+        <h2 class="section-title text-center" data-i18n="sobre_titulo">Sobre a FAPESPA e a DETGI</h2>
+        <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <label for="equipe2_img" class="sr-only">Equipe da FAPESPA</label>
+        <img id="equipe2_img" src="img/image2.jpg" alt="Equipe da FAPESPA responsável pela elaboração do Anuário Estatístico 2024" class="img-fluid rounded shadow" loading="lazy" decoding="async">
+            </div>
+            <div class="col-lg-6">
+                <p class="mb-3" data-i18n="sobre_texto">A FAPESPA tem participação estratégica no modelo de planejamento e governança de políticas públicas do Estado do Pará, promovendo ciência, tecnologia e inovação. A DETGI elabora estudos e análises técnicas que subsidiam a gestão pública e a sociedade, acompanhando indicadores socioeconômicos e ambientais.</p>
+                <a href="#" data-content-url="detgi.html" data-modal-title="DETGI" class="btn btn-outline-primary" aria-label="Abrir informações sobre DETGI em modal" onclick="openCustomModal(event);">Leia Mais</a>
+            </div>
+        </div>
+  </section>
+
+    </main>
+
+  <!-- DOWNLOADS (substitui Produtos em cards, preserva o id para ancoragem) -->
+  <section class="footer-products py-5" id="produtos">
+    <div class="container">
+      <h3 class="text-center mb-5 fw-bold">Downloads</h3>
+      <div class="row g-4 justify-content-center">
+        <!-- Card Download: abre a página Repositório de Arquivos -->
+        <div class="col-lg-4 col-md-6">
+          <a href="repositorio.html" class="product-card" aria-label="Abrir repositório de arquivos">
+            <i class="bi bi-link-45deg"></i>
+            <h5>Repositório de Arquivos</h5>
+            <p>Abrir repositório de arquivos</p>
+          </a>
+        </div>
+        <!-- Card Download2: baixa pacote ZIP -->
+        <div class="col-lg-4 col-md-6">
+          <a href="repositorio/Anuário_2025.zip" class="product-card" download aria-label="Baixar pacote zipado">
+            <i class="bi bi-archive"></i>
+            <h5>Download</h5>
+            <p>Baixar conteúdo completo</p>
+          </a>
+        </div>
+        <!-- Card Download3: download de mapas -->
+        <div class="col-lg-4 col-md-6">
+          <a href="mapas/mapas.rar" class="product-card" aria-label="Acessar mapas para download">
+            <i class="bi bi-map"></i>
+            <h5>Download de Mapas</h5>
+            <p>Acesse mapas temáticos e territoriais</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ PRINCIPAL -->
+  <footer class="footer-main" id="contato">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- SOBRE FAPESPA -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4">Sobre FAPESPA</h5>
+          <p class="small text-light">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p>
+          <div class="social-icons mt-4">
+            <a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/FapespaPA" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://x.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4">Contato</h5>
+          <ul class="list-unstyled small text-light">
+            <li class="mb-3">
+              <i class="bi bi-geo-alt me-2 text-primary"></i>
+              <span data-i18n="footer_endereco">Av. Presidente Vargas, 670</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-telephone me-2 text-primary"></i>
+              <span data-i18n="footer_telefone">+55 (91) 3323-2550</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-clock me-2 text-primary"></i>
+              <span data-i18n="footer_horario">Seg-Sex: 8h às 14h</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope me-2 text-primary"></i>
+              <a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PRODUTOS (links no rodapé) -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4">Produtos</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/anuario-estatistico-do-para-2/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Anuário Estatístico</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/radar-de-indicadores-das-ri/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Radar de Indicadores</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Pará no Contexto Nacional</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/estatistica-municipal/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Estatística Municipal</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-em-numeros/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Pará em Números</a></li>
+          </ul>
+        </div>
+
+        <!-- MAPA -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4">Localização</h5>
+          <div class="map-embed rounded">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.61483842183!2d-48.4907923!3d-1.4589201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a488a1b633b497%3A0xf63d2e2601a4e1e8!2sFundação%20Amazônia%20de%20Amparo%20a%20Estudos%20e%20Pesquisas%20-%20FAPESPA!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização FAPESPA">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-copyright text-center py-4">
+    <div class="container">
+      <small class="text-muted">© Anuário Estatístico do Pará, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
+    </div>
+  </div>
+
+<!-- Botão Voltar ao Topo -->
+<button id="btnTop" title="Voltar ao topo" aria-label="Voltar ao topo" type="button">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+<div id="virtual-keyboard" class="keyboard-container" hidden>
+  <div class="keyboard-keys"></div>
+</div>
+</body>
+
+</html>

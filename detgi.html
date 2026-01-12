@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title data-i18n="detgi_titulo">Sobre a DETGI - FAPESPA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/detgi.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="assets/js/js.js"></script>
+</head>
+
+<body>
+  <main>
+    <article>
+      <div id="cabecalho">
+        <h2 data-i18n="detgi_titulo">Sobre a DETGI - FAPESPA</h2>
+      </div>
+      <div id="corpo">
+        <p data-i18n="detgi_p1">A FAPESPA tem participação estratégica no modelo de planejamento e governança de políticas públicas do Estado do Pará, por meio de estudos nas áreas social, ambiental e econômica. Além disso, promove o progresso da ciência e tecnologia com o fomento e amparo à pesquisa, a formação de capital humano qualificado, executando parte da política estadual de Ciência, Tecnologia e Inovação (CT&I).</p>
+        <p data-i18n="detgi_p2">A Diretoria de Estatística e de Tecnologia e Gestão da Informação (DETGI) elabora seus produtos em atenção ao Programa Temático Governança Pública, na Ação "Elaboração e Divulgação de Estudos e Pesquisa" do PPA 2020-2023. Esses estudos consideram a importância da geração de informações estatísticas consistentes e análises técnicas que subsidiam a gestão pública e a sociedade, realizando o acompanhamento da evolução de diversos indicadores socioeconômicos e ambientais em níveis municipal e regional, o que oriente a decisão e avaliação das políticas públicas e contribui com a macroestratégia e diretrizes da gestão governamental para atingir o objetivo de "Assegurar a Transparência das Ações de Governo".</p>
+        <p data-i18n="detgi_p3">A produção da DETGI é diversa, ampla e multidisciplinar, o que permite diferentes formas de apropriação de seus produtos e informações. Os produtos finalísticos, em formatos de relatório padronizado e de sistema web, possuem conhecimento explícito, são públicos e seus consumidores são órgãos públicos, acadêmicos, agentes da sociedade civil, imprensa formal e informal e a iniciativa privada. Além dos estudos divulgados, são elaborados produtos ou serviços exclusivos, dedicados ao atendimento específico de demandas internas e externas que geram relatórios, que não são, a priori, disponibilizados ao público, porém servem para consolidar a FAPESPA como órgão de referência em Estatística e Informação.</p>
+        <p data-i18n="detgi_p4">O Anuário Estatístico do Pará 2024 apresenta para todos os municípios do Estado uma série histórica, dos últimos cinco anos, em formato de tabelas, com todas as informações sistematizadas, como também mapas das temáticas trabalhadas e sobre o território paraense. Destaca-se que os dados trabalhados são provenientes de órgãos federais e estaduais, e de algumas empresas privadas, aos quais a Fundação agradece pela contribuição que tornou possível a concretização deste projeto.</p>
+        <p data-i18n="detgi_p5">A DETGI possui a Coordenadoria de Estatística Econômica e Contas Regionais (CEECR), que é responsável pelo cálculo do PIB do estado do Pará e de seus municípios, além de outros trabalhos relevantes na área econômica; a Coordenadoria de Estatística e Disseminação da Informação (CEDI), que é responsável por este anuário e por outros sistemas web.</p>
+        <p data-i18n="detgi_p6">Com isso a DETGI cumpre uma das missões da Fundação, que é "produzir, articular e disseminar conhecimento e informação para subsidiar o planejamento de políticas públicas e o desenvolvimento econômico, social e ambiental do Pará".</p>
+      </div>
+      <div id="rodape">
+        <p data-i18n="detgi_assinatura">Atyliana do Socorro Leão Dias</p>
+        <p data-i18n="detgi_cargo">Diretora da DETGI</p>
+      </div>
+    </article>
+  </main>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const lang = localStorage.getItem('lang') || 'pt';
+      if (typeof changeLanguage === 'function') {
+        changeLanguage(lang);
+      }
+    });
+  </script>
+</body>
+
+</html>

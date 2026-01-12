@@ -1,0 +1,273 @@
+/* este css estiliza o arquivo de imagens */
+@charset "utf-8";
+
+@font-face{/* fonte da pagina */
+    font-family: 'fonteTrebuchet';/* nome da fonte */
+    src: url(../font/trebuchet-ms.ttf);/* caminho da fonte */
+}
+
+body{/* configura o corpo da pagina */
+    font-family: fonteTrebuchet;/* tipo de fonte */
+    color: #333;/* fonte COR */
+    padding: 0px;/* espacamento interno */
+    margin: 0px;/* espacamento externo */
+    overflow: hidden;/* oculta barra de rolagem */
+}
+
+@media (min-width: 321px) {/* estilo para tela maior */
+
+    section#texto h2{/* configura o titulo */
+        font-size: 24px;/* fonte tamanho */
+    }
+    section#texto p{/* configura o paragrafo */
+        font-size: 14px;/* fonte tamanho */
+        text-align: justify;/* alinhamento justificado */
+    }
+    nav#item{/* configura o menu de links */
+        width: 100%;/* largura */
+    }
+    nav#item label{/* configura o titulo do menu de links */
+        font-size: 14px;/* fonte tamanho */
+        color: #fff;/* fonte COR */
+        background-color: #87CEFF;/* fundo COR */
+        -webkit-border-radius: 5px;/* bordas arredondadas chrome */
+        -moz-border-radius: 5px;/* bordas arredondadas mozilla */
+        -ms-border-radius: 5px;/* bordas arredondadas ms explorer */
+        -o-border-radius: 5px;/* bordas arredondadas opera */
+        border-radius: 5px;/* bordas arredondadas */
+        padding: 6px 0px 0px 10px;/* espacamento interno */
+        height: 24px;/* altura */
+        display: block;/* fixa */
+        cursor: pointer;/* efeito texto */
+    }
+    nav#item ul{/* configura a lista ordenada do menu de links */
+        background-color: #fefefe;/* fundo COR */
+        -webkit-border-radius: 5px;/* bordas arredondadas chrome */
+        -moz-border-radius: 5px;/* bordas arredondadas mozilla */
+        -ms-border-radius: 5px;/* bordas arredondadas ms explorer */
+        -o-border-radius: 5px;/* bordas arredondadas opera */
+        border-radius: 5px;/* bordas arredondadas */
+        padding: 0px;/* espacamento interno */
+        margin: 0px;/* espacamento externo */
+        max-height: 0;/* oculta os sub menus */
+        overflow: hidden;/* oculta */
+        list-style: none;/* oculta caracteres da lista */
+    }
+    nav#item a{/* configura os links */
+        font-size: 14px;/* fonte tamanho */
+        color: #333;/* fonte COR */
+        text-decoration: none;/* sem sublinhado */
+        background-color: #fff;/* fundo COR */
+        padding: 0px 0px 0px 10px;/* espacamento interno */
+    }
+    nav#item label:hover,/* configura o efeito mouse no menu de links */
+    nav#item a:hover{/* configura o efeito mouse nos links */
+        text-decoration: underline;/* sublinhado */
+    }
+    nav#item input{/* configura a tag input radio */
+        display: none;/* oculta radio */
+    }
+    nav#item input:checked ~ ul{/* atua sobe a ul ao ativar o radio */
+        height: auto;/* altura automatica */
+        max-height: 100%;/* altura maxima */
+    }
+    nav#item label:before{/* configura o estado do menu de links */
+        font-weight: bold;/* fonte forte */
+        color: #fff;/* fonte COR */
+        margin: 0px 5px 0px 0px;/* espacamento externo */
+        float: left;/* flutuar lado esquerdo */
+        content: "\002b";/* sinal + */
+    }
+    nav#item input:checked + label:before{/* atua sobre menu de links ao ativar o radio */
+        content: "\2212";/* sinal - */
+    }
+    nav#item .space{/*espaco entre os menus*/
+        padding: 0px 0px 4px 0px;/* espacamento interno */
+    }
+
+    /* estilizacao da tabela div */
+    nav#item .table {/* define comportamento da div tabela */
+        padding: 0px;/* espacamento interno */
+        margin: 20px auto 20px auto;/* espacamento externo */
+        width: 100%;/* largura */
+        display: table;/* tabela */
+    }
+    nav#item .tr {/* define comportamento da div linha da tabela */
+        display: table-row;/* linha de tabela */
+    }
+    nav#item .td {/* define comportamento da div celula da tabela */
+        text-align: center;/* alinhamento centro */
+        padding: 4px;/* espacamento interno */
+        margin: 0px;/* espacamento externo */
+        width: 33%;/* largura */
+        display: table-cell;/* celula de tabela */
+    }
+    nav#item a{/* configura a tag a da tabela */
+        padding: 0px;/* espacamento interno */
+        margin: 0px;/* espacamento externo */
+    }
+    nav#item div.opacidade{/* configura a tag div da tabela */
+        background: #333;/* fundo COR */
+        padding: 0px;/* espacamento interno */
+        display: inline-block;/* em linha */
+    }
+    nav#item div.opacidade:hover img.imagem {/* configura efeito mouse na tag img */
+        border: solid 1px #d1d1d1;/* borda solida COR */
+        opacity: 0.7;/* opacidade */
+    }
+    nav#item div.opacidade img.imagem {/* configura a tag img da tabela */
+        border: solid 1px #ddd;/* borda solida COR */
+        width: auto;/* largura */
+        display: block;/* fixa */
+        -webkit-transition: all 0.5s linear;/* transicao chrome */
+        -moz-transition: all 0.5s linear;/* transicao mozilla */
+        -ms-transition: all 0.5s linear;/* transicao ms explorer */
+        -o-transition: all 0.5s linear;/* transicao opera */
+        transition: all 0.5s linear;/* transicao */
+        -webkit-box-sizing: border-box;/* chrome tamanho borda */
+        -moz-box-sizing: border-box;/* mozilla tamanho borda */
+        -ms-box-sizing: border-box;/* ms explorer tamanho borda */
+        -o-box-sizing: border-box;/* opera tamanho borda */
+        box-sizing: border-box;/* tamanho borda */
+    }
+    nav#item .imagem{/* cnfigura icones responsivos nas tabelas */
+        width: auto;/* largura */
+        max-width: 100%;/* largura maxima */
+    }
+    nav#item .paragrafo{/* configura o texto nas tabelas */
+        font-size: small;/* fonte tamanho */
+        padding: 0;/* espacamento interno */
+        margin: 10px 0px 0px 0px;/* espacamento externo */
+    }
+    /* fim estilizacao da tabela div */
+
+}
+
+@media (max-width: 320px) {/* estilo para tela menor */
+
+    section#texto h2{/* configura o titulo */
+        font-size: 16px;/* fonte tamanho */
+    }
+    section#texto p{/* configura o paragrafo */
+        font-size: 12px;/* fonte tamanho */
+        text-align: justify;/* alinhamento justificado */
+    }
+    nav#item{/* configura o menu de links */
+        width: 100%;/* largura */
+    }
+    nav#item label{/* configura o titulo do menu de links */
+        font-size: 12px;/* fonte tamanho */
+        color: #fff;/* fonte COR */
+        background-color: #107cc5;/* fundo COR */
+        -webkit-border-radius: 5px;/* bordas arredondadas chrome */
+        -moz-border-radius: 5px;/* bordas arredondadas mozilla */
+        -ms-border-radius: 5px;/* bordas arredondadas ms explorer */
+        -o-border-radius: 5px;/* bordas arredondadas opera */
+        border-radius: 5px;/* bordas arredondadas */
+        padding: 7px 0px 0px 10px;/* espacamento interno */
+        height: 23px;/* altura */
+        display: block;/* fixa */
+        cursor: pointer;/* efeito texto */
+    }
+    nav#item ul{/* configura a lista ordenada do menu de links */
+        background-color: #fefefe;/* fundo COR */
+        -webkit-border-radius: 5px;/* bordas arredondadas chrome */
+        -moz-border-radius: 5px;/* bordas arredondadas mozilla */
+        -ms-border-radius: 5px;/* bordas arredondadas ms explorer */
+        -o-border-radius: 5px;/* bordas arredondadas opera */
+        border-radius: 5px;/* bordas arredondadas */
+        padding: 0px;/* espacamento interno */
+        margin: 0px;/* espacamento externo */
+        max-height: 0;/* oculta os sub menus */
+        overflow: hidden;/* oculta */
+        list-style: none;/* oculta caracteres da lista */
+    }
+    nav#item a{/* configura os links */
+        font-size: 12px;/* fonte tamanho */
+        color: #333;/* fonte COR */
+        text-decoration: none;/* sem sublinhado */
+        background-color: #fff;/* fundo COR */
+        padding: 0px 0px 0px 10px;/* espacamento interno */
+    }
+    nav#item label:hover,/* configura o efeito mouse no menu de links */
+    nav#item a:hover{/* configura o efeito mouse nos links */
+        text-decoration: underline;/* sublinhado */
+    }
+    nav#item input{/* configura a tag input radio */
+        display: none;/* oculta radio */
+    }
+    nav#item input:checked ~ ul{/* atua sobe a ul ao ativar o radio */
+        height: auto;/* altura automatica */
+        max-height: 100%;/* altura maxima */
+    }
+    nav#item label:before{/* configura o estado do menu de links */
+        font-weight: bold;/* fonte forte */
+        color: #fff;/* fonte COR */
+        margin: 0px 5px 0px 0px;/* espacamento externo */
+        float: left;/* flutuar lado esquerdo */
+        content: "\002b";/* sinal + */
+    }
+    nav#item input:checked + label:before{/* atua sobre menu de links ao ativar o radio */
+        content: "\2212";/* sinal - */
+    }
+    nav#item .space{/*espaco entre os menus*/
+        padding: 0px 0px 4px 0px;/* espacamento interno */
+    }
+
+    /* estilizacao da tabela div */
+    nav#item .table {/* define comportamento da div tabela */
+        padding: 0px;/* espacamento interno */
+        margin: 20px auto 20px auto;/* espacamento externo */
+        width: 100%;/* largura */
+        display: table;/* tabela */
+    }
+    nav#item .tr {/* define comportamento da div linha da tabela */
+        display: table-row;/* linha de tabela */
+    }
+    nav#item .td {/* define comportamento da div celula da tabela */
+        text-align: center;/* alinhamento centro */
+        padding: 2px;/* espacamento interno */
+        margin: 0px;/* espacamento externo */
+        width: 33%;/* largura */
+        display: table-cell;/* celula de tabela */
+    }
+    nav#item a{/* configura a tag a da tabela */
+        padding: 0px;/* espacamento interno */
+        margin: 0px;/* espacamento externo */
+    }
+    nav#item div.opacidade{/* configura a tag div da tabela */
+        background: #333;/* fundo COR */
+        padding: 0px;/* espacamento interno */
+        display: inline-block;/* em linha */
+    }
+    nav#item div.opacidade:hover img.imagem {/* configura efeito mouse na tag img */
+        border: solid 1px #d1d1d1;/* borda solida COR */
+        opacity: 0.7;/* opacidade */
+    }
+    nav#item div.opacidade img.imagem {/* configura a tag img da tabela */
+        border: solid 1px #ddd;/* borda solida COR */
+        width: auto;/* largura */
+        display: block;/* fixa */
+        -webkit-transition: all 0.5s linear;/* transicao chrome */
+        -moz-transition: all 0.5s linear;/* transicao mozilla */
+        -ms-transition: all 0.5s linear;/* transicao ms explorer */
+        -o-transition: all 0.5s linear;/* transicao opera */
+        transition: all 0.5s linear;/* transicao */
+        -webkit-box-sizing: border-box;/* chrome tamanho borda */
+        -moz-box-sizing: border-box;/* mozilla tamanho borda */
+        -ms-box-sizing: border-box;/* ms explorer tamanho borda */
+        -o-box-sizing: border-box;/* opera tamanho borda */
+        box-sizing: border-box;/* tamanho borda */
+    }
+    nav#item .imagem{/* cnfigura icones responsivos nas tabelas */
+        width: auto;/* largura */
+        max-width: 100%;/* largura maxima */
+    }
+    nav#item .paragrafo{/* configura o texto nas tabelas */
+        font-size: small;/* fonte tamanho */
+        padding: 0;/* espacamento interno */
+        margin: 10px 0px 0px 0px;/* espacamento externo */
+    }
+    /* fim estilizacao da tabela div */
+
+}

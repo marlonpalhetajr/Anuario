@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Social - Inclusão Social | Anuário Estatístico do Pará - FAPESPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel do subtema Inclusão Social do tema Social do Anuário Estatístico do Pará.">
+  <link rel="icon" href="img/fapespa2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="acess-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5"><h1 class="m-3">FAPESPA</h1></a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto p-4 p-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#anuario">Anuário</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+        <li class="nav-item position-relative">
+          <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);">♿ <span class="d-none d-lg-inline">Acessibilidade</span></button>
+          <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
+            <div class="acess-section-title">Visão</div>
+            <div class="acess-row"><button id="acess-contrast" class="acess-control">Alto contraste</button><button id="acess-night" class="acess-control">Modo noturno</button></div>
+            <div class="acess-section-title">Cores</div>
+            <div class="acess-row"><button id="acess-grayscale" class="acess-control">Escala em Cinza</button></div>
+            <div class="acess-section-title">Tamanho da Fonte</div>
+            <div class="acess-row"><button id="font-dec" class="acess-control">A-</button><button id="font-reset" class="acess-control">A</button><button id="font-inc" class="acess-control">A+</button></div>
+            <div class="acess-section-title">Daltonismo</div>
+            <div class="acess-row"><button id="dalton-prot" class="acess-control">Protanopia</button><button id="dalton-deut" class="acess-control">Deuteranopia</button><button id="dalton-trit" class="acess-control">Tritanopia</button><button id="dalton-off" class="acess-control">Normal</button></div>
+            <div class="acess-section-title">Leitura & Legibilidade</div>
+            <div class="acess-row"><button id="acess-dislexia" class="acess-control">Modo Dislexia</button><button id="acess-reading" class="acess-control">Modo Leitura</button><button id="acess-links" class="acess-control">Destacar Links</button></div>
+            <div class="acess-section-title">Movimento</div>
+            <div class="acess-row"><button id="reduce-motion" class="acess-control">Reduzir Animações</button></div>
+            <div class="acess-section-title">Geral</div>
+            <div class="acess-row"><button id="acess-reset" class="acess-control acess-reset">Restaurar Tudo</button></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container-fluid py-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-11">
+        <div class="shadow-lg rounded" style="background:#fff;padding:0.5rem;">
+          <iframe title="Painel Inclusão Social - Anuário Estatístico do Pará" src="https://app.powerbi.com/view?r=eyJrIjoiYjMxYzZiNDUtZTJhYS00ZGMyLTkwOTAtYjk5ZTNiN2VhNjYyIiwidCI6IjAzMzJhOGEyLWUzODMtNDYwYi1hMjhkLTUyYTM0Mjg4YTRhZCJ9" frameborder="0" allowfullscreen="true" style="width:100%; height:85vh; min-height:700px; border-radius:8px;"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-main" id="contato">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Sobre FAPESPA</h5><p class="small text-light">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p><div class="social-icons mt-4"><a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="https://www.facebook.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="https://twitter.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a></div></div>
+        <div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Contato</h5><ul class="list-unstyled small text-light"><li class="mb-3"><i class="bi bi-geo-alt me-2 text-white"></i><span>Av. Presidente Vargas, 670</span></li><li class="mb-3"><i class="bi bi-telephone me-2 text-white"></i><span>+55 (91) 3323-2550</span></li><li class="mb-3"><i class="bi bi-clock me-2 text-white"></i><span>Seg-Sex: 8h às 14h</span></li><li><i class="bi bi-envelope me-2 text-white"></i><a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a></li></ul></div>
+        <div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Links Úteis</h5><ul class="list-unstyled small"><li class="mb-2"><a href="https://www.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Governo do Estado do Pará</a></li><li class="mb-2"><a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">FAPESPA</a></li><li class="mb-2"><a href="politica-privacidade.html" class="text-light text-decoration-none">Política de Privacidade</a></li><li class="mb-2"><a href="termos-uso.html" class="text-light text-decoration-none">Termos de Uso</a></li><li><a href="index.html#acess-open-btn" class="text-light text-decoration-none">Acessibilidade</a></li></ul></div>
+        <div class="col-lg-3 col-md-6"><h5 class="footer-title mb-4">Navegação</h5><ul class="list-unstyled small"><li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página Inicial</a></li><li class="mb-2"><a href="index.html#principais-temas" class="text-light text-decoration-none">Principais Temas</a></li><li class="mb-2"><a href="index.html#sobre" class="text-light text-decoration-none">Sobre</a></li><li class="mb-2"><a href="index.html#produtos" class="text-light text-decoration-none">Produtos</a></li><li><a href="index.html#contato" class="text-light text-decoration-none">Contato</a></li></ul></div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-copyright text-center py-4"><div class="container"><small class="text-muted">© Anuário Estatístico do Pará, Todos os direitos reservados.<a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none"></a></small></div></div>
+  <button id="btnTop" title="Voltar ao topo" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

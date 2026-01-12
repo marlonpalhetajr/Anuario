@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor XLSX → JSON para Mapa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="file"],
+        select,
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="file"]:focus,
+        select:focus,
+        input[type="text"]:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .preview {
+            background: #f8f9fa;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .preview-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        .preview-table th,
+        .preview-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .preview-table th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .error {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .output-section {
+            display: none;
+        }
+
+        .output-section.show {
+            display: block;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .button-group button {
+            margin: 0;
+        }
+
+        .secondary-btn {
+            background: #6c757d;
+        }
+
+        .secondary-btn:hover {
+            box-shadow: 0 5px 20px rgba(108, 117, 125, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Conversor XLSX → JSON</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            Converta suas planilhas Excel em JSON para o mapa interativo
+        </p>
+
+        <div class="section">
+            <h2>1. Selecione o arquivo XLSX</h2>
+            <label for="fileInput">Arquivo Excel:</label>
+            <input type="file" id="fileInput" accept=".xlsx,.xls">
+            <div class="info-box">
+                ℹ️ Selecione uma planilha da pasta "Tabelas 2025/"
+            </div>
+        </div>
+
+        <div class="section" id="detectSection" style="display: none;">
+            <h2>2. Configure as colunas</h2>
+            <label for="municipioCol">Coluna de Município:</label>
+            <select id="municipioCol">
+                <option value="">-- Detectar automaticamente --</option>
+            </select>
+
+            <label for="valorCol">Coluna de Valores:</label>
+            <select id="valorCol">
+                <option value="">-- Detectar automaticamente --</option>
+            </select>
+
+            <label for="anoInput">Ano (opcional):</label>
+            <input type="text" id="anoInput" placeholder="Ex: 2025">
+
+            <label for="unidadeInput">Unidade (opcional):</label>
+            <input type="text" id="unidadeInput" placeholder="Ex: hab, R$, km²">
+
+            <label for="labelInput">Rótulo do Indicador:</label>
+            <input type="text" id="labelInput" placeholder="Ex: População Total">
+
+            <div id="previewDiv" class="preview" style="display: none;">
+                <table class="preview-table" id="previewTable">
+                    <thead>
+                        <tr>
+                            <th>Município</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="previewBody"></tbody>
+                </table>
+            </div>
+
+            <button onclick="generateJSON()">Gerar JSON</button>
+        </div>
+
+        <div class="section output-section" id="outputSection">
+            <h2>3. Resultado</h2>
+            <p id="resultMessage"></p>
+            <label>JSON gerado (copie o conteúdo abaixo):</label>
+            <textarea id="jsonOutput" readonly></textarea>
+            <div class="button-group">
+                <button onclick="copyJSON()" class="secondary-btn">📋 Copiar JSON</button>
+                <button onclick="downloadJSON()" class="secondary-btn">⬇️ Baixar JSON</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SheetJS para ler XLSX -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
+
+    <script>
+        let workbookData = null;
+        let headers = [];
+        let rows = [];
+
+        document.getElementById('fileInput').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            try {
+                const data = await file.arrayBuffer();
+                const workbook = XLSX.read(data);
+                const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+                workbookData = XLSX.utils.sheet_to_json(worksheet, { defval: '' });
+
+                // Extrai headers
+                headers = Object.keys(workbookData[0] || {});
+                rows = workbookData;
+
+                // Popula selects
+                const municipioSel = document.getElementById('municipioCol');
+                const valorSel = document.getElementById('valorCol');
+
+                municipioSel.innerHTML = '<option value="">-- Detectar automaticamente --</option>';
+                valorSel.innerHTML = '<option value="">-- Detectar automaticamente --</option>';
+
+                headers.forEach(h => {
+                    const opt1 = document.createElement('option');
+                    opt1.value = h;
+                    opt1.textContent = h;
+                    municipioSel.appendChild(opt1);
+
+                    const opt2 = document.createElement('option');
+                    opt2.value = h;
+                    opt2.textContent = h;
+                    valorSel.appendChild(opt2);
+                });
+
+                // Auto-detecção
+                const munCol = headers.find(h => h.toLowerCase().includes('município') || h.toLowerCase().includes('municipio'));
+                const valCol = headers.find(h => /\d{4}|valor|população|pib/i.test(h));
+
+                if (munCol) municipioSel.value = munCol;
+                if (valCol) valorSel.value = valCol;
+
+                // Gera preview
+                updatePreview();
+
+                document.getElementById('detectSection').style.display = 'block';
+                document.getElementById('outputSection').classList.remove('show');
+
+            } catch (err) {
+                alert('Erro ao ler arquivo: ' + err.message);
+            }
+        });
+
+        function updatePreview() {
+            const munCol = document.getElementById('municipioCol').value || detectMunicipio();
+            const valCol = document.getElementById('valorCol').value || detectValor();
+
+            if (!munCol || !valCol) {
+                document.getElementById('previewDiv').style.display = 'none';
+                return;
+            }
+
+            const tbody = document.getElementById('previewBody');
+            tbody.innerHTML = '';
+            rows.slice(0, 5).forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row[munCol]}</td><td>${row[valCol]}</td>`;
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('previewDiv').style.display = 'block';
+        }
+
+        document.getElementById('municipioCol').addEventListener('change', updatePreview);
+        document.getElementById('valorCol').addEventListener('change', updatePreview);
+
+        function detectMunicipio() {
+            return headers.find(h => h.toLowerCase().includes('município') || h.toLowerCase().includes('municipio')) || '';
+        }
+
+        function detectValor() {
+            return headers.find(h => /\d{4}|valor|população|pib/i.test(h)) || '';
+        }
+
+        function generateJSON() {
+            const munCol = document.getElementById('municipioCol').value || detectMunicipio();
+            const valCol = document.getElementById('valorCol').value || detectValor();
+            const ano = document.getElementById('anoInput').value || null;
+            const unidade = document.getElementById('unidadeInput').value || '';
+            const label = document.getElementById('labelInput').value || 'Indicador';
+
+            if (!munCol || !valCol) {
+                alert('Selecione as colunas de Município e Valor');
+                return;
+            }
+
+            const data = {};
+            rows.forEach(row => {
+                const mun = String(row[munCol]).trim();
+                const val = parseFloat(row[valCol]);
+                if (mun && !isNaN(val)) {
+                    data[mun] = val;
+                }
+            });
+
+            if (Object.keys(data).length === 0) {
+                alert('Nenhum dado válido encontrado');
+                return;
+            }
+
+            const payload = {
+                category: 'custom',
+                label: label,
+                unit: unidade,
+                year: ano ? parseInt(ano) : null,
+                source_file: document.getElementById('fileInput').files[0].name,
+                data: data
+            };
+
+            const json = JSON.stringify(payload, null, 2);
+            document.getElementById('jsonOutput').value = json;
+            document.getElementById('resultMessage').innerHTML = `✅ JSON gerado com <strong>${Object.keys(data).length}</strong> municípios`;
+            document.getElementById('outputSection').classList.add('show');
+
+            window.generatedJSON = json;
+            window.generatedFilename = `indicador-${Date.now()}.json`;
+        }
+
+        function copyJSON() {
+            const textarea = document.getElementById('jsonOutput');
+            textarea.select();
+            document.execCommand('copy');
+            alert('JSON copiado para a área de transferência!');
+        }
+
+        function downloadJSON() {
+            const json = document.getElementById('jsonOutput').value;
+            const filename = window.generatedFilename || 'indicador.json';
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

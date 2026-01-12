@@ -1,0 +1,22 @@
+# Arquivos grandes do projeto
+*.xlsx
+*.xls
+Tabelas 2025/
+planilhas/
+pdf/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Pastas de desenvolvimento
+node_modules/
+.vscode/
+*.backup*
+
+# Arquivos grandes (acima de 50MB)
+*.zip
+*.rar
+*.7z

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor XLSX → JSON v2 (Melhorado)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 40px;
+        }
+        h1 { color: #333; margin-bottom: 30px; text-align: center; }
+        .section { margin-bottom: 30px; }
+        .section h2 { color: #667eea; font-size: 1.2rem; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-family: monospace;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4); }
+        button:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+        .info { background: #e8f4f8; border-left: 4px solid #667eea; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        .success { background: #d4edda; border-left-color: #28a745; color: #155724; }
+        .error { background: #f8d7da; border-left-color: #dc3545; color: #721c24; }
+        textarea { height: 200px; resize: vertical; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Conversor XLSX → JSON (v2 Melhorado)</h1>
+        
+        <div class="section">
+            <h2>1. Selecione a Planilha Excel</h2>
+            <label for="file">Arquivo Excel (.xlsx):</label>
+            <input type="file" id="file" accept=".xlsx">
+        </div>
+
+        <div class="section" id="config" style="display:none;">
+            <h2>2. Configurar Colunas</h2>
+            
+            <div class="info">ℹ️ Selecione qual coluna representa o município e qual representa o valor</div>
+
+            <label for="munCol">Coluna de Município:</label>
+            <select id="munCol"></select>
+
+            <label for="valCol">Coluna de Valores:</label>
+            <select id="valCol"></select>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="demografia">Demografia</option>
+                <option value="economia">Economia</option>
+                <option value="infraestrutura">Infraestrutura</option>
+                <option value="meio-ambiente">Meio Ambiente</option>
+                <option value="social">Social</option>
+            </select>
+
+            <label for="label">Rótulo do Indicador:</label>
+            <input type="text" id="label" placeholder="Ex: População Total">
+
+            <div class="grid">
+                <div>
+                    <label for="ano">Ano (opcional):</label>
+                    <input type="text" id="ano" placeholder="2025">
+                </div>
+                <div>
+                    <label for="unidade">Unidade (opcional):</label>
+                    <input type="text" id="unidade" placeholder="hab, R$, km²">
+                </div>
+            </div>
+
+            <div id="preview" style="background: #f0f0f0; padding: 15px; border-radius: 5px; margin: 15px 0; display: none;">
+                <strong>Preview (primeiras 5 linhas):</strong>
+                <table style="width: 100%; font-size: 12px; margin-top: 10px;">
+                    <thead><tr><th>Município</th><th>Valor</th></tr></thead>
+                    <tbody id="previewTbody"></tbody>
+                </table>
+            </div>
+
+            <button onclick="gerarJSON()">Gerar JSON</button>
+        </div>
+
+        <div class="section" id="output" style="display:none;">
+            <h2>3. JSON Gerado</h2>
+            <p id="msg"></p>
+            <textarea id="json" readonly></textarea>
+            <div class="grid">
+                <button onclick="copyJSON()">📋 Copiar</button>
+                <button onclick="downloadJSON()">⬇️ Baixar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
+    <script>
+        let dados = [];
+        let headers = [];
+
+        document.getElementById('file').addEventListener('change', e => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = evt => {
+                try {
+                    const workbook = XLSX.read(evt.target.result, { type: 'array' });
+                    const sheet = workbook.Sheets[workbook.SheetNames[0]];
+                    
+                    // Lê com header na primeira linha
+                    const raw = XLSX.utils.sheet_to_json(sheet);
+                    headers = Object.keys(raw[0] || {}).filter(h => h && h.trim());
+                    dados = raw.filter(r => Object.values(r).some(v => v));
+
+                    // Popula selects
+                    const mSel = document.getElementById('munCol');
+                    const vSel = document.getElementById('valCol');
+                    [mSel, vSel].forEach(sel => {
+                        sel.innerHTML = '';
+                        headers.forEach(h => {
+                            const opt = document.createElement('option');
+                            opt.value = h;
+                            opt.textContent = h;
+                            sel.appendChild(opt);
+                        });
+                    });
+
+                    // Auto-detect
+                    const munH = headers.find(h => /município|municipio|city|mun/i.test(h));
+                    const valH = headers.find(h => /\d{4}|valor|populaç|pib|renda/i.test(h));
+                    if (munH) mSel.value = munH;
+                    if (valH) vSel.value = valH;
+
+                    document.getElementById('config').style.display = 'block';
+                    document.getElementById('output').style.display = 'none';
+                    atualizarPreview();
+                } catch (err) {
+                    alert('Erro ao ler arquivo: ' + err.message);
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        ['munCol', 'valCol'].forEach(id => {
+            document.getElementById(id).addEventListener('change', atualizarPreview);
+        });
+
+        function atualizarPreview() {
+            const munCol = document.getElementById('munCol').value;
+            const valCol = document.getElementById('valCol').value;
+            
+            if (!munCol || !valCol) {
+                document.getElementById('preview').style.display = 'none';
+                return;
+            }
+
+            const tbody = document.getElementById('previewTbody');
+            tbody.innerHTML = '';
+            dados.slice(0, 5).forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row[munCol] || ''}</td><td>${row[valCol] || ''}</td>`;
+                tbody.appendChild(tr);
+            });
+            document.getElementById('preview').style.display = 'block';
+        }
+
+        function gerarJSON() {
+            const munCol = document.getElementById('munCol').value;
+            const valCol = document.getElementById('valCol').value;
+            const categoria = document.getElementById('categoria').value;
+            const label = document.getElementById('label').value || 'Indicador';
+            const ano = document.getElementById('ano').value;
+            const unidade = document.getElementById('unidade').value;
+
+            if (!munCol || !valCol) {
+                alert('Selecione as colunas de município e valor');
+                return;
+            }
+
+            const mapData = {};
+            dados.forEach(row => {
+                const mun = String(row[munCol] || '').trim();
+                const val = parseFloat(row[valCol]);
+                if (mun && !isNaN(val)) {
+                    mapData[mun] = val;
+                }
+            });
+
+            if (Object.keys(mapData).length === 0) {
+                alert('Nenhum dado válido encontrado');
+                return;
+            }
+
+            const payload = {
+                category: categoria,
+                label: label,
+                unit: unidade,
+                year: ano ? parseInt(ano) : null,
+                source_file: document.getElementById('file').files[0].name,
+                data: mapData
+            };
+
+            const json = JSON.stringify(payload, null, 2);
+            document.getElementById('json').value = json;
+            document.getElementById('msg').innerHTML = `✅ JSON gerado com <strong>${Object.keys(mapData).length}</strong> municípios`;
+            document.getElementById('output').style.display = 'block';
+
+            window.jsonData = json;
+        }
+
+        function copyJSON() {
+            const textarea = document.getElementById('json');
+            textarea.select();
+            document.execCommand('copy');
+            alert('✅ Copiado!');
+        }
+
+        function downloadJSON() {
+            const json = document.getElementById('json').value;
+            const categoria = document.getElementById('categoria').value;
+            const label = document.getElementById('label').value.replace(/\s+/g, '-').toLowerCase();
+            const filename = `${categoria}-${label}.json`;
+            
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

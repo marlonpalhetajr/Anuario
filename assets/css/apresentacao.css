@@ -1,0 +1,76 @@
+/* este css estiliza o arquivo inicial */
+@charset "utf-8";
+
+@font-face {
+  /* fonte da pagina */
+  font-family: 'fonteTrebuchet'; /* nome da fonte */
+  src: url(../font/trebuchet-ms.ttf); /* caminho da fonte */
+}
+
+body {
+  /* configura o corpo da pagina */
+  font-family: fonteTrebuchet; /* tipo de fonte */
+  color: #333; /* fonte COR */
+  padding: 0px; /* espacamento interno */
+  margin: 0px; /* espacamento externo */
+  overflow: hidden; /* oculta barra de rolagem */
+}
+
+@media (min-width: 321px) {
+  /* estilo para tela maior */
+
+  div#cabecalho {
+    /* configura o campo cabecalho */
+    margin: 0px 0px 40px 0px; /* espacamento externo */
+  }
+  div#cabecalho h2 {
+    /* configura o titulo cabecalho */
+    font-weight: bold; /* fonte forte */
+    text-align: center; /* alinhamento centro */
+  }
+  div#corpo p {
+    /* configura o paragrafo no corpo */
+    font-size: 14px; /* fonte tamanho */
+    text-align: justify; /* alinhamento justificado */
+  }
+  div#rodape {
+    /* configura o campo rodape */
+    margin: 50px 0px 0px 0px; /* espacamento externo */
+  }
+  div#rodape p {
+    /* configura o texto no campo rodape */
+    font-size: 14px; /* fonte tamanho */
+    font-weight: bold; /* fonte forte */
+    text-align: center; /* alinhamento centro */
+  }
+} /* fim estilo para tela maior */
+
+@media (max-width: 320px) {
+  /* estilo para tela menor */
+
+  div#cabecalho {
+    /* configura o campo cabecalho */
+    margin: 0px 0px 30px 0px; /* espacamento externo */
+  }
+  div#cabecalho h2 {
+    /* configura o titulo cabecalho */
+    font-size: 16px; /* fonte tamanho */
+    font-weight: bold; /* fonte forte */
+    text-align: center; /* alinhamento centro */
+  }
+  div#corpo p {
+    /* configura o paragrafo no corpo */
+    font-size: 12px; /* fonte tamanho */
+    text-align: justify; /* alinhamento justificado */
+  }
+  div#rodape {
+    /* configura o campo rodape */
+    margin: 30px 0px 0px 0px; /* espacamento externo */
+  }
+  div#rodape p {
+    /* configura o texto no campo rodape */
+    font-size: 12px; /* fonte tamanho */
+    font-weight: bold; /* fonte forte */
+    text-align: center; /* alinhamento centro */
+  }
+} /* fim estilo para tela menor */

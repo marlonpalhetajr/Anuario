@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+ /* FOOTER */
+.footer,
+.footer-bottom {
+  background: var(--footer-background) !important;
+  color: var(--footer-text) !important;
+}
+footer .container { padding-top: 32px; padding-bottom: 32px; }
+
+/* MAPA NO RODAPÉ */
+.footer .map-container h5 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.footer .map-embed {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  height: 0;
+  max-height: 200px;
+}
+.footer .map-embed iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .footer .map-embed {
+    padding-bottom: 40%;
+    max-height: 250px;
+  }
+}
+.footer a {
+    color: var(--footer-text) !important; /* Garante que os links sejam brancos */
+    text-decoration: underline !important; /* Adiciona o sublinhado */
+    text-underline-offset: 4px; /* Opcional: Afasta o traço do texto */
+}
+.footer .btn-link {
+    display: block; /* Garante que cada link ocupe uma linha */
+    padding: 0; /* Remove o padding do botão */
+    margin-bottom: 0.5rem; /* Adiciona um pequeno espaçamento inferior para separá-los */
+    line-height: 1.5; /* Ajusta a altura da linha */
+    text-align: left;
+}
+
+/* CSS do Copyright - Rodapé Minimalista */
+.copyright {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid #e0e0e0 !important;
+    padding: 0.5rem 0;
+}
+
+.copyright small {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.copyright a {
+    color: #495057 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #212529 !important;
+}
+
+.copyright .text-center {
+    text-align: center;
+}
+</style>
+    <meta charset="utf-8">
+    <title data-i18n="sumario_titulo">Sumário - Anuário Estatístico</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .formatar-li {
+            list-style-type: none;
+            /* Remove o bullet */
+            margin-left: 0;
+            /* Sem indentação */
+        }
+
+        /* Estilo para os subitens */
+        .subitem {
+            list-style-type: none;
+            /* Remove o bullet */
+            margin-left: 0;
+            /* Sem indentação */
+
+            text-align: left;
+        }
+
+        /* Alinha o texto à direita */
+        .align-right {
+            display: inline-block;
+            /* Permite o uso de width */
+            width: 100%;
+            /* Ocupa toda a largura */
+            text-align: right;
+            /* Alinha o texto à direita */
+        }
+
+        .pagina {
+            display: none;
+            /* Oculta todas as páginas inicialmente */
+        }
+
+        .pagina-ativa {
+            display: block;
+            /* Mostra apenas a página ativa */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="acess-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar">
+        <a href="https://www.fapespa.pa.gov.br/" target="_blank" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-3" data-i18n="nav_fapespa">FAPESPA</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#anuario">Anuário</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle bg-transparent border-0" id="langDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        🌐 <span data-i18n="menu_idioma">Idioma</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item lang-option" data-lang="pt" href="#">Português</a></li>
+                        <li><a class="dropdown-item lang-option" data-lang="en" href="#">English</a></li>
+                        <li><a class="dropdown-item lang-option" data-lang="es" href="#">Español</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item position-relative">
+                    <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);" type="button">
+                        ♿ <span class="d-none d-lg-inline">Acessibilidade</span>
+                    </button>
+                    <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
+                        <div class="acess-section-title">Visão</div>
+                        <div class="acess-row">
+                            <button id="acess-contrast" class="acess-control" type="button">Alto contraste</button>
+                            <button id="acess-night" class="acess-control" type="button">Modo noturno</button>
+                        </div>
+                        <div class="acess-section-title">Cores</div>
+                        <div class="acess-row">
+                            <button id="acess-grayscale" class="acess-control" type="button">Escala em Cinza</button>
+                        </div>
+                        <div class="acess-section-title">Tamanho da Fonte</div>
+                        <div class="acess-row">
+                            <button id="font-dec" class="acess-control" type="button">A-</button>
+                            <button id="font-reset" class="acess-control" type="button">A</button>
+                            <button id="font-inc" class="acess-control" type="button">A+</button>
+                        </div>
+                        <div class="acess-section-title">Daltonismo</div>
+                        <div class="acess-row">
+                            <button id="dalton-prot" class="acess-control" type="button">Protanopia</button>
+                            <button id="dalton-deut" class="acess-control" type="button">Deuteranopia</button>
+                            <button id="dalton-trit" class="acess-control" type="button">Tritanopia</button>
+                            <button id="dalton-off" class="acess-control" type="button">Normal</button>
+                        </div>
+                        <div class="acess-section-title">Leitura &amp; Legibilidade</div>
+                        <div class="acess-row">
+                            <button id="acess-dislexia" class="acess-control" type="button">Modo Dislexia</button>
+                            <button id="acess-reading" class="acess-control" type="button">Modo Leitura</button>
+                            <button id="acess-links" class="acess-control" type="button">Destacar Links</button>
+                        </div>
+                        <div class="acess-section-title">Movimento</div>
+                        <div class="acess-row">
+                            <button id="reduce-motion" class="acess-control" type="button">Reduzir Animações</button>
+                        </div>
+                        <div class="acess-section-title">Geral</div>
+                        <div class="acess-row">
+                            <button id="acess-reset" class="acess-control acess-reset" type="button">Restaurar Tudo</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-3">
+        <!-- <h1 class="display-3 text-white mb-4 animated slideInDown">Anuário 2024</h1> -->
+    </div>
+</div>
+
+    <!-- Page Header End -->
+
+
+    <!-- 404 Start -->
+    <div class="container-xxl py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- <h1 class="mb-4">Anuário Estatístico do Pará 2024</h1> -->
+                    <h1 data-i18n="sumario_titulo">Sumário</h1>
+                    <div class="pagina pagina-ativa">
+                        <ul class="list-unstyled text-start">
+                            <li><strong>I. DEMOGRAFIA</strong>
+                                <ul>
+                                    <li class="formatar-li">- População Total e Estimativas Populacionais</li>
+                                    <li class="formatar-li">- População por Faixa Etária </li>
+                                    <li class="formatar-li">- População por Sexo </li>
+                                    <li class="formatar-li">- Razão de Sexos </li>
+                                    <li class="formatar-li">- Proporção de Idosos  </li>
+                                    <li class="formatar-li">- Índice de Envelhecimento </li>
+                                    <li class="formatar-li">- Razão de Dependência </li>
+                                    <li class="formatar-li">- Taxa de Fecundidade Total </li>
+                                    <li class="formatar-li">- Taxa Específica de Fecundidade por faixa etária  </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><strong>II. ECONOMIA</strong>
+                                <ul>
+                                    <li class="formatar-li"><strong>Lavoura Permanente</strong>
+                                        <ul class="subitem">
+                                            <li>- Área Destinada à Colheita (Hectares) da Lavoura Permanente </li>
+                                            <li>- Área Colhida (Hectares) da Lavoura Permanente </li>
+                                            <li>- Quantidade Produzida por Tipo de Lavoura Permanente</li>
+                                            <li>- Valor da Produção (em mil reais) por Tipo de Lavoura Permanente </li>
+                                            <li>- Rendimento Médio da Produção da Lavoura Permanente </li>
+                                        </ul>
+                                    </li>
+                                    <br>
+                                    <li class="formatar-li"><strong>Lavoura Temporária</strong>
+                                        <ul class="subitem">
+                                            <li>- Área Plantada (em Hectares) por Tipo de Lavoura Temporária  </li>
+                                            <li>- Área Colhida (em Hectares) por Tipo de Lavoura Temporária </li>
+                                            <li>- Quantidade Produzida por Tipo de Lavoura Temporária </li>
+                                            <li>- Valor (R$) da Produção por Tipo de Lavoura Temporária  </li>
+                                            <li>- Rendimento Médio da Produção por Tipo de Lavoura Temporária </li>
+                                        </ul>
+                                    </li>
+                                    <br>
+
+
+                                    <!-- Continue a adicionar outros itens principais aqui -->
+                                    <li class="formatar-li">
+                                        <strong>Pecuária</strong>
+                                        <ul class="subitem">
+                                            <li>- Efetivo de Rebanho Bovino </li>
+                                            <li>- Efetivo de Rebanho Bubalino </li>
+                                            <li>- Efetivo de Rebanho Equino </li>
+                                            <li>- Efetivo de Rebanho Suíno (Total) </li>
+                                            <li>- Efetivo de Rebanho Suínos (Matrizes) </li>
+                                            <li>- Efetivo de Rebanho Caprino </li>
+                                            <li>- Efetivo de Rebanho Ovino </li>
+                                            <li>- Efetivo de Rebanho Galináceos (Total)</li>
+                                            <li>- Efetivo de Rebanho Galináceos (Galinhas) </li>
+                                            <li>- Efetivo de Rebanho Codornas </li>
+                                            <li>- Produção de Origem Animal Leite (Mil litros)</li>
+                                            <li>- Produção de Origem Animal Ovos de galinha (Mil dúzias) </li>
+                                            <li>- Produção de Origem Animal Ovos de codorna (Mil dúzias) </li>
+                                            <li>- Produção de Origem Animal Mel de abelha (Quilogramas)  </li>
+                                        </ul>
+                                    </li>
+                                    <br>
+                                    <li class="formatar-li">
+                                        <strong>Extração Vegetal</strong>
+                                        <ul class="subitem">
+                                            <li>- Quantidade Produzida na Extração Vegetal, por Tipo de Produto
+                                                Extrativo </li>
+                                            <li>- Valor (Mil Reais) da Produção na Extração Vegetal, por Tipo de Produto
+                                                Extrativo </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                    <br>
+                    <div class="pagina">
+                        <ul class="list-unstyled text-start">
+                            <li class="formatar-li">
+                                <strong>PIB</strong>
+                                <ul class="subitem">
+                                    <li>- Produto Interno Bruto a Preços Correntes (Mil Reais) </li>
+                                    <li>- Valor Adicionado Bruto a Preços Correntes Total (Mil Reais) </li>
+                                    <li>- Valor Adicionado Bruto a Preços Correntes da Agropecuária (Mil Reais) </li>
+                                    <li>- Valor Adicionado Bruto a Preços Correntes da Indústria (Mil Reais) </li>
+                                    <li>- Valor Adicionado Bruto a Preços Correntes dos Serviços, Inclusive
+                                        Administração, Saúde e Educação Públicas e Seguridade Social (Mil Reais)</li>
+                                    <li>- Valor Adicionado Bruto a Preços Correntes da Administração, Saúde e
+                                        Educação
+                                        Públicas e Seguridade Social (Mil Reais) </li>
+                                    <li>- Impostos, Líquidos de Subsídios, sobre Produtos a Preços Correntes
+                                        (MilReais)</li>
+                                    <li>- Evolução do Produto Interno Bruto per Capita </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li">
+                                <strong>Balança Comercial</strong>
+                                <ul class="subitem">
+                                    <li>- Balança Comercial - Exportação (em US$ 1.000) </li>
+                                    <li>- Balança Comercial - Importação (em US$ 1.000) </li>
+                                    <li>- Saldo da Balança Comercial (em US$ 1.000) </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li">
+                                <strong>Finanças Públicas</strong>
+                                <ul class="subitem">
+                                    <li>- Repasse de ICMS </li>
+                                    <li>- Demonstrativo dos Índices de Participação na Arrecadação do ICMS </li>
+                                    <li>- Repasse de IPI </li>
+                                    <li>- Repasse de IPVA </li>
+                                    <li>- Receita Orçamentária </li>
+                                    <li>- Receitas Correntes </li>
+                                    <li>- Impostos </li>
+                                    <li>- Receita de Transferências Correntes </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li">
+                                <strong>Finanças Públicas</strong>
+                                <ul class="subitem">
+                                    <li>- Repasse de ICMS </li>
+                                    <li>- Demonstrativo dos Índices de Participação na Arrecadação do ICMS </li>
+                                    <li>- Repasse de IPI </li>
+                                    <li>- Repasse de IPVA </li>
+                                    <li>- Receita Orçamentária </li>
+                                    <li>- Receitas Correntes </li>
+                                    <li>- Impostos </li>
+                                    <li>- Receita de Transferências Correntes </li>
+                                </ul>
+                            </li>
+                            <br>
+
+                            </li>
+                            <li><strong>III. INFRAESTRUTURA</strong>
+                                <ul>
+                                    <li class="formatar-li">- Total da Frota de Veículos Subdivididos em Licenciados e
+                                        Não
+                                        Licenciados -
+                                        2019 a 2023</li>
+                                    <li class="formatar-li">- Consumidores de Energia Elétrica Total</li>
+                                    <li class="formatar-li">- Consumidores de Energia Elétrica por Tipo </li>
+                                    <li class="formatar-li">- Consumo de Energia Elétrica (kWH) </li>
+                                    <li class="formatar-li">- Consumo de Energia Elétrica (kWH) por Tipo </li>
+                                    <li class="formatar-li">- Total de Carregamento nos Portos </li>
+                                    <li class="formatar-li">- Total de Descarregamento nos Portos </li>
+                                    <li class="formatar-li">- Total de Movimentação nos Portos </li>
+                                    <li class="formatar-li">- Total de Embarcações </li>
+                                    <li class="formatar-li">- Total das Receitas Operacionais </li>
+                                    <li class="formatar-li">- Total de Pouso mais Decolagem de Aeronaves </li>
+                                    <li class="formatar-li">- Total de Embarque Mais Desembarque de Passageiros </li>
+                                    <li class=" formatar-li">- Abastecimento de Água Segundo Consumidores e Volume
+                                        Consumido </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li">
+                                <strong>IV. MEIO AMBIENTE</strong>
+                                <ul class="subitem">
+                                    <li>- Desflorestamento Acumulado (km²) </li>
+                                    <li>- Incremento (Desflorestamento km²)</li>
+                                    <li>- Área de Floresta (km²) e Hidrografia 2017 (km²) </li>
+                                    <li>- Focos de Calor </li>
+                                    <li>- Áreas Protegidas (km²) </li>
+                                    <li>- Unidades de Conservação </li>
+                                </ul>
+                            </li>
+                            <br>
+                    </div>
+                    </ul>
+                    <div class="pagina">
+                        <ul class="list-unstyled text-start">
+                            <li class="formatar-li"><strong>V. SOCIAL</strong>
+                                <ul>
+                                    <li class="formatar-li"><strong>Educação</strong>
+                                        <ul class="subitem">
+                                            <li>- Taxa de Aprovação no Ensino Fundamental por Esfera Administrativa</li>
+                                            <li>- Taxa de Aprovação no Ensino Médio por Esfera Administrativa </li>
+                                            <li>- Taxa de Reprovação no Ensino Fundamental por Esfera Administrativa</li>
+                                            <li>- Taxa de Reprovação no Ensino Médio por Esfera Administrativa </li>
+                                            <li>- Taxa de Abandono no Ensino Fundamental por Esfera Administrativa </li>
+                                            <li>- Taxa de Abandono no Ensino Médio por Esfera Administrativa </li>
+                                            <li>- Distorção Idade-Série Total por Nível de Ensino </li>
+                                            <li>- IDEB - Escola pública - 5ª ano (séries iniciais) </li>
+                                            <li>- IDEB - Escola pública - 9ª ano (séries finais) </li>
+                                            <li>- Número de Matrículas no Ensino Pré-escolar por Esfera
+                                                Administrativa </li>
+                                            <li>- Número de Matrículas no Ensino Fundamental por Esfera
+                                                Administrativa </li>
+                                            <li>- Número de Matrículas no Ensino Médio por Esfera Administrativa</li>
+                                            <li>- Média de Alunos por Turma por Nível de Ensino </li>
+                                            <li>- Número de Docentes no Ensino Pré-escolar por Esfera Administrativa</li>
+                                            <li>- Número de Docentes no Ensino Fundamental por Esfera Administrativa</li>
+                                            <li>- Número de Docentes no Ensino Médio por Esfera Administrativa</li>
+                                            <li>- Estabelecimentos de Ensino Fundamental por Dependência
+                                                Administrativa</li>
+                                            <li>- Estabelecimentos de Ensino Médio por Dependência Administrativa</li>
+                                            <li>- Estabelecimentos de Pré-Escola por Dependência Administrativa</li>
+                                    </li>
+                                </ul>
+                                <br>
+                            <li class="formatar-li"><strong>Inclusão Social</strong>
+                                <ul class="formatar-li">
+                                    <li>- Famílias Atendidas e Valor Total Empregado no Programa Bolsa Família </li>
+                                    <li>- Famílias Atendidas e Valor Total Empregado no Programa Auxílio Brasil</li>
+                                    <li>- Total de Famílias Inscritas no Cadastro Único para Programas Sociais
+                                        (CadÚnico) </li>
+                                    <li>- Total de Famílias Inscritas no Cadastro Único para Programas Sociais
+                                        (CadÚnico) com Rendimento Familiar per Capita de até 1/2 Salário Mínimo</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong> Mercado de Trabalho </strong>
+                                <ul class="formatar-li">
+                                    <li>- Vínculos Empregatícios Total no Emprego Formal </li>
+                                    <li>- Vínculos Empregatícios no Emprego Formal por Sexo </li>
+                                    <li>- Vínculos Empregatícios no Emprego Formal por Grande Setor (IBGE) -
+                                        </li>
+                                    <li>- Vínculos Empregatícios no Emprego Formal por Setor Econômico </li>
+                                    <li>- Vínculos Empregatícios por Escolaridade do Trabalhador Formal </li>
+                                    <li>- Remuneração Média (R$) do Trabalhador Formal</li>
+                                    <li>- Remuneração Média (R$) do Trabalhador Formal por Sexo  </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"> <strong>Previdência Social </strong>
+                                <ul class="formatar-li">
+                                    <li>- Quantidade de Benefícios Emitidos em Dezembro </li>
+                                    <li>- Valor dos Benefícios Emitidos em Dezembro </li>
+                                    <li>- Valor dos Benefícios Emitidos </li>
+                                    <li>- Benefícios Emitidos pela Previdência Social </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"> <strong> Saúde </strong>
+                                <ul class="formatar-li">
+                                    <li>- Taxa de Mortalidade Infantil </li>
+                                    <li>- Taxa de Mortalidade na Infância </li>
+                                    <li>- Taxa de Mortalidade Materna </li>
+                                    <li>- Taxa de Natalidade</li>
+                                    <li>- Taxa de Mortalidade Geral </li>
+                                    <li>- Taxa de Mortalidade por Sexo </li>
+                                    <li>- Número de Hospitais </li>
+                                    <li>- Número de Postos e Centros de Saúde por 10.000 hab. </li>
+                                    <li>- Médicos por 10 mil hab. </li>
+                                    <li>- Leito Hospitalar por mil habitantes </li>
+                                    <li>- Percentual de Nascidos Vivos com 7 ou Mais Consultas Pré-Natal </li>
+                                    <li>- Percentual de Nascidos Vivos por Parto Normal </li>
+                                    <li>- Percentual de Nascidos Vivos por Parto Cesário </li>
+                                    <li>- Percentual de Nascidos Vivos de Mães Adolescentes na Faixa Etária de 10 a
+                                        19 anos </li>
+                                    <li>- Taxa de Incidência da Hanseníase </li>
+                                    <li>- Taxa de Incidência da Tuberculose </li>
+                                    <li>- Proporção de Mulheres de 25 a 64 anos que Realizaram Exames
+                                        Citopatológicos do Colo do Útero </li>
+                                    <li>- Óbitos por Residência Neoplasias (tumores) </li>
+                                    <li>- Óbitos por Residência Algumas Doenças Infecciosas e Parasitárias </li>
+                                    <li>- Óbitos por Residência Doenças do Aparelho Circulatório </li>
+                                    <li>- Óbitos por Residência Doenças do Aparelho Digestivo </li>
+                                    <li>- Óbitos por Residência Doenças do Aparelho Respiratório </li>
+                                    <li>- Óbitos por Residência Algumas Afecções Originadas no Período Perinatal </li>
+                                    <li>- Percentual de Óbitos nas Internações por Infarto Agudo do Miocárdio (IAM)</li>
+                                    <li>- Taxa de Cobertura dos ACS (Serie Encerrada)</li>
+                                    <li>- Taxa de Cobertura das ESF (Serie Encerrada)</li>
+                                    <li>- Taxa de Cobertura da APS </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="formatar-li"><strong> Segurança </strong>
+                                <ul class="formatar-li">
+                                    <li>- Taxa de Homicídios Total por 100.000 habitantes </li>
+                                    <li>- Taxa de Homicídios de Jovens por 100.000 habitantes </li>
+                                    <li>- Taxa de Homicídios no Trânsito por 100.000 habitantes </li>
+                                    <li>- Taxa do Crime de Homicídio por 100.000 habitantes </li>
+                                    <li>- Taxa do Crime de Homicídio no Trânsito por 100.000 habitantes </li>
+                                    <li>- Taxa do Crime de Roubo por 100.000 habitantes </li>
+                                    <li>- Taxa do Crime de Latrocínio por 100.000 habitantes </li>
+                                    <li>- Taxa do Crime de Lesão Corporal Seguida de Morte por 100.000 habitantes </li>
+
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <!-- <a class="btn btn-primary py-3 px-4" href="index.html">Voltar para a Página Inicial</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="d-flex justify-content-center mt-4">
+        <ul class="pagination">
+            <li class="page-item">
+                <button class="page-link" onclick="mudarPagina(-1)">Anterior</button>
+            </li>
+            <li class="page-item disabled">
+                <span id="contador-pagina" class="page-link">Página 1</span>
+            </li>
+            <li class="page-item">
+                <button class="page-link" onclick="mudarPagina(1)">Próxima</button>
+            </li>
+        </ul>
+    </nav>
+
+        <!-- FOOTER (Layout principal do index) -->
+        <footer class="footer-main" id="contato">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Sobre FAPESPA</h5>
+                        <p class="small text-light">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p>
+                        <div class="social-icons mt-4">
+                            <a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter" aria-label="Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Contato</h5>
+                        <ul class="list-unstyled small text-light">
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt me-2 text-white"></i>
+                                <span>Av. Presidente Vargas, 670</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-telephone me-2 text-white"></i>
+                                <span>+55 (91) 3323-2550</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-clock me-2 text-white"></i>
+                                <span>Seg-Sex: 8h às 14h</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope me-2 text-white"></i>
+                                <a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Links Úteis</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="https://www.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Governo do Estado do Pará</a></li>
+                            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">FAPESPA</a></li>
+                            <li class="mb-2"><a href="politica-privacidade.html" class="text-light text-decoration-none">Política de Privacidade</a></li>
+                            <li class="mb-2"><a href="termos-uso.html" class="text-light text-decoration-none">Termos de Uso</a></li>
+                            <li><a href="index.html#acess-open-btn" class="text-light text-decoration-none">Acessibilidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title mb-4">Navegação</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página Inicial</a></li>
+                            <li class="mb-2"><a href="index.html#principais-temas" class="text-light text-decoration-none">Principais Temas</a></li>
+                            <li class="mb-2"><a href="index.html#sobre" class="text-light text-decoration-none">Sobre</a></li>
+                            <li class="mb-2"><a href="index.html#produtos" class="text-light text-decoration-none">Produtos</a></li>
+                            <li><a href="index.html#contato" class="text-light text-decoration-none">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright text-center py-4">
+            <div class="container">
+                <small class="text-muted">© Anuário Estatístico do Pará, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
+            </div>
+        </div>
+
+
+ <!-- Botão Voltar ao Topo -->
+<button id="btnTop" title="Voltar ao topo" aria-label="Voltar ao topo">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

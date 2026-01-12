@@ -1,0 +1,40 @@
+.formatar-li {
+  /* list-style-type: none; */
+  /* Remove o bullet */
+  margin-left: 0;
+  /* Sem indentação */
+}
+
+.formatar-li a {
+  color: black; /* Cor padrão do link */
+
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.formatar-li a:hover {
+  color: green; /* Cor do link ao passar o mouse */
+}
+
+/* Estilo para os subitens */
+.subitem {
+  list-style-type: none;
+  /* Remove o bullet */
+  margin-left: 0;
+  /* Sem indentação */
+
+  text-align: left;
+}
+
+/* Alinha o texto à direita */
+.align-right {
+  display: inline-block;
+  /* Permite o uso de width */
+  width: 100%;
+  /* Ocupa toda a largura */
+  text-align: right;
+  /* Alinha o texto à direita */
+}
+
+.letra-maiscula {
+  text-transform: uppercase;
+}

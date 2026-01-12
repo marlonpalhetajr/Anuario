@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo do Pará | FAPESPA</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .controls h3 {
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+
+        .controls label {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: 600;
+        }
+
+        .controls select {
+            padding: 8px 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        .controls select:hover {
+            border-color: #28a745;
+        }
+
+        #map {
+            height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .info-panel {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-panel h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+
+        .info-item label {
+            display: block;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .info-item strong {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .legend {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .legend h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .legend-color {
+            width: 30px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+
+        .leaflet-popup-content {
+            margin: 15px;
+            font-size: 14px;
+        }
+
+        .leaflet-popup-content h4 {
+            margin: 0 0 10px 0;
+            color: #28a745;
+        }
+
+        .popup-info {
+            margin: 5px 0;
+        }
+
+        .popup-info strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mapa Interativo do Pará</h1>
+        <p>Explore dados demográficos, econômicos e sociais dos municípios do Pará</p>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <h3>Selecione a Categoria e o Indicador</h3>
+            <label for="category">Categoria:</label>
+            <select id="category"></select>
+            <label for="indicator" style="margin-left: 15px;">Indicador:</label>
+            <select id="indicator"></select>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="info-panel">
+            <h3>Informações do Município</h3>
+            <p id="info-text">Passe o mouse sobre um município para ver as informações</p>
+            <div id="info-details" class="info-grid" style="display: none;"></div>
+        </div>
+
+        <div class="legend">
+            <h4>Legenda</h4>
+            <div id="legend-content"></div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Dados de exemplo dos municípios do Pará (fallback)
+        const fallbackMunicipiosData = {
+            'Belém': {
+                populacao: 1499641,
+                pib: 35821000,
+                idh: 0.746,
+                densidade: 1315.26,
+                regiao: 'Metropolitana de Belém',
+                coords: [-1.4558, -48.4902]
+            },
+            'Ananindeua': {
+                populacao: 535547,
+                pib: 12456000,
+                idh: 0.718,
+                densidade: 2906.75,
+                regiao: 'Metropolitana de Belém',
+                coords: [-1.3656, -48.3722]
+            },
+            'Santarém': {
+                populacao: 306480,
+                pib: 8932000,
+                idh: 0.691,
+                densidade: 13.68,
+                regiao: 'Baixo Amazonas',
+                coords: [-2.4419, -54.7081]
+            },
+            'Marabá': {
+                populacao: 283542,
+                pib: 11234000,
+                idh: 0.668,
+                densidade: 16.53,
+                regiao: 'Sudeste Paraense',
+                coords: [-5.3686, -49.1178]
+            },
+            'Castanhal': {
+                populacao: 200793,
+                pib: 5678000,
+                idh: 0.694,
+                densidade: 141.15,
+                regiao: 'Nordeste Paraense',
+                coords: [-1.2933, -47.9264]
+            },
+            'Parauapebas': {
+                populacao: 208273,
+                pib: 15890000,
+                idh: 0.715,
+                densidade: 29.51,
+                regiao: 'Sudeste Paraense',
+                coords: [-6.0675, -49.9022]
+            },
+            'Altamira': {
+                populacao: 115969,
+                pib: 4123000,
+                idh: 0.665,
+                densidade: 0.72,
+                regiao: 'Sudoeste Paraense',
+                coords: [-3.2039, -52.2069]
+            },
+            'Marituba': {
+                populacao: 131924,
+                pib: 2890000,
+                idh: 0.689,
+                densidade: 1257.36,
+                regiao: 'Metropolitana de Belém',
+                coords: [-1.3628, -48.3394]
+            }
+        };
+
+        // Conjunto de dados ativo (pode ser substituído pelo JSON externo)
+        let municipiosData = fallbackMunicipiosData;
+
+        // Inicializa o mapa
+        const map = L.map('map').setView([-3.5, -52], 6);
+
+        // Adiciona o tile layer (mapa base)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Variável para armazenar os marcadores e controles de indicador
+        let markers = [];
+        let currentIndicator = null; // slug do indicador
+        let currentIndicatorMeta = null; // {label, unit, year, path}
+        let catalog = null; // catálogo dinâmico
+
+        // Carrega JSON externo se disponível
+        async function loadData() {
+            try {
+                const resp = await fetch('data/indicadores_municipios_2025.json', { cache: 'no-store' });
+                if (!resp.ok) throw new Error('Falha ao carregar JSON');
+                const data = await resp.json();
+                // Se o JSON não tiver coords/regiao, mantemos do fallback quando possível
+                municipiosData = {};
+                const fb = fallbackMunicipiosData;
+                for (const [nome, valores] of Object.entries(data)) {
+                    municipiosData[nome] = {
+                        ...fb[nome],
+                        ...valores
+                    };
+                }
+                // Garante que, se JSON tiver menos municípios, ainda renderizamos os existentes
+                for (const [nome, valores] of Object.entries(fb)) {
+                    if (!municipiosData[nome]) municipiosData[nome] = valores;
+                }
+            } catch (e) {
+                console.warn('Usando dados locais de fallback. Motivo:', e.message);
+                municipiosData = fallbackMunicipiosData;
+            }
+            // Carrega catálogo e inicializa selects
+            await loadCatalog();
+            populateCategories();
+            populateIndicators();
+            onIndicatorChange();
+        }
+
+        // Escala dinâmica por quebras (quantis) e paleta padrão
+        function computeBreaks(values, k=5) {
+            const sorted = values.filter(v => Number.isFinite(v)).sort((a,b)=>a-b);
+            if (sorted.length === 0) return [];
+            const qs = [];
+            for (let i=1;i<k;i++) {
+                const pos = (i/k) * (sorted.length-1);
+                const base = Math.floor(pos);
+                const rest = pos - base;
+                const val = base+1 < sorted.length ? sorted[base]*(1-rest) + sorted[base+1]*rest : sorted[base];
+                qs.push(val);
+            }
+            return qs;
+        }
+
+        const defaultPalette = ['#E6F4EA','#C1E3CC','#90D0A9','#3BB273','#168F49'];
+
+        function getColorFromBreaks(value, breaks, palette=defaultPalette) {
+            if (!Number.isFinite(value)) return '#ddd';
+            let idx = 0;
+            while (idx < breaks.length && value > breaks[idx]) idx++;
+            return palette[Math.min(idx, palette.length-1)];
+        }
+
+        // Função para formatar valores com unidade dinâmica
+        function formatValue(value, unit) {
+            if (!Number.isFinite(value)) return '-';
+            if (unit === 'R$') {
+                return 'R$ ' + value.toLocaleString('pt-BR', {maximumFractionDigits: 0});
+            }
+            if (unit === '%') {
+                return value.toLocaleString('pt-BR', {maximumFractionDigits: 2}) + ' %';
+            }
+            if (value < 1 && value > 0) {
+                return value.toLocaleString('pt-BR', {maximumFractionDigits: 3});
+            }
+            return value.toLocaleString('pt-BR', {maximumFractionDigits: 2}) + (unit ? ' ' + unit : '');
+        }
+
+        // Função para criar marcadores
+        function createMarkers() {
+            // Remove marcadores existentes
+            markers.forEach(marker => map.removeLayer(marker));
+            markers = [];
+
+            // Prepara quebras para escala
+            const values = Object.values(municipiosData).map(d => d.valor).filter(v => Number.isFinite(v));
+            const breaks = computeBreaks(values, 5);
+
+            // Cria novos marcadores
+            Object.entries(municipiosData).forEach(([nome, dados]) => {
+                const value = dados.valor;
+                const color = getColorFromBreaks(value, breaks);
+                
+                const marker = L.circleMarker(dados.coords, {
+                    radius: Number.isFinite(value) ? Math.sqrt(Math.max(value, 0)) / 50 + 6 : 6,
+                    fillColor: color,
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.7
+                });
+
+                // Popup
+                const popupContent = `
+                    <h4>${nome}</h4>
+                    <div class="popup-info"><strong>Região:</strong> ${dados.regiao || '-'}</div>
+                    <div class="popup-info"><strong>${currentIndicatorMeta?.label || 'Indicador'}:</strong> ${formatValue(value, currentIndicatorMeta?.unit || '')}</div>
+                `;
+                
+                marker.bindPopup(popupContent);
+
+                // Hover
+                marker.on('mouseover', function(e) {
+                    this.setStyle({
+                        weight: 3,
+                        fillOpacity: 0.9
+                    });
+                    
+                    // Atualiza painel de informações
+                    document.getElementById('info-text').style.display = 'none';
+                    const infoDetails = document.getElementById('info-details');
+                    infoDetails.style.display = 'grid';
+                    infoDetails.innerHTML = `
+                        <div class="info-item">
+                            <label>Município</label>
+                            <strong>${nome}</strong>
+                        </div>
+                        <div class="info-item">
+                            <label>Região</label>
+                            <strong>${dados.regiao || '-'}</strong>
+                        </div>
+                        <div class="info-item">
+                            <label>${currentIndicatorMeta?.label || 'Indicador'}</label>
+                            <strong>${formatValue(value, currentIndicatorMeta?.unit || '')}</strong>
+                        </div>
+                    `;
+                });
+
+                marker.on('mouseout', function(e) {
+                    this.setStyle({
+                        weight: 2,
+                        fillOpacity: 0.7
+                    });
+                });
+
+                marker.addTo(map);
+                markers.push(marker);
+            });
+
+            updateLegend();
+        }
+
+        // Função para atualizar legenda
+        function updateLegend() {
+            const legendContent = document.getElementById('legend-content');
+            const vals = Object.values(municipiosData).map(d => d.valor).filter(v=>Number.isFinite(v));
+            const breaks = computeBreaks(vals, 5);
+            const labels = [];
+            const palette = defaultPalette;
+            if (vals.length) {
+                const min = Math.min(...vals);
+                const max = Math.max(...vals);
+                const ranges = [min, ...breaks, max];
+                for (let i=0;i<ranges.length-1;i++) {
+                    const a = ranges[i];
+                    const b = ranges[i+1];
+                    const color = palette[Math.min(i, palette.length-1)];
+                    labels.push({color, label: `${formatValue(a, currentIndicatorMeta?.unit||'')} – ${formatValue(b, currentIndicatorMeta?.unit||'')}`});
+                }
+            }
+            legendContent.innerHTML = labels.map(item => `
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: ${item.color}"></div>
+                    <span>${item.label}</span>
+                </div>
+            `).join('');
+        }
+
+        async function loadCatalog() {
+            try {
+                const resp = await fetch('data/catalogo_2025.json', { cache: 'no-store' });
+                if (!resp.ok) throw new Error('Catálogo não encontrado');
+                catalog = await resp.json();
+            } catch (e) {
+                console.warn('Sem catálogo, usando fallback local. Motivo:', e.message);
+                catalog = null;
+            }
+        }
+
+        function populateCategories() {
+            const selCat = document.getElementById('category');
+            selCat.innerHTML = '';
+            const cats = catalog ? Object.keys(catalog) : ['demografia', 'economia', 'infraestrutura', 'meio-ambiente', 'social'];
+            cats.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                const label = c.replace(/-/g, ' ').replace(/\b\w/g, l=>l.toUpperCase());
+                opt.textContent = label;
+                selCat.appendChild(opt);
+            });
+            if (selCat.options.length > 0) {
+                selCat.value = selCat.options[0].value;
+            }
+        }
+
+        function populateIndicators() {
+            const selInd = document.getElementById('indicator');
+            selInd.innerHTML = '';
+            const selCat = document.getElementById('category').value;
+            const indicators = catalog ? (catalog[selCat] || []) : [
+                {slug:'populacao', label:'População (exemplo)', unit:'hab', path:null},
+                {slug:'pib', label:'PIB (exemplo)', unit:'R$', path:null},
+                {slug:'idh', label:'IDH (exemplo)', unit:'', path:null},
+                {slug:'densidade', label:'Densidade (exemplo)', unit:'hab/km²', path:null}
+            ];
+            indicators.forEach(ind => {
+                const opt = document.createElement('option');
+                opt.value = ind.slug;
+                opt.textContent = ind.label;
+                opt.dataset.path = ind.path || '';
+                opt.dataset.unit = ind.unit || '';
+                selInd.appendChild(opt);
+            });
+        }
+
+        async function onIndicatorChange() {
+            const selInd = document.getElementById('indicator');
+            const option = selInd.options[selInd.selectedIndex];
+            currentIndicator = option.value;
+            currentIndicatorMeta = {
+                label: option.textContent,
+                unit: option.dataset.unit || '',
+                path: option.dataset.path || null
+            };
+
+            if (currentIndicatorMeta.path) {
+                try {
+                    const resp = await fetch(currentIndicatorMeta.path, { cache: 'no-store' });
+                    const payload = await resp.json();
+                    const mapData = payload.data || {};
+                    // injeta valores no dataset base
+                    municipiosData = {};
+                    const fb = fallbackMunicipiosData;
+                    for (const [nome, base] of Object.entries(fb)) {
+                        municipiosData[nome] = {
+                            ...base,
+                            valor: mapData[nome]
+                        };
+                    }
+                    createMarkers();
+                    return;
+                } catch (e) {
+                    console.warn('Falha ao carregar indicador, usando fallback local:', e.message);
+                }
+            }
+            // fallback: usa chaves estáticas locais
+            municipiosData = {};
+            for (const [nome, base] of Object.entries(fallbackMunicipiosData)) {
+                let valor = null;
+                if (currentIndicator === 'populacao') valor = base.populacao;
+                else if (currentIndicator === 'pib') valor = base.pib;
+                else if (currentIndicator === 'idh') valor = base.idh;
+                else if (currentIndicator === 'densidade') valor = base.densidade;
+                municipiosData[nome] = { ...base, valor };
+            }
+            createMarkers();
+        }
+
+        document.getElementById('category').addEventListener('change', function() {
+            populateIndicators();
+            onIndicatorChange();
+        });
+
+        document.getElementById('indicator').addEventListener('change', onIndicatorChange);
+
+        // Inicializa os dados e o mapa
+        loadData();
+    </script>
+</body>
+</html>

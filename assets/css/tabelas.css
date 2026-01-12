@@ -1,0 +1,78 @@
+/* este css estiliza as tabelas em HTML */
+@charset "utf-8";
+
+@font-face {
+  /* fonte da pagina */
+  font-family: 'fonteTrebuchet'; /* nome da fonte */
+  src: url(../font/trebuchet-ms.ttf); /* caminho da fonte */
+}
+
+body {
+  /* configura o corpo da pagina */
+  font-family: fonteTrebuchet; /* tipo de fonte */
+  color: #333; /* cor da fonte */
+  padding: 0px; /* espacamento interno */
+  margin: 0px; /* espacamento externo */
+}
+table {
+  /* altera a tag table */
+  margin: auto; /* centraliza tabela */
+}
+.demografia {
+  /* cor do background */
+  background: #5d84f5; /* fundo COR */
+}
+.economia {
+  /* cor do background */
+  background: #ffff00; /* fundo COR */
+}
+.infraestrutura {
+  /* cor do background */
+  background: #b1a0c7; /* fundo COR */
+}
+.meioambiente {
+  /* cor do background */
+  background: #92d050; /* fundo COR */
+}
+.social {
+  /* cor do background */
+  background: #e26b0a; /* fundo COR */
+}
+.titlecenter {
+  /* configura a formatação do título no topo das tabelas HTML */
+  font-family: Trebuchet MS; /* tipo de fonte */
+  font-size: xx-large; /* fonte tamanho */
+  text-align: center; /* alinhamento centro */
+  padding: 5px; /* espacamento interno */
+  margin-bottom: 20px; /* margem no rodape */
+}
+.logo td {
+  /* configura as celulas da tabela CABEÇALHO nas tabelas HTML */
+  width: 150px; /* largura das celulas */
+  vertical-align: baseline; /* alinhamento vertical */
+}
+.logo a.opacidade {
+  /* configura a tag a */
+  border-top-left-radius: 25px; /* borda redonda cima esquerdo */
+  border-top-right-radius: 25px; /* borda redonda cima direito */
+  border-bottom-left-radius: 25px; /* borda redonda baixo esquerdo */
+  border-bottom-right-radius: 25px; /* borda redonda baixo direito */
+  display: inline-block; /* em linha */
+  background: #222; /* fundo COR */
+  padding: 0; /* espacamento interno */
+  margin: 0; /* espacamento externo */
+  height: 32px; /* altura */
+}
+.logo a.opacidade:hover img {
+  /* configura a tag img */
+  opacity: 0.7; /* opacidade */
+}
+.logo a.opacidade img {
+  /* configura a tag img */
+  display: block; /* fixa */
+  -webkit-transition: all 0.5s linear; /* transicao chrome */
+  -moz-transition: all 0.5s linear; /* transicao mozilla */
+  -ms-transition: all 0.5s linear; /* transicao ms explorer */
+  -o-transition: all 0.5s linear; /* transicao opera */
+  transition: all 0.5s linear; /* transicao */
+}

@@ -1,0 +1,76 @@
+/* css/apresentacao.css */
+
+/* Estrutura geral */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+#cabecalho {
+  background-color: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 4px solid #0d6efd;
+}
+
+#cabecalho h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Corpo */
+#corpo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Rodapé */
+#rodape {
+  text-align: center;
+  background-color: #e9ecef;
+  padding: 20px;
+  font-weight: 300;
+  color: #555;
+  border-top: 3px solid #0d6efd;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 1.2em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #corpo {
+    padding: 0 15px;
+  }
+
+  #cabecalho h2 {
+    font-size: 1.5rem;
+  }
+}
+html, body {
+  font-size: 17px; /* fonte um pouco menor */
+  overflow-x: hidden; /* impede scroll lateral */
+}
+
+#cabecalho h2 {
+  font-size: 1.4rem;
+}
+
+#corpo {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+#rodape {
+  font-size: 0.85rem;
+}
