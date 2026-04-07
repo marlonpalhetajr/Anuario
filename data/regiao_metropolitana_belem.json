@@ -1,0 +1,12 @@
+{
+  "regiao_metropolitana_belem": {
+    "label": "Região Metropolitana de Belém",
+    "color": "#FF6B6B",
+    "municipios": ["Belém", "Ananindeua", "Benevides", "Marituba", "Santa Bárbara do Pará"]
+  },
+  "outras_regioes": {
+    "label": "Outras Regiões",
+    "color": "#CCCCCC",
+    "municipios": []
+  }
+}

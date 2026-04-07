@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação do Mapa | FAPESPA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Jost', 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #28a745;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .status-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid #e0e0e0;
+        }
+
+        .status-card.success {
+            border-left-color: #28a745;
+        }
+
+        .status-card.warning {
+            border-left-color: #ffc107;
+        }
+
+        .status-card.error {
+            border-left-color: #dc3545;
+        }
+
+        .status-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .status-card h3 {
+            color: #1a1a1a;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .status-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .console-panel {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        }
+
+        .console-line {
+            padding: 0.4rem 0;
+            line-height: 1.5;
+        }
+
+        .console-line.info {
+            color: #4fc3f7;
+        }
+
+        .console-line.success {
+            color: #66bb6a;
+        }
+
+        .console-line.warning {
+            color: #ffb74d;
+        }
+
+        .console-line.error {
+            color: #ef5350;
+        }
+
+        .console-line.debug {
+            color: #ab47bc;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .instructions {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .instructions h2 {
+            color: #28a745;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .instructions ol {
+            margin-left: 2rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .instructions li {
+            margin-bottom: 0.8rem;
+        }
+
+        .instructions strong {
+            color: #28a745;
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #28a745;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .link-btn:hover {
+            background: #218838;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e0e0e0;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ Verificação do Mapa Interativo</h1>
+            <p>Diagnóstico completo do status de carregamento</p>
+        </div>
+
+        <div class="status-grid">
+            <div class="status-card" id="mapElementCard">
+                <div class="status-icon">🔍</div>
+                <h3>Elemento #map</h3>
+                <p id="mapElementText">Verificando...</p>
+            </div>
+
+            <div class="status-card" id="mapLibreCard">
+                <div class="status-icon">📚</div>
+                <h3>MapLibre GL</h3>
+                <p id="mapLibreText">Verificando...</p>
+            </div>
+
+            <div class="status-card" id="bootstrapCard">
+                <div class="status-icon">💠</div>
+                <h3>Bootstrap CSS</h3>
+                <p id="bootstrapText">Verificando...</p>
+            </div>
+
+            <div class="status-card" id="tabsCard">
+                <div class="status-icon">📑</div>
+                <h3>Sistema de Abas</h3>
+                <p id="tabsText">Verificando...</p>
+            </div>
+
+            <div class="status-card" id="mapa-appCard">
+                <div class="status-icon">⚙️</div>
+                <h3>Script mapa-app.js</h3>
+                <p id="mapaAppText">Verificando...</p>
+            </div>
+
+            <div class="status-card" id="stateCard">
+                <div class="status-icon">📊</div>
+                <h3>Estado Global (STATE)</h3>
+                <p id="stateText">Verificando...</p>
+            </div>
+        </div>
+
+        <div class="console-panel" id="console">
+            <div class="console-line debug">📋 Console de Diagnóstico</div>
+            <div class="console-line">—————————————————————————————</div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="performFullDiagnostics()">🔧 Executar Diagnóstico Completo</button>
+            <button class="btn btn-primary" onclick="openMapPage()">🗺️ Abrir Página do Mapa</button>
+            <button class="btn btn-secondary" onclick="clearLogs()">🗑️ Limpar Console</button>
+        </div>
+
+        <div class="instructions">
+            <h2>Como testar o mapa</h2>
+            <ol>
+                <li>Clique no botão <strong>"Executar Diagnóstico Completo"</strong> para verificar o status de todos os componentes</li>
+                <li>Verifique o console acima para mensagens detalhadas e possíveis erros</li>
+                <li>Se tudo estiver OK (✅), clique em <strong>"Abrir Página do Mapa"</strong> para visualizar o mapa</li>
+                <li>Na página do mapa:
+                    <ul style="margin-left: 2rem; margin-top: 0.5rem; color: #555;">
+                        <li>O mapa deve aparecer na primeira aba (Mapa)</li>
+                        <li>Selecione uma "Categoria" (ex: Demografia)</li>
+                        <li>Selecione um "Indicador" (ex: População)</li>
+                        <li>Clique nas outras abas (Ranking, Histórico, Filtros, Comparação) para testar as funcionalidades</li>
+                    </ul>
+                </li>
+            </ol>
+            <a href="mapa-teste.html" class="link-btn">→ Ir diretamente para o Mapa</a>
+        </div>
+    </div>
+
+    <script>
+        function log(message, type = 'info') {
+            const console = document.getElementById('console');
+            const line = document.createElement('div');
+            line.className = `console-line ${type}`;
+            line.textContent = message;
+            console.appendChild(line);
+            console.scrollTop = console.scrollHeight;
+        }
+
+        function clearLogs() {
+            const console = document.getElementById('console');
+            console.innerHTML = '<div class="console-line debug">📋 Console Limpo</div><div class="console-line">—————————————————————————————</div>';
+        }
+
+        function setCardStatus(cardId, isGood, title, message) {
+            const card = document.getElementById(cardId);
+            const textElement = card.querySelector('p');
+            
+            card.classList.remove('success', 'warning', 'error');
+            card.classList.add(isGood ? (title.includes('⚠️') ? 'warning' : 'success') : 'error');
+            
+            textElement.innerHTML = `<strong>${title}</strong><br>${message}`;
+        }
+
+        function performFullDiagnostics() {
+            clearLogs();
+            log('🔍 Iniciando diagnóstico completo...');
+            log('');
+
+            // 1. Verificar Elemento #map
+            log('1️⃣ Verificando elemento #map...');
+            const mapElement = document.getElementById('map');
+            if (mapElement) {
+                setCardStatus('mapElementCard', true, '✅ Encontrado', `Elemento existe no DOM com ${mapElement.offsetWidth}x${mapElement.offsetHeight}px`);
+                log('   ✅ Elemento #map encontrado no DOM');
+                log(`   ✅ Dimensões: ${mapElement.offsetWidth}x${mapElement.offsetHeight}px`);
+            } else {
+                setCardStatus('mapElementCard', false, '❌ Não Encontrado', 'O elemento #map não existe no DOM');
+                log('   ❌ ERRO: Elemento #map não encontrado!');
+            }
+            log('');
+
+            // 2. Verificar MapLibre GL
+            log('2️⃣ Verificando biblioteca MapLibre GL...');
+            if (window.maplibregl) {
+                setCardStatus('mapLibreCard', true, '✅ Carregada', `Versão: ${window.maplibregl.version || 'desconhecida'}`);
+                log('   ✅ MapLibre GL carregada');
+                log(`   ✅ Objeto maplibregl disponível`);
+            } else {
+                setCardStatus('mapLibreCard', false, '❌ Não Carregada', 'MapLibre GL não está disponível');
+                log('   ❌ ERRO: MapLibre GL não carregada!');
+            }
+            log('');
+
+            // 3. Verificar Bootstrap CSS
+            log('3️⃣ Verificando Bootstrap CSS...');
+            const hasBootstrapCSS = Array.from(document.styleSheets).some(sheet => 
+                sheet.href && sheet.href.includes('bootstrap')
+            );
+            if (hasBootstrapCSS) {
+                setCardStatus('bootstrapCard', true, '✅ Carregado', 'CSS do Bootstrap presente na página');
+                log('   ✅ Bootstrap CSS carregado');
+            } else {
+                setCardStatus('bootstrapCard', false, '⚠️ Não encontrado', 'Bootstrap CSS pode não estar carregado corretamente');
+                log('   ⚠️ AVISO: Bootstrap CSS não encontrado nas styleSheets');
+            }
+            log('');
+
+            // 4. Verificar sistema de abas
+            log('4️⃣ Verificando sistema de abas...');
+            const tabMapa = document.getElementById('tabMapa');
+            const tabMapaContent = document.getElementById('tabMapaContent');
+            let tabsGood = false;
+            
+            if (tabMapa && tabMapaContent) {
+                const isActive = tabMapaContent.classList.contains('active');
+                log(`   ✅ Aba #tabMapa encontrada`);
+                log(`   ✅ Conteúdo #tabMapaContent encontrado`);
+                log(`   ${isActive ? '✅' : '⚠️'} Aba está ${isActive ? 'ATIVA' : 'inativa'}`);
+                setCardStatus('tabsCard', true, '✅ Configurado', `5 abas presentes. Aba do mapa ${isActive ? 'está ativa' : 'não está ativa'}`);
+                tabsGood = true;
+            } else {
+                setCardStatus('tabsCard', false, '❌ Erro', 'Abas não encontradas no DOM');
+                log('   ❌ ERRO: Abas não encontradas!');
+            }
+            log('');
+
+            // 5. Verificar mapa-app.js
+            log('5️⃣ Verificando script mapa-app.js...');
+            if (window.STATE) {
+                setCardStatus('mapaAppCard', true, '✅ Carregado', 'Objeto STATE global disponível');
+                log('   ✅ Script mapa-app.js carregado');
+                log('   ✅ Objeto STATE global presente');
+                
+                if (window.STATE.map) {
+                    log('   ✅ Instância STATE.map existe');
+                    log(`   ✅ Mapa tem zoom: ${window.STATE.map.getZoom()}`);
+                } else {
+                    log('   ⚠️ STATE.map ainda não foi inicializado (esperado durante carregamento)');
+                }
+            } else {
+                setCardStatus('mapaAppCard', false, '❌ Não Carregado', 'mapa-app.js não carregou corretamente');
+                log('   ❌ ERRO: Objeto STATE não disponível!');
+            }
+            log('');
+
+            // 6. Resumo Final
+            log('');
+            log('📊 RESUMO DO DIAGNÓSTICO:', 'debug');
+            if (mapElement && window.maplibregl && window.STATE && tabsGood) {
+                log('✅ Tudo parece estar funcionando!', 'success');
+                log('A página do mapa deve estar pronta para uso.', 'success');
+            } else {
+                log('⚠️ Há possíveis problemas:', 'warning');
+                if (!mapElement) log('   - Elemento #map não encontrado', 'warning');
+                if (!window.maplibregl) log('   - MapLibre GL não carregada', 'warning');
+                if (!window.STATE) log('   - mapa-app.js não carregou', 'warning');
+                if (!tabsGood) log('   - Sistema de abas com problemas', 'warning');
+            }
+            log('');
+            log('💡 Dica: Se o erro persistir, abra mapa-teste.html e pressione F12 para ver o console do navegador.', 'debug');
+        }
+
+        function openMapPage() {
+            window.location.href = 'mapa-teste.html';
+        }
+
+        // Auto-realizar diagnóstico ao carregar a página
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                performFullDiagnostics();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

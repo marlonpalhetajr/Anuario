@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Funcionalidades | FAPESPA</title>
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        .test-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-section h2 {
+            color: #28a745;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 0.5rem;
+        }
+        .status {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.info { background: #d1ecf1; color: #0c5460; }
+        
+        #rankingTableBody tr { border-bottom: 1px solid #e0e0e0; }
+        #rankingTableBody td { padding: 0.5rem; }
+        
+        canvas { max-height: 300px; }
+        
+        .comparacao-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .lista-item-regiao {
+            padding: 1rem;
+            background: white;
+            border-left: 3px solid #28a745;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="mb-4">🧪 Teste de Funcionalidades Avançadas</h1>
+        
+        <!-- Controles Globais -->
+        <div class="test-section">
+            <h2>⚙️ Controles Globais</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="category" class="form-label">Categoria:</label>
+                    <select id="category" class="form-select">
+                        <option value="demografia">Demografia</option>
+                        <option value="economia">Economia</option>
+                        <option value="infraestrutura">Infraestrutura</option>
+                        <option value="social">Social</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="indicator" class="form-label">Indicador:</label>
+                    <select id="indicator" class="form-select">
+                        <option value="populacao">População</option>
+                        <option value="densidade">Densidade</option>
+                    </select>
+                </div>
+            </div>
+            <div class="status info mt-3" id="statusGlobal">
+                Selecione categoria e indicador para testar as funcionalidades
+            </div>
+        </div>
+
+        <!-- Teste 1: Busca -->
+        <div class="test-section">
+            <h2>1️⃣ Busca com Autocomplete</h2>
+            <div style="position: relative;">
+                <input type="text" id="searchMunicipio" placeholder="🔍 Buscar município..." class="form-control">
+                <div id="searchResults" style="position: absolute; width: 100%; background: white; border: 1px solid #ddd; display: none; z-index: 1000; max-height: 200px; overflow-y: auto;"></div>
+            </div>
+            <div class="status info mt-3" id="statusBusca">
+                Digite o nome de um município para testar a busca
+            </div>
+        </div>
+
+        <!-- Teste 2: Ranking -->
+        <div class="test-section">
+            <h2>2️⃣ Ranking de Municípios</h2>
+            <button class="btn btn-primary mb-3" onclick="testarRanking()">🔄 Atualizar Ranking</button>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Posição</th>
+                            <th>Município</th>
+                            <th>Valor</th>
+                            <th>Comparativo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rankingTableBody">
+                        <tr><td colspan="4" class="text-center text-muted">Clique em "Atualizar Ranking"</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="status info" id="statusRanking">
+                Aguardando teste...
+            </div>
+        </div>
+
+        <!-- Teste 3: Histórico -->
+        <div class="test-section">
+            <h2>3️⃣ Gráfico Histórico</h2>
+            <button class="btn btn-primary mb-3" onclick="testarHistorico()">🔄 Atualizar Histórico</button>
+            <canvas id="historicoChart"></canvas>
+            <div class="status info mt-3" id="statusHistorico">
+                Aguardando teste...
+            </div>
+        </div>
+
+        <!-- Teste 4: Filtros -->
+        <div class="test-section">
+            <h2>4️⃣ Filtros por Região</h2>
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="filterRegiao" class="form-label">Selecione uma região:</label>
+                    <select id="filterRegiao" class="form-select">
+                        <option value="">Todas as regiões</option>
+                    </select>
+                </div>
+            </div>
+            <div id="listaFiltrada" class="row g-3"></div>
+            <div class="status info mt-3" id="statusFiltros">
+                Aguardando teste...
+            </div>
+        </div>
+
+        <!-- Teste 5: Comparação -->
+        <div class="test-section">
+            <h2>5️⃣ Comparador de Municípios</h2>
+            <div class="row g-3 mb-3">
+                <div class="col-md-8">
+                    <select id="selectMunicipioComparacao" class="form-select">
+                        <option value="">Selecione um município...</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button id="btnAdicionarComparacao" class="btn btn-primary w-100">➕ Adicionar</button>
+                </div>
+            </div>
+            <h5>Selecionados:</h5>
+            <div id="listaComparacaoMunicipios" class="mb-3">
+                <p class="text-muted">Nenhum município selecionado</p>
+            </div>
+            <canvas id="comparacaoChart"></canvas>
+            <div class="status info mt-3" id="statusComparacao">
+                Aguardando teste...
+            </div>
+        </div>
+
+        <!-- Console de Logs -->
+        <div class="test-section">
+            <h2>📋 Console de Logs</h2>
+            <div id="consoleLog" style="background: #1e1e1e; color: #d4d4d4; padding: 1rem; border-radius: 4px; font-family: monospace; max-height: 300px; overflow-y: auto; font-size: 0.9rem;">
+                <div style="color: #4fc3f7;">🔍 Aguardando testes...</div>
+            </div>
+            <button class="btn btn-secondary mt-2" onclick="limparConsole()">🗑️ Limpar Console</button>
+        </div>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Dados Expandidos-->
+    <script src="dados-expandidos.js"></script>
+    
+    <!-- Features -->
+    <script src="mapa-features.js"></script>
+
+    <script>
+        // Override do console.log para capturar logs
+        const originalLog = console.log;
+        const originalError = console.error;
+        const originalWarn = console.warn;
+
+        function addToConsole(message, type = 'info') {
+            const consoleLog = document.getElementById('consoleLog');
+            const colors = {
+                'info': '#4fc3f7',
+                'success': '#66bb6a',
+                'error': '#ef5350',
+                'warning': '#ffb74d'
+            };
+            const line = document.createElement('div');
+            line.style.color = colors[type] || colors.info;
+            line.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            consoleLog.appendChild(line);
+            consoleLog.scrollTop = consoleLog.scrollHeight;
+        }
+
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addToConsole(args.join(' '), 'info');
+        };
+
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addToConsole('❌ ' + args.join(' '), 'error');
+        };
+
+        console.warn = function(...args) {
+            originalWarn.apply(console, args);
+            addToConsole('⚠️ ' + args.join(' '), 'warning');
+        };
+
+        function limparConsole() {
+            document.getElementById('consoleLog').innerHTML = '<div style="color: #4fc3f7;">🔍 Console limpo</div>';
+        }
+
+        function setStatus(elementId, type, message) {
+            const el = document.getElementById(elementId);
+            el.className = `status ${type}`;
+            el.textContent = message;
+        }
+
+        function testarRanking() {
+            try {
+                console.log('🧪 Testando Ranking...');
+                if (window.mapaFeatures && window.mapaFeatures.atualizarRanking) {
+                    window.mapaFeatures.atualizarRanking();
+                    setStatus('statusRanking', 'success', '✅ Ranking atualizado com sucesso!');
+                } else {
+                    setStatus('statusRanking', 'error', '❌ mapaFeatures.atualizarRanking não disponível');
+                }
+            } catch (e) {
+                console.error('Erro ao testar ranking:', e);
+                setStatus('statusRanking', 'error', '❌ Erro: ' + e.message);
+            }
+        }
+
+        function testarHistorico() {
+            try {
+                console.log('🧪 Testando Histórico...');
+                if (window.mapaFeatures && window.mapaFeatures.atualizarGraficoHistorico) {
+                    window.mapaFeatures.atualizarGraficoHistorico();
+                    setStatus('statusHistorico', 'success', '✅ Gráfico histórico atualizado com sucesso!');
+                } else {
+                    setStatus('statusHistorico', 'error', '❌ mapaFeatures.atualizarGraficoHistorico não disponível');
+                }
+            } catch (e) {
+                console.error('Erro ao testar histórico:', e);
+                setStatus('statusHistorico', 'error', '❌ Erro: ' + e.message);
+            }
+        }
+
+        // Atualizar indicadores quando categoria muda
+        document.getElementById('category').addEventListener('change', (e) => {
+            const categoria = e.target.value;
+            const indicatorSelect = document.getElementById('indicator');
+            const indicadores = CATEGORIAS_CONFIG[categoria].indicadores;
+            
+            let html = '';
+            for (const [key, config] of Object.entries(indicadores)) {
+                html += `<option value="${key}">${config.label}</option>`;
+            }
+            indicatorSelect.innerHTML = html;
+            
+            console.log('Categoria alterada para:', categoria);
+            setStatus('statusGlobal', 'info', `Categoria: ${categoria} | Indicadores disponíveis: ${Object.keys(indicadores).length}`);
+        });
+
+        // Log quando página carrega
+        window.addEventListener('load', () => {
+            console.log('✅ Página de teste carregada');
+            console.log('✅ Chart.js:', typeof Chart !== 'undefined' ? 'Disponível' : '❌ Não disponível');
+            console.log('✅ MUNICIPIOS_EXPANDIDOS:', typeof MUNICIPIOS_EXPANDIDOS !== 'undefined' ? `${Object.keys(MUNICIPIOS_EXPANDIDOS).length} municípios` : '❌ Não disponível');
+            console.log('✅ CATEGORIAS_CONFIG:', typeof CATEGORIAS_CONFIG !== 'undefined' ? 'Disponível' : '❌ Não disponível');
+            console.log('✅ mapaFeatures:', typeof window.mapaFeatures !== 'undefined' ? 'Disponível' : '❌ Não disponível');
+            
+            if (typeof window.mapaFeatures !== 'undefined') {
+                console.log('🔧 Inicializando funcionalidades de teste...');
+                setTimeout(() => {
+                    setStatus('statusBusca', 'success', '✅ Busca inicializada. Digite um município para testar.');
+                    setStatus('statusFiltros', 'success', '✅ Filtros inicializados. Selecione uma região.');
+                    setStatus('statusComparacao', 'success', '✅ Comparador inicializado. Adicione municípios.');
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

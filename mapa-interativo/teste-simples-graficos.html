@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Simples - Gráficos</title>
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body { padding: 2rem; background: #f8f9fa; }
+        .card { margin-bottom: 2rem; }
+        canvas { display: block !important; height: 400px !important; }
+        .status { padding: 1rem; margin: 1rem 0; border-radius: 4px; font-weight: 600; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">🧪 Teste Simples de Gráficos</h1>
+
+        <!-- Controles -->
+        <div class="card">
+            <div class="card-body">
+                <h5>Controles</h5>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <select id="category" class="form-select">
+                            <option value="demografia">Demografia</option>
+                            <option value="economia">Economia</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select id="indicator" class="form-select">
+                            <option value="populacao">População</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teste Histórico -->
+        <div class="card">
+            <div class="card-body">
+                <h5>📈 Gráfico Histórico</h5>
+                <button class="btn btn-primary mb-3" onclick="testarHistorico()">Criar Gráfico</button>
+                <div style="height: 400px; position: relative;">
+                    <canvas id="historicoChart"></canvas>
+                </div>
+                <div id="statusHistorico" class="status info">Clique no botão para criar o gráfico</div>
+            </div>
+        </div>
+
+        <!-- Teste Comparação -->
+        <div class="card">
+            <div class="card-body">
+                <h5>📊 Gráfico Comparação</h5>
+                <div class="row g-3 mb-3">
+                    <div class="col-8">
+                        <select id="selectMunicipioComparacao" class="form-select"></select>
+                    </div>
+                    <div class="col-4">
+                        <button id="btnAdicionarComparacao" class="btn btn-success w-100">Adicionar</button>
+                    </div>
+                </div>
+                <div id="listaComparacaoMunicipios" class="mb-3"></div>
+                <div style="height: 400px; position: relative;">
+                    <canvas id="comparacaoChart"></canvas>
+                </div>
+                <div id="statusComparacao" class="status info">Adicione municípios para comparar</div>
+            </div>
+        </div>
+
+        <!-- Console -->
+        <div class="card">
+            <div class="card-body">
+                <h5>Console</h5>
+                <div id="console" style="background: #1e1e1e; color: #d4d4d4; padding: 1rem; font-family: monospace; max-height: 300px; overflow-y: auto;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="dados-expandidos.js"></script>
+    <script src="mapa-features.js"></script>
+
+    <script>
+        // Console override
+        const consoleDiv = document.getElementById('console');
+        const originalLog = console.log;
+        const originalError = console.error;
+
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            const line = document.createElement('div');
+            line.style.color = '#4fc3f7';
+            line.textContent = args.join(' ');
+            consoleDiv.appendChild(line);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        };
+
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            const line = document.createElement('div');
+            line.style.color = '#ef5350';
+            line.textContent = '❌ ' + args.join(' ');
+            consoleDiv.appendChild(line);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        };
+
+        function setStatus(id, type, msg) {
+            const el = document.getElementById(id);
+            el.className = `status ${type}`;
+            el.textContent = msg;
+        }
+
+        function testarHistorico() {
+            console.log('🧪 Testando gráfico histórico...');
+            const canvas = document.getElementById('historicoChart');
+            console.log('Canvas dimensions:', canvas.offsetWidth, 'x', canvas.offsetHeight);
+            
+            if (window.mapaFeatures) {
+                try {
+                    window.mapaFeatures.atualizarGraficoHistorico();
+                    setStatus('statusHistorico', 'success', '✅ Gráfico criado!');
+                } catch(e) {
+                    console.error('Erro:', e.message);
+                    setStatus('statusHistorico', 'error', '❌ Erro: ' + e.message);
+                }
+            } else {
+                setStatus('statusHistorico', 'error', '❌ mapaFeatures não disponível');
+            }
+        }
+
+        // Atualizar indicadores
+        document.getElementById('category').addEventListener('change', function() {
+            const indicadores = CATEGORIAS_CONFIG[this.value].indicadores;
+            const select = document.getElementById('indicator');
+            select.innerHTML = Object.entries(indicadores)
+                .map(([k, v]) => `<option value="${k}">${v.label}</option>`)
+                .join('');
+        });
+
+        // Popular select de municípios
+        window.addEventListener('load', () => {
+            const select = document.getElementById('selectMunicipioComparacao');
+            select.innerHTML = '<option value="">Selecione...</option>' +
+                Object.keys(MUNICIPIOS_EXPANDIDOS)
+                    .map(nome => `<option value="${nome}">${nome}</option>`)
+                    .join('');
+            
+            console.log('✅ Página carregada');
+            console.log('✅ Chart.js disponível:', typeof Chart !== 'undefined');
+            console.log('✅ MUNICIPIOS_EXPANDIDOS:', Object.keys(MUNICIPIOS_EXPANDIDOS).length, 'municípios');
+            console.log('✅ mapaFeatures:', typeof window.mapaFeatures !== 'undefined');
+        });
+
+        // Inicializar comparador se mapaFeatures disponível
+        setTimeout(() => {
+            if (window.mapaFeatures) {
+                window.mapaFeatures.inicializarComparador();
+            }
+        }, 500);
+    </script>
+</body>
+</html>

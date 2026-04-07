@@ -1,0 +1,364 @@
+{
+  "demografia": [
+    {
+      "label": "População Estimada 2025",
+      "slug": "populacao_2025",
+      "path": "data/populacao_2025.json",
+      "unit": "habitantes",
+      "year": "2025"
+    },
+    {
+      "label": "Índice de Envelhecimento 2024",
+      "slug": "indice_envelhecimento_2024",
+      "path": "data/indice_envelhecimento_2024.json",
+      "unit": "%",
+      "year": "2025"
+    },
+    {
+      "label": "Razão de Dependência 2024",
+      "slug": "razao_dependencia_2024",
+      "path": "data/razao_dependencia_2024.json",
+      "unit": "%",
+      "year": "2025"
+    }
+  ],
+  "economia": [
+    {
+      "label": "Balança Comercial 2024",
+      "slug": "balanca_comercial_2024",
+      "path": "data/balanca_comercial_2024.json",
+      "unit": "US$",
+      "year": "2025"
+    },
+    {
+      "label": "Repasse de ICMS 2024",
+      "slug": "icms_repasse_2024",
+      "path": "data/icms_repasse_2024.json",
+      "unit": "R$",
+      "year": "2025"
+    },
+    {
+      "label": "PIB Per Capita 2021",
+      "slug": "pib_per_capita_2021",
+      "path": "data/pib_per_capita_2021.json",
+      "unit": "R$",
+      "year": "2025"
+    },
+    {
+      "label": "VA Agropecuária 2021",
+      "slug": "va_agropecuaria_2021",
+      "path": "data/va_agropecuaria_2021.json",
+      "unit": "R$ mil",
+      "year": "2025"
+    },
+    {
+      "label": "VA Indústria 2021",
+      "slug": "va_industria_2021",
+      "path": "data/va_industria_2021.json",
+      "unit": "R$ mil",
+      "year": "2025"
+    },
+    {
+      "label": "VA Serviços 2021",
+      "slug": "va_servicos_2021",
+      "path": "data/va_servicos_2021.json",
+      "unit": "R$ mil",
+      "year": "2025"
+    },
+    {
+      "label": "VA Total 2021",
+      "slug": "va_total_2021",
+      "path": "data/va_total_2021.json",
+      "unit": "R$ mil",
+      "year": "2025"
+    },
+    {
+      "label": "PIB Total 2021",
+      "slug": "pib_total_2021",
+      "path": "data/pib_total_2021.json",
+      "unit": "R$ mil",
+      "year": "2025"
+    },
+    {
+      "label": "Rebanho Bovino 2024",
+      "slug": "rebanho_bovino_2024",
+      "path": "data/rebanho_bovino_2024.json",
+      "unit": "cabeças",
+      "year": "2025"
+    },
+    {
+      "label": "Receita Corrente 2024",
+      "slug": "receita_corrente_2024",
+      "path": "data/receita_corrente_2024.json",
+      "unit": "R$",
+      "year": "2025"
+    },
+    {
+      "label": "Receita Orçamentária 2024",
+      "slug": "receita_orcamentaria_2024",
+      "path": "data/receita_orcamentaria_2024.json",
+      "unit": "R$",
+      "year": "2025"
+    },
+    {
+      "label": "Receita de Transferências Correntes 2024",
+      "slug": "receita_transf_correntes_2024",
+      "path": "data/receita_transf_correntes_2024.json",
+      "unit": "R$",
+      "year": "2025"
+    }
+  ],
+  "infraestrutura": [
+    {
+      "label": "Consumidores de Energia Elétrica Total 2023",
+      "slug": "consumidores_energia_2023",
+      "path": "data/consumidores_energia_2023.json",
+      "unit": "consumidores",
+      "year": "2025"
+    },
+    {
+      "label": "Consumo de Energia Elétrica (kWH) 2023",
+      "slug": "consumo_energia_2023",
+      "path": "data/consumo_energia_2023.json",
+      "unit": "kWH",
+      "year": "2025"
+    },
+    {
+      "label": "Frota de Veículos Total 2024",
+      "slug": "frota_veiculos_2024",
+      "path": "data/frota_veiculos_2024.json",
+      "unit": "veículos",
+      "year": "2025"
+    },
+    {
+      "label": "Movimentação nos Portos 2024",
+      "slug": "movimentacao_portos_2024",
+      "path": "data/movimentacao_portos_2024.json",
+      "unit": "toneladas",
+      "year": "2025"
+    },
+    {
+      "label": "Operações de Aeronaves 2023",
+      "slug": "aeronaves_total_2023",
+      "path": "data/aeronaves_total_2023.json",
+      "unit": "operações",
+      "year": "2025"
+    },
+    {
+      "label": "Passageiros em Aeroportos 2023",
+      "slug": "passageiros_aeroportos_2023",
+      "path": "data/passageiros_aeroportos_2023.json",
+      "unit": "passageiros",
+      "year": "2025"
+    },
+    {
+      "label": "Consumidores de Água 2022",
+      "slug": "consumidores_agua_2022",
+      "path": "data/consumidores_agua_2022.json",
+      "unit": "consumidores",
+      "year": "2025"
+    }
+  ],
+  "meio-ambiente": [
+    {
+      "label": "Área de Floresta (km²) 2024",
+      "slug": "area_floresta_2024",
+      "path": "data/area_floresta_2024.json",
+      "unit": "km²",
+      "year": "2025"
+    },
+    {
+      "label": "Desflorestamento Acumulado (km²) 2024",
+      "slug": "desflorestamento_acumulado_2024",
+      "path": "data/desflorestamento_acumulado_2024.json",
+      "unit": "km²",
+      "year": "2025"
+    },
+    {
+      "label": "Focos de Calor 2024",
+      "slug": "focos_calor_2024",
+      "path": "data/focos_calor_2024.json",
+      "unit": "focos",
+      "year": "2025"
+    },
+    {
+      "label": "Incremento Desflorestamento (km²) 2024",
+      "slug": "incremento_desflorestamento_2024",
+      "path": "data/incremento_desflorestamento_2024.json",
+      "unit": "km²",
+      "year": "2025"
+    }
+  ],
+  "social": [
+    {
+      "label": "IDEB Séries Iniciais 2023",
+      "slug": "ideb_series_iniciais_2023",
+      "path": "data/ideb_series_iniciais_2023.json",
+      "unit": "pontos",
+      "year": "2025"
+    },
+    {
+      "label": "IDEB Séries Finais 2023",
+      "slug": "ideb_series_finais_2023",
+      "path": "data/ideb_series_finais_2023.json",
+      "unit": "pontos",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Aprovação Fundamental 2024",
+      "slug": "taxa_aprovacao_fundamental_2024",
+      "path": "data/taxa_aprovacao_fundamental_2024.json",
+      "unit": "%",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Reprovação Fundamental 2024",
+      "slug": "taxa_reprovacao_fundamental_2024",
+      "path": "data/taxa_reprovacao_fundamental_2024.json",
+      "unit": "%",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Abandono Fundamental 2024",
+      "slug": "taxa_abandono_fundamental_2024",
+      "path": "data/taxa_abandono_fundamental_2024.json",
+      "unit": "%",
+      "year": "2025"
+    },
+    {
+      "label": "Bolsa Família - Famílias 2024",
+      "slug": "bolsa_familia_familias_2024",
+      "path": "data/bolsa_familia_familias_2024.json",
+      "unit": "famílias",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Mortalidade Infantil 2024",
+      "slug": "taxa_mortalidade_infantil_2024",
+      "path": "data/taxa_mortalidade_infantil_2024.json",
+      "unit": "por 1.000",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Mortalidade na Infância 2024",
+      "slug": "taxa_mortalidade_infancia_2024",
+      "path": "data/taxa_mortalidade_infancia_2024.json",
+      "unit": "por 1.000",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Natalidade 2024",
+      "slug": "taxa_natalidade_2024",
+      "path": "data/taxa_natalidade_2024.json",
+      "unit": "por 1.000",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Mortalidade Geral 2024",
+      "slug": "taxa_mortalidade_geral_2024",
+      "path": "data/taxa_mortalidade_geral_2024.json",
+      "unit": "por 1.000",
+      "year": "2025"
+    },
+    {
+      "label": "Consultas Pré-natal 2024",
+      "slug": "consultas_prenatal_2024",
+      "path": "data/consultas_prenatal_2024.json",
+      "unit": "%",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Homicídio Total 2024",
+      "slug": "taxa_homicidio_total_2024",
+      "path": "data/taxa_homicidio_total_2024.json",
+      "unit": "por 100.000",
+      "year": "2025"
+    },
+    {
+      "label": "Taxa de Homicídio Jovens 2024",
+      "slug": "taxa_homicidio_jovens_2024",
+      "path": "data/taxa_homicidio_jovens_2024.json",
+      "unit": "por 100.000",
+      "year": "2025"
+    },
+    {
+      "label": "Vínculos Emprego Formal 2023",
+      "slug": "vinculos_emprego_formal_2023",
+      "path": "data/vinculos_emprego_formal_2023.json",
+      "unit": "vínculos",
+      "year": "2025"
+    },
+    {
+      "label": "Remuneração Média 2023",
+      "slug": "remuneracao_media_2023",
+      "path": "data/remuneracao_media_2023.json",
+      "unit": "R$",
+      "year": "2025"
+    }
+  ],
+  "territorio": [
+    {
+      "label": "Fitoecologia",
+      "slug": "fitoecologia",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Fitoecologia2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Geológico 2024",
+      "slug": "geologico_2024",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Geologico2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Geomorfológico 2024",
+      "slug": "geomorfologico_2024",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/territorio_geomorfologico2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Hidrografia",
+      "slug": "hidrografia",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/territorio_hidrografia_pa2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Municípios 2025",
+      "slug": "municipios_2025",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/Territorio_municipios2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Pedológico 2025",
+      "slug": "pedologico_2025",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/territorio_pedologico2023.png",
+      "year": "2025"
+    },
+    {
+      "label": "Região Imediata 2024",
+      "slug": "regiao_imediata_2024",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Regiao_imediata2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Região Intermediária 2024",
+      "slug": "regiao_intermediaria_2024",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/territorio_regiao_intermediaria2024.png",
+      "year": "2025"
+    },
+    {
+      "label": "Zoneamento Ecológico-Econômico",
+      "slug": "zoneamento",
+      "type": "map_image",
+      "image": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Zoneamento2024.png",
+      "year": "2025"
+    }
+  ]
+}

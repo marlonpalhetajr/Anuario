@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "source": "Tab 2.1.1.5 Rendimento Médio da Produção da Lavoura Permanente - 2020 a 2024.xlsx",
+    "categoria": "economia",
+    "municipios": 33,
+    "data_processamento": "2026-01-12T16:12:19.990Z"
+  },
+  "data": {
+    "Abaetetuba": 1000,
+    "Altamira": 1400,
+    "Anapu": 1000,
+    "Augusto Corrêa": 1000,
+    "Aveiro": 714,
+    "Belterra": 800,
+    "Bragança": 1000,
+    "Breu Branco": 1000,
+    "Castanhal": 600,
+    "Curuá": 500,
+    "Curuçá": 600,
+    "Dom Eliseu": 1200,
+    "Igarapé-Açu": 800,
+    "Inhangapi": 800,
+    "Maracanã": 500,
+    "Moju": 1000,
+    "Mojuí dos Campos": 567,
+    "Monte Alegre": 1000,
+    "Óbidos": 1000,
+    "Pacajá": 1000,
+    "Placas": 942,
+    "Prainha": 600,
+    "Rurópolis": 1089,
+    "Santa Maria do Pará": 1200,
+    "Santarém": 1300,
+    "São Caetano de Odivelas": 600,
+    "São Domingos do Capim": 1000,
+    "São Francisco do Pará": 906,
+    "São Miguel do Guamá": 750,
+    "Terra Alta": 1000,
+    "Ulianópolis": 1000,
+    "Uruará": 900,
+    "Vitória do Xingu": 1000
+  }
+}

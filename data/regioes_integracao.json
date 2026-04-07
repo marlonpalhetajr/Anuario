@@ -1,0 +1,47 @@
+{
+  "regiao_carajas": {
+    "label": "Carajás",
+    "color": "#FF6B6B",
+    "municipios": ["Parauapebas", "Marabá", "Itupiranga", "São Félix do Xingu", "Xinguara", "Conceição do Araguaia", "Redenção", "Rio Maria", "Água Azul do Norte", "Tailândia", "Anapu"]
+  },
+  "regiao_araguaia": {
+    "label": "Araguaia",
+    "color": "#4ECDC4",
+    "municipios": ["Conceição do Araguaia", "Redenção", "Rio Maria", "Goianésia do Pará", "Santana do Araguaia", "Cumaru do Norte", "Tucumã", "Floresta do Araguaia"]
+  },
+  "regiao_tocantins": {
+    "label": "Tocantins",
+    "color": "#FFD93D",
+    "municipios": ["Marabá", "Itupiranga", "Tucuruí", "Jacundá", "Novo Repartimento", "Goianésia do Pará"]
+  },
+  "regiao_xingu": {
+    "label": "Xingu",
+    "color": "#95E1D3",
+    "municipios": ["São Félix do Xingu", "Altamira", "Anapu", "Brasil Novo", "Medicilândia", "Uruará", "Vitória do Xingu", "Senador José Porfírio", "Água Azul do Norte"]
+  },
+  "regiao_tapajós": {
+    "label": "Tapajós",
+    "color": "#A8D8EA",
+    "municipios": ["Itaituba", "Jacareacanga", "Rurópolis", "Aveiro", "Belterra", "Placas"]
+  },
+  "regiao_calha_norte": {
+    "label": "Calha Norte",
+    "color": "#C7CEEA",
+    "municipios": ["Belém", "Ananindeua", "Parauapebas", "Marabá", "Barcarena", "Abaetetuba"]
+  },
+  "regiao_guamá": {
+    "label": "Guamá",
+    "color": "#FFB6C1",
+    "municipios": ["Belém", "Ananindeua", "Parauapebas", "Marabá", "Barcarena", "Abaetetuba", "Limoeiro do Ajuru", "Igarapé-Miri", "Moju"]
+  },
+  "regiao_marajó": {
+    "label": "Marajó",
+    "color": "#FFDAB9",
+    "municipios": ["Breves", "Afuá", "Anajás", "Bagre", "Cachoeira do Arari", "Chaves", "Curralinho", "Gurupá", "Soure", "Salvaterra"]
+  },
+  "regiao_belém_metropole": {
+    "label": "Belém (Metrópole)",
+    "color": "#87CEEB",
+    "municipios": ["Belém", "Ananindeua", "Benevides", "Marituba", "Santa Bárbara do Pará", "Castanhal", "Bujaru"]
+  }
+}

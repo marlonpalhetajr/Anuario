@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo | Anuário Estatístico do Pará | FAPESPA</title>
+    <meta name="description" content="Anuário Estatístico do Pará - FAPESPA">
+    <meta name="keywords" content="Anuário, Estatística, Pará, FAPESPA, Indicadores, Economia, Demografia">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Anuário Estatístico do Pará - FAPESPA">
+    <meta property="og:description" content="Indicadores e dados do Pará, organizados pela FAPESPA.">
+    <meta property="og:image" content="../img/anuario.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fapespa.pa.gov.br/anuario">
+
+    <link rel="icon" href="../img/fapespa2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="canonical" href="https://www.fapespa.pa.gov.br/anuario">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anuário Estatístico do Pará - FAPESPA">
+    <meta name="twitter:description" content="Indicadores e dados do Pará, organizados pela FAPESPA.">
+    <meta name="twitter:image" content="../img/anuario.png">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- MapLibre CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" />
+
+    <style>
+        :root {
+            --primary-color: #28a745;
+            --secondary-color: #20c997;
+            --dark-color: #1a1a1a;
+            --light-bg: #f8f9fa;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--light-bg);
+        }
+
+        .mapa-hero {
+          background: linear-gradient(135deg, rgba(40, 167, 69, 0.12), rgba(32, 201, 151, 0.08));
+          border: 1px solid rgba(40, 167, 69, 0.15);
+          border-radius: 18px;
+          padding: 2.25rem 2rem;
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+        }
+
+        .mapa-hero::after {
+          content: "";
+          position: absolute;
+          top: -30px;
+          right: -30px;
+          width: 160px;
+          height: 160px;
+          background: radial-gradient(circle, rgba(40, 167, 69, 0.22), transparent 70%);
+          opacity: 0.7;
+        }
+
+        .mapa-hero-inner {
+          position: relative;
+          z-index: 1;
+        }
+
+        .mapa-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.85rem;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #1f7a1f;
+          background: rgba(40, 167, 69, 0.12);
+          padding: 0.35rem 0.75rem;
+          border-radius: 999px;
+        }
+
+        .mapa-title {
+          font-size: clamp(1.8rem, 2.4vw, 2.6rem);
+          font-weight: 700;
+          margin: 0.75rem 0 0.5rem;
+          color: #1b1b1b;
+        }
+
+        .mapa-subtitle {
+          margin: 0;
+          font-size: 1rem;
+          color: #4b4b4b;
+          max-width: 720px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /* Controles */
+        .controls-panel {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+
+        .controls-panel h3 {
+            color: var(--dark-color);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .form-select {
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            padding: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+
+        /* Mapa */
+        #map {
+            width: 100%;
+            height: 600px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            z-index: 1;
+            transition: height 0.7s ease-out;
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        /* Garantir que o container do mapa fica visível */
+        #mapContainer {
+            display: block !important;
+            visibility: visible !important;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Garantir que o tab com mapa fica visível */
+        #tabMapaContent {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        /* Modo fullscreen para Territorio */
+        #map.fullscreen-territorio {
+            height: calc(100vh - 280px);
+            min-height: 600px;
+            border-radius: 0;
+            margin: 0 !important;
+            width: 100vw !important;
+        }
+
+        .map-container.fullscreen-territorio {
+            background: white;
+            padding: 0 !important;
+            border-radius: 0;
+            box-shadow: none;
+            margin: 0 !important;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+        }
+
+        .map-container {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.7s ease-out;
+        }
+
+        /* Painel Lateral com altura fixa */
+        .col-lg-4 {
+            max-height: 700px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            transition: all 0.7s ease-out;
+        }
+
+        /* Coluna do mapa - altura total */
+        .col-lg-8 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Painel de Informacoes */
+        .info-panel {
+            background: white;
+            padding: 1.1rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.1rem;
+            flex-shrink: 0;
+            transition: all 0.7s ease-out;
+        }
+
+        .info-panel h3 {
+            color: var(--dark-color);
+            font-size: 1.05rem;
+            margin-bottom: 0.65rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .info-text {
+            color: #666;
+            font-style: italic;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
+        .info-text.hide {
+            opacity: 0;
+            display: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-top: 0;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
+        }
+
+        .info-grid.show {
+            max-height: 300px;
+            opacity: 1;
+            margin-top: 0.7rem;
+        }
+
+        .info-item {
+            padding: 0.8rem;
+            background: var(--light-bg);
+            border-radius: 6px;
+            border-left: 3px solid var(--primary-color);
+            animation: slideUp 0.5s ease-out forwards;
+            opacity: 0;
+            font-size: 0.9rem;
+        }
+
+        .info-grid.show .info-item {
+            animation: slideUp 0.4s ease forwards;
+        }
+
+        .info-item:nth-child(1) { animation-delay: 0.15s; }
+        .info-item:nth-child(2) { animation-delay: 0.25s; }
+        .info-item:nth-child(3) { animation-delay: 0.35s; }
+        .info-item:nth-child(4) { animation-delay: 0.45s; }
+
+        .info-item label {
+            display: block;
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 0.15rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.25px;
+        }
+
+        .info-item strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--dark-color);
+            word-wrap: break-word;
+        }
+
+        /* Legenda */
+        .legend {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            flex-shrink: 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .legend h4 {
+            color: var(--dark-color);
+            font-size: 1.05rem;
+            margin-bottom: 0.65rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.6rem;
+            padding: 0.4rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .legend-item:hover {
+            background: var(--light-bg);
+        }
+
+        .legend-color {
+            width: 40px;
+            height: 24px;
+            border-radius: 4px;
+            margin-right: 0.75rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+        }
+
+        .legend-item:hover .legend-color {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transform: scale(1.05);
+        }
+
+        .legend-item span {
+            font-size: 0.9rem;
+            color: var(--dark-color);
+        }
+
+        /* Popups do MapLibre */
+        .maplibregl-popup-content {
+            margin: 8px;
+            font-size: 12px;
+            min-width: 160px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .maplibregl-popup-content h4 {
+            margin: 0 0 8px 0;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+
+        .popup-info {
+            margin: 6px 0;
+            padding: 7px;
+            background: var(--light-bg);
+            border-radius: 4px;
+            border-left: 2px solid var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        .popup-info strong {
+            color: var(--dark-color);
+            display: block;
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+
+        /* Controles de Zoom Customizados */
+        .maplibregl-ctrl-group {
+            border: none;
+            border-radius: 8px;
+            background: white !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .maplibregl-ctrl-group button {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            background-color: white !important;
+            border: 1px solid #ddd !important;
+            color: var(--primary-color) !important;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .maplibregl-ctrl-group button:first-child {
+            border-bottom: 1px solid #ddd !important;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .maplibregl-ctrl-group button:last-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .maplibregl-ctrl-group button:hover {
+            background-color: var(--primary-color) !important;
+            color: white !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .maplibregl-ctrl-group button:active {
+            background-color: var(--dark-color) !important;
+        }
+
+        .map-container {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        /* Cursor de Mao para Arraste */
+        #map .maplibregl-canvas {
+          cursor: grab;
+          cursor: -webkit-grab;
+        }
+
+        #map .maplibregl-canvas:active {
+          cursor: grabbing;
+          cursor: -webkit-grabbing;
+        }
+
+        /* Loading */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loading.hidden {
+            display: none;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid var(--light-bg);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Transição suave do layout */
+        .row[style*="align-items: stretch"] {
+            transition: all 0.7s ease-out;
+        }
+
+        /* Responsivo */
+        @media (max-width: 991px) {
+            .row[style*="align-items: stretch"] {
+                flex-direction: column;
+            }
+
+            .col-lg-8, .col-lg-4 {
+                max-width: 100% !important;
+                flex: 0 0 100% !important;
+            }
+
+            #map {
+                height: 500px;
+                min-height: 500px;
+            }
+
+            .info-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            #map {
+                height: 400px;
+                min-height: 400px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Alert customizado */
+        .alert-custom {
+            border-left: 4px solid var(--primary-color);
+            border-radius: 8px;
+        }
+
+        /* Category Badge */
+        .category-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 600;
+            color: white;
+            font-size: 0.75rem;
+            white-space: nowrap;
+        }
+
+        #categoryBadge {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        #categoryBadge.active {
+            opacity: 1;
+        }
+
+        /* Galeria de mapas estaticos (Territorio) */
+        #territory-gallery .portfolio-inner {
+            position: relative;
+            overflow: hidden;
+            background: #000;
+            border-radius: 12px;
+        }
+
+        #territory-gallery .portfolio-inner img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            transition: transform 0.45s ease, opacity 0.45s ease;
+        }
+
+        #territory-gallery .portfolio-text {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.58);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        #territory-gallery .portfolio-inner:hover img {
+            transform: scale(1.05);
+            opacity: 0.65;
+        }
+
+        #territory-gallery .portfolio-inner:hover .portfolio-text {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        #territory-gallery .portfolio-text .btn {
+            background: #ffffff;
+            color: #2f7f2f;
+            border: none;
+        }
+
+        #territory-gallery .portfolio-text .btn i {
+            color: #2f7f2f;
+        }
+
+        #territory-gallery .map-caption {
+            margin-top: 8px;
+            font-size: 0.95rem;
+            color: #444;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="acess-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Modal Generico (padrao do index) -->
+  <div id="modalBackdrop" class="modal-backdrop-custom" onclick="closeCustomModal();"></div>
+  <div id="contentModal" class="custom-modal">
+    <div class="custom-modal-content">
+      <div class="custom-modal-header">
+        <h5 id="contentModalLabel" data-i18n="modal_conteudo">Conteúdo</h5>
+        <button type="button" class="custom-modal-close" onclick="closeCustomModal();">&times;</button>
+      </div>
+      <div class="custom-modal-body" id="contentModalBody">
+        <div class="text-center py-5">
+          <div class="spinner-border"></div>
+        </div>
+      </div>
+      <div class="custom-modal-footer">
+        <a id="modal-open-full" href="#" target="_blank" class="btn btn-outline-primary btn-sm" data-i18n="modal_abrir_nova_aba">Abrir em nova aba</a>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="closeCustomModal();" data-i18n="btn_fechar">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" id="navbar">
+    <a href="https://www.fapespa.pa.gov.br/" target="_blank" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h1 class="m-3" data-i18n="nav_fapespa">FAPESPA</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Alternar navegacao">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto p-4 p-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../index.html" data-i18n="menu_home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#anuario" data-i18n="menu_anuario">Anuário</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#sobre" data-i18n="menu_sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#contato" data-i18n="menu_contato">Contato</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent border-0" id="langDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+           🌐 <span data-i18n="menu_idioma">Idioma</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item lang-option" data-lang="pt" href="#">Portuguese</a></li>
+            <li><a class="dropdown-item lang-option" data-lang="en" href="#">English</a></li>
+            <li><a class="dropdown-item lang-option" data-lang="es" href="#">Español</a></li>
+          </ul>
+        </li>
+        <li class="nav-item position-relative">
+          <button id="acess-open-btn" class="nav-link border-0 bg-transparent" title="Acessibilidade" onclick="toggleAccessibilityMenu(event);" type="button">
+            ♿ <span class="d-none d-lg-inline">Acessibilidade</span>
+          </button>
+          <div id="acessibilidadeMenu" class="acess-dropdown" style="display:none;">
+            <div class="acess-section-title">Visão</div>
+            <div class="acess-row">
+              <button id="acess-contrast" class="acess-control" type="button">Alto contraste</button>
+              <button id="acess-night" class="acess-control" type="button">Modo noturno</button>
+            </div>
+            <div class="acess-section-title">Cores</div>
+            <div class="acess-row">
+              <button id="acess-grayscale" class="acess-control" type="button">Escala em Cinza</button>
+            </div>
+            <div class="acess-section-title">Tamanho da Fonte</div>
+            <div class="acess-row">
+              <button id="font-dec" class="acess-control" type="button">A-</button>
+              <button id="font-reset" class="acess-control" type="button">A</button>
+              <button id="font-inc" class="acess-control" type="button">A+</button>
+            </div>
+            <div class="acess-section-title">Daltonismo</div>
+            <div class="acess-row">
+              <button id="dalton-prot" class="acess-control" type="button">Protanopia</button>
+              <button id="dalton-deut" class="acess-control" type="button">Deuteranopia</button>
+              <button id="dalton-trit" class="acess-control" type="button">Tritanopia</button>
+              <button id="dalton-off" class="acess-control" type="button">Normal</button>
+            </div>
+            <div class="acess-section-title">Leitura &amp; Legibilidade</div>
+            <div class="acess-row">
+              <button id="acess-dislexia" class="acess-control" type="button">Modo Dislexia</button>
+              <button id="acess-reading" class="acess-control" type="button">Modo Leitura</button>
+              <button id="acess-links" class="acess-control" type="button">Destacar Links</button>
+            </div>
+            <div class="acess-section-title">Movimento</div>
+            <div class="acess-row">
+              <button id="reduce-motion" class="acess-control" type="button">Reduzir Animações</button>
+            </div>
+            <div class="acess-section-title">Geral</div>
+            <div class="acess-row">
+              <button id="acess-reset" class="acess-control acess-reset" type="button">Restaurar Tudo</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Loading -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p class="mt-3 text-muted" data-i18n="mapa_carregando">Carregando dados...</p>
+    </div>
+
+    <section class="container py-5">
+      <div class="mapa-hero mb-4">
+        <div class="mapa-hero-inner">
+          <span class="mapa-eyebrow"><i class="bi bi-map"></i> <span data-i18n="mapa_titulo_eyebrow">Mapa Interativo - Versão Teste</span></span>
+          <h2 class="mapa-title" data-i18n="mapa_titulo">Mapa Interativo do Pará (Teste)</h2>
+          <p class="mapa-subtitle" data-i18n="mapa_subtitulo">Explore dados territoriais, demográficos, econômicos, sociais e ambientais dos 144 municípios paraenses.</p>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <div class="controls-panel">
+        <h3><i class="bi bi-sliders"></i> <span data-i18n="mapa_controles">Controles de Visualização</span></h3>
+        
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="yearFilter" class="form-label mb-2">
+              <i class="bi bi-calendar"></i> <span data-i18n="mapa_ano">Ano</span>:
+            </label>
+            <select id="yearFilter" class="form-select">
+              <option value="" data-i18n="mapa_todos_anos">Todos os anos</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <label for="category" class="form-label mb-0">
+                <i class="bi bi-folder"></i> <span data-i18n="mapa_categoria">Categoria</span>:
+              </label>
+              <span id="categoryBadge" class="category-badge"></span>
+            </div>
+            <select id="category" class="form-select">
+              <option value="" data-i18n="mapa_selecione_categoria">Selecione uma categoria</option>
+              <option value="demografia">Demografia</option>
+              <option value="economia">Economia</option>
+              <option value="infraestrutura">Infraestrutura</option>
+              <option value="social">Social</option>
+            </select>
+          </div>
+          <div class="col-md-4" id="indicatorCol">
+            <label for="indicator" class="form-label mb-2">
+              <i class="bi bi-bar-chart"></i> <span data-i18n="mapa_indicador">Indicador</span>:
+            </label>
+            <select id="indicator" class="form-select">
+              <option value="" data-i18n="mapa_selecione_categoria_primeiro">Selecione uma categoria primeiro</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa Principal -->
+      <div class="row mt-4 g-3" style="align-items: stretch;">
+        <!-- Mapa -->
+        <div class="col-lg-8">
+          <div class="map-container" id="mapContainer">
+            <div id="map"></div>
+          </div>
+
+          <!-- Galeria estatica para Territorio -->
+          <div id="territory-gallery" class="row g-4 mt-4" style="display: none;"></div>
+        </div>
+
+        <!-- Painel Lateral: Informações e Legenda -->
+        <div class="col-lg-4">
+          <!-- Painel de Informacoes -->
+          <div class="info-panel" style="margin-bottom: 1.5rem;">
+            <h3><i class="bi bi-info-circle"></i> <span data-i18n="mapa_informacoes">Informações</span></h3>
+            <p class="info-text" id="info-text" data-i18n="mapa_info_texto">
+              Passe o mouse sobre uma região para visualizar as informações.
+            </p>
+            <div id="info-details" class="info-grid"></div>
+          </div>
+
+          <!-- Legenda -->
+          <div class="legend">
+            <h4><i class="bi bi-palette"></i> <span data-i18n="mapa_legenda">Legenda</span></h4>
+            <div id="legend-content">
+              <p class="text-muted small" data-i18n="mapa_legenda_texto">Selecione um indicador para visualizar a legenda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPE PRINCIPAL (padrao index) -->
+  <footer class="footer-main" id="contato">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- SOBRE FAPESPA -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4" data-i18n="footer_sobre_titulo">Sobre FAPESPA</h5>
+          <p class="small text-light" data-i18n="footer_sobre_texto">Fundação Amazônia de Amparo a Estudos e Pesquisas, promovendo ciência, tecnologia e inovação para o desenvolvimento do estado.</p>
+          <div class="social-icons mt-4">
+            <a href="https://www.instagram.com/fapespa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/FapespaPA" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://x.com/fapespa" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4" data-i18n="footer_contato_titulo">Contato</h5>
+          <ul class="list-unstyled small text-light">
+            <li class="mb-3">
+              <i class="bi bi-geo-alt me-2 text-primary"></i>
+              <span data-i18n="footer_endereco">Av. Presidente Vargas, 670</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-telephone me-2 text-primary"></i>
+              <span data-i18n="footer_telefone">+55 (91) 3323-2550</span>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-clock me-2 text-primary"></i>
+              <span data-i18n="footer_horario">Seg-Sex: 8h às 14h</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope me-2 text-primary"></i>
+              <a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PRODUTOS -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4" data-i18n="footer_produtos_titulo">Produtos</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/anuario-estatistico-do-para-2/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Anuário Estatístico</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/radar-de-indicadores-das-ri/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Radar de Indicadores</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-no-contexto-nacional-2/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Pará no Contexto Nacional</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/estatistica-municipal/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Estatística Municipal</a></li>
+            <li class="mb-2"><a href="https://www.fapespa.pa.gov.br/para-em-numeros/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Pará em Números</a></li>
+          </ul>
+        </div>
+
+        <!-- MAPA -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title mb-4" data-i18n="footer_localizacao_titulo">Localização</h5>
+          <div class="map-embed rounded">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.61483842183!2d-48.4907923!3d-1.4589201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a488a1b633b497%3A0xf63d2e2601a4e1e8!2sFundacao%20Amazonia%20de%20Amparo%20a%20Estudos%20e%20Pesquisas%20-%20FAPESPA!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-i18n-title="footer_iframe_title" title="Localização FAPESPA">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-copyright text-center py-4">
+    <div class="container">
+      <small class="text-muted"><span data-i18n="footer_copyright">© Anuário Estatístico do Pará. Todos os direitos reservados.</span> <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
+    </div>
+  </div>
+
+  <!-- Botao Voltar ao Topo -->
+  <button id="btnTop" data-i18n-title="btn_voltar_topo" title="Voltar ao topo" aria-label="Voltar ao topo" type="button">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Modal para visualizar mapas (Territorio) -->
+  <div id="mapModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalTitle" data-i18n="mapa_modal_titulo">Mapa</h5>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-primary btn-sm" id="openFullImageBtn" data-i18n-title="mapa_abrir_nova_aba" title="Abrir imagem em nova aba">
+              <i class="bi bi-box-arrow-up-right"></i> <span data-i18n="mapa_btn_abrir">Abrir em Nova Aba</span>
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="downloadImageBtn" data-i18n-title="mapa_baixar_imagem" title="Baixar imagem">
+              <i class="bi bi-download"></i> <span data-i18n="mapa_btn_baixar">Baixar</span>
+            </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" data-i18n-aria-label="btn_fechar" aria-label="Fechar"></button>
+          </div>
+        </div>
+        <div class="modal-body p-0" style="height: 85vh;">
+          <div id="modalMap" style="width: 100%; height: 100%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/waypoints/waypoints.min.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/counterup/counterup.min.js"></script>
+  <script src="../lib/parallax/parallax.min.js"></script>
+  <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="../lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../js/main.js"></script>
+
+  <div id="virtual-keyboard" class="keyboard-container" hidden>
+    <div class="keyboard-keys"></div>
+  </div>
+
+  <!-- MapLibre JS -->
+  <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+
+  <!-- Paletas de Cores por Categoria -->
+  <script src="paletas-cores.js"></script>
+
+  <!-- Loader de Configuracao de Mapas -->
+  <script src="config-loader.js"></script>
+
+  <!-- Aplicacao do Mapa -->
+  <script src="mapa-app.js"></script>
+</body>
+
+</html>

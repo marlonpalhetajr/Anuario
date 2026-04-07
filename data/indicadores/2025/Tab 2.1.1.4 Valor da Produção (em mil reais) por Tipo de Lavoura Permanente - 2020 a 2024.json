@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "source": "Tab 2.1.1.4 Valor da Produção (em mil reais) por Tipo de Lavoura Permanente - 2020 a 2024.xlsx",
+    "categoria": "economia",
+    "municipios": 33,
+    "data_processamento": "2026-01-12T16:12:19.924Z"
+  },
+  "data": {
+    "Abaetetuba": 41,
+    "Altamira": 420,
+    "Anapu": 225,
+    "Augusto Corrêa": 64,
+    "Aveiro": 300,
+    "Belterra": 96,
+    "Bragança": 14,
+    "Breu Branco": 216,
+    "Castanhal": 70,
+    "Curuá": 30,
+    "Curuçá": 26,
+    "Dom Eliseu": 90,
+    "Igarapé-Açu": 513,
+    "Inhangapi": 194,
+    "Maracanã": 16,
+    "Moju": 285,
+    "Mojuí dos Campos": 252,
+    "Monte Alegre": 46,
+    "Óbidos": 24,
+    "Pacajá": 136,
+    "Placas": 1695,
+    "Prainha": 77,
+    "Rurópolis": 2940,
+    "Santa Maria do Pará": 590,
+    "Santarém": 172,
+    "São Caetano de Odivelas": 30,
+    "São Domingos do Capim": 90,
+    "São Francisco do Pará": 626,
+    "São Miguel do Guamá": 48,
+    "Terra Alta": 16,
+    "Ulianópolis": 135,
+    "Uruará": 108,
+    "Vitória do Xingu": 90
+  }
+}

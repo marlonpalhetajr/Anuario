@@ -1,0 +1,3317 @@
+{
+  "anos": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+  ],
+  "categorias": [
+    "Social",
+    "Demografia",
+    "Território",
+    "Infraestrutura",
+    "Economia",
+    "Meio Ambiente"
+  ],
+  "mapas": {
+    "Demografia": {
+      "2017": [
+        {
+          "titulo": "População Total 2016",
+          "arquivo": "dem1_populacao_total_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/demografia/dem1_populacao_total_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2017/demografia/dem1_populacao_total_2016.png"
+        },
+        {
+          "titulo": "Índice De Envelhecimento 2012",
+          "arquivo": "dem2_indice_de_envelhecimento_2012.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/demografia/dem2_indice_de_envelhecimento_2012.png",
+          "icon": "../icons-mapa-interativo/icons_2017/demografia/dem2_indice_de_envelhecimento_2012.png"
+        },
+        {
+          "titulo": "Razão De Dependência 2012",
+          "arquivo": "dem3_razao_de_dependencia_2012.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/demografia/dem3_razao_de_dependencia_2012.png",
+          "icon": "../icons-mapa-interativo/icons_2017/demografia/dem3_razao_de_dependencia_2012.png"
+        }
+      ],
+      "2018": [
+        {
+          "titulo": "População Residente Estimada 2017",
+          "arquivo": "dem11_populacao_residente_estimada_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/demografia/dem11_populacao_residente_estimada_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/demografia/dem11_populacao_residente_estimada_2017.png"
+        },
+        {
+          "titulo": "Índice De Envelhecimento 2015",
+          "arquivo": "dem16_indice_de_envelhecimento_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/demografia/dem16_indice_de_envelhecimento_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/demografia/dem16_indice_de_envelhecimento_2015.png"
+        },
+        {
+          "titulo": "Razão De Dependência 2015",
+          "arquivo": "dem17_razao_de_dependencia_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/demografia/dem17_razao_de_dependencia_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/demografia/dem17_razao_de_dependencia_2015.png"
+        }
+      ],
+      "2019": [
+        {
+          "titulo": "Demografia 1populacao Estimada 2018",
+          "arquivo": "1_demografia_1populacao_estimada_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/demografia/1_demografia_1populacao_estimada_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/demografia/1_demografia_1populacao_estimada_2018.png"
+        },
+        {
+          "titulo": "Demografia 2indice De Envelhecimento 2015",
+          "arquivo": "1_demografia_2indice_de_envelhecimento_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/demografia/1_demografia_2indice_de_envelhecimento_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2019/demografia/1_demografia_2indice_de_envelhecimento_2015.png"
+        },
+        {
+          "titulo": "Demografia 3razao De Dependência 2015",
+          "arquivo": "1_demografia_3razao_de_dependencia_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/demografia/1_demografia_3razao_de_dependencia_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2019/demografia/1_demografia_3razao_de_dependencia_2015.png"
+        }
+      ],
+      "2020": [
+        {
+          "titulo": "1demografia Populaçãoestimada 2020",
+          "arquivo": "1Demografia_populaçãoestimada2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/demografia/1Demografia_populaçãoestimada2020.png",
+          "icon": "../icons-mapa-interativo/icons_2020/demografia/1Demografia_populaçãoestimada2020.png"
+        },
+        {
+          "titulo": "2demografia Razaodependencia 2020",
+          "arquivo": "2Demografia_razaodependencia2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/demografia/2Demografia_razaodependencia2020.png",
+          "icon": "../icons-mapa-interativo/icons_2020/demografia/2Demografia_razaodependencia2020.png"
+        },
+        {
+          "titulo": "3demografia Índice Envelhecimento 2020",
+          "arquivo": "3Demografia_indice_envelhecimento2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/demografia/3Demografia_indice_envelhecimento2020.png",
+          "icon": "../icons-mapa-interativo/icons_2020/demografia/3Demografia_indice_envelhecimento2020.png"
+        }
+      ],
+      "2021": [
+        {
+          "titulo": "Demografia População Estimada",
+          "arquivo": "1-demografia_população_estimada.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/demografia/1-demografia_população_estimada.png",
+          "icon": "../icons-mapa-interativo/icons_2021/demografia/1-demografia_população_estimada.png"
+        },
+        {
+          "titulo": "Demografia Razão Dependência",
+          "arquivo": "2-demografia_razao_dependencia.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/demografia/2-demografia_razao_dependencia.png",
+          "icon": "../icons-mapa-interativo/icons_2021/demografia/2-demografia_razao_dependencia.png"
+        },
+        {
+          "titulo": "Demografia Índice Envelhecimento",
+          "arquivo": "3-demografia_indice_envelhecimento.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/demografia/3-demografia_indice_envelhecimento.png",
+          "icon": "../icons-mapa-interativo/icons_2021/demografia/3-demografia_indice_envelhecimento.png"
+        }
+      ],
+      "2022": [
+        {
+          "titulo": "Demografia Estimativa Populacional 2022",
+          "arquivo": "Demografia_Estimativa_Populacional2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/demografia/Demografia_Estimativa_Populacional2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/demografia/Demografia_Estimativa_Populacional2022.png"
+        },
+        {
+          "titulo": "Demografia Índice Envelhecimento 2022",
+          "arquivo": "Demografia_Indice_Envelhecimento2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/demografia/Demografia_Indice_Envelhecimento2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/demografia/Demografia_Indice_Envelhecimento2022.png"
+        },
+        {
+          "titulo": "Demografia Razão Dependencia 2022",
+          "arquivo": "Demografia_Razao_Dependencia2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/demografia/Demografia_Razao_Dependencia2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/demografia/Demografia_Razao_Dependencia2022.png"
+        }
+      ],
+      "2023": [
+        {
+          "titulo": "Demografia Índice Envelhecimento 2023",
+          "arquivo": "Demografia_Indice_Envelhecimento2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/demografia/Demografia_Indice_Envelhecimento2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/demografia/Demografia_Indice_Envelhecimento2023.png"
+        },
+        {
+          "titulo": "Demografia População Total 2023",
+          "arquivo": "Demografia_População_Total_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/demografia/Demografia_População_Total_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/demografia/Demografia_População_Total_2023.png"
+        },
+        {
+          "titulo": "Demografia Razão Dependencia 2023",
+          "arquivo": "Demografia_Razao_Dependencia2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/demografia/Demografia_Razao_Dependencia2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/demografia/Demografia_Razao_Dependencia2023.png"
+        }
+      ],
+      "2024": [
+        {
+          "titulo": "Demografia Estimativa Populacional 2024",
+          "arquivo": "Demografia_Estimativa_Populacional_2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/demografia/Demografia_Estimativa_Populacional_2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/demografia/Demografia_Estimativa_Populacional_2024.png"
+        },
+        {
+          "titulo": "Demografia Índice de Envelhecimento 2024",
+          "arquivo": "Demografia_Indice_Envelhecimento2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/demografia/Demografia_Indice_Envelhecimento2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/demografia/Demografia_Indice_Envelhecimento2024.png"
+        },
+        {
+          "titulo": "Demografia Razão de Dependência 2024",
+          "arquivo": "Demografia_Razao_Dependencia2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/demografia/Demografia_Razao_Dependencia2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/demografia/Demografia_Razao_Dependencia2024.png"
+        }
+      ],
+      "2025": [
+        {
+          "titulo": "Demografia Estimativa Populacional2025",
+          "arquivo": "Demografia_Estimativa_Populacional2025.jpg",
+          "caminho": "../mapas/demografia/Demografia_Estimativa_Populacional2025.jpg",
+          "icon": "../icons/demografia/Demografia_Estimativa_Populacional2025.png"
+        },
+        {
+          "titulo": "Demografia Indice Envelhecimento2024",
+          "arquivo": "Demografia_Indice_Envelhecimento2024.jpg",
+          "caminho": "../mapas/demografia/Demografia_Indice_Envelhecimento2024.jpg",
+          "icon": "../icons/demografia/Demografia_Indice_Envelhecimento2024.png"
+        },
+        {
+          "titulo": "Demografia Razao Dependencia2024",
+          "arquivo": "Demografia_Razao_Dependencia2024.jpg",
+          "caminho": "../mapas/demografia/Demografia_Razao_Dependencia2024.jpg",
+          "icon": "../icons/demografia/Demografia_Razao_Dependencia2024.png"
+        }
+      ]
+    },
+    "Economia": {
+      "2017": [
+        {
+          "titulo": "Efetivo De Rebanho Bovino 2015",
+          "arquivo": "econ1_efetivo_de_rebanho_bovino_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ1_efetivo_de_rebanho_bovino_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ1_efetivo_de_rebanho_bovino_2015.png"
+        },
+        {
+          "titulo": "Produto Interno Bruto 2014",
+          "arquivo": "econ2_produto_interno_bruto_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ2_produto_interno_bruto_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ2_produto_interno_bruto_2014.png"
+        },
+        {
+          "titulo": "Valor Adicionado Bruto A Precos Correntes Total 2014",
+          "arquivo": "econ3_valor_adicionado_bruto_a_precos_correntes_total_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ3_valor_adicionado_bruto_a_precos_correntes_total_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ3_valor_adicionado_bruto_a_precos_correntes_total_2014.png"
+        },
+        {
+          "titulo": "Saldo Da Balança Comercial 2016",
+          "arquivo": "econ4_saldo_da_balanca_comercial_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ4_saldo_da_balanca_comercial_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ4_saldo_da_balanca_comercial_2016.png"
+        },
+        {
+          "titulo": "Repasse De ICMS 2015",
+          "arquivo": "econ5_repasse_de_icms_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ5_repasse_de_icms_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ5_repasse_de_icms_2015.png"
+        },
+        {
+          "titulo": "Receitas Correntes 2015",
+          "arquivo": "econ6_receitas_correntes_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ6_receitas_correntes_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ6_receitas_correntes_2015.png"
+        },
+        {
+          "titulo": "Receita Tributaria 2015",
+          "arquivo": "econ7_receita_tributaria_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/economia/econ7_receita_tributaria_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/economia/econ7_receita_tributaria_2015.png"
+        }
+      ],
+      "2018": [
+        {
+          "titulo": "Saldo Da Balança Comercial Em 1000 Dolares Para E Municípios 2017",
+          "arquivo": "econ253_saldo_da_balanca_comercial_em_1000_dolares_para_e_municipios_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ253_saldo_da_balanca_comercial_em_1000_dolares_para_e_municipios_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ253_saldo_da_balanca_comercial_em_1000_dolares_para_e_municipios_2017.png"
+        },
+        {
+          "titulo": "Repasse ICMS 2016",
+          "arquivo": "econ261_repasse_icms_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ261_repasse_icms_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ261_repasse_icms_2016.png"
+        },
+        {
+          "titulo": "Receita Orçamentária 2016",
+          "arquivo": "econ265_receita_orcamentaria_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ265_receita_orcamentaria_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ265_receita_orcamentaria_2016.png"
+        },
+        {
+          "titulo": "Receita Corrente 2016",
+          "arquivo": "econ266_receita_corrente_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ266_receita_corrente_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ266_receita_corrente_2016.png"
+        },
+        {
+          "titulo": "Receita Tributaria 2016",
+          "arquivo": "econ267_receita_tributaria_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ267_receita_tributaria_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ267_receita_tributaria_2016.png"
+        },
+        {
+          "titulo": "Efetivo De Rebanho Bovino 2016",
+          "arquivo": "econ221_efetivo_de_rebanho_bovino_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ221_efetivo_de_rebanho_bovino_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ221_efetivo_de_rebanho_bovino_2016.png"
+        },
+        {
+          "titulo": "Receita Orçamentária",
+          "arquivo": "econ2410_receita_orcamentaria.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ2410_receita_orcamentaria.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ2410_receita_orcamentaria.png"
+        },
+        {
+          "titulo": "Estado Do Para Produto Interno Bruto 2015",
+          "arquivo": "econ241_estado_do_para_produto_interno_bruto_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ241_estado_do_para_produto_interno_bruto_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ241_estado_do_para_produto_interno_bruto_2015.png"
+        },
+        {
+          "titulo": "Estado Do Para Produto Interno Bruto Total 2015",
+          "arquivo": "econ242_estado_do_para_produto_interno_bruto_Total_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ242_estado_do_para_produto_interno_bruto_Total_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ242_estado_do_para_produto_interno_bruto_Total_2015.png"
+        },
+        {
+          "titulo": "Estado Do Para Valor Adcionado Do Setor Agropecuario 2015",
+          "arquivo": "econ243_estado_do_para_valor_adcionado_do_setor_agropecuario_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ243_estado_do_para_valor_adcionado_do_setor_agropecuario_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ243_estado_do_para_valor_adcionado_do_setor_agropecuario_2015.png"
+        },
+        {
+          "titulo": "Estado Do Para Valor Adicionado Do Setor Industrial 2015",
+          "arquivo": "econ244_estado_do_para_valor_adicionado_do_setor_industrial_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ244_estado_do_para_valor_adicionado_do_setor_industrial_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ244_estado_do_para_valor_adicionado_do_setor_industrial_2015.png"
+        },
+        {
+          "titulo": "Estado Do Para Valor Adicionado Do Setor De Servico 2015",
+          "arquivo": "econ245_estado_do_para_valor_adicionado_do_setor_de_servico_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ245_estado_do_para_valor_adicionado_do_setor_de_servico_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ245_estado_do_para_valor_adicionado_do_setor_de_servico_2015.png"
+        },
+        {
+          "titulo": "Estado Do Para Valor Adicionado Do Setor Admistracao Publica 2015",
+          "arquivo": "econ246_estado_do_para_valor_adicionado_do_setor_admistracao_publica_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ246_estado_do_para_valor_adicionado_do_setor_admistracao_publica_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ246_estado_do_para_valor_adicionado_do_setor_admistracao_publica_2015.png"
+        },
+        {
+          "titulo": "Estado Do Para Produto Interno Bruto Per Capita 2015",
+          "arquivo": "econ248_estado_do_para_produto_interno_bruto_per_capita_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ248_estado_do_para_produto_interno_bruto_per_capita_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ248_estado_do_para_produto_interno_bruto_per_capita_2015.png"
+        },
+        {
+          "titulo": "Receita Corrente",
+          "arquivo": "econ249_receita_corrente.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/economia/econ249_receita_corrente.png",
+          "icon": "../icons-mapa-interativo/icons_2018/economia/econ249_receita_corrente.png"
+        }
+      ],
+      "2019": [
+        {
+          "titulo": "Economia 10receitacorrente 2018",
+          "arquivo": "2_economia_10receitacorrente_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_10receitacorrente_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_10receitacorrente_2018.png"
+        },
+        {
+          "titulo": "Economia 11receitaorcamentaria 2018",
+          "arquivo": "2_economia_11receitaorcamentaria_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_11receitaorcamentaria_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_11receitaorcamentaria_2018.png"
+        },
+        {
+          "titulo": "Economia 12receitaotransfcorrente 2018",
+          "arquivo": "2_economia_12receitaotransfcorrente_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_12receitaotransfcorrente_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_12receitaotransfcorrente_2018.png"
+        },
+        {
+          "titulo": "Economia 13receitatributaria 2018",
+          "arquivo": "2_economia_13receitatributaria_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_13receitatributaria_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_13receitatributaria_2018.png"
+        },
+        {
+          "titulo": "Economia 1pibtotal 2016",
+          "arquivo": "2_economia_1pibtotal_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_1pibtotal_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_1pibtotal_2016.png"
+        },
+        {
+          "titulo": "Economia 2pibvatotal 2016",
+          "arquivo": "2_economia_2pibvatotal_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_2pibvatotal_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_2pibvatotal_2016.png"
+        },
+        {
+          "titulo": "Economia 3pibvaagrop 2016",
+          "arquivo": "2_economia_3pibvaagrop_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_3pibvaagrop_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_3pibvaagrop_2016.png"
+        },
+        {
+          "titulo": "Economia 4pibvaindustria 2016",
+          "arquivo": "2_economia_4pibvaindustria_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_4pibvaindustria_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_4pibvaindustria_2016.png"
+        },
+        {
+          "titulo": "Economia 5pibvaservicos 2016",
+          "arquivo": "2_economia_5pibvaservicos_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_5pibvaservicos_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_5pibvaservicos_2016.png"
+        },
+        {
+          "titulo": "Economia 6pipercapita 2016",
+          "arquivo": "2_economia_6pipercapita_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_6pipercapita_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_6pipercapita_2016.png"
+        },
+        {
+          "titulo": "Economia 7rebanhobovino 2017",
+          "arquivo": "2_economia_7rebanhobovino_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_7rebanhobovino_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_7rebanhobovino_2017.png"
+        },
+        {
+          "titulo": "Economia 8balancacomercial 2018",
+          "arquivo": "2_economia_8balancacomercial_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_8balancacomercial_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_8balancacomercial_2018.png"
+        },
+        {
+          "titulo": "Economia 9icms 2018",
+          "arquivo": "2_economia_9icms_2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/economia/2_economia_9icms_2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/economia/2_economia_9icms_2018.png"
+        }
+      ],
+      "2020": [
+        {
+          "titulo": "10economia Receita Corrente",
+          "arquivo": "10Economia_RECEITA_CORRENTE.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/10Economia_RECEITA_CORRENTE.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/10Economia_RECEITA_CORRENTE.png"
+        },
+        {
+          "titulo": "11economia Receita Transferências Correntes",
+          "arquivo": "11Economia_RECEITA_TRANSF_CORRENTES.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/11Economia_RECEITA_TRANSF_CORRENTES.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/11Economia_RECEITA_TRANSF_CORRENTES.png"
+        },
+        {
+          "titulo": "1economia PIB 2017",
+          "arquivo": "1Economia_PIB2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/1Economia_PIB2017.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/1Economia_PIB2017.png"
+        },
+        {
+          "titulo": "2economia PIBvatotal 2017",
+          "arquivo": "2Economia_PIBvatotal2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/2Economia_PIBvatotal2017.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/2Economia_PIBvatotal2017.png"
+        },
+        {
+          "titulo": "3economia PIB VA Agropecuária 2017",
+          "arquivo": "3Economia_PIB_VA_AGROPECUARIA_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/3Economia_PIB_VA_AGROPECUARIA_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/3Economia_PIB_VA_AGROPECUARIA_2017.png"
+        },
+        {
+          "titulo": "4economia PIB VA Industria 2017",
+          "arquivo": "4Economia_PIB_VA_INDUSTRIA2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/4Economia_PIB_VA_INDUSTRIA2017.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/4Economia_PIB_VA_INDUSTRIA2017.png"
+        },
+        {
+          "titulo": "5economia PIB VA Servicos 2017",
+          "arquivo": "5Economia_PIB_VA_SERVICOS2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/5Economia_PIB_VA_SERVICOS2017.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/5Economia_PIB_VA_SERVICOS2017.png"
+        },
+        {
+          "titulo": "6economia PIB Per Capita 2017",
+          "arquivo": "6Economia_PIB_PER_CAPITA 2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/6Economia_PIB_PER_CAPITA 2017.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/6Economia_PIB_PER_CAPITA 2017.png"
+        },
+        {
+          "titulo": "7economia Rebanho Bovino 2018",
+          "arquivo": "7Economia_REBANHO_BOVINO2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/7Economia_REBANHO_BOVINO2018.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/7Economia_REBANHO_BOVINO2018.png"
+        },
+        {
+          "titulo": "8economia Balança Comercial",
+          "arquivo": "8Economia_BALANCA_COMERCIAL.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/8Economia_BALANCA_COMERCIAL.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/8Economia_BALANCA_COMERCIAL.png"
+        },
+        {
+          "titulo": "9economia ICMS 2019",
+          "arquivo": "9Economia_ICMS2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/economia/9Economia_ICMS2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/economia/9Economia_ICMS2019.png"
+        }
+      ],
+      "2021": [
+        {
+          "titulo": "Economia PIB 2018",
+          "arquivo": "1-economia_pib2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/1-economia_pib2018.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/1-economia_pib2018.png"
+        },
+        {
+          "titulo": "Economia Receita Orçamentária",
+          "arquivo": "10-economia_receita_orcamentaria.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/10-economia_receita_orcamentaria.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/10-economia_receita_orcamentaria.png"
+        },
+        {
+          "titulo": "11economia Receita Transferências Correntes",
+          "arquivo": "11economia_receita_transf_correntes.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/11economia_receita_transf_correntes.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/11economia_receita_transf_correntes.png"
+        },
+        {
+          "titulo": "Economia Receita Corrente",
+          "arquivo": "12-economia_receita_corrente.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/12-economia_receita_corrente.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/12-economia_receita_corrente.png"
+        },
+        {
+          "titulo": "Economia PIB VA Total 2018",
+          "arquivo": "2-economia_pib_va_total2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/2-economia_pib_va_total2018.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/2-economia_pib_va_total2018.png"
+        },
+        {
+          "titulo": "Economia PIB VA Agropecuaria 2018",
+          "arquivo": "3-economia_pib_va_agropecuaria2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/3-economia_pib_va_agropecuaria2018.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/3-economia_pib_va_agropecuaria2018.png"
+        },
+        {
+          "titulo": "Economia PIB VA Industria 2018",
+          "arquivo": "4-economia_pib_va_industria2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/4-economia_pib_va_industria2018.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/4-economia_pib_va_industria2018.png"
+        },
+        {
+          "titulo": "Economia PIB VA Servicos 2018",
+          "arquivo": "5-economia_pib_va_servicos2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/5-economia_pib_va_servicos2018.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/5-economia_pib_va_servicos2018.png"
+        },
+        {
+          "titulo": "Economia PIB Per Capita 2018",
+          "arquivo": "6-economia_pib_per_capita 2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/6-economia_pib_per_capita 2018.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/6-economia_pib_per_capita 2018.png"
+        },
+        {
+          "titulo": "Economia Rebanho Bovino 2019",
+          "arquivo": "7-economia_rebanho_bovino2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/7-economia_rebanho_bovino2019.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/7-economia_rebanho_bovino2019.png"
+        },
+        {
+          "titulo": "Economia Balança Comercial",
+          "arquivo": "8-economia_balanca_comercial.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/8-economia_balanca_comercial.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/8-economia_balanca_comercial.png"
+        },
+        {
+          "titulo": "Economia ICMS 2020",
+          "arquivo": "9-economia_icms2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/economia/9-economia_icms2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/economia/9-economia_icms2020.png"
+        }
+      ],
+      "2022": [
+        {
+          "titulo": "Economia Balança Comercial 2021",
+          "arquivo": "Economia_Balança_Comercial_2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_Balança_Comercial_2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_Balança_Comercial_2021.png"
+        },
+        {
+          "titulo": "Economia ICMS 2021",
+          "arquivo": "Economia_ICMS2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_ICMS2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_ICMS2021.png"
+        },
+        {
+          "titulo": "Economia PIB 2019",
+          "arquivo": "Economia_PIB2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_PIB2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_PIB2019.png"
+        },
+        {
+          "titulo": "Economia PIB Per Capita 2019",
+          "arquivo": "Economia_PIB_Per_Capita2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_PIB_Per_Capita2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_PIB_Per_Capita2019.png"
+        },
+        {
+          "titulo": "Economia PIB VA Agropecuaria 2019",
+          "arquivo": "Economia_PIB_VA_Agropecuaria2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_PIB_VA_Agropecuaria2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_PIB_VA_Agropecuaria2019.png"
+        },
+        {
+          "titulo": "Economia PIB VA Industria 2019",
+          "arquivo": "Economia_PIB_VA_Industria2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_PIB_VA_Industria2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_PIB_VA_Industria2019.png"
+        },
+        {
+          "titulo": "Economia PIB VA Serviços 2019",
+          "arquivo": "Economia_PIB_VA_Serviços2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_PIB_VA_Serviços2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_PIB_VA_Serviços2019.png"
+        },
+        {
+          "titulo": "Economia PIB VA Total 2019",
+          "arquivo": "Economia_PIB_VA_total2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_PIB_VA_total2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_PIB_VA_total2019.png"
+        },
+        {
+          "titulo": "Economia Rebanho Bovino 2021",
+          "arquivo": "Economia_Rebanho_Bovino2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_Rebanho_Bovino2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_Rebanho_Bovino2021.png"
+        },
+        {
+          "titulo": "Economia Receita Corrente 2021",
+          "arquivo": "Economia_Receita_Corrente_2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_Receita_Corrente_2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_Receita_Corrente_2021.png"
+        },
+        {
+          "titulo": "Economia Receita Orçamentaria 2021",
+          "arquivo": "Economia_Receita_Orçamentaria_2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_Receita_Orçamentaria_2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_Receita_Orçamentaria_2021.png"
+        },
+        {
+          "titulo": "Economia Receita Transferências Correntes 2021",
+          "arquivo": "Economia_RECEITA_TRANSF_CORRENTES_2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/economia/Economia_RECEITA_TRANSF_CORRENTES_2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/economia/Economia_RECEITA_TRANSF_CORRENTES_2021.png"
+        }
+      ],
+      "2023": [
+        {
+          "titulo": "Economia ICMS 2022",
+          "arquivo": "Economia_ICMS2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_ICMS2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_ICMS2022.png"
+        },
+        {
+          "titulo": "Economia PIB 2020",
+          "arquivo": "Economia_PIB_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_PIB_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_PIB_2020.png"
+        },
+        {
+          "titulo": "Economia PIB Per Capita 2020",
+          "arquivo": "Economia_PIB_Per_Capita_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_PIB_Per_Capita_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_PIB_Per_Capita_2020.png"
+        },
+        {
+          "titulo": "Economia PIB VA Agropecuária 2020",
+          "arquivo": "Economia_PIB_VA_Agropecuária_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_PIB_VA_Agropecuária_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_PIB_VA_Agropecuária_2020.png"
+        },
+        {
+          "titulo": "Economia PIB VA Indústria 2020",
+          "arquivo": "Economia_PIB_VA_Indústria_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_PIB_VA_Indústria_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_PIB_VA_Indústria_2020.png"
+        },
+        {
+          "titulo": "Economia PIB VA Serviços 2020",
+          "arquivo": "Economia_PIB_VA_Serviços_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_PIB_VA_Serviços_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_PIB_VA_Serviços_2020.png"
+        },
+        {
+          "titulo": "Economia PIB VA Total 2020",
+          "arquivo": "Economia_PIB_VA_Total_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_PIB_VA_Total_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_PIB_VA_Total_2020.png"
+        },
+        {
+          "titulo": "Economia Rebanho Bovino 2022",
+          "arquivo": "Economia_Rebanho_Bovino2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_Rebanho_Bovino2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_Rebanho_Bovino2022.png"
+        },
+        {
+          "titulo": "Economia Receita Corrente 2022",
+          "arquivo": "Economia_Receita_Corrente_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_Receita_Corrente_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_Receita_Corrente_2022.png"
+        },
+        {
+          "titulo": "Economia Receita Orçamentaria 2022",
+          "arquivo": "Economia_Receita_Orçamentaria_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_Receita_Orçamentaria_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_Receita_Orçamentaria_2022.png"
+        },
+        {
+          "titulo": "Economia Receita Transferências Correntes 2022",
+          "arquivo": "Economia_RECEITA_TRANSF_CORRENTES_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_RECEITA_TRANSF_CORRENTES_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_RECEITA_TRANSF_CORRENTES_2022.png"
+        },
+        {
+          "titulo": "Economia Saldo Balançacomercial 2022",
+          "arquivo": "Economia_Saldo_BalançaComercial_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/economia/Economia_Saldo_BalançaComercial_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/economia/Economia_Saldo_BalançaComercial_2022.png"
+        }
+      ],
+      "2024": [
+        {
+          "titulo": "Economia ICMS 2023",
+          "arquivo": "Economia_ICMS_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_ICMS_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_ICMS_2023.png"
+        },
+        {
+          "titulo": "Economia Rebanho Bovino 2023",
+          "arquivo": "Economia_Rebanho_Bovino2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_Rebanho_Bovino2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_Rebanho_Bovino2023.png"
+        },
+        {
+          "titulo": "Economia Receita Corrente 2023",
+          "arquivo": "Economia_Receita_Corrente_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_Receita_Corrente_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_Receita_Corrente_2023.png"
+        },
+        {
+          "titulo": "Economia Receita Orçamentária 2023",
+          "arquivo": "Economia_Receita_OrA7amentaria_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_Receita_OrA7amentaria_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_Receita_OrA7amentaria_2023.png"
+        },
+        {
+          "titulo": "Economia Receita Transferências Correntes 2023",
+          "arquivo": "Economia_Receita_Transf_Correntes_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_Receita_Transf_Correntes_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_Receita_Transf_Correntes_2023.png"
+        },
+        {
+          "titulo": "Economia Saldo Balança Comercial 2023",
+          "arquivo": "Economia_Saldo_BalanA7a_Comercial_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_Saldo_BalanA7a_Comercial_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_Saldo_BalanA7a_Comercial_2023.png"
+        },
+        {
+          "titulo": "Economia PIB 2023",
+          "arquivo": "Economia_PIB_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_PIB_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_PIB_2023.png"
+        },
+        {
+          "titulo": "Economia PIB Per Capita 2023",
+          "arquivo": "Economia_PIB_Per_Capita_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_PIB_Per_Capita_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_PIB_Per_Capita_2023.png"
+        },
+        {
+          "titulo": "Economia PIB VA Agropecuária 2023",
+          "arquivo": "Economia_PIB_VA_AgropecuA1ria_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_PIB_VA_AgropecuA1ria_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_PIB_VA_AgropecuA1ria_2023.png"
+        },
+        {
+          "titulo": "Economia PIB VA Indústria 2023",
+          "arquivo": "Economia_PIB_VA_Industria_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_PIB_VA_Industria_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_PIB_VA_Industria_2023.png"
+        },
+        {
+          "titulo": "Economia PIB VA Serviços 2023",
+          "arquivo": "Economia_PIB_VA_Servicos_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_PIB_VA_Servicos_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_PIB_VA_Servicos_2023.png"
+        },
+        {
+          "titulo": "Economia PIB VA Total 2023",
+          "arquivo": "Economia_PIB_VA_Total_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/economia/Economia_PIB_VA_Total_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/economia/Economia_PIB_VA_Total_2023.png"
+        }
+      ],
+      "2025": [
+        {
+          "titulo": "Economia Balança Comercial 2024",
+          "arquivo": "Economia_Balança_Comercial_2024.jpg",
+          "caminho": "../mapas/economia/Economia_Balança_Comercial_2024.jpg",
+          "icon": "../icons/economia/Economia_Balança_Comercial_2024.png"
+        },
+        {
+          "titulo": "Economia ICMS2024",
+          "arquivo": "Economia_ICMS2024.jpg",
+          "caminho": "../mapas/economia/Economia_ICMS2024.jpg",
+          "icon": "../icons/economia/Economia_ICMS2024.png"
+        },
+        {
+          "titulo": "Economia PIB2021",
+          "arquivo": "Economia_PIB2021.jpg",
+          "caminho": "../mapas/economia/Economia_PIB2021.jpg",
+          "icon": "../icons/economia/Economia_PIB2021.png"
+        },
+        {
+          "titulo": "Economia PIB Per Capita 2021",
+          "arquivo": "Economia_PIB_Per_Capita 2021.jpg",
+          "caminho": "../mapas/economia/Economia_PIB_Per_Capita 2021.jpg",
+          "icon": "../icons/economia/Economia_PIB_Per_Capita 2021.png"
+        },
+        {
+          "titulo": "Economia PIB VA Agropecuaria2021",
+          "arquivo": "Economia_PIB_VA_Agropecuaria2021.jpg",
+          "caminho": "../mapas/economia/Economia_PIB_VA_Agropecuaria2021.jpg",
+          "icon": "../icons/economia/Economia_PIB_VA_Agropecuaria2021.png"
+        },
+        {
+          "titulo": "Economia PIB VA Industria2021",
+          "arquivo": "Economia_PIB_VA_Industria2021.jpg",
+          "caminho": "../mapas/economia/Economia_PIB_VA_Industria2021.jpg",
+          "icon": "../icons/economia/Economia_PIB_VA_Industria2021.png"
+        },
+        {
+          "titulo": "Economia PIB VA Serviços2021",
+          "arquivo": "Economia_PIB_VA_Serviços2021.jpg",
+          "caminho": "../mapas/economia/Economia_PIB_VA_Serviços2021.jpg",
+          "icon": "../icons/economia/Economia_PIB_VA_Serviços2021.png"
+        },
+        {
+          "titulo": "Economia PIB VA total2021",
+          "arquivo": "Economia_PIB_VA_total2021.jpg",
+          "caminho": "../mapas/economia/Economia_PIB_VA_total2021.jpg",
+          "icon": "../icons/economia/Economia_PIB_VA_total2021.png"
+        },
+        {
+          "titulo": "Economia RECEITA TRANSF CORRENTES 2024",
+          "arquivo": "Economia_RECEITA_TRANSF_CORRENTES_2024.jpg",
+          "caminho": "../mapas/economia/Economia_RECEITA_TRANSF_CORRENTES_2024.jpg",
+          "icon": "../icons/economia/Economia_RECEITA_TRANSF_CORRENTES_2024.png"
+        },
+        {
+          "titulo": "Economia Rebanho Bovino2024",
+          "arquivo": "Economia_Rebanho_Bovino2024.jpg",
+          "caminho": "../mapas/economia/Economia_Rebanho_Bovino2024.jpg",
+          "icon": "../icons/economia/Economia_Rebanho_Bovino2024.png"
+        },
+        {
+          "titulo": "Economia Receita Corrente 2024",
+          "arquivo": "Economia_Receita_Corrente_2024.jpg",
+          "caminho": "../mapas/economia/Economia_Receita_Corrente_2024.jpg",
+          "icon": "../icons/economia/Economia_Receita_Corrente_2024.png"
+        },
+        {
+          "titulo": "Economia Receita Orçamentaria 2024",
+          "arquivo": "Economia_Receita_Orçamentaria_2024.jpg",
+          "caminho": "../mapas/economia/Economia_Receita_Orçamentaria_2024.jpg",
+          "icon": "../icons/economia/Economia_Receita_Orçamentaria_2024.png"
+        }
+      ]
+    },
+    "Infraestrutura": {
+      "2017": [
+        {
+          "titulo": "Total Da Frota De Veículos 2015",
+          "arquivo": "infra1_total_da_frota_de_veiculos_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/infraestrutura/infra1_total_da_frota_de_veiculos_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/infraestrutura/infra1_total_da_frota_de_veiculos_2015.png"
+        },
+        {
+          "titulo": "Consumo De Energia Eletrica 2015",
+          "arquivo": "infra2_consumo_de_energia_eletrica_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/infraestrutura/infra2_consumo_de_energia_eletrica_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/infraestrutura/infra2_consumo_de_energia_eletrica_2015.png"
+        },
+        {
+          "titulo": "Consumidores De Energia Eletrica 2015",
+          "arquivo": "infra3_consumidores_de_energia_eletrica_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/infraestrutura/infra3_consumidores_de_energia_eletrica_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/infraestrutura/infra3_consumidores_de_energia_eletrica_2015.png"
+        }
+      ],
+      "2018": [
+        {
+          "titulo": "Total Da Frota De Veículos 2017",
+          "arquivo": "infra31_total_da_frota_de_veiculos_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/infraestrutura/infra31_total_da_frota_de_veiculos_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/infraestrutura/infra31_total_da_frota_de_veiculos_2017.png"
+        },
+        {
+          "titulo": "Consumidores De Energia Eletrica Total 2015",
+          "arquivo": "infra32_consumidores_de_energia_eletrica_total_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/infraestrutura/infra32_consumidores_de_energia_eletrica_total_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/infraestrutura/infra32_consumidores_de_energia_eletrica_total_2015.png"
+        },
+        {
+          "titulo": "Consumo De Energia Eletrica Kmh 2016",
+          "arquivo": "infra34_consumo_de_energia_eletrica_kmh_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/infraestrutura/infra34_consumo_de_energia_eletrica_kmh_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/infraestrutura/infra34_consumo_de_energia_eletrica_kmh_2016.png"
+        }
+      ],
+      "2019": [
+        {
+          "titulo": "Infra 1consumidoresenergia 2018",
+          "arquivo": "3_infra_1consumidoresenergia2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/infraestrutura/3_infra_1consumidoresenergia2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/infraestrutura/3_infra_1consumidoresenergia2018.png"
+        },
+        {
+          "titulo": "Infra 2consumoenergia 2018",
+          "arquivo": "3_infra_2consumoenergia2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/infraestrutura/3_infra_2consumoenergia2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/infraestrutura/3_infra_2consumoenergia2018.png"
+        },
+        {
+          "titulo": "Infra 3frota 2018",
+          "arquivo": "3_infra_3frota2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/infraestrutura/3_infra_3frota2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/infraestrutura/3_infra_3frota2018.png"
+        }
+      ],
+      "2020": [
+        {
+          "titulo": "1infra Consumo Energia 2019",
+          "arquivo": "1Infra_consumo_energia2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/infraestrutura/1Infra_consumo_energia2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/infraestrutura/1Infra_consumo_energia2019.png"
+        },
+        {
+          "titulo": "2infra Consumidores Energia 2019",
+          "arquivo": "2Infra_consumidores_energia2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/infraestrutura/2Infra_consumidores_energia2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/infraestrutura/2Infra_consumidores_energia2019.png"
+        },
+        {
+          "titulo": "3infra Frota 2019",
+          "arquivo": "3Infra_frota2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/infraestrutura/3Infra_frota2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/infraestrutura/3Infra_frota2019.png"
+        }
+      ],
+      "2021": [
+        {
+          "titulo": "Infra Consumidores Energia 2020",
+          "arquivo": "1-Infra_consumidores_energia2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/infraestrutura/1-Infra_consumidores_energia2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/infraestrutura/1-Infra_consumidores_energia2020.png"
+        },
+        {
+          "titulo": "Infra Consumo Energia 2020",
+          "arquivo": "2-Infra_consumo_energia2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/infraestrutura/2-Infra_consumo_energia2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/infraestrutura/2-Infra_consumo_energia2020.png"
+        },
+        {
+          "titulo": "Infra Frota 2020",
+          "arquivo": "3-Infra_frota2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/infraestrutura/3-Infra_frota2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/infraestrutura/3-Infra_frota2020.png"
+        }
+      ],
+      "2022": [
+        {
+          "titulo": "Infra Consumidores Energia 2022",
+          "arquivo": "infra_consumidores_energia2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/infraestrutura/infra_consumidores_energia2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/infraestrutura/infra_consumidores_energia2022.png"
+        },
+        {
+          "titulo": "Infra Consumo Energia 2022",
+          "arquivo": "infra_consumo_energia2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/infraestrutura/infra_consumo_energia2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/infraestrutura/infra_consumo_energia2022.png"
+        },
+        {
+          "titulo": "Infra Frota 2022",
+          "arquivo": "infra_frota2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/infraestrutura/infra_frota2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/infraestrutura/infra_frota2022.png"
+        }
+      ],
+      "2023": [
+        {
+          "titulo": "Infraestrutura Consumidores De Energia 2022",
+          "arquivo": "Infraestrutura_Consumidores_de_Energia_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/infraestrutura/Infraestrutura_Consumidores_de_Energia_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/infraestrutura/Infraestrutura_Consumidores_de_Energia_2022.png"
+        },
+        {
+          "titulo": "Infraestrutura Consumo De Energia 2022",
+          "arquivo": "Infraestrutura_Consumo_de_Energia_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/infraestrutura/Infraestrutura_Consumo_de_Energia_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/infraestrutura/Infraestrutura_Consumo_de_Energia_2022.png"
+        },
+        {
+          "titulo": "Infraestrutura Frota De Veículos 2022",
+          "arquivo": "Infraestrutura_Frota_de_Veículos_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/infraestrutura/Infraestrutura_Frota_de_Veículos_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/infraestrutura/Infraestrutura_Frota_de_Veículos_2022.png"
+        }
+      ],
+      "2024": [
+        {
+          "titulo": "Infraestrutura Consumidores de Energia 2023",
+          "arquivo": "Infra_consumidores_energia2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/infraestrutura/Infra_consumidores_energia2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/infraestrutura/Infra_consumidores_energia2023.png"
+        },
+        {
+          "titulo": "Infraestrutura Consumo de Energia 2023",
+          "arquivo": "Infra_consumo_energia2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/infraestrutura/Infra_consumo_energia2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/infraestrutura/Infra_consumo_energia2023.png"
+        },
+        {
+          "titulo": "Infraestrutura Frota 2023",
+          "arquivo": "Infra_frota2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/infraestrutura/Infra_frota2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/infraestrutura/Infra_frota2023.png"
+        }
+      ],
+      "2025": [
+        {
+          "titulo": "Infra consumidores energia2023",
+          "arquivo": "Infra_consumidores_energia2023.jpg",
+          "caminho": "../mapas/infraestrutura/Infra_consumidores_energia2023.jpg",
+          "icon": "../icons/infraestrutura/Infra_consumidores_energia2023.png"
+        },
+        {
+          "titulo": "Infra consumo energia2023",
+          "arquivo": "Infra_consumo_energia2023.jpg",
+          "caminho": "../mapas/infraestrutura/Infra_consumo_energia2023.jpg",
+          "icon": "../icons/infraestrutura/Infra_consumo_energia2023.png"
+        },
+        {
+          "titulo": "Infra frota2024",
+          "arquivo": "Infra_frota2024.jpg",
+          "caminho": "../mapas/infraestrutura/Infra_frota2024.jpg",
+          "icon": "../icons/infraestrutura/Infra_frota2024.png"
+        }
+      ]
+    },
+    "Meio Ambiente": {
+      "2017": [
+        {
+          "titulo": "Desflorestamento Acumulado 2015",
+          "arquivo": "ma1_desflorestamento_acumulado_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/meioambiente/ma1_desflorestamento_acumulado_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/meio_ambiente/ma1_desflorestamento_acumulado_2015.png"
+        },
+        {
+          "titulo": "Área De Floresta 2015",
+          "arquivo": "ma2_area_de_floresta_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/meioambiente/ma2_area_de_floresta_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/meio_ambiente/ma2_area_de_floresta_2015.png"
+        },
+        {
+          "titulo": "Focos De Calor 2015",
+          "arquivo": "ma3_focos_de_calor_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/meioambiente/ma3_focos_de_calor_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/meio_ambiente/ma3_focos_de_calor_2015.png"
+        }
+      ],
+      "2018": [
+        {
+          "titulo": "Desflorestamento Acumulado 2016",
+          "arquivo": "ma41_desflorestamento_acumulado_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/meioambiente/ma41_desflorestamento_acumulado_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/meio_ambiente/ma41_desflorestamento_acumulado_2016.png"
+        },
+        {
+          "titulo": "Área De Floresta 2016",
+          "arquivo": "ma43_area_de_floresta_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/meioambiente/ma43_area_de_floresta_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/meio_ambiente/ma43_area_de_floresta_2016.png"
+        },
+        {
+          "titulo": "Focos De Calor",
+          "arquivo": "ma44_focos_de_calor.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/meioambiente/ma44_focos_de_calor.png",
+          "icon": "../icons-mapa-interativo/icons_2018/meio_ambiente/ma44_focos_de_calor.png"
+        }
+      ],
+      "2019": [
+        {
+          "titulo": "Meioamb 1deflorestamento 2017",
+          "arquivo": "4_meioamb_1deflorestamento2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/meio_ambiente/4_meioamb_1deflorestamento2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/meio_ambiente/4_meioamb_1deflorestamento2017.png"
+        },
+        {
+          "titulo": "Meioamb 2areadefloresta 2017",
+          "arquivo": "4_meioamb_2areadefloresta2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/meio_ambiente/4_meioamb_2areadefloresta2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/meio_ambiente/4_meioamb_2areadefloresta2017.png"
+        },
+        {
+          "titulo": "Meioamb 3focosdecalor 2017",
+          "arquivo": "4_meioamb_3focosdecalor2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/meio_ambiente/4_meioamb_3focosdecalor2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/meio_ambiente/4_meioamb_3focosdecalor2017.png"
+        }
+      ],
+      "2020": [
+        {
+          "titulo": "1meioamb Deflorestamento 2019",
+          "arquivo": "1MeioAmb_deflorestamento2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/meio_ambiente/1MeioAmb_deflorestamento2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/meio_ambiente/1MeioAmb_deflorestamento2019.png"
+        },
+        {
+          "titulo": "2meioamb Areadefloresta 2019",
+          "arquivo": "2MeioAmb_AreadeFloresta2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/meio_ambiente/2MeioAmb_AreadeFloresta2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/meio_ambiente/2MeioAmb_AreadeFloresta2019.png"
+        },
+        {
+          "titulo": "3meioamb Focos Calor 2019",
+          "arquivo": "3MeioAmb_focos_calor2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/meio_ambiente/3MeioAmb_focos_calor2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/meio_ambiente/3MeioAmb_focos_calor2019.png"
+        }
+      ],
+      "2021": [
+        {
+          "titulo": "Meioamb Deflorestamento 2020",
+          "arquivo": "1-meioamb_deflorestamento2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/meio_ambiente/1-meioamb_deflorestamento2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/meio_ambiente/1-meioamb_deflorestamento2020.png"
+        },
+        {
+          "titulo": "Meioamb Areadefloresta 2020",
+          "arquivo": "2-meioamb_areadefloresta2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/meio_ambiente/2-meioamb_areadefloresta2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/meio_ambiente/2-meioamb_areadefloresta2020.png"
+        },
+        {
+          "titulo": "Meioamb Focos Calor 2020",
+          "arquivo": "3-meioamb_focos_calor2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/meio_ambiente/3-meioamb_focos_calor2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/meio_ambiente/3-meioamb_focos_calor2020.png"
+        }
+      ],
+      "2022": [
+        {
+          "titulo": "Incremento Desflorestamento 2022",
+          "arquivo": "incremento_desflorestamento2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/meio_ambiente/incremento_desflorestamento2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/meio_ambiente/incremento_desflorestamento2022.png"
+        },
+        {
+          "titulo": "Meioamb Areadefloresta 2022",
+          "arquivo": "meioamb_areadefloresta2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/meio_ambiente/meioamb_areadefloresta2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/meio_ambiente/meioamb_areadefloresta2022.png"
+        },
+        {
+          "titulo": "Meioamb Deflorestamento 2022",
+          "arquivo": "meioamb_deflorestamento2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/meio_ambiente/meioamb_deflorestamento2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/meio_ambiente/meioamb_deflorestamento2022.png"
+        },
+        {
+          "titulo": "Meioamb Focos Calor 2022",
+          "arquivo": "meioamb_focos_calor2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/meio_ambiente/meioamb_focos_calor2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/meio_ambiente/meioamb_focos_calor2022.png"
+        }
+      ],
+      "2023": [
+        {
+          "titulo": "Incremento Desflorestamento 2023",
+          "arquivo": "Incremento_Desflorestamento2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/meio_ambiente/Incremento_Desflorestamento2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/meio_ambiente/Incremento_Desflorestamento2023.png"
+        },
+        {
+          "titulo": "Meio Ambiente Área De Floresta 2022",
+          "arquivo": "Meio_Ambiente_Area_de_Floresta_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/meio_ambiente/Meio_Ambiente_Area_de_Floresta_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/meio_ambiente/Meio_Ambiente_Area_de_Floresta_2022.png"
+        },
+        {
+          "titulo": "Meio Ambiente Focos De Calor 2022",
+          "arquivo": "Meio_Ambiente_Focos_de_Calor_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/meio_ambiente/Meio_Ambiente_Focos_de_Calor_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/meio_ambiente/Meio_Ambiente_Focos_de_Calor_2022.png"
+        },
+        {
+          "titulo": "Meio Amb Deflorestamento 2023",
+          "arquivo": "Meio_Amb_deflorestamento2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/meio_ambiente/Meio_Amb_deflorestamento2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/meio_ambiente/Meio_Amb_deflorestamento2023.png"
+        }
+      ],
+      "2024": [
+        {
+          "titulo": "Meio Ambiente Área de Floresta 2023",
+          "arquivo": "Meio_Ambiente_Area_de_Floresta_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/meio_ambiente/Meio_Ambiente_Area_de_Floresta_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/meio_ambiente/Meio_Ambiente_Area_de_Floresta_2023.png"
+        },
+        {
+          "titulo": "Meio Ambiente Desflorestamento Acumulado 2023",
+          "arquivo": "Meio_Ambiente_Desflorestamento_Acumulado_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/meio_ambiente/Meio_Ambiente_Desflorestamento_Acumulado_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/meio_ambiente/Meio_Ambiente_Desflorestamento_Acumulado_2023.png"
+        },
+        {
+          "titulo": "Meio Ambiente Focos de Calor 2023",
+          "arquivo": "Meio_Ambiente_Focos_de_Calor_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/meio_ambiente/Meio_Ambiente_Focos_de_Calor_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/meio_ambiente/Meio_Ambiente_Focos_de_Calor_2023.png"
+        },
+        {
+          "titulo": "Meio Ambiente Incremento de Desflorestamento 2023",
+          "arquivo": "Meio_Ambiente_Incremento_Desflorestamento_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/meio_ambiente/Meio_Ambiente_Incremento_Desflorestamento_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/meio_ambiente/Meio_Ambiente_Incremento_Desflorestamento_2023.png"
+        }
+      ],
+      "2025": [
+        {
+          "titulo": "MeioAmb AreadeFloresta2024",
+          "arquivo": "MeioAmb_AreadeFloresta2024.jpg",
+          "caminho": "../mapas/meio_ambiente/MeioAmb_AreadeFloresta2024.jpg",
+          "icon": "../icons/meio_ambiente/MeioAmb_AreadeFloresta2024.png"
+        },
+        {
+          "titulo": "MeioAmb Deflorestamento2024",
+          "arquivo": "MeioAmb_Deflorestamento2024.jpg",
+          "caminho": "../mapas/meio_ambiente/MeioAmb_Deflorestamento2024.jpg",
+          "icon": "../icons/meio_ambiente/MeioAmb_Deflorestamento2024.png"
+        },
+        {
+          "titulo": "MeioAmb Incremento2024",
+          "arquivo": "MeioAmb_Incremento2024.jpg",
+          "caminho": "../mapas/meio_ambiente/MeioAmb_Incremento2024.jpg",
+          "icon": "../icons/meio_ambiente/MeioAmb_Incremento2024.png"
+        },
+        {
+          "titulo": "MeioAmb focos calor2024",
+          "arquivo": "MeioAmb_focos_calor2024.jpg",
+          "caminho": "../mapas/meio_ambiente/MeioAmb_focos_calor2024.jpg",
+          "icon": "../icons/meio_ambiente/MeioAmb_focos_calor2024.png"
+        }
+      ]
+    },
+    "Social": {
+      "2017": [
+        {
+          "titulo": "Vínculos Empregaticios Total No Emprego Formal 2015",
+          "arquivo": "soc10_vinculos_empregaticios_total_no_emprego_formal_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc10_vinculos_empregaticios_total_no_emprego_formal_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc10_vinculos_empregaticios_total_no_emprego_formal_2015.png"
+        },
+        {
+          "titulo": "Remuneração Media Rs Do Trabalhador Formal 2015",
+          "arquivo": "soc11_remuneracao_media_rs_do_trabalhador_formal_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc11_remuneracao_media_rs_do_trabalhador_formal_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc11_remuneracao_media_rs_do_trabalhador_formal_2015.png"
+        },
+        {
+          "titulo": "Quantidade De Beneficios Emitidos Em Dezembro 2015",
+          "arquivo": "soc12_quantidade_de_beneficios_emitidos_em_dezembro_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc12_quantidade_de_beneficios_emitidos_em_dezembro_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc12_quantidade_de_beneficios_emitidos_em_dezembro_2015.png"
+        },
+        {
+          "titulo": "Taxa De Mortalidade Infantil 2014",
+          "arquivo": "soc13_taxa_de_mortalidade_infantil_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc13_taxa_de_mortalidade_infantil_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc13_taxa_de_mortalidade_infantil_2014.png"
+        },
+        {
+          "titulo": "Taxa De Mortalidade Na Infância 2014",
+          "arquivo": "soc14_taxa_de_mortalidade_na_infancia_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc14_taxa_de_mortalidade_na_infancia_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc14_taxa_de_mortalidade_na_infancia_2014.png"
+        },
+        {
+          "titulo": "Taxa De Mortalidade Geral 2014",
+          "arquivo": "soc15_taxa_de_mortalidade_geral_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc15_taxa_de_mortalidade_geral_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc15_taxa_de_mortalidade_geral_2014.png"
+        },
+        {
+          "titulo": "Numero De Postos E Centros De Saude Por 10 Mil Habitantes 2016",
+          "arquivo": "soc16_numero_de_postos_e_centros_de_saude_por_10_mil_habitantes_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc16_numero_de_postos_e_centros_de_saude_por_10_mil_habitantes_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc16_numero_de_postos_e_centros_de_saude_por_10_mil_habitantes_2016.png"
+        },
+        {
+          "titulo": "Médicos Por 10 Mil Habitantes",
+          "arquivo": "soc17_medicos_por_10_mil_habitantes.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc17_medicos_por_10_mil_habitantes.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc17_medicos_por_10_mil_habitantes.png"
+        },
+        {
+          "titulo": "Leitos Hospitalares Por Mil Habitantes 2016",
+          "arquivo": "soc18_leitos_hospitalares_por_mil_habitantes_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc18_leitos_hospitalares_por_mil_habitantes_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc18_leitos_hospitalares_por_mil_habitantes_2016.png"
+        },
+        {
+          "titulo": "Percentual De Nascidos Vivos Com 7 Ou Mais Consultas Pre Natal 2014",
+          "arquivo": "soc19_percentual_de_nascidos_vivos_com_7_ou_mais_consultas_pre_natal_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc19_percentual_de_nascidos_vivos_com_7_ou_mais_consultas_pre_natal_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc19_percentual_de_nascidos_vivos_com_7_ou_mais_consultas_pre_natal_2014.png"
+        },
+        {
+          "titulo": "Taxa De Aprovação No Ensino Fundamental 2015",
+          "arquivo": "soc1_taxa_de_aprovacao_no_ensino_fundamental_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc1_taxa_de_aprovacao_no_ensino_fundamental_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc1_taxa_de_aprovacao_no_ensino_fundamental_2015.png"
+        },
+        {
+          "titulo": "Percentual De Nascidos Vivos Por Parto Normal 2014",
+          "arquivo": "soc20_percentual_de_nascidos_vivos_por_parto_normal_2014.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc20_percentual_de_nascidos_vivos_por_parto_normal_2014.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc20_percentual_de_nascidos_vivos_por_parto_normal_2014.png"
+        },
+        {
+          "titulo": "Taxa De Aprovação No Ensino Médio 2015",
+          "arquivo": "soc2_taxa_de_aprovacao_no_ensino_medio_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc2_taxa_de_aprovacao_no_ensino_medio_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc2_taxa_de_aprovacao_no_ensino_medio_2015.png"
+        },
+        {
+          "titulo": "Taxa De Reprovação No Ensino Fundamental 2015",
+          "arquivo": "soc3_taxa_de_reprovacao_no_ensino_fundamental_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc3_taxa_de_reprovacao_no_ensino_fundamental_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc3_taxa_de_reprovacao_no_ensino_fundamental_2015.png"
+        },
+        {
+          "titulo": "Taxa De Reprovação No Ensino Médio 2015",
+          "arquivo": "soc4_taxa_de_reprovacao_no_ensino_medio_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc4_taxa_de_reprovacao_no_ensino_medio_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc4_taxa_de_reprovacao_no_ensino_medio_2015.png"
+        },
+        {
+          "titulo": "Taxa De Evasao No Ensino Fundamental 2015",
+          "arquivo": "soc5_taxa_de_evasao_no_ensino_fundamental_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc5_taxa_de_evasao_no_ensino_fundamental_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc5_taxa_de_evasao_no_ensino_fundamental_2015.png"
+        },
+        {
+          "titulo": "Taxa De Evasao No Ensino Médio 2015",
+          "arquivo": "soc6_taxa_de_evasao_no_ensino_medio_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc6_taxa_de_evasao_no_ensino_medio_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc6_taxa_de_evasao_no_ensino_medio_2015.png"
+        },
+        {
+          "titulo": "IDEB Series Iniciais 2015",
+          "arquivo": "soc7_ideb_series_iniciais_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc7_ideb_series_iniciais_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc7_ideb_series_iniciais_2015.png"
+        },
+        {
+          "titulo": "IDEB Series Finais 2015",
+          "arquivo": "soc8_ideb_series_finais_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc8_ideb_series_finais_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc8_ideb_series_finais_2015.png"
+        },
+        {
+          "titulo": "Famílias Atendidas No Programa Bolsa Família 2015",
+          "arquivo": "soc9_familias_atendidas_no_programa_bolsa_familia_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/social/soc9_familias_atendidas_no_programa_bolsa_familia_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2017/social/soc9_familias_atendidas_no_programa_bolsa_familia_2015.png"
+        }
+      ],
+      "2018": [
+        {
+          "titulo": "Taxa De Aprovação No Ensino Fundamental 2016",
+          "arquivo": "soc511_taxa_de_aprovacao_no_ensino_fundamental_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc511_taxa_de_aprovacao_no_ensino_fundamental_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc511_taxa_de_aprovacao_no_ensino_fundamental_2016.png"
+        },
+        {
+          "titulo": "Taxa De Aprovação No Ensino Médio 2016",
+          "arquivo": "soc512_taxa_de_aprovacao_no_ensino_medio_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc512_taxa_de_aprovacao_no_ensino_medio_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc512_taxa_de_aprovacao_no_ensino_medio_2016.png"
+        },
+        {
+          "titulo": "Taxa De Reprovação Fundamental",
+          "arquivo": "soc513_taxa_de_reprovacao_fundamental.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc513_taxa_de_reprovacao_fundamental.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc513_taxa_de_reprovacao_fundamental.png"
+        },
+        {
+          "titulo": "Taxa De Reprovação Médio",
+          "arquivo": "soc514_taxa_de_reprovacao_medio.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc514_taxa_de_reprovacao_medio.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc514_taxa_de_reprovacao_medio.png"
+        },
+        {
+          "titulo": "Taxa De Abandono No Ensino Fundamental 2016",
+          "arquivo": "soc515_taxa_de_abandono_no_ensino_fundamental_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc515_taxa_de_abandono_no_ensino_fundamental_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc515_taxa_de_abandono_no_ensino_fundamental_2016.png"
+        },
+        {
+          "titulo": "Taxa De Abandono No Ensino Médio 2016",
+          "arquivo": "soc516_taxa_de_abandono_no_ensino_medio_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc516_taxa_de_abandono_no_ensino_medio_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc516_taxa_de_abandono_no_ensino_medio_2016.png"
+        },
+        {
+          "titulo": "Taxa De Distorção Idade Série No Ensino Médio",
+          "arquivo": "soc517_taxa_de_distorcao_idade_serie_no_ensino_medio.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc517_taxa_de_distorcao_idade_serie_no_ensino_medio.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc517_taxa_de_distorcao_idade_serie_no_ensino_medio.png"
+        },
+        {
+          "titulo": "Taxa De Ditorcao Idade Série No Ensino Fundamental",
+          "arquivo": "soc517__taxa_de_ditorcao_idade_serie_no_ensino_fundamental.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc517__taxa_de_ditorcao_idade_serie_no_ensino_fundamental.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc517__taxa_de_ditorcao_idade_serie_no_ensino_fundamental.png"
+        },
+        {
+          "titulo": "IDEB Escola Publica 5a Ano 2016",
+          "arquivo": "soc518_ideb_escola_publica_5a_ano_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc518_ideb_escola_publica_5a_ano_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc518_ideb_escola_publica_5a_ano_2016.png"
+        },
+        {
+          "titulo": "IDEB Escola Publica 9a Ano 2016",
+          "arquivo": "soc519_ideb_escola_publica_9a_ano_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc519_ideb_escola_publica_9a_ano_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc519_ideb_escola_publica_9a_ano_2016.png"
+        },
+        {
+          "titulo": "Numero De Famílias Atendidas No Programa Bolsa Família",
+          "arquivo": "soc521_numero_de_familias_atendidas_no_programa_bolsa_familia.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc521_numero_de_familias_atendidas_no_programa_bolsa_familia.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc521_numero_de_familias_atendidas_no_programa_bolsa_familia.png"
+        },
+        {
+          "titulo": "Vínculos Empregaticios Total No Emprego Formal 2016",
+          "arquivo": "soc531_vinculos_empregaticios_total_no_emprego_formal_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc531_vinculos_empregaticios_total_no_emprego_formal_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc531_vinculos_empregaticios_total_no_emprego_formal_2016.png"
+        },
+        {
+          "titulo": "Remuneração Media Do Trabalhador Formal 2016",
+          "arquivo": "soc536_remuneracao_media_do_trabalhador_formal_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc536_remuneracao_media_do_trabalhador_formal_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc536_remuneracao_media_do_trabalhador_formal_2016.png"
+        },
+        {
+          "titulo": "Quantidade De Beneficios Emitidos Em Dezembro 2016",
+          "arquivo": "soc541_quantidade_de_beneficios_emitidos_em_dezembro_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc541_quantidade_de_beneficios_emitidos_em_dezembro_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc541_quantidade_de_beneficios_emitidos_em_dezembro_2016.png"
+        },
+        {
+          "titulo": "Valor Dos Beneficios Emitidos Em Dezembro 2016",
+          "arquivo": "soc542_valor_dos_beneficios_emitidos_em_dezembro_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc542_valor_dos_beneficios_emitidos_em_dezembro_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc542_valor_dos_beneficios_emitidos_em_dezembro_2016.png"
+        },
+        {
+          "titulo": "Leitos Hospitalares Por 10 Mil Habitantes 2015",
+          "arquivo": "soc5510_leitos_hospitalares_por_10_mil_habitantes_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc5510_leitos_hospitalares_por_10_mil_habitantes_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc5510_leitos_hospitalares_por_10_mil_habitantes_2015.png"
+        },
+        {
+          "titulo": "Percentual De Nascidos Vivos Com 07 Ou Mais Consultas Pre Natal 2015",
+          "arquivo": "soc5511_percentual_de_nascidos_vivos_com_07_ou_mais_consultas_pre-natal_2015.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc5511_percentual_de_nascidos_vivos_com_07_ou_mais_consultas_pre-natal_2015.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc5511_percentual_de_nascidos_vivos_com_07_ou_mais_consultas_pre-natal_2015.png"
+        },
+        {
+          "titulo": "Percentual De Nascidos Vivos Por Parto Normal 2016",
+          "arquivo": "soc5512_percentual_de_nascidos_vivos_por_parto_normal_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc5512_percentual_de_nascidos_vivos_por_parto_normal_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc5512_percentual_de_nascidos_vivos_por_parto_normal_2016.png"
+        },
+        {
+          "titulo": "Percentual De Nascidos Vivos Por Parto Cesaria 2016",
+          "arquivo": "soc5513_percentual_de_nascidos_vivos_por_parto_cesaria_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc5513_percentual_de_nascidos_vivos_por_parto_cesaria_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc5513_percentual_de_nascidos_vivos_por_parto_cesaria_2016.png"
+        },
+        {
+          "titulo": "Percentual De Nascidos Vivos De Maes Adolescentes Na Faixa Etaria De 10 A 19 Anos 2016",
+          "arquivo": "soc5514_percentual_de_nascidos_vivos_de_maes_adolescentes_na_faixa_etaria_de_10_a_19_anos_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc5514_percentual_de_nascidos_vivos_de_maes_adolescentes_na_faixa_etaria_de_10_a_19_anos_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc5514_percentual_de_nascidos_vivos_de_maes_adolescentes_na_faixa_etaria_de_10_a_19_anos_2016.png"
+        },
+        {
+          "titulo": "Taxa De Mortalidade Infantil 2016",
+          "arquivo": "soc551_taxa_de_mortalidade_infantil_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc551_taxa_de_mortalidade_infantil_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc551_taxa_de_mortalidade_infantil_2016.png"
+        },
+        {
+          "titulo": "Taxa De Mortalidade Menor Que 05 Anos 2016",
+          "arquivo": "soc552_taxa_de_mortalidade_menor_que_05_anos_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc552_taxa_de_mortalidade_menor_que_05_anos_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc552_taxa_de_mortalidade_menor_que_05_anos_2016.png"
+        },
+        {
+          "titulo": "Taxa De Natalidade 2016",
+          "arquivo": "soc554_taxa_de_natalidade_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc554_taxa_de_natalidade_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc554_taxa_de_natalidade_2016.png"
+        },
+        {
+          "titulo": "Taxa De Mortalidade Geral 2016",
+          "arquivo": "soc555_taxa_de_mortalidade_geral_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc555_taxa_de_mortalidade_geral_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc555_taxa_de_mortalidade_geral_2016.png"
+        },
+        {
+          "titulo": "Numeros De Hospitais 2017",
+          "arquivo": "soc557_numeros_de_hospitais_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc557_numeros_de_hospitais_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc557_numeros_de_hospitais_2017.png"
+        },
+        {
+          "titulo": "Numero De Postos E Centros De Saude Por 10 Mil Habitante 2017",
+          "arquivo": "soc558_numero_de_postos_e_centros_de_saude_por_10_mil_habitante_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc558_numero_de_postos_e_centros_de_saude_por_10_mil_habitante_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc558_numero_de_postos_e_centros_de_saude_por_10_mil_habitante_2017.png"
+        },
+        {
+          "titulo": "Numero De Médicos Por 10 Mil Habitantes 2017",
+          "arquivo": "soc559_numero_de_medicos_por_10_mil_habitantes_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/social/soc559_numero_de_medicos_por_10_mil_habitantes_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/social/soc559_numero_de_medicos_por_10_mil_habitantes_2017.png"
+        }
+      ],
+      "2019": [
+        {
+          "titulo": "Social 1educacao 10idebseriesfinais 2017",
+          "arquivo": "5_social_1educacao_10idebseriesfinais2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_10idebseriesfinais2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_10idebseriesfinais2017.png"
+        },
+        {
+          "titulo": "Social 1educacao 1txaprovacaofundamental 2018",
+          "arquivo": "5_social_1educacao_1txaprovacaofundamental2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_1txaprovacaofundamental2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_1txaprovacaofundamental2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 2txareprovacaofundamental 2018",
+          "arquivo": "5_social_1educacao_2txareprovacaofundamental2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_2txareprovacaofundamental2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_2txareprovacaofundamental2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 3txabandonofundamental 2018",
+          "arquivo": "5_social_1educacao_3txabandonofundamental2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_3txabandonofundamental2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_3txabandonofundamental2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 4txaprovacaomedio 2018",
+          "arquivo": "5_social_1educacao_4txaprovacaomedio2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_4txaprovacaomedio2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_4txaprovacaomedio2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 5txreprovacaomedio 2018",
+          "arquivo": "5_social_1educacao_5txreprovacaomedio2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_5txreprovacaomedio2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_5txreprovacaomedio2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 6txabandonomedio 2018",
+          "arquivo": "5_social_1educacao_6txabandonomedio2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_6txabandonomedio2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_6txabandonomedio2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 7distorcaofundamental 2018",
+          "arquivo": "5_social_1educacao_7distorcaofundamental2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_7distorcaofundamental2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_7distorcaofundamental2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 8distorcaomedio 2018",
+          "arquivo": "5_social_1educacao_8distorcaomedio2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_8distorcaomedio2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_8distorcaomedio2018.png"
+        },
+        {
+          "titulo": "Social 1educacao 9idebseriesiniciais 2017",
+          "arquivo": "5_social_1educacao_9idebseriesiniciais2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_1educacao_9idebseriesiniciais2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_1educacao_9idebseriesiniciais2017.png"
+        },
+        {
+          "titulo": "Social 2inclusaosocial 1familiasbolsa 2018",
+          "arquivo": "5_social_2inclusaosocial_1familiasbolsa2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_2inclusaosocial_1familiasbolsa2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_2inclusaosocial_1familiasbolsa2018.png"
+        },
+        {
+          "titulo": "Social 2inclusaosocial 2valorfamiliasbolsa 2018",
+          "arquivo": "5_social_2inclusaosocial_2valorfamiliasbolsa2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_2inclusaosocial_2valorfamiliasbolsa2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_2inclusaosocial_2valorfamiliasbolsa2018.png"
+        },
+        {
+          "titulo": "Social 3mt 1vinculosemprego 2017",
+          "arquivo": "5_social_3mt_1vinculosemprego2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_3mt_1vinculosemprego2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_3mt_1vinculosemprego2017.png"
+        },
+        {
+          "titulo": "Social 3mt 2vinculosremuneracao 2017",
+          "arquivo": "5_social_3mt_2vinculosremuneracao2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_3mt_2vinculosremuneracao2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_3mt_2vinculosremuneracao2017.png"
+        },
+        {
+          "titulo": "Social 4saude 1txnatalidade 2017",
+          "arquivo": "5_social_4saude_1txnatalidade2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_1txnatalidade2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_1txnatalidade2017.png"
+        },
+        {
+          "titulo": "Social 4saude 2txmortinfantil 2017",
+          "arquivo": "5_social_4saude_2txmortinfantil2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_2txmortinfantil2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_2txmortinfantil2017.png"
+        },
+        {
+          "titulo": "Social 4saude 3txmortinfancia05anos 2017",
+          "arquivo": "5_social_4saude_3txmortinfancia05anos2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_3txmortinfancia05anos2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_3txmortinfancia05anos2017.png"
+        },
+        {
+          "titulo": "Social 4saude 4txmortgeral 2017",
+          "arquivo": "5_social_4saude_4txmortgeral2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_4txmortgeral2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_4txmortgeral2017.png"
+        },
+        {
+          "titulo": "Social 4saude 5postosecentros 2018",
+          "arquivo": "5_social_4saude_5postosecentros2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_5postosecentros2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_5postosecentros2018.png"
+        },
+        {
+          "titulo": "Social 4saude 6leitos 2018",
+          "arquivo": "5_social_4saude_6leitos2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_6leitos2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_6leitos2018.png"
+        },
+        {
+          "titulo": "Social 4saude 7medicos 2018",
+          "arquivo": "5_social_4saude_7medicos2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_7medicos2018.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_7medicos2018.png"
+        },
+        {
+          "titulo": "Social 4saude 8nvconsultaprenatal 2017",
+          "arquivo": "5_social_4saude_8nvconsultaprenatal2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_4saude_8nvconsultaprenatal2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_4saude_8nvconsultaprenatal2017.png"
+        },
+        {
+          "titulo": "Social 5 Seguranca 1txhomicidiototal 2017",
+          "arquivo": "5_social_5_seguranca_1txhomicidiototal2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_5_seguranca_1txhomicidiototal2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_5_seguranca_1txhomicidiototal2017.png"
+        },
+        {
+          "titulo": "Social 5 Seguranca 2txhomicidiojovem 2017",
+          "arquivo": "5_social_5_seguranca_2txhomicidiojovem2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_5_seguranca_2txhomicidiojovem2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_5_seguranca_2txhomicidiojovem2017.png"
+        },
+        {
+          "titulo": "Social 5 Seguranca 3mortestransito 2017",
+          "arquivo": "5_social_5_seguranca_3mortestransito2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/social/5_social_5_seguranca_3mortestransito2017.png",
+          "icon": "../icons-mapa-interativo/icons_2019/social/5_social_5_seguranca_3mortestransito2017.png"
+        }
+      ],
+      "2020": [
+        {
+          "titulo": "10social IDEB Series Finais 2019",
+          "arquivo": "10Social_ideb_series_finais2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/10Social_ideb_series_finais2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/10Social_ideb_series_finais2019.png"
+        },
+        {
+          "titulo": "11social Bolsafamilia Familias 2019",
+          "arquivo": "11Social_bolsafamilia_familias2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/11Social_bolsafamilia_familias2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/11Social_bolsafamilia_familias2019.png"
+        },
+        {
+          "titulo": "12social Bolsafamilia Valores 2019",
+          "arquivo": "12Social_bolsafamilia_valores2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/12Social_bolsafamilia_valores2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/12Social_bolsafamilia_valores2019.png"
+        },
+        {
+          "titulo": "13social Vínculos Emprego 2018",
+          "arquivo": "13Social_vinculos_emprego2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/13Social_vinculos_emprego2018.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/13Social_vinculos_emprego2018.png"
+        },
+        {
+          "titulo": "14social Vínculos Remuneracao 2018",
+          "arquivo": "14Social_vinculos_remuneracao2018.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/14Social_vinculos_remuneracao2018.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/14Social_vinculos_remuneracao2018.png"
+        },
+        {
+          "titulo": "15social Txmortalidade Geral 2019",
+          "arquivo": "15Social_txmortalidade_geral2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/15Social_txmortalidade_geral2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/15Social_txmortalidade_geral2019.png"
+        },
+        {
+          "titulo": "16social Tx Mortalidade Infantil 2019",
+          "arquivo": "16Social_tx_mortalidade_infantil2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/16Social_tx_mortalidade_infantil2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/16Social_tx_mortalidade_infantil2019.png"
+        },
+        {
+          "titulo": "17social Tx Mortalidade Na Infancia05anos 2019",
+          "arquivo": "17Social_tx_mortalidade_na_infancia05anos2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/17Social_tx_mortalidade_na_infancia05anos2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/17Social_tx_mortalidade_na_infancia05anos2019.png"
+        },
+        {
+          "titulo": "18social Tx Natalidade 2019",
+          "arquivo": "18Social_tx_natalidade2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/18Social_tx_natalidade2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/18Social_tx_natalidade2019.png"
+        },
+        {
+          "titulo": "19social Leitos 2019",
+          "arquivo": "19Social_leitos2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/19Social_leitos2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/19Social_leitos2019.png"
+        },
+        {
+          "titulo": "1social Tx Aprovação Fundamental 2019",
+          "arquivo": "1Social_tx_aprovacao_fundamental2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/1Social_tx_aprovacao_fundamental2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/1Social_tx_aprovacao_fundamental2019.png"
+        },
+        {
+          "titulo": "20social Medicos 2019",
+          "arquivo": "20Social_medicos2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/20Social_medicos2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/20Social_medicos2019.png"
+        },
+        {
+          "titulo": "21social Postos Centros 2019",
+          "arquivo": "21Social_postos_centros2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/21Social_postos_centros2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/21Social_postos_centros2019.png"
+        },
+        {
+          "titulo": "22social Nvconsultaprenatal 2019",
+          "arquivo": "22Social_nvconsultaprenatal2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/22Social_nvconsultaprenatal2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/22Social_nvconsultaprenatal2019.png"
+        },
+        {
+          "titulo": "23social Txhomicidiototal 2019",
+          "arquivo": "23Social_txhomicidiototal_2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/23Social_txhomicidiototal_2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/23Social_txhomicidiototal_2019.png"
+        },
+        {
+          "titulo": "24social Txhomicidio Jovem 2019",
+          "arquivo": "24Social_txhomicidio_jovem2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/24Social_txhomicidio_jovem2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/24Social_txhomicidio_jovem2019.png"
+        },
+        {
+          "titulo": "25social Mortes Transito 2019",
+          "arquivo": "25Social_mortes_transito2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/25Social_mortes_transito2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/25Social_mortes_transito2019.png"
+        },
+        {
+          "titulo": "2social Txa Reprovação Fundamental 2019",
+          "arquivo": "2Social_txa_reprovacao_fundamental2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/2Social_txa_reprovacao_fundamental2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/2Social_txa_reprovacao_fundamental2019.png"
+        },
+        {
+          "titulo": "3social Txabandono Fundamental 2019",
+          "arquivo": "3Social_txabandono_fundamental2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/3Social_txabandono_fundamental2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/3Social_txabandono_fundamental2019.png"
+        },
+        {
+          "titulo": "4social Tx Aprovação Medio 2019",
+          "arquivo": "4Social_tx_aprovacao_medio2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/4Social_tx_aprovacao_medio2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/4Social_tx_aprovacao_medio2019.png"
+        },
+        {
+          "titulo": "5social Txa Reprovacaomedio 2019",
+          "arquivo": "5Social_txa_reprovacaomedio2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/5Social_txa_reprovacaomedio2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/5Social_txa_reprovacaomedio2019.png"
+        },
+        {
+          "titulo": "6social Txabandono Medio 2019",
+          "arquivo": "6Social_txabandono_medio2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/6Social_txabandono_medio2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/6Social_txabandono_medio2019.png"
+        },
+        {
+          "titulo": "7social Distorção Fundamental 2019",
+          "arquivo": "7Social_distorcao_fundamental2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/7Social_distorcao_fundamental2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/7Social_distorcao_fundamental2019.png"
+        },
+        {
+          "titulo": "8social Distorção Medio 2019",
+          "arquivo": "8Social_distorcao_medio2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/8Social_distorcao_medio2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/8Social_distorcao_medio2019.png"
+        },
+        {
+          "titulo": "9social IDEB Series Iniciais 2019",
+          "arquivo": "9Social_ideb_series_iniciais2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/social/9Social_ideb_series_iniciais2019.png",
+          "icon": "../icons-mapa-interativo/icons_2020/social/9Social_ideb_series_iniciais2019.png"
+        }
+      ],
+      "2021": [
+        {
+          "titulo": "Social Tx Aprovação Fundamental 2020",
+          "arquivo": "1-social_tx_aprovacao_fundamental2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/1-social_tx_aprovacao_fundamental2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/1-social_tx_aprovacao_fundamental2020.png"
+        },
+        {
+          "titulo": "Social IDEB Series Finais 2020",
+          "arquivo": "10-social_ideb_series_finais2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/10-social_ideb_series_finais2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/10-social_ideb_series_finais2020.png"
+        },
+        {
+          "titulo": "Social Bolsafamilia Familias 2020",
+          "arquivo": "11-social_bolsafamilia_familias2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/11-social_bolsafamilia_familias2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/11-social_bolsafamilia_familias2020.png"
+        },
+        {
+          "titulo": "Social Bolsafamilia Valores 2020",
+          "arquivo": "12-social_bolsafamilia_valores2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/12-social_bolsafamilia_valores2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/12-social_bolsafamilia_valores2020.png"
+        },
+        {
+          "titulo": "Social Vínculos Emprego 2019",
+          "arquivo": "13-social_vinculos_emprego2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/13-social_vinculos_emprego2019.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/13-social_vinculos_emprego2019.png"
+        },
+        {
+          "titulo": "Social Vínculos Remuneracao 2019",
+          "arquivo": "14-social_vinculos_remuneracao2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/14-social_vinculos_remuneracao2019.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/14-social_vinculos_remuneracao2019.png"
+        },
+        {
+          "titulo": "Social Txmortalidade Geral 2020",
+          "arquivo": "15-social_txmortalidade_geral2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/15-social_txmortalidade_geral2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/15-social_txmortalidade_geral2020.png"
+        },
+        {
+          "titulo": "Social Tx Mortalidade Infantil 2020",
+          "arquivo": "16-social_tx_mortalidade_infantil2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/16-social_tx_mortalidade_infantil2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/16-social_tx_mortalidade_infantil2020.png"
+        },
+        {
+          "titulo": "Social Tx Mortalidade Na Infancia05anos 2020",
+          "arquivo": "17-social_tx_mortalidade_na_infancia05anos2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/17-social_tx_mortalidade_na_infancia05anos2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/17-social_tx_mortalidade_na_infancia05anos2020.png"
+        },
+        {
+          "titulo": "Social Tx Natalidade 2020",
+          "arquivo": "18-social_tx_natalidade2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/18-social_tx_natalidade2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/18-social_tx_natalidade2020.png"
+        },
+        {
+          "titulo": "Social Leitos 2020",
+          "arquivo": "19-social_leitos2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/19-social_leitos2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/19-social_leitos2020.png"
+        },
+        {
+          "titulo": "Social Txa Reprovação Fundamental 2020",
+          "arquivo": "2-social_txa_reprovacao_fundamental2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/2-social_txa_reprovacao_fundamental2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/2-social_txa_reprovacao_fundamental2020.png"
+        },
+        {
+          "titulo": "Social Medicos 2020",
+          "arquivo": "20-social_medicos2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/20-social_medicos2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/20-social_medicos2020.png"
+        },
+        {
+          "titulo": "Social Postos Centros 2020",
+          "arquivo": "21-social_postos_centros2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/21-social_postos_centros2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/21-social_postos_centros2020.png"
+        },
+        {
+          "titulo": "Social Nvconsultaprenatal 2020",
+          "arquivo": "22-social_nvconsultaprenatal2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/22-social_nvconsultaprenatal2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/22-social_nvconsultaprenatal2020.png"
+        },
+        {
+          "titulo": "Social Txhomicidiototal 2020",
+          "arquivo": "23-social_txhomicidiototal_2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/23-social_txhomicidiototal_2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/23-social_txhomicidiototal_2020.png"
+        },
+        {
+          "titulo": "Social Txhomicidio Jovem 2020",
+          "arquivo": "24-social_txhomicidio_jovem2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/24-social_txhomicidio_jovem2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/24-social_txhomicidio_jovem2020.png"
+        },
+        {
+          "titulo": "Social Tx Mortes Transito 2020",
+          "arquivo": "25-social_tx_mortes_transito2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/25-social_tx_mortes_transito2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/25-social_tx_mortes_transito2020.png"
+        },
+        {
+          "titulo": "Social Txabandono Fundamental 2020",
+          "arquivo": "3-social_txabandono_fundamental2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/3-social_txabandono_fundamental2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/3-social_txabandono_fundamental2020.png"
+        },
+        {
+          "titulo": "Social Tx Aprovação Medio 2020",
+          "arquivo": "4-social_tx_aprovacao_medio2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/4-social_tx_aprovacao_medio2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/4-social_tx_aprovacao_medio2020.png"
+        },
+        {
+          "titulo": "Social Txa Reprovacaomedio 2020",
+          "arquivo": "5-social_txa_reprovacaomedio2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/5-social_txa_reprovacaomedio2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/5-social_txa_reprovacaomedio2020.png"
+        },
+        {
+          "titulo": "Social Txabandono Medio 2020",
+          "arquivo": "6-social_txabandono_medio2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/6-social_txabandono_medio2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/6-social_txabandono_medio2020.png"
+        },
+        {
+          "titulo": "Social Distorção Fundamental 2020",
+          "arquivo": "7-social_distorcao_fundamental2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/7-social_distorcao_fundamental2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/7-social_distorcao_fundamental2020.png"
+        },
+        {
+          "titulo": "Social Distorção Medio 2020",
+          "arquivo": "8-social_distorcao_medio2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/8-social_distorcao_medio2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/8-social_distorcao_medio2020.png"
+        },
+        {
+          "titulo": "Social IDEB Series Iniciais 2020",
+          "arquivo": "9-social_ideb_series_iniciais2020.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/social/9-social_ideb_series_iniciais2020.png",
+          "icon": "../icons-mapa-interativo/icons_2021/social/9-social_ideb_series_iniciais2020.png"
+        }
+      ],
+      "2022": [
+        {
+          "titulo": "Social IDEB Series Finais 2021",
+          "arquivo": "10_social_ideb_series_finais2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/10_social_ideb_series_finais2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/10_social_ideb_series_finais2021.png"
+        },
+        {
+          "titulo": "Social Bolsafamilia Familias 2021",
+          "arquivo": "11_social_bolsafamilia_familias2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/11_social_bolsafamilia_familias2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/11_social_bolsafamilia_familias2021.png"
+        },
+        {
+          "titulo": "Social Bolsafamilia Valores 2021",
+          "arquivo": "12_social_bolsafamilia_valores2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/12_social_bolsafamilia_valores2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/12_social_bolsafamilia_valores2021.png"
+        },
+        {
+          "titulo": "Social Vínculos Emprego 2019",
+          "arquivo": "13_social_vinculos_emprego2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/13_social_vinculos_emprego2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/13_social_vinculos_emprego2019.png"
+        },
+        {
+          "titulo": "Social Vínculos Remuneracao 2019",
+          "arquivo": "14_social_vinculos_remuneracao2019.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/14_social_vinculos_remuneracao2019.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/14_social_vinculos_remuneracao2019.png"
+        },
+        {
+          "titulo": "Social Txmortalidade Geral 2021",
+          "arquivo": "15_social_txmortalidade_geral2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/15_social_txmortalidade_geral2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/15_social_txmortalidade_geral2021.png"
+        },
+        {
+          "titulo": "Social Tx Mortalidade Infantil 2021",
+          "arquivo": "16_social_tx_mortalidade_infantil2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/16_social_tx_mortalidade_infantil2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/16_social_tx_mortalidade_infantil2021.png"
+        },
+        {
+          "titulo": "Social Tx Mortalidade Na Infancia05anos 2021",
+          "arquivo": "17_social_tx_mortalidade_na_infancia05anos2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/17_social_tx_mortalidade_na_infancia05anos2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/17_social_tx_mortalidade_na_infancia05anos2021.png"
+        },
+        {
+          "titulo": "Social Tx Natalidade 2021",
+          "arquivo": "18_social_tx_natalidade2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/18_social_tx_natalidade2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/18_social_tx_natalidade2021.png"
+        },
+        {
+          "titulo": "Social Leitos 2021",
+          "arquivo": "19_social_leitos2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/19_social_leitos2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/19_social_leitos2021.png"
+        },
+        {
+          "titulo": "Social Tx Aprovação Fundamental 2021",
+          "arquivo": "1_social_tx_aprovacao_fundamental2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/1_social_tx_aprovacao_fundamental2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/1_social_tx_aprovacao_fundamental2021.png"
+        },
+        {
+          "titulo": "Social Medicos 2021",
+          "arquivo": "20_social_medicos2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/20_social_medicos2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/20_social_medicos2021.png"
+        },
+        {
+          "titulo": "Social Postos Centros 2021",
+          "arquivo": "21_social_postos_centros2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/21_social_postos_centros2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/21_social_postos_centros2021.png"
+        },
+        {
+          "titulo": "Social Nvconsultaprenatal 2021",
+          "arquivo": "22_social_nvconsultaprenatal2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/22_social_nvconsultaprenatal2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/22_social_nvconsultaprenatal2021.png"
+        },
+        {
+          "titulo": "Social Txhomicidiototal 2021",
+          "arquivo": "23_social_txhomicidiototal_2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/23_social_txhomicidiototal_2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/23_social_txhomicidiototal_2021.png"
+        },
+        {
+          "titulo": "Social Txhomicidio Jovem 2022",
+          "arquivo": "24_social_txhomicidio_jovem2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/24_social_txhomicidio_jovem2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/24_social_txhomicidio_jovem2022.png"
+        },
+        {
+          "titulo": "Social Tx Mortes Transito 2021",
+          "arquivo": "25_social_tx_mortes_transito2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/25_social_tx_mortes_transito2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/25_social_tx_mortes_transito2021.png"
+        },
+        {
+          "titulo": "Social Txa Reprovação Fundamental 2021",
+          "arquivo": "2_social_txa_reprovacao_fundamental2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/2_social_txa_reprovacao_fundamental2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/2_social_txa_reprovacao_fundamental2021.png"
+        },
+        {
+          "titulo": "Social Txabandono Fundamental 2021",
+          "arquivo": "3_social_txabandono_fundamental2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/3_social_txabandono_fundamental2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/3_social_txabandono_fundamental2021.png"
+        },
+        {
+          "titulo": "Social Tx Aprovação Medio 2021",
+          "arquivo": "4_social_tx_aprovacao_medio2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/4_social_tx_aprovacao_medio2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/4_social_tx_aprovacao_medio2021.png"
+        },
+        {
+          "titulo": "Social Txa Reprovacaomedio 2021",
+          "arquivo": "5_social_txa_reprovacaomedio2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/5_social_txa_reprovacaomedio2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/5_social_txa_reprovacaomedio2021.png"
+        },
+        {
+          "titulo": "Social Txabandono Medio 2021",
+          "arquivo": "6_social_txabandono_medio2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/6_social_txabandono_medio2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/6_social_txabandono_medio2021.png"
+        },
+        {
+          "titulo": "Social Distorção Fundamental 2021",
+          "arquivo": "7_social_distorcao_fundamental2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/7_social_distorcao_fundamental2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/7_social_distorcao_fundamental2021.png"
+        },
+        {
+          "titulo": "Social Distorção Medio 2021",
+          "arquivo": "8_social_distorcao_medio2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/8_social_distorcao_medio2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/8_social_distorcao_medio2021.png"
+        },
+        {
+          "titulo": "Social IDEB Series Iniciais 2021",
+          "arquivo": "9_social_ideb_series_iniciais2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/social/9_social_ideb_series_iniciais2021.png",
+          "icon": "../icons-mapa-interativo/icons_2022/social/9_social_ideb_series_iniciais2021.png"
+        }
+      ],
+      "2023": [
+        {
+          "titulo": "Social Auxiliobrasil Familias 2022",
+          "arquivo": "Social_AuxilioBrasil_familias2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_AuxilioBrasil_familias2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_AuxilioBrasil_familias2022.png"
+        },
+        {
+          "titulo": "Social Auxíliobrasil Valores 2022",
+          "arquivo": "Social_AuxílioBrasil_Valores2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_AuxílioBrasil_Valores2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_AuxílioBrasil_Valores2022.png"
+        },
+        {
+          "titulo": "Social Distorção Idade Série Ens. Médio 2022",
+          "arquivo": "Social_Distorção_Idade_Série_Ens._Médio_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Distorção_Idade_Série_Ens._Médio_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Distorção_Idade_Série_Ens._Médio_2022.png"
+        },
+        {
+          "titulo": "Social Distorção Idade Série Ens.Fundamental 2022",
+          "arquivo": "Social_Distorção_Idade_Série_Ens_Fundamental_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Distorção_Idade_Série_Ens_Fundamental_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Distorção_Idade_Série_Ens_Fundamental_2022.png"
+        },
+        {
+          "titulo": "Social IDEB Series Finais 2022",
+          "arquivo": "Social_IDEB_Series_Finais_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_IDEB_Series_Finais_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_IDEB_Series_Finais_2022.png"
+        },
+        {
+          "titulo": "Social IDEB Series Iniciais 2022",
+          "arquivo": "Social_IDEB_Series_Iniciais_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_IDEB_Series_Iniciais_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_IDEB_Series_Iniciais_2022.png"
+        },
+        {
+          "titulo": "Social Leitos Hospitalares 2022",
+          "arquivo": "Social_Leitos_Hospitalares_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Leitos_Hospitalares_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Leitos_Hospitalares_2022.png"
+        },
+        {
+          "titulo": "Social Médicos 2022",
+          "arquivo": "Social_Médicos_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Médicos_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Médicos_2022.png"
+        },
+        {
+          "titulo": "Social Nvconsultaprenatal 2022",
+          "arquivo": "Social_nvconsultaprenatal2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_nvconsultaprenatal2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_nvconsultaprenatal2022.png"
+        },
+        {
+          "titulo": "Social Postos Centros 2022",
+          "arquivo": "Social_Postos_Centros2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Postos_Centros2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Postos_Centros2022.png"
+        },
+        {
+          "titulo": "Social Txa Reprovacaomedio 2022",
+          "arquivo": "Social_txa_reprovacaomedio2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_txa_reprovacaomedio2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_txa_reprovacaomedio2022.png"
+        },
+        {
+          "titulo": "Social Txa Reprovação Fundamental 2022",
+          "arquivo": "Social_txa_reprovacao_fundamental2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_txa_reprovacao_fundamental2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_txa_reprovacao_fundamental2022.png"
+        },
+        {
+          "titulo": "Social Txhomicidiototal 2022",
+          "arquivo": "Social_txhomicidiototal_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_txhomicidiototal_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_txhomicidiototal_2022.png"
+        },
+        {
+          "titulo": "Social Txhomicidio Jovem 2023",
+          "arquivo": "Social_txhomicidio_jovem2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_txhomicidio_jovem2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_txhomicidio_jovem2023.png"
+        },
+        {
+          "titulo": "Social Txmortalidade Geral 2022",
+          "arquivo": "Social_txmortalidade_geral2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_txmortalidade_geral2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_txmortalidade_geral2022.png"
+        },
+        {
+          "titulo": "Social Tx Aprovação Fundamental 2022",
+          "arquivo": "Social_tx_aprovacao_fundamental2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_tx_aprovacao_fundamental2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_tx_aprovacao_fundamental2022.png"
+        },
+        {
+          "titulo": "Social Tx Aprovação Medio 2022",
+          "arquivo": "Social_tx_aprovacao_medio2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_tx_aprovacao_medio2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_tx_aprovacao_medio2022.png"
+        },
+        {
+          "titulo": "Social Tx De Abandono Ens.Fundamental 2022",
+          "arquivo": "Social_Tx_de_Abandono_Ens_Fundamental_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Tx_de_Abandono_Ens_Fundamental_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Tx_de_Abandono_Ens_Fundamental_2022.png"
+        },
+        {
+          "titulo": "Social Tx De Abandono Ens.Médio 2022",
+          "arquivo": "Social_Tx_de_Abandono_Ens_Médio_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Tx_de_Abandono_Ens_Médio_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Tx_de_Abandono_Ens_Médio_2022.png"
+        },
+        {
+          "titulo": "Social Tx De Mortalidade Infantil 2022",
+          "arquivo": "Social_Tx_de_Mortalidade_Infantil_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Tx_de_Mortalidade_Infantil_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Tx_de_Mortalidade_Infantil_2022.png"
+        },
+        {
+          "titulo": "Social Tx De Mortalidade Na Infância 2022",
+          "arquivo": "Social_Tx_de_Mortalidade_na_Infância_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Tx_de_Mortalidade_na_Infância_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Tx_de_Mortalidade_na_Infância_2022.png"
+        },
+        {
+          "titulo": "Social Tx De Mortes No Trânsito 2022",
+          "arquivo": "Social_Tx_de_Mortes_no_Transito_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Tx_de_Mortes_no_Transito_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Tx_de_Mortes_no_Transito_2022.png"
+        },
+        {
+          "titulo": "Social Tx De Natalidade 2022",
+          "arquivo": "Social_Tx_de_Natalidade_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_Tx_de_Natalidade_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_Tx_de_Natalidade_2022.png"
+        },
+        {
+          "titulo": "Social Vínculos Emprego 2021",
+          "arquivo": "Social_vinculos_emprego2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_vinculos_emprego2021.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_vinculos_emprego2021.png"
+        },
+        {
+          "titulo": "Social Vínculos Remuneracao 2021",
+          "arquivo": "Social_vinculos_remuneracao2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/social/Social_vinculos_remuneracao2021.png",
+          "icon": "../icons-mapa-interativo/icons_2023/social/Social_vinculos_remuneracao2021.png"
+        }
+      ],
+      "2024": [
+        {
+          "titulo": "Social Bolsa Família - Famílias Atendidas 2023",
+          "arquivo": "Social_Bolsa_Familia_Familias_Atendidas_2023_.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Bolsa_Familia_Familias_Atendidas_2023_.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Bolsa_Familia_Familias_Atendidas_2023_.png"
+        },
+        {
+          "titulo": "Social Bolsa Família - Valor Total 2023",
+          "arquivo": "Social_Bolsa_Familia_Valor_Total_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Bolsa_Familia_Valor_Total_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Bolsa_Familia_Valor_Total_2023.png"
+        },
+        {
+          "titulo": "Social Distorção Idade-Série Ens. Fundamental 2023",
+          "arquivo": "Social_DistorA7A3o_Idade_SA9rie_Ens._Fundamental_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_DistorA7A3o_Idade_SA9rie_Ens._Fundamental_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_DistorA7A3o_Idade_SA9rie_Ens._Fundamental_2023.png"
+        },
+        {
+          "titulo": "Social Distorção Idade-Série Ens. Médio 2023",
+          "arquivo": "Social_DistorA7A3o_Idade_SA9rie_Ens._MA9dio_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_DistorA7A3o_Idade_SA9rie_Ens._MA9dio_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_DistorA7A3o_Idade_SA9rie_Ens._MA9dio_2023.png"
+        },
+        {
+          "titulo": "Social IDEB - Séries Finais 2023",
+          "arquivo": "Social_IDEB_Series_Finais_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_IDEB_Series_Finais_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_IDEB_Series_Finais_2023.png"
+        },
+        {
+          "titulo": "Social IDEB - Séries Iniciais 2023",
+          "arquivo": "Social_IDEB_Series_Iniciais_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_IDEB_Series_Iniciais_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_IDEB_Series_Iniciais_2023.png"
+        },
+        {
+          "titulo": "Social Leitos 2024",
+          "arquivo": "Social_Leitos2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Leitos2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Leitos2024.png"
+        },
+        {
+          "titulo": "Social Médicos 2024",
+          "arquivo": "Social_Medicos2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Medicos2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Medicos2024.png"
+        },
+        {
+          "titulo": "Social Consulta Pré-Natal 2023",
+          "arquivo": "Social_nvconsultaprenatal2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_nvconsultaprenatal2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_nvconsultaprenatal2023.png"
+        },
+        {
+          "titulo": "Social Postos e Centros de Saúde 2024",
+          "arquivo": "social_postos_centros2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/social_postos_centros2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/social_postos_centros2024.png"
+        },
+        {
+          "titulo": "Social Taxa de Homicídio Total 2023",
+          "arquivo": "Social_txhomicidiototal_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_txhomicidiototal_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_txhomicidiototal_2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Homicídio Jovem 2023",
+          "arquivo": "Social_txhomicidio_jovem2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_txhomicidio_jovem2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_txhomicidio_jovem2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Mortalidade Geral 2023",
+          "arquivo": "Social_txmortalidade_geral2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_txmortalidade_geral2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_txmortalidade_geral2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Aprovação Fundamental 2023",
+          "arquivo": "Social_Tx_Aprovacao_Fundamental_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_Aprovacao_Fundamental_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_Aprovacao_Fundamental_2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Aprovação Médio 2023",
+          "arquivo": "Social_Tx_Aprovacao_Medio_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_Aprovacao_Medio_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_Aprovacao_Medio_2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Abandono Ens. Fundamental 2023",
+          "arquivo": "Social_Tx_de_Abandono_Ens._Fundamental_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_de_Abandono_Ens._Fundamental_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_de_Abandono_Ens._Fundamental_2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Abandono Ens. Médio 2023",
+          "arquivo": "Social_Tx_de_Abandono_Ens._MA9dio_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_de_Abandono_Ens._MA9dio_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_de_Abandono_Ens._MA9dio_2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Mortalidade Infantil 2023",
+          "arquivo": "Social_tx_mortalidade_infantil2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_tx_mortalidade_infantil2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_tx_mortalidade_infantil2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Mortalidade na Infância 0-5 anos 2023",
+          "arquivo": "Social_tx_mortalidade_na_infancia05anos2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_tx_mortalidade_na_infancia05anos2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_tx_mortalidade_na_infancia05anos2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Mortes no Trânsito 2023",
+          "arquivo": "Social_Tx_mortes_transito2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_mortes_transito2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_mortes_transito2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Natalidade 2023",
+          "arquivo": "Social_tx_natalidade2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_tx_natalidade2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_tx_natalidade2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Reprovação Fundamental 2023",
+          "arquivo": "Social_Tx_Reprovacao_Fundamental_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_Reprovacao_Fundamental_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_Reprovacao_Fundamental_2023.png"
+        },
+        {
+          "titulo": "Social Taxa de Reprovação Médio 2023",
+          "arquivo": "Social_Tx_Reprovacao_Medio_2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_Tx_Reprovacao_Medio_2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_Tx_Reprovacao_Medio_2023.png"
+        },
+        {
+          "titulo": "Social Vínculos de Emprego 2023",
+          "arquivo": "Social_vinculos_emprego2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_vinculos_emprego2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_vinculos_emprego2023.png"
+        },
+        {
+          "titulo": "Social Vínculos - Remuneração 2023",
+          "arquivo": "Social_vinculos_remuneracao2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/social/Social_vinculos_remuneracao2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/social/Social_vinculos_remuneracao2023.png"
+        }
+      ],
+      "2025": [
+        {
+          "titulo": "Social Leitos2025",
+          "arquivo": "Social_Leitos2025.jpg",
+          "caminho": "../mapas/social/Social_Leitos2025.jpg",
+          "icon": "../icons/social/Social_Leitos2025.png"
+        },
+        {
+          "titulo": "Social Medicos2025",
+          "arquivo": "Social_Medicos2025.jpg",
+          "caminho": "../mapas/social/Social_Medicos2025.jpg",
+          "icon": "../icons/social/Social_Medicos2025.png"
+        },
+        {
+          "titulo": "Social Postos Centros2025",
+          "arquivo": "Social_Postos_Centros2025.jpg",
+          "caminho": "../mapas/social/Social_Postos_Centros2025.jpg",
+          "icon": "../icons/social/Social_Postos_Centros2025.png"
+        },
+        {
+          "titulo": "Social Tx mortes transito2024",
+          "arquivo": "Social_Tx_mortes_transito2024.jpg",
+          "caminho": "../mapas/social/Social_Tx_mortes_transito2024.jpg",
+          "icon": "../icons/social/Social_Tx_mortes_transito2024.png"
+        },
+        {
+          "titulo": "Social bolsafamilia familias2024",
+          "arquivo": "Social_bolsafamilia_familias2024.jpg",
+          "caminho": "../mapas/social/Social_bolsafamilia_familias2024.jpg",
+          "icon": "../icons/social/Social_bolsafamilia_familias2024.png"
+        },
+        {
+          "titulo": "Social bolsafamilia valores2024",
+          "arquivo": "Social_bolsafamilia_valores2024.jpg",
+          "caminho": "../mapas/social/Social_bolsafamilia_valores2024.jpg",
+          "icon": "../icons/social/Social_bolsafamilia_valores2024.png"
+        },
+        {
+          "titulo": "Social distorcao fundamental2024",
+          "arquivo": "Social_distorcao_fundamental2024.jpg",
+          "caminho": "../mapas/social/Social_distorcao_fundamental2024.jpg",
+          "icon": "../icons/social/Social_distorcao_fundamental2024.png"
+        },
+        {
+          "titulo": "Social distorcao medio2024",
+          "arquivo": "Social_distorcao_medio2024.jpg",
+          "caminho": "../mapas/social/Social_distorcao_medio2024.jpg",
+          "icon": "../icons/social/Social_distorcao_medio2024.png"
+        },
+        {
+          "titulo": "Social ideb series finais2024",
+          "arquivo": "Social_ideb_series_finais2024.jpg",
+          "caminho": "../mapas/social/Social_ideb_series_finais2024.jpg",
+          "icon": "../icons/social/Social_ideb_series_finais2024.png"
+        },
+        {
+          "titulo": "Social ideb series iniciais2024",
+          "arquivo": "Social_ideb_series_iniciais2024.jpg",
+          "caminho": "../mapas/social/Social_ideb_series_iniciais2024.jpg",
+          "icon": "../icons/social/Social_ideb_series_iniciais2024.png"
+        },
+        {
+          "titulo": "Social nvconsultaprenatal2024",
+          "arquivo": "Social_nvconsultaprenatal2024.jpg",
+          "caminho": "../mapas/social/Social_nvconsultaprenatal2024.jpg",
+          "icon": "../icons/social/Social_nvconsultaprenatal2024.png"
+        },
+        {
+          "titulo": "Social tx aprovacao fundamental2024",
+          "arquivo": "Social_tx_aprovacao_fundamental2024.jpg",
+          "caminho": "../mapas/social/Social_tx_aprovacao_fundamental2024.jpg",
+          "icon": "../icons/social/Social_tx_aprovacao_fundamental2024.png"
+        },
+        {
+          "titulo": "Social tx aprovacao medio2024",
+          "arquivo": "Social_tx_aprovacao_medio2024.jpg",
+          "caminho": "../mapas/social/Social_tx_aprovacao_medio2024.jpg",
+          "icon": "../icons/social/Social_tx_aprovacao_medio2024.png"
+        },
+        {
+          "titulo": "Social tx mortalidade infantil2024",
+          "arquivo": "Social_tx_mortalidade_infantil2024.jpg",
+          "caminho": "../mapas/social/Social_tx_mortalidade_infantil2024.jpg",
+          "icon": "../icons/social/Social_tx_mortalidade_infantil2024.png"
+        },
+        {
+          "titulo": "Social tx mortalidade na infância2024",
+          "arquivo": "Social_tx_mortalidade_na_infância2024.jpg",
+          "caminho": "../mapas/social/Social_tx_mortalidade_na_infância2024.jpg",
+          "icon": "../icons/social/Social_tx_mortalidade_na_infância2024.png"
+        },
+        {
+          "titulo": "Social tx natalidade2024",
+          "arquivo": "Social_tx_natalidade2024.jpg",
+          "caminho": "../mapas/social/Social_tx_natalidade2024.jpg",
+          "icon": "../icons/social/Social_tx_natalidade2024.png"
+        },
+        {
+          "titulo": "Social txa reprovacao fundamental2024",
+          "arquivo": "Social_txa_reprovacao_fundamental2024.jpg",
+          "caminho": "../mapas/social/Social_txa_reprovacao_fundamental2024.jpg",
+          "icon": "../icons/social/Social_txa_reprovacao_fundamental2024.png"
+        },
+        {
+          "titulo": "Social txa reprovacaomedio2024",
+          "arquivo": "Social_txa_reprovacaomedio2024.jpg",
+          "caminho": "../mapas/social/Social_txa_reprovacaomedio2024.jpg",
+          "icon": "../icons/social/Social_txa_reprovacaomedio2024.png"
+        },
+        {
+          "titulo": "Social txabandono fundamental2024",
+          "arquivo": "Social_txabandono_fundamental2024.jpg",
+          "caminho": "../mapas/social/Social_txabandono_fundamental2024.jpg",
+          "icon": "../icons/social/Social_txabandono_fundamental2024.png"
+        },
+        {
+          "titulo": "Social txabandono medio2024",
+          "arquivo": "Social_txabandono_medio2024.jpg",
+          "caminho": "../mapas/social/Social_txabandono_medio2024.jpg",
+          "icon": "../icons/social/Social_txabandono_medio2024.png"
+        },
+        {
+          "titulo": "Social txhomicidio jovens2024",
+          "arquivo": "Social_txhomicidio_jovens2024.jpg",
+          "caminho": "../mapas/social/Social_txhomicidio_jovens2024.jpg",
+          "icon": "../icons/social/Social_txhomicidio_jovens2024.png"
+        },
+        {
+          "titulo": "Social txhomicidiototal 2024",
+          "arquivo": "Social_txhomicidiototal_2024.jpg",
+          "caminho": "../mapas/social/Social_txhomicidiototal_2024.jpg",
+          "icon": "../icons/social/Social_txhomicidiototal_2024.png"
+        },
+        {
+          "titulo": "Social txmortalidade geral2024",
+          "arquivo": "Social_txmortalidade_geral2024.jpg",
+          "caminho": "../mapas/social/Social_txmortalidade_geral2024.jpg",
+          "icon": "../icons/social/Social_txmortalidade_geral2024.png"
+        },
+        {
+          "titulo": "Social vinculos emprego2023",
+          "arquivo": "Social_vinculos_emprego2023.jpg",
+          "caminho": "../mapas/social/Social_vinculos_emprego2023.jpg",
+          "icon": "../icons/social/Social_vinculos_emprego2023.png"
+        },
+        {
+          "titulo": "Social vinculos remuneracao2023",
+          "arquivo": "Social_vinculos_remuneracao2023.jpg",
+          "caminho": "../mapas/social/Social_vinculos_remuneracao2023.jpg",
+          "icon": "../icons/social/Social_vinculos_remuneracao2023.png"
+        }
+      ]
+    },
+    "Território": {
+      "2017": [
+        {
+          "titulo": "Municípios Do Estado Do Para 2016",
+          "arquivo": "ter1_municipios_do_estado_do_para_2016.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter1_municipios_do_estado_do_para_2016.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter1_municipios_do_estado_do_para_2016.png"
+        },
+        {
+          "titulo": "Regioes De Integração Do Para",
+          "arquivo": "ter2_regioes_de_integracao_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter2_regioes_de_integracao_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter2_regioes_de_integracao_do_para.png"
+        },
+        {
+          "titulo": "Mesorregioes Paraenses",
+          "arquivo": "ter3_mesorregioes_paraenses.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter3_mesorregioes_paraenses.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter3_mesorregioes_paraenses.png"
+        },
+        {
+          "titulo": "Microrregioes Paraenses",
+          "arquivo": "ter4_microrregioes_paraenses.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter4_microrregioes_paraenses.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter4_microrregioes_paraenses.png"
+        },
+        {
+          "titulo": "Mapa Hidrografico Do Para",
+          "arquivo": "ter5_mapa_hidrografico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter5_mapa_hidrografico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter5_mapa_hidrografico_do_para.png"
+        },
+        {
+          "titulo": "Mapa Geológico Do Para",
+          "arquivo": "ter6_mapa_geologico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter6_mapa_geologico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter6_mapa_geologico_do_para.png"
+        },
+        {
+          "titulo": "Mapa Geomorfológico Do Para",
+          "arquivo": "ter7_mapa_geomorfologico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter7_mapa_geomorfologico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter7_mapa_geomorfologico_do_para.png"
+        },
+        {
+          "titulo": "Mapa Pedológico Do Para",
+          "arquivo": "ter8_mapa_pedologico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter8_mapa_pedologico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter8_mapa_pedologico_do_para.png"
+        },
+        {
+          "titulo": "Fitoecologia Do Para",
+          "arquivo": "ter9_fitoecologia_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter9_fitoecologia_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter9_fitoecologia_do_para.png"
+        },
+        {
+          "titulo": "Macrozoneamento Mzee 2010",
+          "arquivo": "ter10_macrozoneamento_mzee_2010.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter10_macrozoneamento_mzee_2010.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter10_macrozoneamento_mzee_2010.png"
+        },
+        {
+          "titulo": "Metropolitana De Belém",
+          "arquivo": "ter11_metropolitana_de_belem.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter11_metropolitana_de_belem.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter11_metropolitana_de_belem.png"
+        },
+        {
+          "titulo": "Distritos Administrativos",
+          "arquivo": "ter12_distritos_administrativos.png",
+          "caminho": "../mapas-modo-interativo/mapas2017/territorio/ter12_distritos_administrativos.png",
+          "icon": "../icons-mapa-interativo/icons_2017/territorio/ter12_distritos_administrativos.png"
+        }
+      ],
+      "2018": [
+        {
+          "titulo": "Macrozoneamento Mzee 2010",
+          "arquivo": "ter10_macrozoneamento_mzee_2010.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter10_macrozoneamento_mzee_2010.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter10_macrozoneamento_mzee_2010.png"
+        },
+        {
+          "titulo": "Metropolitana De Belém",
+          "arquivo": "ter11_metropolitana_de_belem.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter11_metropolitana_de_belem.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter11_metropolitana_de_belem.png"
+        },
+        {
+          "titulo": "Distritos Administrativos",
+          "arquivo": "ter12_distritos_administrativos.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter12_distritos_administrativos.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter12_distritos_administrativos.png"
+        },
+        {
+          "titulo": "Municípios Do Estado Do Para 2017",
+          "arquivo": "ter1_municipios_do_estado_do_para_2017.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter1_municipios_do_estado_do_para_2017.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter1_municipios_do_estado_do_para_2017.png"
+        },
+        {
+          "titulo": "Regioes De Integração Do Para",
+          "arquivo": "ter2_regioes_de_integracao_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter2_regioes_de_integracao_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter2_regioes_de_integracao_do_para.png"
+        },
+        {
+          "titulo": "Mesorregioes Paraenses",
+          "arquivo": "ter3_mesorregioes_paraenses.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter3_mesorregioes_paraenses.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter3_mesorregioes_paraenses.png"
+        },
+        {
+          "titulo": "Microrregioes Paraenses",
+          "arquivo": "ter4_microrregioes_paraenses.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter4_microrregioes_paraenses.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter4_microrregioes_paraenses.png"
+        },
+        {
+          "titulo": "Mapa Hidrografico Do Para",
+          "arquivo": "ter5_mapa_hidrografico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter5_mapa_hidrografico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter5_mapa_hidrografico_do_para.png"
+        },
+        {
+          "titulo": "Mapa Geológico Do Para",
+          "arquivo": "ter6_mapa_geologico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter6_mapa_geologico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter6_mapa_geologico_do_para.png"
+        },
+        {
+          "titulo": "Mapa Geomorfológico Do Para",
+          "arquivo": "ter7_mapa_geomorfologico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter7_mapa_geomorfologico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter7_mapa_geomorfologico_do_para.png"
+        },
+        {
+          "titulo": "Mapa Pedológico Do Para",
+          "arquivo": "ter8_mapa_pedologico_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter8_mapa_pedologico_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter8_mapa_pedologico_do_para.png"
+        },
+        {
+          "titulo": "Fitoecologia Do Para",
+          "arquivo": "ter9_fitoecologia_do_para.png",
+          "caminho": "../mapas-modo-interativo/mapas2018/territorio/ter9_fitoecologia_do_para.png",
+          "icon": "../icons-mapa-interativo/icons_2018/territorio/ter9_fitoecologia_do_para.png"
+        }
+      ],
+      "2019": [
+        {
+          "titulo": "Território 10fitoecologia",
+          "arquivo": "6_territorio_10fitoecologia.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_10fitoecologia.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_10fitoecologia.png"
+        },
+        {
+          "titulo": "Território 11pedologico",
+          "arquivo": "6_territorio_11pedologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_11pedologico.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_11pedologico.png"
+        },
+        {
+          "titulo": "Território 12geomorfologico",
+          "arquivo": "6_territorio_12geomorfologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_12geomorfologico.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_12geomorfologico.png"
+        },
+        {
+          "titulo": "Território 1municipios",
+          "arquivo": "6_territorio_1municipios.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_1municipios.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_1municipios.png"
+        },
+        {
+          "titulo": "Território 2regiaointegracao",
+          "arquivo": "6_territorio_2regiaointegracao.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_2regiaointegracao.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_2regiaointegracao.png"
+        },
+        {
+          "titulo": "Território 3mesoregioes",
+          "arquivo": "6_territorio_3mesoregioes.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_3mesoregioes.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_3mesoregioes.png"
+        },
+        {
+          "titulo": "Território 4microregioes",
+          "arquivo": "6_territorio_4microregioes.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_4microregioes.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_4microregioes.png"
+        },
+        {
+          "titulo": "Território 5metropolitana",
+          "arquivo": "6_territorio_5metropolitana.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_5metropolitana.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_5metropolitana.png"
+        },
+        {
+          "titulo": "Território 6distritos",
+          "arquivo": "6_territorio_6distritos.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_6distritos.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_6distritos.png"
+        },
+        {
+          "titulo": "Território 7hidrografia",
+          "arquivo": "6_territorio_7hidrografia.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_7hidrografia.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_7hidrografia.png"
+        },
+        {
+          "titulo": "Território 8macrozoneamento",
+          "arquivo": "6_territorio_8macrozoneamento.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_8macrozoneamento.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_8macrozoneamento.png"
+        },
+        {
+          "titulo": "Território 9geologico",
+          "arquivo": "6_territorio_9geologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2019/territorio/6_territorio_9geologico.png",
+          "icon": "../icons-mapa-interativo/icons_2019/territorio/6_territorio_9geologico.png"
+        }
+      ],
+      "2020": [
+        {
+          "titulo": "10territorio Macrozoneamento",
+          "arquivo": "10Territorio_macrozoneamento.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/10Territorio_macrozoneamento.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/10Territorio_macrozoneamento.png"
+        },
+        {
+          "titulo": "11territorio Geomorfológico",
+          "arquivo": "11Territorio_geomorfologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/11Territorio_geomorfologico.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/11Territorio_geomorfologico.png"
+        },
+        {
+          "titulo": "12territorio Geológico",
+          "arquivo": "12Territorio_geologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/12Territorio_geologico.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/12Territorio_geologico.png"
+        },
+        {
+          "titulo": "13territorio Fitoecologia",
+          "arquivo": "13Territorio_fitoecologia.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/13Territorio_fitoecologia.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/13Territorio_fitoecologia.png"
+        },
+        {
+          "titulo": "14territorio Pedológico",
+          "arquivo": "14Territorio_pedologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/14Territorio_pedologico.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/14Territorio_pedologico.png"
+        },
+        {
+          "titulo": "1territorio Municípios",
+          "arquivo": "1Territorio_municipios.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/1Territorio_municipios.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/1Territorio_municipios.png"
+        },
+        {
+          "titulo": "2territorio Região Integração",
+          "arquivo": "2Territorio_regiao_integração.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/2Territorio_regiao_integração.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/2Territorio_regiao_integração.png"
+        },
+        {
+          "titulo": "3territorio Região Imediata",
+          "arquivo": "3Territorio_Região_imediata.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/3Territorio_Região_imediata.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/3Territorio_Região_imediata.png"
+        },
+        {
+          "titulo": "4territorio Região Intermediária",
+          "arquivo": "4Territorio_região_intermediária.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/4Territorio_região_intermediária.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/4Territorio_região_intermediária.png"
+        },
+        {
+          "titulo": "5territorio Mesorregioes",
+          "arquivo": "5Territorio_mesorregioes.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/5Territorio_mesorregioes.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/5Territorio_mesorregioes.png"
+        },
+        {
+          "titulo": "6territorio Microregioes",
+          "arquivo": "6Territorio_microregioes.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/6Territorio_microregioes.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/6Territorio_microregioes.png"
+        },
+        {
+          "titulo": "7territorio RMB",
+          "arquivo": "7Territorio_RMB.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/7Territorio_RMB.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/7Territorio_RMB.png"
+        },
+        {
+          "titulo": "8territorio Distritos Belém",
+          "arquivo": "8Territorio_distritos_belém.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/8Territorio_distritos_belém.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/8Territorio_distritos_belém.png"
+        },
+        {
+          "titulo": "9territorio Hidrografia Pará",
+          "arquivo": "9Territorio_hidrografia_Pará.png",
+          "caminho": "../mapas-modo-interativo/mapas2020/territorio/9Territorio_hidrografia_Pará.png",
+          "icon": "../icons-mapa-interativo/icons_2020/territorio/9Territorio_hidrografia_Pará.png"
+        }
+      ],
+      "2021": [
+        {
+          "titulo": "Território Municípios",
+          "arquivo": "1-Territorio_municipios.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/1-Territorio_municipios.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/1-Territorio_municipios.png"
+        },
+        {
+          "titulo": "Território Macrozoneamento",
+          "arquivo": "10-Territorio_Macrozoneamento.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/10-Territorio_Macrozoneamento.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/10-Territorio_Macrozoneamento.png"
+        },
+        {
+          "titulo": "Território Geomorfológico",
+          "arquivo": "11-territorio_geomorfologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/11-territorio_geomorfologico.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/11-territorio_geomorfologico.png"
+        },
+        {
+          "titulo": "Território Geológico",
+          "arquivo": "12-territorio_geologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/12-territorio_geologico.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/12-territorio_geologico.png"
+        },
+        {
+          "titulo": "Território Fitoecologia",
+          "arquivo": "13-Territorio_Fitoecologia.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/13-Territorio_Fitoecologia.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/13-Territorio_Fitoecologia.png"
+        },
+        {
+          "titulo": "Território Pedológico",
+          "arquivo": "14-territorio_pedologico.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/14-territorio_pedologico.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/14-territorio_pedologico.png"
+        },
+        {
+          "titulo": "Território Região Integração",
+          "arquivo": "2-territorio_regiao_integracao.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/2-territorio_regiao_integracao.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/2-territorio_regiao_integracao.png"
+        },
+        {
+          "titulo": "Território Região Imediata",
+          "arquivo": "3-territorio_regiao_imediata.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/3-territorio_regiao_imediata.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/3-territorio_regiao_imediata.png"
+        },
+        {
+          "titulo": "Território Região Intermediária",
+          "arquivo": "4-territorio_regiao_intermediaria.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/4-territorio_regiao_intermediaria.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/4-territorio_regiao_intermediaria.png"
+        },
+        {
+          "titulo": "Território Mesorregioes",
+          "arquivo": "5-territorio_mesorregioes.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/5-territorio_mesorregioes.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/5-territorio_mesorregioes.png"
+        },
+        {
+          "titulo": "Território Microregioes",
+          "arquivo": "6-territorio_microregioes.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/6-territorio_microregioes.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/6-territorio_microregioes.png"
+        },
+        {
+          "titulo": "Território RMB",
+          "arquivo": "7-Territorio_RMB.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/7-Territorio_RMB.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/7-Territorio_RMB.png"
+        },
+        {
+          "titulo": "Território Distritos Belém",
+          "arquivo": "8-Territorio_Distritos_Belém.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/8-Territorio_Distritos_Belém.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/8-Territorio_Distritos_Belém.png"
+        },
+        {
+          "titulo": "Território Hidrografia Pa",
+          "arquivo": "9-Territorio_hidrografia_PA.png",
+          "caminho": "../mapas-modo-interativo/mapas2021/territorio/9-Territorio_hidrografia_PA.png",
+          "icon": "../icons-mapa-interativo/icons_2021/territorio/9-Territorio_hidrografia_PA.png"
+        }
+      ],
+      "2022": [
+        {
+          "titulo": "Território Macrozoneamento 2022",
+          "arquivo": "10_territorio_macrozoneamento2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/10_territorio_macrozoneamento2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/10_territorio_macrozoneamento2022.png"
+        },
+        {
+          "titulo": "Território Geomorfologico 2022",
+          "arquivo": "11_territorio_geomorfologico2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/11_territorio_geomorfologico2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/11_territorio_geomorfologico2022.png"
+        },
+        {
+          "titulo": "Território Geologico 2022",
+          "arquivo": "12_territorio_geologico2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/12_territorio_geologico2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/12_territorio_geologico2022.png"
+        },
+        {
+          "titulo": "Território Fitoecologia 2022",
+          "arquivo": "13_territorio_fitoecologia2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/13_territorio_fitoecologia2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/13_territorio_fitoecologia2022.png"
+        },
+        {
+          "titulo": "Território Pedologico 2022",
+          "arquivo": "14_territorio_pedologico2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/14_territorio_pedologico2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/14_territorio_pedologico2022.png"
+        },
+        {
+          "titulo": "Território Municipios 2022",
+          "arquivo": "1_territorio_municipios2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/1_territorio_municipios2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/1_territorio_municipios2022.png"
+        },
+        {
+          "titulo": "Território Região Integração 2022",
+          "arquivo": "2_territorio_regiao_integração2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/2_territorio_regiao_integração2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/2_territorio_regiao_integração2022.png"
+        },
+        {
+          "titulo": "Território Região Imediata 2022",
+          "arquivo": "3_territorio_regiao_imediata2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/3_territorio_regiao_imediata2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/3_territorio_regiao_imediata2022.png"
+        },
+        {
+          "titulo": "Território Região Intermediaria 2022",
+          "arquivo": "4_territorio_regiao_intermediaria2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/4_territorio_regiao_intermediaria2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/4_territorio_regiao_intermediaria2022.png"
+        },
+        {
+          "titulo": "Território Mesorregioes 2022",
+          "arquivo": "5_territorio_mesorregioes2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/5_territorio_mesorregioes2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/5_territorio_mesorregioes2022.png"
+        },
+        {
+          "titulo": "Território Microregioes 2022",
+          "arquivo": "6_territorio_microregioes2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/6_territorio_microregioes2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/6_territorio_microregioes2022.png"
+        },
+        {
+          "titulo": "Território RMB 2022",
+          "arquivo": "7_territorio_rmb2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/7_territorio_rmb2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/7_territorio_rmb2022.png"
+        },
+        {
+          "titulo": "Território Distritos Belem 2022",
+          "arquivo": "8_territorio_distritos_belem2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/8_territorio_distritos_belem2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/8_territorio_distritos_belem2022.png"
+        },
+        {
+          "titulo": "Território Hidrografia Pa 2022",
+          "arquivo": "9_territorio_hidrografia_pa2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2022/territorio/9_territorio_hidrografia_pa2022.png",
+          "icon": "../icons-mapa-interativo/icons_2022/territorio/9_territorio_hidrografia_pa2022.png"
+        }
+      ],
+      "2023": [
+        {
+          "titulo": "Território Distritos Belem 2023 2",
+          "arquivo": "Territorio_Distritos_Belem2023_2.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Distritos_Belem2023_2.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Distritos_Belem2023_2.png"
+        },
+        {
+          "titulo": "Território Fitoecologia 2023",
+          "arquivo": "Territorio_Fitoecologia2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Fitoecologia2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Fitoecologia2023.png"
+        },
+        {
+          "titulo": "Território Geologico 2021",
+          "arquivo": "Territorio_Geologico2021.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Geologico2021.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Geologico2021.png"
+        },
+        {
+          "titulo": "Território Geomorfologico 2022",
+          "arquivo": "Territorio_Geomorfologico2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Geomorfologico2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Geomorfologico2022.png"
+        },
+        {
+          "titulo": "Território Hidrografia Pa 2023",
+          "arquivo": "Territorio_hidrografia_PA2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_hidrografia_PA2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_hidrografia_PA2023.png"
+        },
+        {
+          "titulo": "Território Macrozoneamento 2023",
+          "arquivo": "Territorio_Macrozoneamento2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Macrozoneamento2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Macrozoneamento2023.png"
+        },
+        {
+          "titulo": "Território Mesorregiões 2022",
+          "arquivo": "Territorio_Mesorregiões_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Mesorregiões_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Mesorregiões_2022.png"
+        },
+        {
+          "titulo": "Território Microrregiões 2022",
+          "arquivo": "Territorio_Microrregiões_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Microrregiões_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Microrregiões_2022.png"
+        },
+        {
+          "titulo": "Território Municipios 2023",
+          "arquivo": "Territorio_municipios2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_municipios2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_municipios2023.png"
+        },
+        {
+          "titulo": "Território Pedologico 2023",
+          "arquivo": "Territorio_Pedologico2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Pedologico2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Pedologico2023.png"
+        },
+        {
+          "titulo": "Território Regioes De Integração 2022",
+          "arquivo": "Territorio_Regioes_de_Integração_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Regioes_de_Integração_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Regioes_de_Integração_2022.png"
+        },
+        {
+          "titulo": "Território Regioes Imediatas 2022",
+          "arquivo": "Territorio_Regioes_Imediatas_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Regioes_Imediatas_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Regioes_Imediatas_2022.png"
+        },
+        {
+          "titulo": "Território Regioes Intermediarias 2022",
+          "arquivo": "Territorio_Regioes_Intermediarias_2022.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_Regioes_Intermediarias_2022.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_Regioes_Intermediarias_2022.png"
+        },
+        {
+          "titulo": "Território RMB 2023",
+          "arquivo": "Territorio_RMB2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2023/territorio/Territorio_RMB2023.png",
+          "icon": "../icons-mapa-interativo/icons_2023/territorio/Territorio_RMB2023.png"
+        }
+      ],
+      "2024": [
+        {
+          "titulo": "Território Distritos de Belém 2024",
+          "arquivo": "territorio_distritos_belem2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/territorio_distritos_belem2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/territorio_distritos_belem2024.png"
+        },
+        {
+          "titulo": "Território Fitoecologia 2024",
+          "arquivo": "Territorio_Fitoecologia2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/Territorio_Fitoecologia2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Fitoecologia2024.png"
+        },
+        {
+          "titulo": "Território Geológico 2024",
+          "arquivo": "Territorio_Geologico2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/Territorio_Geologico2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Geologico2024.png"
+        },
+        {
+          "titulo": "Território Geomorfológico 2024",
+          "arquivo": "territorio_geomorfologico2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/territorio_geomorfologico2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/territorio_geomorfologico2024.png"
+        },
+        {
+          "titulo": "Território Hidrografia PA 2024",
+          "arquivo": "territorio_hidrografia_pa2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/territorio_hidrografia_pa2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/territorio_hidrografia_pa2024.png"
+        },
+        {
+          "titulo": "Território Municípios 2024",
+          "arquivo": "Territorio_municipios2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/Territorio_municipios2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/Territorio_municipios2024.png"
+        },
+        {
+          "titulo": "Território Pedológico 2023",
+          "arquivo": "territorio_pedologico2023.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/territorio_pedologico2023.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/territorio_pedologico2023.png"
+        },
+        {
+          "titulo": "Território Região Imediata 2024",
+          "arquivo": "Territorio_Regiao_imediata2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/Territorio_Regiao_imediata2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Regiao_imediata2024.png"
+        },
+        {
+          "titulo": "Território Região de Integração 2024",
+          "arquivo": "territorio_regiao_integracao2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/territorio_regiao_integracao2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/territorio_regiao_integracao2024.png"
+        },
+        {
+          "titulo": "Território Região Intermediária 2024",
+          "arquivo": "territorio_regiao_intermediaria2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/territorio_regiao_intermediaria2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/territorio_regiao_intermediaria2024.png"
+        },
+        {
+          "titulo": "Território Região Metropolitana de Belém 2024",
+          "arquivo": "Territorio_RMB2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/Territorio_RMB2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/Territorio_RMB2024.png"
+        },
+        {
+          "titulo": "Território Zoneamento 2024",
+          "arquivo": "Territorio_Zoneamento2024.png",
+          "icon": "../icons-mapa-interativo/icons_2024/territorio/Territorio_Zoneamento2024.png",
+          "caminho": "../mapas-modo-interativo/mapas2024/territorio/Territorio_Zoneamento2024.png"
+        }
+      ],
+      "2025": [
+        {
+          "titulo": "Territorio Distritos Belém2025",
+          "arquivo": "Territorio_Distritos_Belém2025.jpg",
+          "caminho": "../mapas/territorio/Territorio_Distritos_Belém2025.jpg",
+          "icon": "../icons/territorio/territorio_distritos_belem2024.png"
+        },
+        {
+          "titulo": "Territorio Fitoecologia",
+          "arquivo": "Territorio_Fitoecologia.jpg",
+          "caminho": "../mapas/territorio/Territorio_Fitoecologia.jpg",
+          "icon": "../icons/territorio/Territorio_Fitoecologia2024.png"
+        },
+        {
+          "titulo": "Territorio Geológico2024",
+          "arquivo": "Territorio_Geológico2024.jpg",
+          "caminho": "../mapas/territorio/Territorio_Geológico2024.jpg",
+          "icon": "../icons/territorio/Territorio_Geologico2024.png"
+        },
+        {
+          "titulo": "Territorio Geomorfológico2024",
+          "arquivo": "Territorio_Geomorfológico2024.jpg",
+          "caminho": "../mapas/territorio/Territorio_Geomorfológico2024.jpg",
+          "icon": "../icons/territorio/territorio_geomorfologico2024.png"
+        },
+        {
+          "titulo": "Territorio Pedológico2025",
+          "arquivo": "Territorio_Pedológico2025.jpg",
+          "caminho": "../mapas/territorio/Territorio_Pedológico2025.jpg",
+          "icon": "../icons/territorio/territorio_pedologico2023.png"
+        },
+        {
+          "titulo": "Territorio Região Integração2024",
+          "arquivo": "Territorio_Região_Integração2024.jpg",
+          "caminho": "../mapas/territorio/Territorio_Região_Integração2024.jpg",
+          "icon": "../icons/territorio/territorio_regiao_integracao2024.png"
+        },
+        {
+          "titulo": "Territorio Região Intermediária2024",
+          "arquivo": "Territorio_Região_Intermediária2024.jpg",
+          "caminho": "../mapas/territorio/Territorio_Região_Intermediária2024.jpg",
+          "icon": "../icons/territorio/territorio_regiao_intermediaria2024.png"
+        },
+        {
+          "titulo": "Territorio Região imediata2024",
+          "arquivo": "Territorio_Região_imediata2024.jpg",
+          "caminho": "../mapas/territorio/Territorio_Região_imediata2024.jpg",
+          "icon": "../icons/territorio/Territorio_Regiao_imediata2024.png"
+        },
+        {
+          "titulo": "Territorio Zoneamento",
+          "arquivo": "Territorio_Zoneamento.jpg",
+          "caminho": "../mapas/territorio/Territorio_Zoneamento.jpg",
+          "icon": "../icons/territorio/Territorio_Zoneamento2024.png"
+        },
+        {
+          "titulo": "Territorio hidrografia PA",
+          "arquivo": "Territorio_hidrografia_PA.png",
+          "caminho": "../mapas/territorio/Territorio_hidrografia_PA.png",
+          "icon": "../icons/territorio/territorio_hidrografia_pa2024.png"
+        },
+        {
+          "titulo": "Territorio municipios2025",
+          "arquivo": "Territorio_municipios2025.jpg",
+          "caminho": "../mapas/territorio/Territorio_municipios2025.jpg",
+          "icon": "../icons/territorio/Territorio_municipios2024.png"
+        },
+        {
+          "titulo": "Território RMB2025",
+          "arquivo": "Território_RMB2025.jpg",
+          "caminho": "../mapas/territorio/Território_RMB2025.jpg",
+          "icon": "../icons/territorio/Territorio_RMB2024.png"
+        }
+      ]
+    }
+  },
+  "total": 470
+}

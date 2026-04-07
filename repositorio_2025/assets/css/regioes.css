@@ -1,0 +1,143 @@
+/* Regiões CSS */
+:root {
+  --bg: #f3f7f5;
+  --panel: #ffffff;
+  --text: #1f2a23;
+  --muted: #5d6a62;
+  --brand: #1f7a5a;
+  --brand-2: #0f5b41;
+  --line: #dbe6df;
+  --chip: #e6f3ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eef6f1 0%, #f8fbf9 55%, #f3f7f5 100%);
+  color: var(--text);
+}
+
+.hero {
+  background: radial-gradient(circle at 15% 10%, #43a67e 0%, var(--brand) 45%, var(--brand-2) 100%);
+  color: #fff;
+  padding: 42px 20px;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0;
+  opacity: 0.92;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 26px auto 40px;
+  padding: 0 16px;
+}
+
+.actions-bar {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--brand-2);
+  transform: translateY(-2px);
+}
+
+.regioes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.regiao-card {
+  background: var(--panel);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.regiao-card:hover {
+  border-color: var(--brand);
+  box-shadow: 0 4px 16px rgba(31, 122, 90, 0.15);
+  transform: translateY(-4px);
+}
+
+.regiao-card-code {
+  display: inline-block;
+  background: var(--chip);
+  color: var(--brand-2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.regiao-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.regiao-card-desc {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.regiao-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .regioes-grid {
+    grid-template-columns: 1fr;
+  }
+}

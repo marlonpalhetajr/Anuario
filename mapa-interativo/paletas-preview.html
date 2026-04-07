@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview das Paletas de Cores</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 2rem;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .palette-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .palette-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .palette-header {
+            padding: 1.5rem;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .color-rows {
+            padding: 0;
+        }
+        
+        .color-row {
+            display: flex;
+            height: 50px;
+        }
+        
+        .color-swatch {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .palette-footer {
+            padding: 1rem;
+            background: #f9f9f9;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .description {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Paletas de Cores por Categoria - Mapa Interativo</h1>
+        
+        <div class="description">
+            <h2>Sobre as Cores</h2>
+            <p>
+                Cada categoria de dados do Mapa Interativo possui uma paleta de cores única e harmoniosa,
+                baseada nos padrões visuais dos mapas estáticos do Anuário. As cores foram selecionadas para:
+            </p>
+            <ul>
+                <li><strong>Acessibilidade:</strong> Garantir contraste adequado entre os tons</li>
+                <li><strong>Consistência:</strong> Manter o padrão visual dos mapas originais</li>
+                <li><strong>Clareza:</strong> Facilitar a interpretação dos dados mediante gradientes visuais</li>
+                <li><strong>Marca:</strong> Reforçar a identidade visual de cada categoria</li>
+            </ul>
+        </div>
+        
+        <div class="palette-grid">
+            <!-- DEMOGRAFIA -->
+            <div class="palette-card">
+                <div class="palette-header" style="background: #2E5F8A;">
+                    📊 Demografia
+                </div>
+                <div class="color-rows">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E8F4F8;">Mínimo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #A5D8E8;">Baixo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #5BA5D0;">Médio</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #2E5F8A; color: #fff;">Alto</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #0D2F5C; color: #fff;">Máximo</div>
+                    </div>
+                </div>
+                <div class="palette-footer">
+                    População, Envelhecimento, Dependência
+                </div>
+            </div>
+            
+            <!-- ECONOMIA -->
+            <div class="palette-card">
+                <div class="palette-header" style="background: #3B7F3F;">
+                    💰 Economia
+                </div>
+                <div class="color-rows">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E8F5E9;">Mínimo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #A5D88B;">Baixo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #5FA85F;">Médio</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #3B7F3F; color: #fff;">Alto</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1A4D2E; color: #fff;">Máximo</div>
+                    </div>
+                </div>
+                <div class="palette-footer">
+                    Receitas, PIB, Comércio, Indústria
+                </div>
+            </div>
+            
+            <!-- INFRAESTRUTURA -->
+            <div class="palette-card">
+                <div class="palette-header" style="background: #E67E22;">
+                    ⚡ Infraestrutura
+                </div>
+                <div class="color-rows">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FFE8CC;">Mínimo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FFD9A3;">Baixo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FFC070;">Médio</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FF9B3D; color: #fff;">Alto</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E67E22; color: #fff;">Máximo</div>
+                    </div>
+                </div>
+                <div class="palette-footer">
+                    Energia, Transporte, Comunicação
+                </div>
+            </div>
+            
+            <!-- MEIO AMBIENTE -->
+            <div class="palette-card">
+                <div class="palette-header" style="background: #2E7D32;">
+                    🌿 Meio Ambiente
+                </div>
+                <div class="color-rows">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #C8E6C9;">Mínimo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #81C784;">Baixo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #4CAF50;">Médio</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #2E7D32; color: #fff;">Alto</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1B5E20; color: #fff;">Máximo</div>
+                    </div>
+                </div>
+                <div class="palette-footer">
+                    Floresta, Desflorestamento, Focos
+                </div>
+            </div>
+            
+            <!-- SOCIAL -->
+            <div class="palette-card">
+                <div class="palette-header" style="background: #8A2E2E;">
+                    👥 Social
+                </div>
+                <div class="color-rows">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #F8E8E8;">Mínimo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E8A5A5;">Baixo</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D05B5B;">Médio</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #8A2E2E; color: #fff;">Alto</div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #5C0D0D; color: #fff;">Máximo</div>
+                    </div>
+                </div>
+                <div class="palette-footer">
+                    Saúde, Educação, Segurança, Bem-estar
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h2>Características da Implementação</h2>
+            <ul>
+                <li>✅ <strong>Paletas Dinâmicas:</strong> Cada categoria carrega sua própria paleta de cores automaticamente</li>
+                <li>✅ <strong>Badge Colorido:</strong> Indicador visual mostra qual categoria está sendo visualizada</li>
+                <li>✅ <strong>Legenda Interativa:</strong> Mostra os intervalos de valores com as cores correspondentes</li>
+                <li>✅ <strong>Hover Effects:</strong> As cores da legenda ganham sombra e efeito visual ao passar o mouse</li>
+                <li>✅ <strong>22 Indicadores Totais:</strong> Todos utilizando as paletas específicas de suas categorias</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

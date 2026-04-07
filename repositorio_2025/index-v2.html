@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repositório 2025 - Tabelas Integradas</title>
+  <link rel="stylesheet" href="./assets/css/repository.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Repositório 2025</h1>
+      <p>Consulta integrada de tabelas de todos os anos com filtros dinâmicos encadeados.</p>
+      <p style="font-size: 0.9rem; margin-top: 8px;"><a href="./regioes.html" style="color: #fff; text-decoration: underline;">🗺️ Explorar por Regiões de Integração</a></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters-card">
+      <h2>Filtros</h2>
+      <div class="filters-grid">
+        <label>
+          Ano
+          <select id="filter-ano">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label>
+          Eixo
+          <select id="filter-eixo">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label>
+          Tema
+          <select id="filter-tema">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label>
+          Região
+          <select id="filter-regiao">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label>
+          Município
+          <select id="filter-municipio">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label>
+          Busca livre
+          <input id="filter-busca" type="text" placeholder="Digite parte do título, indicador ou código..." />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="btn-limpar" type="button">Limpar filtros</button>
+        <span id="results-count">0 resultados</span>
+      </div>
+    </section>
+
+    <section class="results-card">
+      <h2>Resultados</h2>
+      <div class="table-wrap">
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th>Ano</th>
+              <th>Eixo</th>
+              <th>Tema</th>
+              <th>Região</th>
+              <th>Município</th>
+              <th>Código</th>
+              <th>Título</th>
+              <th>Arquivo</th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+      <p id="empty-state" class="empty hidden">Nenhum resultado para os filtros selecionados.</p>
+    </section>
+  </main>
+
+  <script src="./assets/js/repository-engine-v2.js"></script>
+</body>
+</html>

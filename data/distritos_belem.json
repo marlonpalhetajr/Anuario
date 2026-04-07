@@ -1,0 +1,7 @@
+{
+  "distritos_belem": {
+    "label": "Distrito de Belém",
+    "color": "#FF6B6B",
+    "municipios": ["Belém"]
+  }
+}

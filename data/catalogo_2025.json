@@ -1,71 +1,670 @@
 {
   "demografia": [
     {
-      "slug": "demo-pop-total",
-      "label": "População Total - Estimativas Populacionais e Censo Demográfico (2021 a 2025)",
-      "unit": "hab",
+      "slug": "tab-11-populao-total---estimativas-populacionais-e-censo-demogrfico---2021-a-2025",
+      "label": "População Total - Estimativas Populacionais e Censo Demográfico",
+      "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.1 População Total - Estimativas Populacionais e Censo Demográfico - 2021 a 2025.json"
     },
     {
-      "slug": "demo-pop-faixa-etaria",
-      "label": "População por Faixa Etária (2021 a 2025)",
-      "unit": "hab",
+      "slug": "tab-12-populao-por-faixa-etria---2021-a-2025",
+      "label": "População por Faixa Etária",
+      "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.2 População por Faixa Etária - 2021 a 2025.json"
     },
     {
-      "slug": "demo-pop-sexo",
-      "label": "População por Sexo (2021 a 2025)",
-      "unit": "hab",
+      "slug": "tab-13-populao-por-sexo---2021-a-2025",
+      "label": "População por Sexo",
+      "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.3 População por Sexo - 2021 a 2025.json"
     },
     {
-      "slug": "demo-razao-sexos",
-      "label": "Razão de Sexos (2021 a 2025)",
+      "slug": "tab-14-razo-de-sexos---2021-a-2025",
+      "label": "Razão de Sexos",
       "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.4 Razão de Sexos - 2021 a 2025.json"
     },
     {
-      "slug": "demo-proporcao-idosos",
-      "label": "Proporção de Idosos (2021 a 2025)",
-      "unit": "%",
+      "slug": "tab-15-proporo-de-idosos---2021-a-2025",
+      "label": "Proporção de Idosos",
+      "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.5 Proporção de Idosos - 2021 a 2025.json"
     },
     {
-      "slug": "demo-indice-envelhecimento",
-      "label": "Índice de Envelhecimento (2021 a 2025)",
+      "slug": "tab-16-ndice-de-envelhecimento---2021-a-2025",
+      "label": "Índice de Envelhecimento",
       "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.6 Índice de Envelhecimento - 2021 a 2025.json"
     },
     {
-      "slug": "demo-razao-dependencia",
-      "label": "Razão de Dependência (2021 a 2025)",
+      "slug": "tab-17-razo-de-dependncia---2021-a-2025",
+      "label": "Razão de Dependência",
       "unit": "",
       "year": 2025,
       "path": "data/indicadores/2025/Tab 1.7 Razão de Dependência - 2021 a 2025.json"
     },
     {
-      "slug": "demo-taxa-fecundidade",
-      "label": "Taxa de Fecundidade Total (2020 a 2024)",
+      "slug": "tab-18-taxa-de-fecundidade-total---2020-a-2024",
+      "label": "Taxa de Fecundidade Total",
       "unit": "",
-      "year": 2024,
+      "year": 2025,
       "path": "data/indicadores/2025/Tab 1.8 Taxa de Fecundidade Total - 2020 a 2024.json"
     },
     {
-      "slug": "demo-taxa-fec-faixa",
-      "label": "Taxa Específica de Fecundidade por faixa etária (2020 a 2024)",
+      "slug": "tab-19-taxa-especfica-de-fecundidade-por-faixa-etria---2020-a-2024",
+      "label": "Taxa Específica de Fecundidade por faixa etária",
       "unit": "",
-      "year": 2024,
+      "year": 2025,
       "path": "data/indicadores/2025/Tab 1.9 Taxa Específica de Fecundidade por faixa etária - 2020 a 2024.json"
     }
   ],
-  "economia": [],
-  "infraestrutura": [],
-  "meio-ambiente": [],
-  "social": []
+  "economia": [
+    {
+      "slug": "tab-2111-rea-destinada--colheita-hectares-da-lavoura-permanente---2020a-2024",
+      "label": "Área Destinada à Colheita (Hectares) da Lavoura Permanente",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.1.1 Área Destinada à Colheita (Hectares) da Lavoura Permanente - 2020a 2024.json"
+    },
+    {
+      "slug": "tab-2112-rea-colhida-hectares-da-lavoura-permanente---2020-a-2024",
+      "label": "Área Colhida (Hectares) da Lavoura Permanente",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.1.2 Área Colhida (Hectares) da Lavoura Permanente - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2113-quantidade-produzida-por-tipo-de-lavoura-permanente---2020-a-2024",
+      "label": "Quantidade Produzida por Tipo de Lavoura Permanente",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.1.3 Quantidade Produzida por Tipo de Lavoura Permanente - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2114-valor-da-produo-em-mil-reais-por-tipo-de-lavoura-permanente---2020-a-2024",
+      "label": "Valor da Produção (em mil reais) por Tipo de Lavoura Permanente",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.1.4 Valor da Produção (em mil reais) por Tipo de Lavoura Permanente - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2115-rendimento-mdio-da-produo-da-lavoura-permanente---2020-a-2024",
+      "label": "Rendimento Médio da Produção da Lavoura Permanente",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.1.5 Rendimento Médio da Produção da Lavoura Permanente - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2121-rea-plantada-em-hectares-por-tipo-de-lavoura-temporria---2020-a-2024",
+      "label": "Área Plantada (em hectares) por Tipo de Lavoura Temporária",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.2.1 Área Plantada (em hectares) por Tipo de Lavoura Temporária - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2122-rea-colhida-em-hectares-por-tipo-de-lavoura-temporria---2020-a-2024",
+      "label": "Área Colhida (em hectares) por Tipo de Lavoura Temporária",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.2.2 Área Colhida (em hectares) por Tipo de Lavoura Temporária - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2123-quantidade-produzida-por-tipo-de-lavoura-temporria---2020-a-2024",
+      "label": "Quantidade Produzida por Tipo de Lavoura Temporária",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.2.3 Quantidade Produzida por Tipo de Lavoura Temporária - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2124-valor-mil-reais-da-produo-por-tipo-de-lavoura-temporria---2020-a-2024",
+      "label": "Valor (Mil Reais) da Produção por Tipo de Lavoura Temporária",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.2.4 Valor (Mil Reais) da Produção por Tipo de Lavoura Temporária - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2125-rendimento-mdio-da-produo-por-tipo-de-lavoura-temporria---2020-a-2024",
+      "label": "Rendimento Médio da Produção por Tipo de Lavoura Temporária",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.1.2.5 Rendimento Médio da Produção por Tipo de Lavoura Temporária - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-221-efetivo-de-rebanho-bovino---2020-a-2024",
+      "label": "Efetivo de Rebanho Bovino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.1 Efetivo de Rebanho Bovino - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2210-efetivo-de-rebanho-codornas---2020-a-2024",
+      "label": "Efetivo de Rebanho Codornas",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.10 Efetivo de Rebanho Codornas - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2211-produo-de-origem-animal-leite-mil-litros---2020-a-2024",
+      "label": "Produção de Origem Animal Leite (Mil litros)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.11 Produção de Origem Animal Leite (Mil litros) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2212-produo-de-origem-animal-ovos-de-galinha-mil-dzias---2020-a-2024",
+      "label": "Produção de Origem Animal Ovos de galinha (Mil dúzias)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.12 Produção de Origem Animal Ovos de galinha (Mil dúzias) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2213-produo-de-origem-animal-ovos-de-codorna-mil-dzias---2020-a-2024",
+      "label": "Produção de Origem Animal Ovos de codorna (Mil dúzias)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.13 Produção de Origem Animal Ovos de codorna (Mil dúzias) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-2214-produo-de-origem-animal-mel-de-abelha-quilogramas---2020-a-2024",
+      "label": "Produção de Origem Animal Mel de abelha (Quilogramas)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.14 Produção de Origem Animal Mel de abelha (Quilogramas) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-222-efetivo-de-rebanho-bubalino---2020-a-2024",
+      "label": "Efetivo de Rebanho Bubalino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.2 Efetivo de Rebanho Bubalino - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-223-efetivo-de-rebanho-equino---2020-a-2024",
+      "label": "Efetivo de Rebanho Equino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.3 Efetivo de Rebanho Equino - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-224-efetivo-de-rebanho-suno-total---2020-a-2024",
+      "label": "Efetivo de Rebanho Suíno (Total)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.4 Efetivo de Rebanho Suíno (Total) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-225-efetivo-de-rebanho-sunos-matrizes---2020-a-2024",
+      "label": "Efetivo de Rebanho Suínos (Matrizes)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.5 Efetivo de Rebanho Suínos (Matrizes) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-226-efetivo-de-rebanho-caprino---2020-a-2024",
+      "label": "Efetivo de Rebanho Caprino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.6 Efetivo de Rebanho Caprino - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-227-efetivo-de-rebanho-ovino---2020-a-2024",
+      "label": "Efetivo de Rebanho Ovino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.7 Efetivo de Rebanho Ovino - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-228-efetivo-de-rebanho-galinceos-total---2020-a-2024",
+      "label": "Efetivo de Rebanho Galináceos (Total)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.8 Efetivo de Rebanho Galináceos (Total) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-229-efetivo-de-rebanho-galinceos-galinhas---2020-a-2024",
+      "label": "Efetivo de Rebanho Galináceos (Galinhas)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.2.9 Efetivo de Rebanho Galináceos (Galinhas) - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-231-quantidade-produzida-na-extrao-vegetal-por-tipo-de-produto-extrativo---2020-a-2024",
+      "label": "Quantidade Produzida na Extração Vegetal, por Tipo de Produto Extrativo",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.3.1 Quantidade Produzida na Extração Vegetal, por Tipo de Produto Extrativo - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-232-valor-mil-reais-da-produo-na-extrao-vegetal-por-tipo-de-produto-extrativo---2020-a-2024",
+      "label": "Valor (Mil Reais) da Produção na Extração Vegetal, por Tipo de Produto Extrativo",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.3.2 Valor (Mil Reais) da Produção na Extração Vegetal, por Tipo de Produto Extrativo - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-241-produto-interno-bruto-a-preos-correntes-mil-reais---2017-a-2021",
+      "label": "Produto Interno Bruto a Preços Correntes (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.1 Produto Interno Bruto a Preços Correntes (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-242-va-bruto-a-preos-correntes-total-mil-reais---2017-a-2021",
+      "label": "VA Bruto a Preços Correntes Total (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.2 VA Bruto a Preços Correntes Total (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-243-va-bruto-a-preos-correntes-da-agropecuria-mil-reais---2017-a-2021",
+      "label": "VA Bruto a Preços Correntes da Agropecuária (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.3 VA Bruto a Preços Correntes da Agropecuária (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-244-va-bruto-a-preos-correntes-da-indstria-mil-reais---2017-a-2021",
+      "label": "VA Bruto a Preços Correntes da Indústria (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.4 VA Bruto a Preços Correntes da Indústria (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-245-va-bruto-a-preos-correntes-dos-serv-exclus-admin-sade-e-educ-pb-e-segur-soc-mil-reais---2017-a-2021",
+      "label": "VA Bruto a Preços Correntes dos Serv, Exclus Admin, Saúde e Educ Púb e Segur Soc (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.5 VA Bruto a Preços Correntes dos Serv, Exclus Admin, Saúde e Educ Púb e Segur Soc (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-246-va-bruto-a-preos-correntes-da-admin-sade-e-educ-pb-e-segur-soc-mil-reais---2017-a-2021",
+      "label": "VA Bruto a Preços Correntes da Admin, Saúde e Educ Púb e Segur Soc (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.6 VA Bruto a Preços Correntes da Admin, Saúde e Educ Púb e Segur Soc (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-247-impostos-lquidos-de-subsdios-sobre-produtos-a-preos-correntes-mil-reais---2017-a-2021",
+      "label": "Impostos, Líquidos de Subsídios, Sobre Produtos a Preços Correntes (Mil Reais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.7 Impostos, Líquidos de Subsídios, Sobre Produtos a Preços Correntes (Mil Reais) - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-248-evoluo-do-produto-interno-bruto-per-capita-dos-municpios-paraenses---2017-a-2021",
+      "label": "Evolução do Produto Interno Bruto per Capita dos Municípios Paraenses",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.4.8 Evolução do Produto Interno Bruto per Capita dos Municípios Paraenses - 2017 a 2021.json"
+    },
+    {
+      "slug": "tab-251-balana-comercial---exportao---2019-a-2024",
+      "label": "Balança Comercial - Exportação",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.5.1 Balança Comercial - Exportação - 2019 a 2024.json"
+    },
+    {
+      "slug": "tab-252-balana-comercial---importao---2019-a-2024",
+      "label": "Balança Comercial - Importação",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.5.2 Balança Comercial - Importação - 2019 a 2024.json"
+    },
+    {
+      "slug": "tab-253-saldo-da-balana-comercial---2019-a-2024",
+      "label": "Saldo da Balança Comercial",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.5.3 Saldo da Balança Comercial - 2019 a 2024.json"
+    },
+    {
+      "slug": "tab-261-repasse-de-icms-dos-municpios-do-par---2020-a-2024",
+      "label": "Repasse de ICMS dos Municípios do Pará",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.1 Repasse de ICMS dos Municípios do Pará - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-262-demonstrativo-dos-ndices-de-participao-na-arrecadao-do-icms---2020-a-2024",
+      "label": "Demonstrativo dos Índices de Participação na Arrecadação do ICMS",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.2 Demonstrativo dos Índices de Participação na Arrecadação do ICMS - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-263-repasse-de-ipi-dos-municpios-do-par---2020-a-2024",
+      "label": "Repasse de IPI dos Municípios  do Pará",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.3 Repasse de IPI dos Municípios  do Pará - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-264-repasse-de-ipva-dos-municpios-do-par---2020-a-2024",
+      "label": "Repasse de IPVA  dos Municípios  do Pará",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.4 Repasse de IPVA  dos Municípios  do Pará - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-265-receita-oramentria-par-e-municpios---2020-a-2024",
+      "label": "Receita Orçamentária, Pará e municípios",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.5 Receita Orçamentária, Pará e municípios - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-266-receitas-correntes-par-e-municpios---2020-a-2024",
+      "label": "Receitas Correntes, Pará e municípios",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.6 Receitas Correntes, Pará e municípios - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-267-impostos-par-e-municpios---2020-a-2024",
+      "label": "Impostos, Pará e municípios",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.7 Impostos, Pará e municípios - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-268-receita-de-transferncias-correntes-par-e-municpios---2020-a-2024",
+      "label": "Receita de Transferências Correntes, Pará e municípios",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 2.6.8 Receita de Transferências Correntes, Pará e municípios - 2020 a 2024.json"
+    }
+  ],
+  "infraestrutura": [
+    {
+      "slug": "tab-31-total-da-frota-de-veculos-subdivididos-em-licenciados-e-no-licenciados---2020-a-2024",
+      "label": "Total da Frota de Veículos Subdivididos em Licenciados e Não Licenciados",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.1 Total da Frota de Veículos Subdivididos em Licenciados e Não Licenciados - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-311-total-de-embarque-mais-desembarque-de-passageiros---2019-a-2023",
+      "label": "Total de Embarque mais desembarque de passageiros",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.11 Total de Embarque mais desembarque de passageiros - 2019 a 2023.json"
+    },
+    {
+      "slug": "tab-312-abastecimento-de-gua-segundo-consumidores-e-volume-consumido---2018-a-2022",
+      "label": "Abastecimento de Água Segundo Consumidores e Volume Consumido",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.12 Abastecimento de Água Segundo Consumidores e Volume Consumido - 2018 a 2022.json"
+    },
+    {
+      "slug": "tab-32-consumidores-de-energia-eltrica-total---2019-a-2023",
+      "label": "Consumidores de Energia Elétrica Total",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.2 Consumidores de Energia Elétrica Total - 2019 a 2023.json"
+    },
+    {
+      "slug": "tab-33-consumidores-de-energia-eltrica-por-tipo---2019-a-2023",
+      "label": "Consumidores de Energia Elétrica por Tipo",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.3 Consumidores de Energia Elétrica por Tipo - 2019 a 2023.json"
+    },
+    {
+      "slug": "tab-34-consumo-de-energia-eltrica-kwh---2019-a-2023",
+      "label": "Consumo de Energia Elétrica (kWH)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.4 Consumo de Energia Elétrica (kWH) - 2019 a 2023.json"
+    },
+    {
+      "slug": "tab-341-consumo-de-energia-eltrica-por-tipo---2019-a-2023",
+      "label": "Consumo de Energia Elétrica por Tipo",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.4.1 Consumo de Energia Elétrica por Tipo - 2019 a 2023.json"
+    },
+    {
+      "slug": "tab-35-total-de-carregamento-nos-portos---2020-a-2024",
+      "label": "Total de  Carregamento nos Portos",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.5 Total de  Carregamento nos Portos - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-36-total-de-descarregamento-nos-portos---2020-a-2024",
+      "label": "Total de  Descarregamento nos Portos",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.6 Total de  Descarregamento nos Portos - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-37-total-de-movimentao-nos-portos---2020-a-2024",
+      "label": "Total de  Movimentação nos Portos",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.7 Total de  Movimentação nos Portos - 2020 a 2024.json"
+    },
+    {
+      "slug": "tab-38-total-de-embarcaes---2020-a-2024",
+      "label": "Total de  Embarcações",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 3.8 Total de  Embarcações - 2020 a 2024.json"
+    }
+  ],
+  "meio-ambiente": [
+    {
+      "slug": "tab-41-desflorestamento-acumulado-km---2020-a-2024-atualizada",
+      "label": "Desflorestamento Acumulado (km²)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 4.1 Desflorestamento Acumulado (km²) - 2020 a 2024 (ATUALIZADA).json"
+    },
+    {
+      "slug": "tab-42-incremento-desflorestamento-km---2020-a-2024-atualizada",
+      "label": "Incremento (Desflorestamento km²)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 4.2 Incremento (Desflorestamento km²)  - 2020 a 2024 (ATUALIZADA).json"
+    },
+    {
+      "slug": "tab-43-rea-de-floresta-km-e-hidrografia-km---2020-a-2024atualizada",
+      "label": "Área de Floresta (km²) e Hidrografia (km²)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 4.3 Área de Floresta (km²) e Hidrografia (km²) - 2020 a 2024(ATUALIZADA).json"
+    },
+    {
+      "slug": "tab-44-focos-de-calor---2020-a-2024atualizada",
+      "label": "Focos de Calor",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 4.4 Focos de Calor - 2020 a 2024(ATUALIZADA).json"
+    },
+    {
+      "slug": "tab-45-reas-protegidas-par-e-municpios---2025atualizada",
+      "label": "Áreas Protegidas,  Pará e  municípios",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 4.5 Áreas Protegidas,  Pará e  municípios - 2025(ATUALIZADA).json"
+    }
+  ],
+  "social": [
+    {
+      "slug": "tab-511-taxa-de-aprovao-no-ensino-fundamental-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Taxa de Aprovação no Ensino Fundamental por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.1 Taxa de Aprovação no Ensino Fundamental por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5110-ndice-de-desenv-da-educ-bsica---ideb---esc-pblica---9-ano-sries-finais---20152017201920212023",
+      "label": "Índice de Desenv da Educ Básica - IDEB - Esc Pública - 9 ano (séries finais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.10 Índice de Desenv da Educ Básica - IDEB - Esc Pública - 9 ano (séries finais) - 2015_2017_2019_2021_2023.json"
+    },
+    {
+      "slug": "tab-5112-matrculas-no-ensino-pr-escolar-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Matrículas no Ensino Pré-escolar por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.12 Matrículas no Ensino Pré-escolar por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5113-matrculas-no-ensino-fundamental-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Matrículas no Ensino Fundamental por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.13 Matrículas no Ensino Fundamental por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5114-matrculas-no-ensino-mdio-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Matrículas no Ensino Médio por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.14 Matrículas no Ensino Médio por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5116-docentes-no-ensino-pr-escolar-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Docentes no Ensino Pré-escolar por  Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.16 Docentes no Ensino Pré-escolar por  Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5117-docentes-no-ensino-fundamental-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Docentes no Ensino Fundamental por  Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.17 Docentes no Ensino Fundamental por  Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5118-docentes-no-ensino-mdio-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Docentes no Ensino Médio por  Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.18 Docentes no Ensino Médio por  Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5119-estabelecimentos-de-creche-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Estabelecimentos de Creche por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.19 Estabelecimentos de Creche por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-512-taxa-de-aprovao-no-ensino-mdio-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Taxa de Aprovação no Ensino Médio por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.2 Taxa de Aprovação no Ensino Médio por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5120-estabelecimentos-de-ensino-pr-escolar-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Estabelecimentos de Ensino Pré-Escolar por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.20 Estabelecimentos de Ensino Pré-Escolar por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5121-estabelecimentos-de-ensino-fundamental-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Estabelecimentos de Ensino Fundamental por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.21 Estabelecimentos de Ensino Fundamental por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-5122-estabelecimentos-de-ensino-mdio-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Estabelecimentos de Ensino Médio por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.22 Estabelecimentos de Ensino Médio por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-513-taxa-de-reprovao-no-ensino-fundamental-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Taxa de Reprovação no Ensino Fundamental por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.3 Taxa de Reprovação no Ensino Fundamental por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-514-taxa-de-reprovao-no-ensino-mdio-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Taxa de Reprovação no Ensino Médio por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.4 Taxa de Reprovação no Ensino Médio por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-515-taxa-de-abandono-no-ensino-fundamental-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Taxa de Abandono no Ensino Fundamental por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.5 Taxa de Abandono no Ensino Fundamental por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-516-taxa-de-abandono-no-ensino-mdio-por-dependncia-administrativa---2020-a-2024-ok",
+      "label": "Taxa de Abandono no Ensino Médio por Dependência Administrativa",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.6 Taxa de Abandono no Ensino Médio por Dependência Administrativa - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-517-distoro-idade-srie-total-por-nvel-de-ensino---2020-a-2024-ok",
+      "label": "Distorção Idade-Série Total por Nível de Ensino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.7 Distorção Idade-Série Total por Nível de Ensino - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-518-mdia-de-alunos-por-turma-por-nvel-de-ensino---2020-a-2024-ok",
+      "label": "Média de Alunos por Turma por Nível de Ensino",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.8 Média de Alunos por Turma por Nível de Ensino - 2020 a 2024 ok.json"
+    },
+    {
+      "slug": "tab-519-ndice-de-desenv-da-educ-bsica---ideb---esc-pblica---5-ano-sries-iniciais---20152017201920212023",
+      "label": "Índice de Desenv da Educ Básica - IDEB - Esc Pública - 5 ano (séries iniciais)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.1.9 Índice de Desenv da Educ Básica - IDEB - Esc Pública - 5 ano (séries iniciais) - 2015_2017_2019_2021_2023.json"
+    },
+    {
+      "slug": "tab-521-famlias-atendidas-e-valor-total-empregado-no-programa-bolsa-famlia---2020-a-2025",
+      "label": "Famílias Atendidas e Valor Total Empregado no Programa Bolsa Família",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.2.1 Famílias Atendidas e Valor Total Empregado no Programa Bolsa Família - 2020 a 2025.json"
+    },
+    {
+      "slug": "tab-522-famlias-atendidas-e-valor-total-empregado-no-programa-auxlio-brasil---2021-a-2023",
+      "label": "Famílias Atendidas e Valor Total Empregado no Programa Auxílio Brasil",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.2.2 Famílias Atendidas e Valor Total Empregado no Programa Auxílio Brasil - 2021 a 2023.json"
+    },
+    {
+      "slug": "tab-523-total-de-famlias-inscritas-no-cadastro-nico-para-programas-sociais-cadnico---2021-a-2025",
+      "label": "Total de Famílias Inscritas no Cadastro Único para Programas Sociais (CadÚnico)",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.2.3 Total de Famílias Inscritas no Cadastro Único para Programas Sociais (CadÚnico) - 2021 a 2025.json"
+    },
+    {
+      "slug": "tab-524-total-de-fam-insc-no-cadnico-com-rend-familiar-per-capita-de-at-meio-salrio-mnimo---2021-a-2025",
+      "label": "Total de Fam Insc no CadÚnico com Rend Familiar per capita de até Meio Salário Mínimo",
+      "unit": "",
+      "year": 2025,
+      "path": "data/indicadores/2025/Tab 5.2.4 Total de Fam Insc no CadÚnico com Rend Familiar per capita de até Meio Salário Mínimo - 2021 a 2025.json"
+    }
+  ]
 }
