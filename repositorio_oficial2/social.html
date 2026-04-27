@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social - Anuário Fapespa 2025</title>
+    <style>
+        :root {
+            --bg-1: #f2f7f3;
+            --bg-2: #e3eee5;
+            --text: #173127;
+            --muted: #5a6d63;
+            --line: #cfd9d2;
+            --primary: #1f5a3d;
+            --primary-dark: #163f2b;
+            --accent: #2e7d52;
+            --shadow: 0 16px 38px rgba(18, 49, 35, 0.10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(46, 125, 82, 0.14) 0%, rgba(46, 125, 82, 0.04) 28%, transparent 55%),
+                linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+            min-height: 100vh;
+            padding: 18px;
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(31, 90, 61, 0.12);
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+        }
+
+        .institutional-bar {
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+            color: #ecf6ef;
+            padding: 13px 22px;
+            font-size: 0.78em;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .page-content {
+            padding: 18px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background: var(--primary);
+            color: #ffffff;
+            padding: 11px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-bottom: 16px;
+            transition: all 0.28s;
+            border: 1px solid rgba(31, 90, 61, 0.2);
+        }
+
+        .btn-back:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(31, 90, 61, 0.22);
+        }
+
+        .header {
+            position: relative;
+            background: linear-gradient(135deg, rgba(23, 49, 39, 0.98) 0%, rgba(31, 90, 61, 0.96) 56%, rgba(46, 125, 82, 0.92) 100%);
+            padding: 30px 28px 32px;
+            color: #f4fbf6;
+            border-radius: 18px;
+            margin-bottom: 16px;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            inset: auto 0 0 0;
+            height: 4px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.14), rgba(255,255,255,0.48), rgba(255,255,255,0.14));
+        }
+
+        .header .kicker {
+            display: inline-flex;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #eef8f1;
+            font-size: 0.76em;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .header p {
+            font-size: 1em;
+            color: rgba(244, 251, 246, 0.88);
+        }
+
+        .section-title {
+            color: var(--primary-dark);
+            font-size: 1.02em;
+            margin-bottom: 12px;
+            margin-top: 10px;
+            text-align: center;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .card {
+            position: relative;
+            background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,252,249,0.98) 100%);
+            border-radius: 18px;
+            padding: 22px 18px 18px;
+            min-height: 210px;
+            box-shadow: 0 10px 24px rgba(18, 49, 35, 0.08);
+            transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+            cursor: pointer;
+            border: 1px solid var(--line);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            inset: 0 auto auto 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary-dark), var(--accent));
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 34px rgba(18, 49, 35, 0.16);
+            border-color: rgba(31, 90, 61, 0.35);
+        }
+
+        .card-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 1.9em;
+            margin-bottom: 14px;
+        }
+
+        .card h2 {
+            color: var(--primary-dark);
+            font-size: 1.12em;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.88em;
+            flex-grow: 1;
+            line-height: 1.4;
+        }
+
+        .card-arrow {
+            color: var(--accent);
+            font-size: 1.4em;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #5d6d65;
+            padding: 10px 16px 16px;
+            margin-top: 8px;
+            font-size: 0.85em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                border-radius: 18px;
+            }
+
+            .page-content {
+                padding: 12px;
+            }
+
+            .header {
+                text-align: center;
+                padding: 24px 18px 24px;
+            }
+
+            .header h1 {
+                font-size: 1.7em;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                min-height: 0;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="institutional-bar">Fundação Amazônia de Amparo a Estudos e Pesquisas - Fapespa</div>
+        <div class="page-content">
+            <a href="index.html" class="btn-back">← Voltar ao Início</a>
+
+            <div class="header">
+                <div class="kicker">Painel Temático</div>
+                <h1>Social</h1>
+                <p>Educação, saúde, segurança, trabalho e políticas sociais</p>
+            </div>
+
+            <div class="section-title">Selecione um Subtema</div>
+            <div class="grid">
+            <a href="dados.html?tematica=Social&subtema=Educação" class="card">
+                <div class="card-icon">🎓</div>
+                <h2>Educação</h2>
+                <p>Dados sobre educação, escolaridade e ensino</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="dados.html?tematica=Social&subtema=Inclusão Social" class="card">
+                <div class="card-icon">🤲</div>
+                <h2>Inclusão Social</h2>
+                <p>Programas de inclusão e políticas sociais</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="dados.html?tematica=Social&subtema=Mercado de Trabalho" class="card">
+                <div class="card-icon">💼</div>
+                <h2>Mercado de Trabalho</h2>
+                <p>Emprego, desemprego e indicadores laborais</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="dados.html?tematica=Social&subtema=Previdência Social" class="card">
+                <div class="card-icon">🧾</div>
+                <h2>Previdência Social</h2>
+                <p>Benefícios e sistemas de proteção social</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="dados.html?tematica=Social&subtema=Saúde" class="card">
+                <div class="card-icon">🩺</div>
+                <h2>Saúde</h2>
+                <p>Dados de saúde, saúde pública e indicadores</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="dados.html?tematica=Social&subtema=Segurança" class="card">
+                <div class="card-icon">🛡️</div>
+                <h2>Segurança</h2>
+                <p>Segurança pública e crime</p>
+                <div class="card-arrow">→</div>
+            </a>
+            </div>
+
+            <div class="footer">
+                <p>Desenvolvido para Fapespa | Abril 2026</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

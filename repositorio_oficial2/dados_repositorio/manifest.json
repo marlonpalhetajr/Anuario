@@ -1,0 +1,2544 @@
+[
+  {
+    "path": "dados_repositorio/demografia/1_Medida_Variacção_População_Total_Estimativas_Populacionais_e_Censo_Demográfico.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor",
+      "variacao_abs",
+      "variacao_pct"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/1_População_Total_Estimativas_Populacionais_e_Censo_Demográfico.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/2_População_por_Faixa_Etária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/3_População_por_Sexo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/4_Razão_de_Sexos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/5_Proporção_de_Idosos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/6_Índice_de_Envelhecimento.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/7_Razão_de_Dependência.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/8_Taxa_de_Fecundidade_Total.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/demografia/9_Taxa_Específica_de_Fecundidade_por_faixa_etária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Demografia",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/balanca_comercial/1_Balança_Comercial_Exportação.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Balança Comercial",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/balanca_comercial/2_Balança_Comercial_Importação.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Balança Comercial",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/balanca_comercial/3_Saldo_da_Balança_Comercial.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Balança Comercial",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/extracao_vegetal/1_Quantidade_Produzida_na_Extração_Vegetal_por_Tipo_de_Produto_Extrativo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Extração Vegetal",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/extracao_vegetal/2_Valor_(Mil_Reais)_da_Produção_na_Extração_Vegetal_por_Tipo_de_Produto_Extrativo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Extração Vegetal",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/1_Repasse-de_ICMS.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/2_Demonstrativo_dos_Índices_de_Participação_na_Arrecadação_do_ICMS.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/3_Repasse_de_IPI.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/4_Repasse_de_IPVA.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/5_Receita_Orçamentária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/6_Receitas_Correntes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/7_Impostos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/financas_publicas/8_Receita_de_Transferências_Correntes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Finanças Públicas",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_permanente/1_Área_Destinada_à_Colheita_(Hectares)_da_Lavoura_Permanente.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Permanente",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_permanente/2_Área_Colhida_(Hectares)_da_Lavoura_Permanente.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Permanente",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_permanente/3_Quantidade_produzida_por_tipo_de_Lavoura_Permanente.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Permanente",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_permanente/4_Valor_da_produção_(em_mil_reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Permanente",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_permanente/5_Rendimento_médio_da_produção.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Permanente",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_temporaria/1_Área_Plantada_(em_hectares)_por_Tipo_de_Lavoura_Temporária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Temporária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_temporaria/2_Área Colhida_(em_hectares)_por_Tipo_de_Lavoura_Temporária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Temporária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_temporaria/3_Quantidade-Produzida_por_Tipo_de_Lavoura_Temporária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Temporária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_temporaria/4_Valor-(Mil_Reais)_da_Produção_por_Tipo_de_Lavoura_Temporária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Temporária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/lavoura_temporaria/5_Rendimento-Médio_da_Produção_por_Tipo_de_Lavoura_Temporária.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Lavoura Temporária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/10_Efetivo_de_Rebanho_Codornas.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/11_Produção_de_Origem_Animal_Leite_(Mil_litros).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/12_Produção_de_Origem_Animal_Ovos_de_galinha_(Mil_dúzias).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/13_Produção_de_Origem_Animal_Ovos_de_codorna_(Mil_dúzias).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/14_Produção_de_Origem_Animal_Mel_de_abelha_(Quilogramas).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/1_Efetivo_de_Rebanho_bovino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/2_Efetivo_de_Rebanho_Bubalino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/3_Efetivo_de_Rebanho_Equino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/4_Efetivo_de_Rebanho_Suíno_(Total).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/5_Efetivo_de_Rebanho_Suínos_(Matrizes).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/6_Efetivo_de_Rebanho_Caprino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/7_Efetivo_de_Rebanho_Ovino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/8_Efetivo_de_Rebanho_Galináceos_(Total).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pecuaria/9_Efetivo_de_Rebanho_Galináceos_(Galinhas).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "Pecuária",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/1_Produto_Interno_Bruto_a_Preços_Correntes_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/2_Valor_Adicionado_Bruto_a_Preços_Correntes_Total_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/3_Valor_Adicionado_Bruto_a_Preços_Correntes_da_Agropecuária_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/4_Valor_Adicionado_Bruto_a_Preços_Correntes_da_Indústria_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/5_Valor_Adicionado_Bruto_a_Preços_Correntes_dos_Serviços,_Exclusive_Administração,_Saúde_e_Educação_Públicas_e_Seguridade_Social_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/6_Valor_Adicionado_Bruto_a_Preços_Correntes_da_Administração,_Saúde_e_Educação_Públicas_e_Seguridade_Social_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/7_Impostos,_Líquidos_de_Subsídios,_Sobre_Produtos_a_Preços_Correntes_(Mil_Reais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/economia/pib/8_Evolução_do_Produto_Interno_Bruto_per_Capita.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Economia",
+    "subtema": "PIB",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/10_Total_das_Receitas_Operacionais.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/11_Total_de_Pouso_mais_decolagem_de_Aeronaves.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/12_Total_de_Embarque_mais_desembarque_de_passageiros.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/13_Abastecimento_de_Água_Segundo_Consumidores_e_Volume_Consumido.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/1_Total_da_Frota_de_Veículos_Subdivididos_em_Licenciados_e_Não_Licenciados.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/2_Consumidores_de_Energia_Elétrica_Total.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/3_Consumidores_de_Energia_Elétrica_por_Tipo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/4_Consumo_de_Energia_Elétrica_Total_(kWH).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/5_Consumo_de_Energia_Elétrica_por_Tipo_(kWH).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/6_Total_de_Carregamento_nos_Portos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/7_Total_de_Descarregamento nos Portos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/8_Total_de_Movimentação_nos_Portos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/9_Total_de_Embarcações.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Infraestrutura",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/aeroportos_localidade.csv",
+    "delimiter": ";",
+    "valid": false,
+    "tematica": "",
+    "subtema": "",
+    "fields": [
+      "ri",
+      "localidade",
+      "count"
+    ]
+  },
+  {
+    "path": "dados_repositorio/infraestrutura/receitas_localidade.csv",
+    "delimiter": ";",
+    "valid": false,
+    "tematica": "",
+    "subtema": "",
+    "fields": [
+      "ri",
+      "localidade",
+      "count"
+    ]
+  },
+  {
+    "path": "dados_repositorio/meio_ambiente/1_Desflorestamento_Acumulado_(km²).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Meio Ambiente",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/meio_ambiente/2_Incremento_(Desflorestamento_km²).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Meio Ambiente",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/meio_ambiente/3_Hidrografia_2020_(km²).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Meio Ambiente",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/meio_ambiente/3_Área_de_Floresta_(km²).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Meio Ambiente",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/meio_ambiente/3_Área_de_Floresta_(km²)_e_Hidrografia_2020_(km²).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Meio Ambiente",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/meio_ambiente/4_Focos_de_Calor.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Meio Ambiente",
+    "subtema": "-",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/10_Índice_de_desenvonvimento_da_educação_básica_IDEB_Escola_pública_9_ano_(séries_finais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/11_Número_de_Matrículas_em_Creches_por_Dependência_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/12_Número_de_Matrículas_no_Ensino_Pré_Escolar_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/13_Número_de_Matrículas_no_Ensino_Fundamental_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/14_Número_de_Matrículas_no_Ensino_Médio_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/15_Número_de_Docentes_em_Creches_por__Dependência_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/16_Número_de_Docentes_no_Ensino_Pré_escolar_por__Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/17_Número_de_Docentes_no_Ensino_Fundamental_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/18_Número_de_Docentes_no_Ensino_Médio_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/19_Estabelecimentos_de_Creche_por_Dependência_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/1_Taxa_de_Aprovação_no_Ensino_Fundamental_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/20_Estabelecimentos_de_Pré_Escola_por_Dependência_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/21_Estabelecimentos_de_Ensino_Fundamental_por_Dependência_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/22_Estabelecimentos_de_Ensino_Médio_por_Dependência_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/2_Taxa_de_Aprovação_no_Ensino_Médio_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/3_Taxa_de_Reprovação_no_Ensino_Fundamental_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/4_Taxa_de_Reprovação_no_Ensino_Médio_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/5_Taxa_de_Abandono_no_Ensino_Fundamental_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/6_Taxa_de_Abandono_no_Ensino_Médio_por_Esfera_Administrativa.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/7_Distorção_Idade_Série_Total_por_Nível_de_Ensino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/8_Média_de_Alunos_por_Turma_por_Nível_de_Ensino.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/educacao/9_Índice_de_desenvonvimento_da_educação_básica_IDEB_Escola_pública_5_ano_(séries_iniciais).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Educação",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/inclusao_social/1_Famílias_Atendidas_e_Valor_Total_Empregado_no_Programa_Bolsa_Família.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Inclusão Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/inclusao_social/2_Famílias_Atendidas_e_Valor_Total_Empregado_no_Programa_Auxílio_Brasil.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Inclusão Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/inclusao_social/3_Total_de_famílias_inscritas_no_Cadastro_Único_para_Programas_Sociais_(CadÚnico).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Inclusão Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/inclusao_social/4_Total_de_famílias_inscritas_no_CadÚnico_com_rendimento_familiar_per_capita_de_até_1_2_salário_mínimo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Inclusão Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/1_Vínculos_Empregatícios_Total_no_Emprego_Formal.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/2_Vínculos_Empregatícios_no_Emprego_Formal_por_Sexo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/3_Vínculos_Empregatícios_no_Emprego_Formal_por_Grande_Setor_(IBGE).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/4_Vínculos_Empregatícios_no_Emprego_Formal_por_Setor_Econômico.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/5_Vínculos_Empregatícios_por_Escolaridade_do_Trabalhador_Formal.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/6_Remuneração_Média_(R$)_do_Trabalhador_Formal.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/mercado_de_trabalho/7_Remuneração_Média_(R$)_do_Trabalhador_Formal_por_Sexo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Mercado de Trabalho",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/previdencia_social/1_Quantidade_de_Benefícios_Emitidos_(benefícios_previdenciários,_assistenciais_e_de_legislação_específica)_em_Dezembro.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Previdência Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/previdencia_social/2_Valor_dos_Benefícios_Emitidos_(benefícios_previdenciários_assistenciais_e_de_legislação_específica)_em_Dezembro.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Previdência Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/previdencia_social/3_Valor_dos_Benefícios_Emitidos_ao_Ano_(benefícios_previdenciários_assistenciais_e_de_legislação_específica).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Previdência Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/previdencia_social/4_1_Quantidade_de_benefícios_emitidos_no_mês_de_dezembro.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Previdência Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/previdencia_social/4_2_Valor_dos_benefícios_emitidos_no_mês_de_dezembro.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Previdência Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/previdencia_social/4_3_Valor_dos_benefícios_emitidos_no_ano.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Previdência Social",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/10_Leito_Hospitalar_por_Mil_Habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/11_Percentual_de_Nascidos_Vivos_com_7_ou_Mais_Consultas_Pré_natal.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/12_Percentual_de_Nascidos_Vivos_por_Parto_Normal.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/13_Percentual_de_Nascidos_Vivos_por_Parto_Cesário.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/14_Percentual_de_Nascidos_Vivos_de_Mães_na_Faixa_Etária_de_10_a_19_Anos.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/15_Taxa_de_Incidência_da_Hanseníase.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/16_Taxa_de_Incidência_da_Tuberculose.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/17_Proporção_de_Mulheres_de_25_a_64_anos_que_Realizaram_Exames_Citopatológicos_do_Colo_do_Útero.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/18_Óbitos_por_Residência_Neoplasias_(Tumores).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/19_Óbitos_por_Residência_Algumas_Doenças_Infecciosas_e_Parasitárias.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/1_Taxa_de_Mortalidade_Infantil.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/20_Óbitos_por_Residência_Doenças_do_Aparelho_Circulatório.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/21_Óbitos_por_Residência_Doenças_do_Aparelho_Digestivo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/22_Óbitos_por_Residência_Doenças_do_Aparelho_Respiratório.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/23_Óbitos_por_Residência_Algumas_Afecções_Originadas_no_Período_Perinatal.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/24_Percentual_de_Óbitos_por_Infarto_Agudo_do_Miocárdio_(IAM).csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/25_Taxa_de_Cobertura_da_Atenção_Primária_à_Saúde.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/27_Taxa_de_Proporção_de_Cobertura_dos_Agentes_Comunitários_de_Saúde_2016_a_2020_SERIE_ENCERRADA.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/28_Taxa_de_Proporção_de_Cobertura_da_Estratégia_Saúde_da_Família_2016_a_2020_SERIE_ENCERRADA.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/2_Taxa_de_Mortalidade_na_Infância.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/3_Taxa_de_Mortalidade_Materna.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/4_Taxa_de_Natalidade.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/5_Taxa_de_Mortalidade_Geral.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/6_Taxa_de_Mortalidade_por_Sexo.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/7_Número_de_Hospitais.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/8_Postos_e_Centros_de_Saúde_por_10.000_Habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/saude/9_Médicos_por_10_Mil_Habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Saúde",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/1_Taxa_de_Homicídios_Total_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/2_Taxa_de_Homicídios_de_Jovens_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/3_Taxa_de_Mortes_no_Trânsito_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/4_Taxa_do_Crime_de_Homicídio_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/5_Taxa_do_Crime_de_Homicídio_no_Trânsito_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/6_Taxa_do_Crime_de_Roubo_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/7_Taxa_do_Crime_de_Latrocínio_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  },
+  {
+    "path": "dados_repositorio/social/seguranca/8_Taxa_do_Crime_de_Lesão_Corporal_Seguida_de_Morte_por_100_000_habitantes.csv",
+    "delimiter": ";",
+    "valid": true,
+    "tematica": "Social",
+    "subtema": "Segurança",
+    "fields": [
+      "tematica",
+      "subtema",
+      "indicador",
+      "ri",
+      "localidade",
+      "categoria",
+      "ano",
+      "valor"
+    ]
+  }
+]

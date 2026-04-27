@@ -1,0 +1,165 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   📊 REPOSITÓRIO ANUÁRIO 2025 - INÍCIO RÁPIDO               ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🎯 COMO COMEÇAR AGORA:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPÇÃO 1: ABRIR NO NAVEGADOR (Mais Simples)
+─────────────────────────────────────────
+
+1. Abra este arquivo no seu navegador:
+   👉 index.html
+
+✅ A página inicial mostrará as 5 temáticas disponíveis
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPÇÃO 2: USAR SERVIDOR LOCAL (Recomendado - Mais Rápido)
+───────────────────────────────────────────────────────
+
+No Windows, duplo-clique neste arquivo:
+👉 start_server.bat
+
+Ou em PowerShell, execute:
+👉 .\start_server.ps1
+
+✅ Depois acesse: http://localhost:8000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗂️ ESTRUTURA DE NAVEGAÇÃO:
+
+Temáticas Principais (5):
+
+1️⃣  Demografia
+    └─ Ver Dados → Filtrar e Baixar
+
+2️⃣  Economia (com 7 subtemas)
+    ├─ PIB → Ver Dados
+    ├─ Lavoura Permanente → Ver Dados
+    ├─ Lavoura Temporária → Ver Dados
+    ├─ Extração Vegetal → Ver Dados
+    ├─ Pecuária → Ver Dados
+    ├─ Balança Comercial → Ver Dados
+    └─ Finanças Públicas → Ver Dados
+
+3️⃣  Infraestrutura
+    └─ Ver Dados → Filtrar e Baixar
+
+4️⃣  Meio Ambiente
+    └─ Ver Dados → Filtrar e Baixar
+
+5️⃣  Social (com 6 subtemas)
+    ├─ Educação → Ver Dados
+    ├─ Inclusão Social → Ver Dados
+    ├─ Mercado de Trabalho → Ver Dados
+    ├─ Previdência Social → Ver Dados
+    ├─ Saúde → Ver Dados
+    └─ Segurança → Ver Dados
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 ARQUIVOS DO REPOSITÓRIO:
+
+Páginas HTML:
+  📄 index.html              → Página inicial
+  📄 demografia.html         → Temática Demografia
+  📄 economia.html           → Temática Economia (escolher subtema)
+  📄 infraestrutura.html     → Temática Infraestrutura
+  📄 meio-ambiente.html      → Temática Meio Ambiente
+  📄 social.html             → Temática Social (escolher subtema)
+  📄 dados.html              → Página de visualização de dados
+
+Suporte:
+  🐍 functions.js            → Funções compartilhadas
+  🐍 server.py               → Servidor Python
+  🚀 start_server.bat        → Iniciador Windows
+  🚀 start_server.ps1        → Iniciador PowerShell
+  📚 README.md               → Documentação completa
+  📋 GUIA_RÁPIDO.txt         → Este guia
+
+Dados:
+   📂 dados_repositorio/      → Dados em CSV por temática/subtema
+   🧭 manifest.json           → Índice de arquivos de dados válidos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 NA PÁGINA DE DADOS:
+
+1. Use os filtros na lateral para explorar:
+   ✓ Subtema (se houver)
+   ✓ Indicador
+   ✓ Localidade
+   ✓ Ano
+
+2. A tabela mostra até 20 registros por página
+
+3. Estatísticas em tempo real:
+   ✓ Total de registros
+   ✓ Registros após filtrar
+
+4. Use os botões de download:
+   ✓ 📥 XLSX (formato Excel)
+   ✓ 📥 CSV (formato universal)
+
+5. Use "🔄 Limpar" para resetar os filtros
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 DICAS IMPORTANTES:
+
+⚡ Performance: Os dados carregam MUITO MAIS RÁPIDO agora!
+   → Cada temática carrega apenas seus dados
+   → Sem delays ou travamentos
+
+🎯 Navegação: Volte sempre que quiser
+   → Clique em "← Voltar" para ir para página anterior
+   → Clique no logo para voltar ao início
+
+📊 Filtros: Deixar vazio = Mostrar todos
+   → Combine vários filtros para resultados mais específicos
+   → Nem todos os dados existem para todas as combinações
+
+💾 Downloads: Os arquivos têm a data no nome
+   → 📥 XLSX: Abre em Excel
+   → 📥 CSV: Abre em qualquer programa
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ PERGUNTAS FREQUENTES:
+
+P: Por que é tão mais rápido agora?
+R: Porque carregamos apenas os dados de cada temática, não tudo de uma vez!
+
+P: Posso usar offline?
+R: Sim! Abra index.html direto no navegador ou use o servidor local.
+
+P: Os downloads não funcionam
+R: Certifique-se que tem internet (para as bibliotecas JavaScript).
+   Se estiver usando o navegador localmente, use o servidor.py.
+
+P: Onde ficam os dados principais agora?
+R: Na pasta dados_repositorio/, com índice em dados_repositorio/manifest.json
+
+P: Como adicionar mais dados?
+R: Adicione os CSVs em dados_repositorio/ e atualize o manifest.json.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 COMPATIBILIDADE:
+
+  ✅ Chrome/Edge (Recomendado)
+  ✅ Firefox
+  ✅ Safari
+  ✅ Tablets e Smartphones
+  ✅ Internet Explorer 11+ (limitado)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PRONTO! Aproveite o repositório otimizado!
+
+Desenvolvido com ❤️ para Fapespa | Abril 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
