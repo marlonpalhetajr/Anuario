@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anuário Fapespa 2025 - Repositório de Dados</title>
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <style>
         :root {
             --bg-1: #f2f7f3;
@@ -152,10 +155,16 @@
         }
 
         .grid {
-            display: grid;
-            grid-template-columns: repeat(5, minmax(0, 1fr));
+            display: flex;
+            flex-wrap: nowrap;
             gap: 16px;
-            margin-bottom: 20px;
+            justify-content: flex-start;
+            align-items: stretch;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 8px 12px;
+            max-width: 100%;
+            margin: 0 auto 20px;
         }
 
         .card {
@@ -163,8 +172,10 @@
             background:
                 linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,252,249,0.98) 100%);
             border-radius: 20px;
-            padding: 26px 22px 22px;
-            min-height: 240px;
+            padding: 18px 14px;
+            min-height: 200px;
+            flex: 0 0 220px;
+            max-width: 220px;
             box-shadow: 0 10px 24px rgba(18, 49, 35, 0.08);
             transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
             cursor: pointer;
@@ -275,6 +286,7 @@
             }
 
             .grid {
+                display: grid;
                 grid-template-columns: 1fr;
                 gap: 12px;
             }
@@ -299,9 +311,11 @@
             }
         }
 
-        @media (max-width: 1180px) {
+        @media (min-width: 769px) and (max-width: 1180px) {
             .grid {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                display: grid;
+                grid-template-columns: repeat(2, minmax(280px, 1fr));
+                gap: 18px;
             }
         }
 
@@ -372,11 +386,11 @@
         <div class="info-box">
             <strong>Dica:</strong> Clique em qualquer temática para explorar os dados específicos dessa área. Você encontrará filtros avançados, tabelas interativas e opções de download em XLSX e CSV.
         </div>
-
-        <div class="footer">
-            <p>Desenvolvido para Fapespa | Abril 2026</p>
-            <p style="font-size: 0.85em; margin-top: 10px;">Total de dados disponíveis: Anuário 2025 - Contém informações de múltiplas temáticas e indicadores</p>
-        </div>
     </div>
+
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="layout.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

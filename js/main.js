@@ -19,9 +19,38 @@ $(document).ready(function() {
   spinner();
 
   // Initiate the wowjs (somente se a lib estiver carregada para evitar quebra)
+  // Use a lightweight IntersectionObserver-based reveal instead of WOW.js
+  // to avoid duplicated scroll listeners and janky animations on scroll.
   if (typeof WOW === 'function') {
-    new WOW().init();
+    // intentionally not initializing WOW.js to prevent heavy listeners
+    // new WOW().init();
   }
+
+  (function() {
+    if (!('IntersectionObserver' in window)) {
+      // fallback: mark all reveals visible
+      document.documentElement.classList.add('js');
+      document.querySelectorAll('.js-reveal').forEach(function(el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+
+    document.documentElement.classList.add('js');
+
+    var io = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.js-reveal').forEach(function(el) {
+      io.observe(el);
+    });
+  })();
 
   // Sticky Navbar
   $(window).scroll(function () {
@@ -819,17 +848,26 @@ function openCustomModal(event) {
 
           const style = doc.createElement('style');
           style.textContent = `
-            html, body { margin:0; padding:0; background:#fff; color:#222; font-family:'Open Sans', Arial, sans-serif; font-size:16px; line-height:1.6; }
+            html, body { margin:0; padding:0; background:linear-gradient(180deg, #eef4fb 0%, #f8fbff 100%); color:#243447; font-family:'Open Sans', Arial, sans-serif; font-size:16px; line-height:1.75; }
+            body { padding: 22px !important; }
             header, nav, footer, .header, .topbar, .rodape, #topo, #menu { display:none !important; }
-            main, #corpo, .content, .container, body { max-width: 860px; margin: 0 auto !important; padding: 20px 24px !important; box-sizing: border-box; }
-            h1 { font-size: 1.75rem; color:#163b6b; margin: 0 0 1rem; font-weight: 800; }
-            h2 { font-size: 1.4rem; color:#163b6b; margin: 1.25rem 0 .75rem; font-weight: 700; }
+            main, body { max-width: 100%; margin: 0 auto !important; box-sizing: border-box; }
+            #cabecalho { max-width: 960px !important; margin: 0 auto 18px !important; background: linear-gradient(135deg, #163b6b 0%, #1f5ea8 100%) !important; color:#fff !important; text-align:center !important; padding: 34px 32px !important; border: 1px solid rgba(255,255,255,0.18) !important; border-radius: 28px !important; box-shadow: 0 22px 50px rgba(22,59,107,0.22); }
+            #cabecalho h2 { margin: 0 !important; font-size: clamp(2.2rem, 3vw, 3.1rem) !important; line-height: 1.05 !important; font-weight: 800 !important; color:#fff !important; letter-spacing: -0.03em; }
+            #cabecalho::after { content:''; display:block; width: 96px; height: 4px; margin: 18px auto 0; border-radius: 999px; background: rgba(255,255,255,0.5); }
+            #corpo { max-width: 960px !important; margin: 0 auto !important; padding: 34px 34px 18px !important; box-sizing: border-box; background: #ffffff; border: 1px solid #e1e8f1; border-radius: 28px; box-shadow: 0 16px 36px rgba(18, 42, 73, 0.08); }
+            #corpo p { font-size: 1.08rem !important; line-height: 1.95 !important; color:#243447 !important; margin: 0 0 1.2rem !important; }
+            #corpo p:first-of-type { font-size: 1.14rem !important; }
+            #rodape { max-width: 960px !important; margin: 18px auto 0 !important; padding: 18px 28px 22px !important; background: rgba(255,255,255,0.72) !important; border: 1px solid #dbe6f2 !important; border-radius: 22px !important; text-align: center !important; box-shadow: 0 12px 24px rgba(18,42,73,0.06); backdrop-filter: blur(6px); }
+            #rodape p { margin: 0.25rem 0 !important; color:#41566f !important; font-size: 0.98rem !important; }
+            #rodape p:first-child { font-weight: 700 !important; color:#163b6b !important; }
+            h1 { font-size: 1.95rem; color:#163b6b; margin: 0 0 1rem; font-weight: 800; }
+            h2 { font-size: 1.48rem; color:#163b6b; margin: 1.25rem 0 .75rem; font-weight: 700; }
             h3 { font-size: 1.2rem; color:#163b6b; margin: 1rem 0 .5rem; font-weight: 700; }
-            p, li { font-size: 1rem; }
-            a { color:#2d6a47; text-decoration: underline; text-underline-offset: 2px; }
+            a { color:#1e5aa0; text-decoration: underline; text-underline-offset: 2px; }
             img, iframe, table { max-width: 100%; height: auto; }
             table { border-collapse: collapse; width: 100%; }
-            th, td { border: 1px solid #e5e5e5; padding: 6px 8px; }
+            th, td { border: 1px solid #dfe7f0; padding: 8px 10px; }
           `;
           doc.head.appendChild(style);
 
@@ -1498,5 +1536,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })();
 }); // Fim do DOMContentLoaded wrapper para A11Y
+
+// Animacao sutil por secao na home
+(function() {
+  'use strict';
+
+  function initSectionReveal() {
+    var sections = document.querySelectorAll('.js-reveal');
+    if (!sections.length) return;
+
+    document.documentElement.classList.add('js');
+
+    var reduced = document.documentElement.classList.contains('a11y-reduced-motion') ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduced) {
+      sections.forEach(function(section) { section.classList.add('is-visible'); });
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      sections.forEach(function(section) { section.classList.add('is-visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        } else {
+          entry.target.classList.remove('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.16,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    sections.forEach(function(section) { observer.observe(section); });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSectionReveal);
+  } else {
+    initSectionReveal();
+  }
+})();
 
 

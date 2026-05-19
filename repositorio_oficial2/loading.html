@@ -46,6 +46,44 @@
         p {
             color: #666;
         }
+
+        .home-btn {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 50px;
+            height: 50px;
+            background: #2f7f2f;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 22px;
+            line-height: 1;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover,
+        .home-btn:focus {
+            color: #fff;
+            background: #1a5f1a;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .home-btn {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -54,6 +92,7 @@
         <h2>Carregando dados...</h2>
         <p>Por favor, aguarde.</p>
     </div>
+    <a href="../index.html" class="home-btn" title="Início" aria-label="Ir para o início">⌂</a>
     <script>
         // Redirecionar para a página correta após carregamento
         // Esta é uma página temporária

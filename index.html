@@ -136,7 +136,7 @@
 
 <main>
   <!-- HERO SECTION MODERNO -->
-  <section class="hero-section-modern" id="anuario">
+  <section class="hero-section-modern js-reveal is-visible" id="anuario">
     <div class="hero-background">
       <img src="img/anuario.png" alt="Capa do Anuário Estatístico do Pará da FAPESPA" class="hero-image" width="1100" height="700" decoding="async" fetchpriority="high">
       <div class="hero-overlay"></div>
@@ -155,9 +155,9 @@
     </div>
   </section>
   <!-- CARDS DE ACESSO RÁPIDO (Sumário, Glossário, Expediente) -->
-  <section class="quick-access-section">
+  <section class="quick-access-section js-reveal section-break" aria-label="Acesso rapido">
     <div class="container">
-      <div class="row justify-content-center g-4">
+      <div class="row justify-content-center g-4 reveal-stagger">
         <div class="col-md-4">
           <div class="card-modern card-hover-lift">
             <div class="card-icon-wrapper bg-primary-gradient">
@@ -200,9 +200,9 @@
     </div>
   </section>
 
-    <section class="container py-5" id="principais-temas">
+    <section class="container py-5 js-reveal section-break" id="principais-temas">
       <h2 data-i18n="main_title" class="section-title text-center">Principais Temas</h2>
-      <div class="row g-4 justify-content-center">
+      <div class="row g-4 justify-content-center reveal-stagger">
         <!-- Linha 1: Demografia, Economia -->
         <div class="col-md-6">
           <div class="card card-feature card-animated text-center p-4 h-100 card-demografia" data-bg-image="img/demografia.png">
@@ -259,9 +259,9 @@
       </div>
     </section>
 
-  <section class="container py-5" id="sobre">
+    <section class="container py-5 js-reveal section-break" id="sobre">
         <h2 class="section-title text-center" data-i18n="sobre_titulo">Sobre a FAPESPA e a DETGI</h2>
-        <div class="row align-items-center">
+      <div class="row align-items-center reveal-stagger">
       <div class="col-lg-6 mb-4 mb-lg-0">
         <label for="equipe2_img" class="sr-only">Equipe da FAPESPA</label>
         <img id="equipe2_img" src="img/image2.jpg" alt="Equipe da FAPESPA responsável pela elaboração do Anuário Estatístico 2024" class="img-fluid rounded shadow" loading="lazy" decoding="async">
@@ -276,10 +276,10 @@
     </main>
 
   <!-- DOWNLOADS (substitui Produtos em cards, preserva o id para ancoragem) -->
-  <section class="footer-products py-5" id="produtos">
+  <section class="footer-products py-5 js-reveal section-break" id="produtos">
     <div class="container">
       <h3 class="text-center mb-5 fw-bold">Downloads</h3>
-      <div class="row g-4 justify-content-center">
+      <div class="row g-4 justify-content-center reveal-stagger">
         <!-- Card Download: abre a página Repositório de Arquivos -->
         <div class="col-lg-4 col-md-6">
           <a href="repositorio_oficial2/index.html" class="product-card" aria-label="Abrir repositório de arquivos">
@@ -290,17 +290,17 @@
         </div>
         <!-- Card Download2: baixa pacote ZIP -->
         <div class="col-lg-4 col-md-6">
-          <a href="repositorio/Anuário_2025.zip" class="product-card" download aria-label="Baixar pacote zipado">
+          <a href="repositorio_oficial2/Anuário_2025.rar" class="product-card" download aria-label="Baixar pacote zipado">
             <i class="bi bi-archive"></i>
-            <h5>Download</h5>
+            <h5>Download de Tabelas</h5>
             <p>Baixar conteúdo completo</p>
           </a>
         </div>
         <!-- Card Download3: download de mapas -->
         <div class="col-lg-4 col-md-6">
-          <a href="mapas/mapas.rar" class="product-card" aria-label="Acessar mapas para download">
+          <a href="mapas/repository.html" class="product-card" aria-label="Acessar repositório de mapas">
             <i class="bi bi-map"></i>
-            <h5>Download de Mapas</h5>
+            <h5>Repositório de Mapas</h5>
             <p>Acesse mapas temáticos e territoriais</p>
           </a>
         </div>
@@ -309,9 +309,9 @@
   </section>
 
   <!-- RODAPÉ PRINCIPAL -->
-  <footer class="footer-main" id="contato">
+  <footer class="footer-main js-reveal section-break" id="contato">
     <div class="container py-5">
-      <div class="row g-5">
+      <div class="row g-5 reveal-stagger">
         <!-- SOBRE FAPESPA -->
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-title mb-4">Sobre FAPESPA</h5>
@@ -382,7 +382,7 @@
   </footer>
 
   <!-- COPYRIGHT -->
-  <div class="footer-copyright text-center py-4">
+  <div class="footer-copyright text-center py-4 section-break">
     <div class="container">
       <small class="text-muted">© Anuário Estatístico do Pará, Todos os direitos reservados. <a href="https://www.fapespa.pa.gov.br/" class="text-muted text-decoration-none">FAPESPA</a></small>
     </div>
