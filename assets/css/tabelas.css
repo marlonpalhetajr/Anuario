@@ -1,15 +1,9 @@
 /* este css estiliza as tabelas em HTML */
 @charset "utf-8";
 
-@font-face {
-  /* fonte da pagina */
-  font-family: 'fonteTrebuchet'; /* nome da fonte */
-  src: url(../font/trebuchet-ms.ttf); /* caminho da fonte */
-}
-
 body {
   /* configura o corpo da pagina */
-  font-family: fonteTrebuchet; /* tipo de fonte */
+  font-family: "Trebuchet MS", Arial, sans-serif; /* tipo de fonte */
   color: #333; /* cor da fonte */
   padding: 0px; /* espacamento interno */
   margin: 0px; /* espacamento externo */

@@ -557,7 +557,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url('../img/3.png') top center;
+  background: url('../../img/image2.jpg') top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -825,7 +825,7 @@ section {
 --------------------------------------------------------------*/
 .call-to-action {
   background: linear-gradient(rgba(6, 53, 45, 0.8), rgba(27, 47, 69, 0.8)),
-    url('../img/ambiental.png') center center;
+    url('../../img/slide/ambiente.png') center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1404,7 +1404,7 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background: url('../img/contact-bg.png') left top no-repeat;
+  background-color: #fff;
   background-size: contain;
   position: relative;
 }

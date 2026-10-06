@@ -9,18 +9,18 @@
     <link href="../css/style.css" rel="stylesheet">
     <style>
         :root {
-            --bg-1: #f2f7f3;
-            --bg-2: #e3eee5;
+            --bg-1: #f1f7fc;
+            --bg-2: #e3f0fb;
             --surface: #ffffff;
-            --surface-soft: #f7faf8;
-            --text: #173127;
-            --muted: #5a6d63;
-            --line: #cfd9d2;
-            --primary: #1f5a3d;
-            --primary-dark: #163f2b;
-            --primary-soft: #e3f0e7;
-            --accent: #2e7d52;
-            --shadow: 0 16px 38px rgba(18, 49, 35, 0.10);
+            --surface-soft: #f7fbff;
+            --text: #173b5c;
+            --muted: #5a7185;
+            --line: #c9dceb;
+            --primary: #2868a8;
+            --primary-dark: #1f5488;
+            --primary-soft: #e8f4ff;
+            --accent: #55aeeb;
+            --shadow: 0 16px 38px rgba(31, 84, 136, 0.10);
         }
 
         * {
@@ -32,7 +32,7 @@
         body {
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(46, 125, 82, 0.14) 0%, rgba(46, 125, 82, 0.04) 28%, transparent 55%),
+                radial-gradient(circle at top left, rgba(85, 174, 235, 0.14) 0%, rgba(85, 174, 235, 0.04) 28%, transparent 55%),
                 linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
             min-height: 100vh;
             padding: 18px;
@@ -43,7 +43,7 @@
             max-width: 1280px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.72);
-            border: 1px solid rgba(31, 90, 61, 0.12);
+            border: 1px solid rgba(40, 104, 168, 0.12);
             border-radius: 22px;
             overflow: hidden;
             box-shadow: var(--shadow);
@@ -52,7 +52,7 @@
 
         .institutional-bar {
             background: linear-gradient(90deg, var(--primary-dark), var(--primary));
-            color: #ecf6ef;
+            color: #eff7ff;
             padding: 13px 22px;
             font-size: 0.78em;
             letter-spacing: 0.04em;
@@ -63,11 +63,11 @@
         .header {
             position: relative;
             background:
-                linear-gradient(135deg, rgba(23, 49, 39, 0.98) 0%, rgba(31, 90, 61, 0.96) 56%, rgba(46, 125, 82, 0.92) 100%);
+                linear-gradient(135deg, rgba(31, 84, 136, 0.98) 0%, rgba(40, 104, 168, 0.96) 56%, rgba(85, 174, 235, 0.92) 100%);
             padding: 48px 38px 52px;
             text-align: center;
             margin-bottom: 18px;
-            color: #f4fbf6;
+            color: #f4f9ff;
             min-height: 260px;
             display: flex;
             flex-direction: column;
@@ -91,7 +91,7 @@
             border-radius: 999px;
             background: rgba(255, 255, 255, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.16);
-            color: #eef8f1;
+            color: #eff7ff;
             font-size: 0.76em;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -176,7 +176,7 @@
             min-height: 200px;
             flex: 0 0 220px;
             max-width: 220px;
-            box-shadow: 0 10px 24px rgba(18, 49, 35, 0.08);
+            box-shadow: 0 10px 24px rgba(31, 84, 136, 0.08);
             transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
             cursor: pointer;
             border: 1px solid var(--line);
@@ -199,8 +199,8 @@
 
         .card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 18px 34px rgba(18, 49, 35, 0.16);
-            border-color: rgba(31, 90, 61, 0.35);
+            box-shadow: 0 18px 34px rgba(31, 84, 136, 0.16);
+            border-color: rgba(40, 104, 168, 0.35);
         }
 
         .card-icon {
@@ -320,14 +320,14 @@
         }
 
         .info-box {
-            background: linear-gradient(180deg, #ffffff 0%, #f7fbf8 100%);
+            background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
             border: 1px solid var(--line);
             border-radius: 16px;
             padding: 16px 18px;
             color: #355046;
             text-align: center;
             margin-top: 18px;
-            box-shadow: 0 10px 24px rgba(18, 49, 35, 0.07);
+            box-shadow: 0 10px 24px rgba(31, 84, 136, 0.07);
             font-size: 0.94em;
         }
 
@@ -392,5 +392,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="layout.js"></script>
     <script src="../js/main.js"></script>
+
+<script src="../js/site-i18n.js"></script>
 </body>
 </html>

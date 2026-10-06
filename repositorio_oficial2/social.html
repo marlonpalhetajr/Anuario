@@ -9,15 +9,15 @@
     <link href="../css/style.css" rel="stylesheet">
     <style>
         :root {
-            --bg-1: #f2f7f3;
-            --bg-2: #e3eee5;
-            --text: #173127;
-            --muted: #5a6d63;
-            --line: #cfd9d2;
-            --primary: #1f5a3d;
-            --primary-dark: #163f2b;
-            --accent: #2e7d52;
-            --shadow: 0 16px 38px rgba(18, 49, 35, 0.10);
+            --bg-1: #f1f7fc;
+            --bg-2: #e3f0fb;
+            --text: #173b5c;
+            --muted: #5a7185;
+            --line: #c9dceb;
+            --primary: #2868a8;
+            --primary-dark: #1f5488;
+            --accent: #55aeeb;
+            --shadow: 0 16px 38px rgba(31, 84, 136, 0.10);
         }
 
         * {
@@ -29,7 +29,7 @@
         body {
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(46, 125, 82, 0.14) 0%, rgba(46, 125, 82, 0.04) 28%, transparent 55%),
+                radial-gradient(circle at top left, rgba(85, 174, 235, 0.14) 0%, rgba(85, 174, 235, 0.04) 28%, transparent 55%),
                 linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
             min-height: 100vh;
             padding: 18px;
@@ -40,7 +40,7 @@
             max-width: 1280px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.72);
-            border: 1px solid rgba(31, 90, 61, 0.12);
+            border: 1px solid rgba(40, 104, 168, 0.12);
             border-radius: 22px;
             overflow: hidden;
             box-shadow: var(--shadow);
@@ -49,7 +49,7 @@
 
         .institutional-bar {
             background: linear-gradient(90deg, var(--primary-dark), var(--primary));
-            color: #ecf6ef;
+            color: #eff7ff;
             padding: 13px 22px;
             font-size: 0.78em;
             letter-spacing: 0.04em;
@@ -70,20 +70,20 @@
             text-decoration: none;
             margin-bottom: 16px;
             transition: all 0.28s;
-            border: 1px solid rgba(31, 90, 61, 0.2);
+            border: 1px solid rgba(40, 104, 168, 0.2);
         }
 
         .btn-back:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(31, 90, 61, 0.22);
+            box-shadow: 0 10px 20px rgba(40, 104, 168, 0.22);
         }
 
         .header {
             position: relative;
-            background: linear-gradient(135deg, rgba(23, 49, 39, 0.98) 0%, rgba(31, 90, 61, 0.96) 56%, rgba(46, 125, 82, 0.92) 100%);
+            background: linear-gradient(135deg, rgba(31, 84, 136, 0.98) 0%, rgba(40, 104, 168, 0.96) 56%, rgba(85, 174, 235, 0.92) 100%);
             padding: 30px 28px 32px;
-            color: #f4fbf6;
+            color: #f4f9ff;
             border-radius: 18px;
             margin-bottom: 16px;
         }
@@ -102,7 +102,7 @@
             border-radius: 999px;
             background: rgba(255, 255, 255, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.16);
-            color: #eef8f1;
+            color: #eff7ff;
             font-size: 0.76em;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -145,7 +145,7 @@
             border-radius: 18px;
             padding: 22px 18px 18px;
             min-height: 210px;
-            box-shadow: 0 10px 24px rgba(18, 49, 35, 0.08);
+            box-shadow: 0 10px 24px rgba(31, 84, 136, 0.08);
             transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
             cursor: pointer;
             border: 1px solid var(--line);
@@ -168,8 +168,8 @@
 
         .card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 18px 34px rgba(18, 49, 35, 0.16);
-            border-color: rgba(31, 90, 61, 0.35);
+            box-shadow: 0 18px 34px rgba(31, 84, 136, 0.16);
+            border-color: rgba(40, 104, 168, 0.35);
         }
 
         .card-icon {
@@ -306,5 +306,7 @@
 
         </div>
     </div>
+
+<script src="../js/site-i18n.js"></script>
 </body>
 </html>

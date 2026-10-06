@@ -85,7 +85,7 @@ function initMap() {
 // ========== CARREGAMENTO DE DADOS ==========
 async function loadData() {
     try {
-        const resp = await fetch('data/municipios_para.geojson');
+        const resp = await fetch('../data/para_municipios.geojson');
         STATE.geojson = await resp.json();
         console.log(`✅ GeoJSON carregado: ${STATE.geojson.features.length} features`);
     } catch (e) {
@@ -94,7 +94,7 @@ async function loadData() {
     }
     
     try {
-        const resp = await fetch('data/catalogo_categorias.json');
+        const resp = await fetch('../data/catalogo_categorias.json');
         STATE.catalogo = await resp.json();
         console.log(`✅ Catálogo carregado`);
     } catch (e) {

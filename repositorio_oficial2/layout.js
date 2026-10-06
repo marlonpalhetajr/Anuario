@@ -18,7 +18,7 @@
       right: 32px;
       width: 50px;
       height: 50px;
-      background: #2f7f2f;
+      background: #2868a8;
       color: #ffffff;
       border: none;
       border-radius: 50%;
@@ -45,7 +45,7 @@
     .repo-home-btn:hover,
     .repo-home-btn:focus {
       color: #ffffff;
-      background: #1a5f1a;
+      background: #1f5488;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       transform: translateY(-2px);
       text-decoration: none;
@@ -161,7 +161,7 @@
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-title mb-4">Contato</h5>
           <ul class="list-unstyled small text-light">
-            <li class="mb-3"><i class="bi bi-geo-alt me-2 text-primary"></i> <span>Av. Presidente Vargas, 670</span></li>
+            <li class="mb-3"><i class="bi bi-geo-alt me-2 text-primary"></i> <span>Av. Brg. Protásio, 621 - Marco, Belém - PA</span></li>
             <li class="mb-3"><i class="bi bi-telephone me-2 text-primary"></i> <span>+55 (91) 3323-2550</span></li>
             <li class="mb-3"><i class="bi bi-clock me-2 text-primary"></i> <span>Seg-Sex: 8h às 14h</span></li>
             <li><i class="bi bi-envelope me-2 text-primary"></i> <a href="mailto:contato@fapespa.pa.gov.br" class="text-light text-decoration-none">contato@fapespa.pa.gov.br</a></li>
@@ -183,7 +183,7 @@
           <h5 class="footer-title mb-4">Localização</h5>
           <div class="map-embed rounded">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.61483842183!2d-48.4907923!3d-1.4589201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a488a1b633b497%3A0xf63d2e2601a4e1e8!2sFundação%20Amazônia%20de%20Amparo%20a%20Estudos%20e%20Pesquisas%20-%20FAPESPA!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps?q=Av.%20Brg.%20Prot%C3%A1sio%2C%20621%20-%20Marco%2C%20Bel%C3%A9m%20-%20PA&amp;output=embed"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
