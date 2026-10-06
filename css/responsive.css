@@ -614,11 +614,6 @@ body > table > tbody {
   #acess-open-btn .d-none.d-lg-inline {
     display: inline !important;
   }
-
-  #sobre a[data-content-url="detgi.html"] {
-    display: table;
-    margin-inline: auto;
-  }
 }
 
 @media (max-width: 767.98px) {
