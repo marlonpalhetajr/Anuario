@@ -94,6 +94,8 @@ body > table > tbody {
 
   .navbar-brand {
     max-width: calc(100% - 76px);
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 1rem !important;
     padding-right: .5rem !important;
   }
@@ -134,14 +136,19 @@ body > table > tbody {
 
   .hero-section-modern,
   .hero-content {
-    min-height: 100vh;
-    min-height: 100svh;
+    min-height: calc(100vh - 64px);
+    min-height: calc(100dvh - 64px);
   }
 
   .hero-content {
     width: 100%;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+
+  .hero-text-wrapper,
+  .hero-cta-single {
+    animation: none;
   }
 
   .page-header {
@@ -549,8 +556,8 @@ body > table > tbody {
 @media (max-width: 767.98px) {
   .hero-section-modern,
   .hero-content {
-    min-height: 100vh;
-    min-height: 100svh;
+    min-height: calc(100vh - 64px);
+    min-height: calc(100dvh - 64px);
   }
 
   .btn-hero {
