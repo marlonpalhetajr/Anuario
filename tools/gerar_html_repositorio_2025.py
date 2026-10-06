@@ -106,6 +106,7 @@ def page_template(title: str, body: str, back_link: str | None = None) -> str:
       border-bottom: 1px solid #ddd;
     }}
   </style>
+<link href="../css/responsive.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
