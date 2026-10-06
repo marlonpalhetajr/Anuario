@@ -128,10 +128,14 @@ body > table > tbody {
     transform: none !important;
   }
 
-  .hero-section-modern,
-  .hero-section,
-  .hero-content {
+  .hero-section {
     min-height: min(78dvh, 680px);
+  }
+
+  .hero-section-modern,
+  .hero-content {
+    min-height: 100vh;
+    min-height: 100svh;
   }
 
   .hero-content {
@@ -545,7 +549,8 @@ body > table > tbody {
 @media (max-width: 767.98px) {
   .hero-section-modern,
   .hero-content {
-    min-height: 70svh;
+    min-height: 100vh;
+    min-height: 100svh;
   }
 
   .btn-hero {
