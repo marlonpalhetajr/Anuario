@@ -16,9 +16,7 @@ body {
 
 img,
 picture,
-video,
-canvas,
-svg {
+video {
   max-width: 100%;
   height: auto;
 }
@@ -283,9 +281,27 @@ body > table > tbody {
     flex-wrap: wrap;
   }
 
+  .custom-modal {
+    width: calc(100% - 20px);
+    max-height: calc(100dvh - 20px) !important;
+    overflow: hidden;
+  }
+
   .custom-modal-content {
-    width: calc(100vw - 20px) !important;
-    margin: 10px !important;
+    width: 100%;
+    margin: 0;
+    max-height: calc(100dvh - 20px);
+    overflow-y: auto;
+  }
+
+  .custom-modal-body {
+    min-height: 0;
+    overflow: auto;
+  }
+
+  .custom-modal-footer {
+    flex-wrap: wrap;
+    padding: 12px;
   }
 
   #btnTop,
@@ -298,8 +314,9 @@ body > table > tbody {
   #site-language-switcher,
   #trilang {
     top: auto !important;
-    right: 12px !important;
-    bottom: 12px !important;
+    left: max(12px, env(safe-area-inset-left)) !important;
+    right: auto !important;
+    bottom: max(12px, env(safe-area-inset-bottom)) !important;
   }
 }
 
@@ -429,10 +446,6 @@ body > table > tbody {
 }
 /* Narrow-phone overflow guard */
 @media (max-width: 767.98px) {
-  body {
-    overflow-x: hidden;
-  }
-
   body > table,
   [x\:publishsource="Excel"] {
     overflow-x: auto;
@@ -473,12 +486,6 @@ body > table > tbody {
     white-space: normal !important;
   }
 
-  .card p {
-    max-width: 100%;
-    padding-left: .25rem;
-    padding-right: .25rem;
-    font-size: .86rem;
-  }
 }
 /* Repository shell sizing fix */
 @media (max-width: 767.98px) {
@@ -496,7 +503,87 @@ body > table > tbody {
   .header h1 {
     width: 100% !important;
     padding: 0 .25rem;
-    font-size: 1.3rem !important;
     word-break: normal;
+  }
+}
+/* Cover images must fill the hero; intrinsic image sizing applies elsewhere. */
+.hero-background .hero-image {
+  height: 100%;
+}
+
+/* Canvas and SVG dimensions belong to the chart/map libraries, not image resets. */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  .navbar .nav-link {
+    white-space: normal;
+  }
+
+  .hero-title {
+    margin-top: clamp(4rem, 18svh, 10rem);
+  }
+
+  .hero-content {
+    padding-bottom: 2rem;
+  }
+
+  body:has(#map) .col-lg-4 {
+    max-height: none;
+    overflow: visible;
+  }
+
+  #map.fullscreen-territorio,
+  .map-container.fullscreen-territorio {
+    width: 100% !important;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section-modern,
+  .hero-content {
+    min-height: 70svh;
+  }
+
+  .btn-hero {
+    white-space: normal;
+  }
+
+  .map-container {
+    padding: .75rem;
+  }
+
+  #map,
+  #map.fullscreen-territorio {
+    height: clamp(300px, 60svh, 500px);
+    min-height: 300px;
+  }
+
+  .info-grid.show {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .acess-control {
+    min-width: 0;
+    white-space: normal;
+    min-height: 44px;
+  }
+
+  #btnTop,
+  .back-to-top,
+  .repo-home-btn {
+    bottom: max(14px, env(safe-area-inset-bottom)) !important;
+    right: max(14px, env(safe-area-inset-right)) !important;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .iframe-container iframe,
+  main iframe[allowfullscreen] {
+    min-height: 240px !important;
   }
 }
