@@ -18,46 +18,12 @@ $(document).ready(function() {
   };
   spinner();
 
-  // Initiate the wowjs (somente se a lib estiver carregada para evitar quebra)
-  // Use a lightweight IntersectionObserver-based reveal instead of WOW.js
-  // to avoid duplicated scroll listeners and janky animations on scroll.
-  if (typeof WOW === 'function') {
-    // intentionally not initializing WOW.js to prevent heavy listeners
-    // new WOW().init();
-  }
-
-  (function() {
-    if (!('IntersectionObserver' in window)) {
-      // fallback: mark all reveals visible
-      document.documentElement.classList.add('js');
-      document.querySelectorAll('.js-reveal').forEach(function(el) {
-        el.classList.add('is-visible');
-      });
-      return;
-    }
-
-    document.documentElement.classList.add('js');
-
-    var io = new IntersectionObserver(function(entries, obs) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.js-reveal').forEach(function(el) {
-      io.observe(el);
-    });
-  })();
-
   // Sticky Navbar
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-      $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+      $('.sticky-top').addClass('shadow-sm');
     } else {
-      $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+      $('.sticky-top').removeClass('shadow-sm');
     }
   });
 
@@ -1547,7 +1513,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.documentElement.classList.add('js');
 
-    var reduced = document.documentElement.classList.contains('a11y-reduced-motion') ||
+    var reduced = window.matchMedia('(max-width: 991.98px)').matches ||
+      document.documentElement.classList.contains('a11y-reduced-motion') ||
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (reduced) {
@@ -1560,17 +1527,16 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
 
-    var observer = new IntersectionObserver(function(entries) {
+    var observer = new IntersectionObserver(function(entries, obs) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
-        } else {
-          entry.target.classList.remove('is-visible');
+          obs.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.16,
-      rootMargin: '0px 0px -8% 0px'
+      threshold: 0,
+      rootMargin: '0px 0px 60px 0px'
     });
 
     sections.forEach(function(section) { observer.observe(section); });
@@ -1584,3 +1550,14 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 
+
+// Close the mobile navigation before following a section link.
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('.navbar-collapse a.nav-link[href]');
+  if (!link || link.getAttribute('href') === '#' ||
+      !window.matchMedia('(max-width: 991.98px)').matches) return;
+  const menu = link.closest('.navbar-collapse');
+  if (menu.classList.contains('show') && window.bootstrap) {
+    window.bootstrap.Collapse.getOrCreateInstance(menu, { toggle: false }).hide();
+  }
+});
